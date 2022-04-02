@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:MC_Dex"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <DockPanel.Background>
+            <ImageBrush ImageSource="/img/background.png"/>
+        </DockPanel.Background>
+
+        <Grid DockPanel.Dock="Top" Height="125">
+            <Grid.Background>
+                <ImageBrush ImageSource="/img/texture_grass2.png" />
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="Margin" Value="0,0,0,20"/>
+                    
+                </Style>
+            </Grid.Resources>
+            <Image Source="/img/logo.png" Width="180" Margin="-25,0,0,20" Grid.Column="0"/>
+            <Image Source="/img/MC-Dex.png" Width="250" Grid.Column="1"/>
+            <Image Width="100" Source="/img/ajouter.png" Grid.Column="2"/>
+            <Image Width="80" Source="/img/loupe.png" Grid.Column="3"/>
+        </Grid>
+
+        <DockPanel DockPanel.Dock="Bottom">
+
+        </DockPanel>
+
+    </DockPanel>
 </Window>
