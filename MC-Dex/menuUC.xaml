@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="MC_Dex.menuUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MC_Dex"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Height="125">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\texture_grass.png" Stretch="UniformToFill" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style TargetType="Image">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+
+            </Style>
+        </Grid.Resources>
+        <Image Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\logo.png" Width="180" Margin="-25,0,0,20" Grid.Column="0"/>
+        <Image Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\MC-Dex.png" Width="250" Grid.Column="1"/>
+        <Image Width="100" Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\ajouter.png" Grid.Column="2"/>
+        <Image Width="80" Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\loupe.png" Grid.Column="3"/>
+    </Grid>
+</UserControl>

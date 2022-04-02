@@ -11,32 +11,50 @@
             <ImageBrush ImageSource="/img/background.png"/>
         </DockPanel.Background>
 
-        <Grid DockPanel.Dock="Top" Height="125">
-            <Grid.Background>
-                <ImageBrush ImageSource="/img/texture_grass2.png" />
-            </Grid.Background>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-            <Grid.Resources>
-                <Style TargetType="Image">
-                    <Setter Property="VerticalAlignment" Value="Center"/>
-                    <Setter Property="Margin" Value="0,0,0,20"/>
-                    
-                </Style>
-            </Grid.Resources>
-            <Image Source="/img/logo.png" Width="180" Margin="-25,0,0,20" Grid.Column="0"/>
-            <Image Source="/img/MC-Dex.png" Width="250" Grid.Column="1"/>
-            <Image Width="100" Source="/img/ajouter.png" Grid.Column="2"/>
-            <Image Width="80" Source="/img/loupe.png" Grid.Column="3"/>
-        </Grid>
+        
+        <local:menuUC DockPanel.Dock="Top" Loaded="menuUC_Loaded"/>
 
-        <DockPanel DockPanel.Dock="Bottom">
 
-        </DockPanel>
+        <ScrollViewer>
+            <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="25,10,0,0">
+                <local:itemUC Loaded="itemUC_Loaded"/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+                <local:itemUC/>
+            </WrapPanel>
+        </ScrollViewer>
 
     </DockPanel>
 </Window>
