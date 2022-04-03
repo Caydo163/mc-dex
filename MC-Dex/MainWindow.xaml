@@ -16,7 +16,7 @@
 
 
         <ScrollViewer>
-            <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="25,10,0,0">
+            <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Center">
                 <local:itemUC Loaded="itemUC_Loaded"/>
                 <local:itemUC/>
                 <local:itemUC/>
