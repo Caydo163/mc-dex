@@ -10,7 +10,7 @@
     
     <DockPanel>
         <DockPanel.Background>
-            <ImageBrush ImageSource="/img/background.png"/>
+            <ImageBrush ImageSource="/img/background2.png"/>
         </DockPanel.Background>
 
 
