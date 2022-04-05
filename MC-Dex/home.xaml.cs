@@ -16,27 +16,13 @@ using System.Windows.Shapes;
 namespace MC_Dex
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour home.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class home : UserControl
     {
-        public MainWindow()
+        public home()
         {
             InitializeComponent();
-        }
-
-        private void itemUC_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void menuUC_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void accueilUC_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

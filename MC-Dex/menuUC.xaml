@@ -6,9 +6,10 @@
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
     <Grid Height="125">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\texture_grass.png" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="img\texture_grass.png" Stretch="UniformToFill" />
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -23,9 +24,9 @@
 
             </Style>
         </Grid.Resources>
-        <Image Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\logo.png" Width="180" Margin="-25,0,0,20" Grid.Column="0"/>
-        <Image Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\MC-Dex.png" Width="250" Grid.Column="1"/>
-        <Image Width="100" Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\ajouter.png" Grid.Column="2"/>
-        <Image Width="80" Source="C:\Users\justi\source\repos\mc-dex\MC-Dex\img\loupe.png" Grid.Column="3"/>
+        <Image Source="img\logo.png" Width="180" Margin="-25,0,0,20" Grid.Column="0"/>
+        <Image Source="img\MC-Dex.png" Width="250" Grid.Column="1"/>
+        <Image Width="100" Source="img\ajouter.png" Grid.Column="2"/>
+        <Image Source="img\loupe.png" Width="80" Grid.Column="3"/>
     </Grid>
 </UserControl>
