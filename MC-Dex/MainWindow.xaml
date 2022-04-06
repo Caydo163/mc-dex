@@ -17,7 +17,7 @@
         <local:menuUC DockPanel.Dock="Top" Loaded="menuUC_Loaded"/>
         
 
-        <local:home DockPanel.Dock="Bottom"></local:home>
+        <local:home DockPanel.Dock="Bottom" Loaded="home_Loaded"></local:home>
 
 
 

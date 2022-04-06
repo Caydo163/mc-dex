@@ -38,5 +38,10 @@ namespace MC_Dex
         {
 
         }
+
+        private void home_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
