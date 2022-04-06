@@ -7,17 +7,52 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40">
-        <StackPanel Margin="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Text="Nom" Foreground="White"/>
-                <PasswordBox Grid.Column="1"/>
-            </Grid>
+    <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0">
+        <DockPanel>
+        <StackPanel Margin="10" DockPanel.Dock="Left">
+
+            <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="Nom" Margin="20,10" FontFamily="Minecraft" Foreground="White" Grid.Column="0"/>
+                        <TextBox Grid.Column="1" Margin="0,7,15,7" FontFamily="Minecraft"/>
+                    </Grid>
+            </Border>
+
+
+            <Border CornerRadius="20" BorderThickness="5" Background="#538f28"  Margin="0,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Identifiant" Margin="20,10" FontFamily="Minecraft" Foreground="White" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" Margin="0,7,15,7" FontFamily="Minecraft"/>
+                </Grid>
+            </Border>
+
+
+            <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Text="Description" Margin="20,10" FontFamily="Minecraft" Foreground="White" Grid.Column="0" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Margin="0,7,15,7" FontFamily="Minecraft" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr"/>
+                </Grid>
+            </Border>
         </StackPanel>
+        
+
+        </DockPanel>
+        
 
 
     </Border>
