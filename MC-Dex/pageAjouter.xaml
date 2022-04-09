@@ -7,51 +7,139 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0">
-        <DockPanel>
-        <StackPanel Margin="10" DockPanel.Dock="Left">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="20,10"/>
+            <Setter Property="FontFamily" Value="Minecraft"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="7"/>
+            <Setter Property="FontFamily" Value="Minecraft"/>
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style TargetType="Border" x:Key="borderGrid">
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="Background" Value="#538f28"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
 
-            <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
+        <Style TargetType="Border" x:Key="borderTextBox">
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="BorderThickness" Value="4"/>
+        </Style>   
+        
+    </UserControl.Resources>
+    
+    
+    <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <StackPanel Margin="10">
+                <Border Style="{StaticResource borderGrid}">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="125"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Nom" Margin="20,10" FontFamily="Minecraft" Foreground="White" Grid.Column="0"/>
-                        <TextBox Grid.Column="1" Margin="0,7,15,7" FontFamily="Minecraft"/>
-                    </Grid>
+                        <TextBlock Text="Nom" Grid.Column="0"/>
+                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                            <TextBox />
+                            </Border>
+                        </Grid>
             </Border>
 
-
-            <Border CornerRadius="20" BorderThickness="5" Background="#538f28"  Margin="0,5">
+            <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="125"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Identifiant" Margin="20,10" FontFamily="Minecraft" Foreground="White" Grid.Column="0"/>
-                    <TextBox Grid.Column="1" Margin="0,7,15,7" FontFamily="Minecraft"/>
-                </Grid>
+                    <TextBlock Text="Nom (anglais)" Grid.Column="0"/>
+                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                                <TextBox/>
+                            </Border>
+                        </Grid>
             </Border>
 
+                    <Border Style="{StaticResource borderGrid}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="125"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-            <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    
-                    <TextBlock Text="Description" Margin="20,10" FontFamily="Minecraft" Foreground="White" Grid.Column="0" VerticalAlignment="Center"/>
-                    <TextBox Grid.Column="1" Margin="0,7,15,7" FontFamily="Minecraft" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr"/>
-                </Grid>
+                <TextBlock Text="Identifiant" Grid.Column="0"/>
+                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                                <TextBox />
+                            </Border>
+                        </Grid>
+        </Border>
+
+
+        <Border Style="{StaticResource borderGrid}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="125"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Description" Grid.Column="0"/>
+                <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                    <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged"/>
+                </Border>
+                
+            </Grid>
+        </Border>
+
+        <Border Style="{StaticResource borderGrid}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="125"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Image" Grid.Column="0"/>
+                <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                    <TextBlock Margin="7" Text="/Chemin/du/fichier/selectionne" Foreground="#FF555855"/>
+                </Border>
+                <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+
+            </Grid>
+        </Border>
+
+                </StackPanel>
+                
+        </ScrollViewer>
+            
+            
+            
+            
+            
+            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource borderGrid}">
+            <Button Background="{x:Null}" BorderThickness="0">
+                <TextBlock Text="VALIDER"/>
+            </Button>
+
             </Border>
-        </StackPanel>
-        
-
-        </DockPanel>
+        </Grid>
         
 
 
