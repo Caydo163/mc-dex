@@ -20,7 +20,7 @@
         <!--<local:home DockPanel.Dock="Bottom" Loaded="home_Loaded"></local:home>-->
 
             
-            <local:pageAjouter/>
+        <local:pageObjet/>
 
 
 

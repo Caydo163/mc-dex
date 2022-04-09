@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
         <Grid.Resources>
             <Style TargetType="Image">
-                <Setter Property="VerticalAlignment" Value="Bottom"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
                 <Setter Property="Margin" Value="0,0,0,0"/>
             </Style>
 
@@ -29,6 +29,7 @@
                 <Setter Property="BorderThickness" Value="0"/>
                 <Setter Property="Height" Value="100"/>
                 <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="Margin" Value="0,0,0,30"/>
             </Style>
         </Grid.Resources>
         
