@@ -114,7 +114,7 @@
 
                 <TextBlock Text="Image" Grid.Column="0"/>
                 <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                    <TextBlock Margin="7" Text="/Chemin/du/fichier/selectionne" Foreground="#FF555855"/>
+                                <TextBlock Margin="7" Text="/Chemin/du/fichier/selectionne" Foreground="#FF979797" FontFamily="Arial"/>
                 </Border>
                 <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
                     <Button.Background>
