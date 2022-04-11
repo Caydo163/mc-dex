@@ -12,14 +12,14 @@
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="Minecraft"/>
             <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Foreground" Value="#C5C5C5"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="titre_partie">
             <Setter Property="Margin" Value="20,15,20,7"/>
             <Setter Property="FontFamily" Value="Minecraft"/>
             <Setter Property="FontSize" Value="22"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Foreground" Value="#C5C5C5"/>
             <Setter Property="TextDecorations" Value="Underline"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="texte_partie">
@@ -36,7 +36,8 @@
 
         <local:home DockPanel.Dock="Right" Width="250" Margin="0,12"/>
 
-        <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left">
             <StackPanel>
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
@@ -61,11 +62,11 @@
                 <TextBlock Style="{StaticResource texte_partie}" Text="Voici un exemple de description type qu'il pourrait y avoir."/>
 
                 <TextBlock Text="Craft" Style="{StaticResource titre_partie}"/>
-                <Image/>
+                <local:craftUC Margin="20,15,20,7" />
 
             </StackPanel>
         </Border>
-        
+       </ScrollViewer>
     </DockPanel>
     
     
