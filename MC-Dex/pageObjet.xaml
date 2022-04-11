@@ -34,7 +34,7 @@
     <DockPanel>
 
 
-        <local:home DockPanel.Dock="Right" Width="250" Margin="0,12"/>
+
 
         <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left">
             <StackPanel >
