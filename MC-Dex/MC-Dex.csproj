@@ -167,10 +167,27 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\bloc_terre.png" />
+    <Resource Include="img\background2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\background2.png" />
+    <Resource Include="img\Arc.png" />
+    <Resource Include="img\Bateau.png" />
+    <Resource Include="img\Bouclier.png" />
+    <Resource Include="img\Buche.png" />
+    <Resource Include="img\Charbon.png" />
+    <Resource Include="img\Citrouille.png" />
+    <Resource Include="img\Cobblestone.png" />
+    <Resource Include="img\Coffre.png" />
+    <Resource Include="img\Diamant.png" />
+    <Resource Include="img\Etabli.png" />
+    <Resource Include="img\Fer.png" />
+    <Resource Include="img\Lit.png" />
+    <Resource Include="img\Planche.png" />
+    <Resource Include="img\Poulet.png" />
+    <Resource Include="img\Seau.png" />
+    <Resource Include="img\Stone.png" />
+    <Resource Include="img\Terre.png" />
+    <Resource Include="img\Torche.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
