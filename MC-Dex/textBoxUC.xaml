@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="MC_Dex.textBoxUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MC_Dex"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    
+    <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="NomTextBox"  Grid.Column="0" Margin="20,10" Foreground="White" FontFamily="Minecraft" VerticalAlignment="Center"/>
+            <Border Grid.Column="1" Background="White" CornerRadius="15" Margin="2" BorderThickness="4" >
+                <TextBox FontFamily="Minecraft" Margin="7" Background="{x:Null}" BorderThickness="0"/>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

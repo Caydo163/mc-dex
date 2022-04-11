@@ -76,3 +76,7 @@ C:\Users\elandre4\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.exe
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.pdb
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\craftUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\craftUC.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxUC.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxUC.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\boutonAjoutUC.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\boutonAjoutUC.baml

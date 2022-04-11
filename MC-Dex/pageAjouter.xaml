@@ -35,9 +35,10 @@
         </Style>   
         
     </UserControl.Resources>
-    
-    
+
     <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0">
+
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -46,65 +47,30 @@
 
             <ScrollViewer VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="10">
-                <Border Style="{StaticResource borderGrid}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="125"/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Nom" Grid.Column="0"/>
-                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                            <TextBox />
-                            </Border>
-                        </Grid>
-            </Border>
+                    <local:textBoxUC Nom="Nom"/>
+                    <local:textBoxUC Nom="Nom (anglais)"/>
+                    <local:textBoxUC Nom="Identifiant"/>
 
-            <Border Style="{StaticResource borderGrid}">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="125"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Nom (anglais)" Grid.Column="0"/>
-                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                                <TextBox/>
-                            </Border>
-                        </Grid>
-            </Border>
+
 
                     <Border Style="{StaticResource borderGrid}">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="125"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="125"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Identifiant" Grid.Column="0"/>
+                            <TextBlock Text="Description" Grid.Column="0"/>
                             <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                                <TextBox />
+                                <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"-+/>
                             </Border>
+
                         </Grid>
-        </Border>
+                    </Border>   
 
-
-        <Border Style="{StaticResource borderGrid}">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="125"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <TextBlock Text="Description" Grid.Column="0"/>
-                <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                    <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged"/>
-                </Border>
-                
-            </Grid>
-        </Border>
-
-        <Border Style="{StaticResource borderGrid}">
+                    <Border Style="{StaticResource borderGrid}">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="125"/>
@@ -125,6 +91,16 @@
             </Grid>
         </Border>
 
+
+
+
+
+                    <local:boutonAjoutUC Message="Ajouter un craft"/>
+                    <local:boutonAjoutUC Message="Ajouter un texte"/>
+                
+
+
+
                 </StackPanel>
                 
         </ScrollViewer>
@@ -140,7 +116,9 @@
 
             </Border>
         </Grid>
-        
+
+       
+
 
 
     </Border>
