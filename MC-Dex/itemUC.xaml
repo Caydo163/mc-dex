@@ -10,7 +10,7 @@
     <Border CornerRadius="12" BorderThickness="5" Background="#BA0E0D0D" Height="80" Width="220" Margin="3">
         <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
             <Image Grid.Column="0" Source="img\bloc_terre.png" Height="50" Width="50" Margin="20,1"/>

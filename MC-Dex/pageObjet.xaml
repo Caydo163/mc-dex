@@ -37,7 +37,7 @@
         <local:home DockPanel.Dock="Right" Width="250" Margin="0,12"/>
 
         <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left">
-            <StackPanel >
+            <StackPanel>
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -59,6 +59,9 @@
 
                 <TextBlock Text="Description" Style="{StaticResource titre_partie}"/>
                 <TextBlock Style="{StaticResource texte_partie}" Text="Voici un exemple de description type qu'il pourrait y avoir."/>
+
+                <TextBlock Text="Craft" Style="{StaticResource titre_partie}"/>
+                <Image/>
 
             </StackPanel>
         </Border>
