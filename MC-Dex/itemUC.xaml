@@ -13,7 +13,7 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="img\bloc_terre.png" Height="50" Width="50" Margin="20,1"/>
+            <Image Grid.Column="0" Source="img\Terre.png" Height="50" Width="50" Margin="20,1"/>
             <TextBlock Grid.Column="1" Text="Terre" FontFamily="Minecraft" Foreground="White" FontSize="25" VerticalAlignment="Center" TextWrapping="Wrap"/>
         </Grid>
     </Border>
