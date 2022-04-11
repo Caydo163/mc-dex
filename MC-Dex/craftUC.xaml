@@ -10,12 +10,12 @@
 
 
 
-        <StackPanel Background="#C3C3C3" Orientation="Horizontal">
-                <Grid Background="Gray" Margin="10" VerticalAlignment="Center">
+        <StackPanel Width="auto"  Orientation="Horizontal">
+                <Grid  Margin="10" VerticalAlignment="Center">
                 <Grid.Resources>
                     <SolidColorBrush x:Key="brush" Color="#C5C5C5"/>
                     <Style TargetType="Image">
-                        <Setter Property="Width" Value="70"/>
+                        <Setter Property="Width" Value="60"/>
                     </Style>
                 </Grid.Resources>
                 <Grid.ColumnDefinitions>
@@ -28,32 +28,32 @@
                         <RowDefinition Height="80"/>
                         <RowDefinition Height="80"/>
                     </Grid.RowDefinitions>
-                    <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
+                        <Image />
                     </Border>
-                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 2">
+                        <Image Source="img\Planche.png"/>
                     </Border>
-                    <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 0">
+                        <Image Source="img\Planche.png"/>
                     </Border>
-                    <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 2 2">
+                        <Image/>
                     </Border>
                     <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                        <Image/>
                     </Border>
-                    <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 0">
+                        <Image Source="img\Planche.png"/>
                     </Border>
-                    <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 0 2">
+                        <Image />
                     </Border>
-                    <Border Grid.Column="2" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="2" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 2">
+                        <Image Source="img\Planche.png"/>
                     </Border>
-                    <Border Grid.Column="2" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image Source="img\Terre.png"/>
+                    <Border Grid.Column="2" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 0">
+                        <Image Source="img\Planche.png"/>
                     </Border>
 
                 </Grid>
@@ -64,8 +64,8 @@
 
         <Image Source="img\flecheCraft.png" Width="100" Margin="10"/>
 
-        <Border Background="Gray" Width="100" Height="100">
-            <Image Source="img\Terre.png" Margin="5"/>
+        <Border  Width="100" Height="100">
+            <Image Source="img\Bateau.png" Margin="5"/>
         </Border>
     </StackPanel>
 </UserControl>

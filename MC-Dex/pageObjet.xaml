@@ -61,7 +61,7 @@
                 <TextBlock Style="{StaticResource texte_partie}" Text="Voici un exemple de description type qu'il pourrait y avoir."/>
 
                 <TextBlock Text="Craft" Style="{StaticResource titre_partie}"/>
-                <Image/>
+                <local:craftUC Margin="20,15,20,7" />
 
             </StackPanel>
         </Border>

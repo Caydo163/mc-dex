@@ -51,7 +51,6 @@ C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.pdb
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\bin\Debug\MC-Dex.exe.config
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\bin\Debug\MC-Dex.exe
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\bin\Debug\MC-Dex.pdb
-C:\Users\elandre4\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.AssemblyReference.cache
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\obj\Debug\home.g.cs
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\obj\Debug\itemUC.g.cs
 C:\Users\elandre4\source\repos\mc-dex\MC-Dex\obj\Debug\MainWindow.g.cs
