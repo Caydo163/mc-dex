@@ -189,5 +189,8 @@
     <Resource Include="img\Terre.png" />
     <Resource Include="img\Torche.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\flecheCraft.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <StackPanel Background="#C3C3C3">
-        <Grid Background="Gray">
+             d:DesignHeight="300" d:DesignWidth="500">
+    <StackPanel Background="#C3C3C3" Orientation="Horizontal">
+        <Grid Background="Gray" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="80"/>
@@ -18,18 +18,26 @@
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
             </Grid.RowDefinitions>
-            <Image Grid.Column="0" Grid.Row="0" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="1" Grid.Row="0" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="2" Grid.Row="0" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="0" Grid.Row="1" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="1" Grid.Row="1" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="2" Grid.Row="1" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="0" Grid.Row="2" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="1" Grid.Row="2" Source="img\bloc_terre.png"/>
-            <Image Grid.Column="2" Grid.Row="2" Source="img\bloc_terre.png"/>
-
-
-
+            <Grid.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="Width" Value="70"/>
+                </Style>
+            </Grid.Resources>
+            <Image Grid.Column="0" Grid.Row="0" Source="img\Terre.png"/>
+            <Image Grid.Column="1" Grid.Row="0" Source="img\Terre.png"/>
+            <Image Grid.Column="2" Grid.Row="0" Source="img\Terre.png"/>
+            <Image Grid.Column="0" Grid.Row="1" Source="img\Terre.png"/>
+            <Image Grid.Column="1" Grid.Row="1" Source="img\Terre.png"/>
+            <Image Grid.Column="2" Grid.Row="1" Source="img\Terre.png"/>
+            <Image Grid.Column="0" Grid.Row="2" Source="img\Terre.png"/>
+            <Image Grid.Column="1" Grid.Row="2" Source="img\Terre.png"/>
+            <Image Grid.Column="2" Grid.Row="2" Source="img\Terre.png"/>
         </Grid>
+
+        <Image Source="img\flecheCraft.png" Width="100" Margin="10"/>
+
+        <Border Background="Gray" Width="100" Height="100">
+            <Image Source="img\Terre.png" Margin="5"/>
+        </Border>
     </StackPanel>
 </UserControl>
