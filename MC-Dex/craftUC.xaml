@@ -29,31 +29,31 @@
                         <RowDefinition Height="80"/>
                     </Grid.RowDefinitions>
                     <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
-                        <Image />
-                    </Border>
-                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 2">
-                        <Image Source="img\Planche.png"/>
-                    </Border>
-                    <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 0">
-                        <Image Source="img\Planche.png"/>
+                        <Image x:Name="Image1"/>
                     </Border>
                     <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 2 2">
-                        <Image/>
-                    </Border>
-                    <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                        <Image/>
-                    </Border>
-                    <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 0">
-                        <Image Source="img\Planche.png"/>
+                        <Image x:Name="Image2"/>
                     </Border>
                     <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 0 2">
-                        <Image />
+                        <Image x:Name="Image3" />
+                    </Border>
+                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 2">
+                        <Image x:Name="Image4"/>
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
+                        <Image x:Name="Image5"/>
                     </Border>
                     <Border Grid.Column="2" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 2">
-                        <Image Source="img\Planche.png"/>
+                        <Image x:Name="Image6"/>
+                    </Border>
+                    <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 0">
+                        <Image x:Name="Image7"/>
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 0">
+                        <Image x:Name="Image8"/>
                     </Border>
                     <Border Grid.Column="2" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 0">
-                        <Image Source="img\Planche.png"/>
+                        <Image x:Name="Image9"/>
                     </Border>
 
                 </Grid>
@@ -65,7 +65,7 @@
         <Image Source="img\flecheCraft.png" Width="100" Margin="10"/>
 
         <Border  Width="100" Height="100">
-            <Image Source="img\Bateau.png" Margin="5"/>
+            <Image x:Name="Image10" Margin="5"/>
         </Border>
     </StackPanel>
 </UserControl>

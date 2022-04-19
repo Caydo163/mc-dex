@@ -29,5 +29,21 @@ namespace MC_Dex
         {
             
         }
+
+        public string Nom
+        {
+            set
+            {
+                NomItem.Text = value;
+            }
+        }
+
+        public string ImageName
+        {
+            set
+            {
+                SrcImg.Source = new BitmapImage(new Uri(value, UriKind.Relative));
+            }
+        }
     }
 }

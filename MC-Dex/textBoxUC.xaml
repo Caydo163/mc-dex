@@ -15,7 +15,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock x:Name="NomTextBox"  Grid.Column="0" Margin="20,10" Foreground="White" FontFamily="Minecraft" VerticalAlignment="Center"/>
+            <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Margin="20,10" Foreground="White" FontFamily="Minecraft" VerticalAlignment="Center"/>
             <Border Grid.Column="1" Background="White" CornerRadius="15" Margin="2" BorderThickness="4" >
                 <TextBox FontFamily="Minecraft" Margin="7" Background="{x:Null}" BorderThickness="0"/>
             </Border>

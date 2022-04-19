@@ -21,7 +21,7 @@
         <Grid.Resources>
             <Style TargetType="Image">
                 <Setter Property="VerticalAlignment" Value="Top"/>
-                <Setter Property="Margin" Value="0,0,0,0"/>
+                <Setter Property="Margin" Value="0"/>
             </Style>
 
             <Style TargetType="Button">
@@ -30,15 +30,26 @@
                 <Setter Property="Height" Value="100"/>
                 <Setter Property="VerticalAlignment" Value="Top"/>
                 <Setter Property="Margin" Value="0,0,0,30"/>
+                
+                <!--Enlève couleur survol bouton-->
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
             </Style>
         </Grid.Resources>
-        
+
         <Button Grid.Column="0">
             <Image Source="img\logo.png" Width="180" Margin="-25,0,0,10" />
         </Button>
-        <Button Grid.Column="1" Width="270">
-            <Image Source="img\MC-Dex.png" Width="250" />
-        </Button>
+        
+        <Image Source="img\MC-Dex.png" Width="250" Grid.Column="1" Height="100" Margin="0,20,0,30"/>
+        
         <Button Grid.Column="2">
             <Image Width="100" Source="img\ajouter.png" />
         </Button>

@@ -9,7 +9,7 @@
     
     <ScrollViewer VerticalScrollBarVisibility="Hidden">
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <local:itemUC/>
+            <local:itemUC Nom="Buche" ImageName="img\Buche.png"/>
             <local:itemUC/>
             <local:itemUC/>
             <local:itemUC/>

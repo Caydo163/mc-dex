@@ -32,5 +32,6 @@ namespace MC_Dex
                 NomTextBox.Text = value;
             }
         }
+
     }
 }
