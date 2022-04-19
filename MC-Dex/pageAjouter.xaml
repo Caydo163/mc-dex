@@ -64,7 +64,7 @@
 
                             <TextBlock Text="Description" Grid.Column="0"/>
                             <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                                <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"-+/>
+                                <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
                             </Border>
 
                         </Grid>
@@ -91,15 +91,8 @@
             </Grid>
         </Border>
 
-
-
-
-
                     <local:boutonAjoutUC Message="Ajouter un craft"/>
                     <local:boutonAjoutUC Message="Ajouter un texte"/>
-                
-
-
 
                 </StackPanel>
                 
