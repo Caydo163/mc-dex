@@ -62,7 +62,7 @@
 
 
 
-        <Image Source="img\flecheCraft.png" Width="100" Margin="10"/>
+        <Image Source="img\flecheCraft.png" Width="90" Margin="10"/>
 
         <Border  Width="100" Height="100">
             <Image x:Name="Image10" Margin="5"/>

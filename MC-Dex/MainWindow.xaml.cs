@@ -25,23 +25,14 @@ namespace MC_Dex
             InitializeComponent();
         }
 
-        private void itemUC_Loaded(object sender, RoutedEventArgs e)
+        public void Button_home(object sender, RoutedEventArgs e)
         {
-
+            contentControl.Content = new home();
         }
 
-        private void menuUC_Loaded(object sender, RoutedEventArgs e)
+        public void Button_ajouter(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void accueilUC_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void home_Loaded(object sender, RoutedEventArgs e)
-        {
-            
+            contentControl.Content = new pageAjouter();
         }
     }
 }

@@ -38,7 +38,7 @@
         <local:home DockPanel.Dock="Right" Width="250" Margin="0,12"/>
 
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left">
+            <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left" Padding="0,0,0,20">
             <StackPanel>
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
@@ -59,13 +59,13 @@
 
                 <Rectangle Width="Auto" Height="2" Fill="White" Margin="15,5"/>
 
-                    <!--<TextBlock Text="Description" Style="{StaticResource titre_partie}"/>
+                    <TextBlock Text="Description" Style="{StaticResource titre_partie}"/>
                 <TextBlock Style="{StaticResource texte_partie}" Text="Voici un exemple de description type qu'il pourrait y avoir."/>
 
                     <TextBlock Text="Craft" Style="{StaticResource titre_partie}"/>
                     <local:craftUC Margin="20,15,20,7" ImageName4="img\Planche.png" ImageName6="img\Planche.png"
                                    ImageName7="img\Planche.png" ImageName8="img\Planche.png" ImageName9="img\Planche.png" ImageName10="img\Bateau.png"/>
--->
+
                 
                     <TextBlock Text="Statistiques" Style="{StaticResource titre_partie}"/>
                     <Grid Margin="20,0">

@@ -20,6 +20,7 @@ namespace MC_Dex
     /// </summary>
     public partial class itemUC : UserControl
     {
+
         public itemUC()
         {
             InitializeComponent();
@@ -44,6 +45,11 @@ namespace MC_Dex
             {
                 SrcImg.Source = new BitmapImage(new Uri(value, UriKind.Relative));
             }
+        }
+
+        public void Button_item(object sender, RoutedEventArgs e)
+        {
+            //contentControl.Content = new pageObjet();
         }
     }
 }
