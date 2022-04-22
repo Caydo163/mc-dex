@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MC_Dex
 {
     /// <summary>
-    /// Logique d'interaction pour valeurGridStatUC.xaml
+    /// Logique d'interaction pour ligneGridStatUC.xaml
     /// </summary>
-    public partial class valeurGridStatUC : UserControl
+    public partial class ligneGridStatUC : UserControl
     {
-        public valeurGridStatUC()
+        public ligneGridStatUC()
         {
             InitializeComponent();
         }

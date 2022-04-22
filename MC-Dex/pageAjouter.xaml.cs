@@ -35,16 +35,10 @@ namespace MC_Dex
         private void Button_ajoutLigneStat(object sender, RoutedEventArgs e)
         {
             Grid_stat.RowDefinitions.Add(new RowDefinition());
-            nomGridStatUC newNom = new nomGridStatUC();
-            valeurGridStatUC newValeur = new valeurGridStatUC();
+            ligneGridStatUC newLine = new ligneGridStatUC();
 
-            Grid_stat.Children.Add(newNom);
-            newNom.SetValue(Grid.RowProperty, nbStat+1);
-            newNom.SetValue(Grid.ColumnProperty, 0);
-
-            Grid_stat.Children.Add(newValeur);
-            newValeur.SetValue(Grid.RowProperty, nbStat+1);
-            newValeur.SetValue(Grid.ColumnProperty, 1);
+            Grid_stat.Children.Add(newLine);
+            newLine.SetValue(Grid.RowProperty, nbStat);
 
             nbStat++;
         }

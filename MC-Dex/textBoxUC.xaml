@@ -11,7 +11,7 @@
     <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="160"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 

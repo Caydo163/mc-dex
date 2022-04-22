@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
-             d:DesignHeight="950" d:DesignWidth="800">
+             d:DesignHeight="950" d:DesignWidth="1000">
 
     <UserControl.Resources>
         <Style TargetType="TextBlock">
@@ -13,6 +13,7 @@
             <Setter Property="FontFamily" Value="Minecraft"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="15"/>
         </Style>
         <Style TargetType="TextBox">
             <Setter Property="Margin" Value="7"/>
@@ -62,13 +63,10 @@
                     <local:textBoxUC Nom="Nom (anglais)"/>
                     <local:textBoxUC Nom="Identifiant"/>
 
-
-
-
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="160"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
@@ -83,7 +81,7 @@
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="160"/>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
@@ -105,7 +103,7 @@
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="160"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
@@ -215,55 +213,46 @@
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="160"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Text="Statistiques" Grid.Column="0"/>
-                    <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                                <StackPanel Orientation="Horizontal">
-                            <Grid Margin="20,10" Name="Grid_stat">
+                    
+                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                                <StackPanel Margin="20,20">
+                                <Grid  Name="Grid_stat" >
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
                                 <Grid.Resources>
                                     <SolidColorBrush x:Key="brush" Color="Gray"/>
-                                    <Style TargetType="Image">
-                                        <Setter Property="Width" Value="60"/>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Margin" Value="20,5"/>
+                                        <Setter Property="FontFamily" Value="Minecraft"/>
+                                        <Setter Property="FontSize" Value="18"/>
+                                        <Setter Property="Foreground" Value="White"/>
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
                                     </Style>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="Margin" Value="20,5"/>
-                                                <Setter Property="FontFamily" Value="Minecraft"/>
-                                                <Setter Property="FontSize" Value="18"/>
-                                                <Setter Property="Foreground" Value="White"/>
-                                                <Setter Property="HorizontalAlignment" Value="Center"/>
-                                            </Style>
-                                        </Grid.Resources>
+                                </Grid.Resources>
 
-                                <Border Grid.Column="0" Grid.Row="0"  BorderBrush="{StaticResource brush}" BorderThickness="0,0,1,1" Background="Gray">
-                                    <TextBlock Text="Nom" Grid.Column="0"/>
-                                </Border>
-                                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1,0,0,1" Background="Gray">
-                                    <TextBlock Text="Valeur" Grid.Column="1"/>
-                                </Border>
-
-                                <local:nomGridStatUC Grid.Column="0" Grid.Row="1"/>
-                                <local:valeurGridStatUC Grid.Column="1" Grid.Row="1"/>
+                                <local:ligneGridStatUC Grid.Row="0"/>
 
 
-                                </Grid>
+
+
+                                    </Grid>
                                     
-                                    
-                                        <Button Width="60" Height="60" BorderThickness="0" Click="Button_ajoutLigneStat">
+                                <Button Width="40" Height="40" BorderThickness="0" Click="Button_ajoutLigneStat" HorizontalAlignment="Left">
                                             <Button.Background>
-                                                <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
+                                                <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
                                             </Button.Background>
-                                        </Button>
+                                </Button>
                                 </StackPanel>
                             </Border>
 
