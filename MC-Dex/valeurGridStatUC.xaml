@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     
-    <Border BorderBrush="Gray" BorderThickness="1,1,0,1">
+    <Border BorderBrush="Gray" CornerRadius="0,10,10,0" BorderThickness="0,3,3,3">
         <TextBox/>
     </Border>
 </UserControl>

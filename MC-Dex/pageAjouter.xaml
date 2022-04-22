@@ -222,15 +222,15 @@
                     <TextBlock Text="Statistiques" Grid.Column="0"/>
                     <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
                                 <StackPanel Orientation="Horizontal">
-                            <Grid Margin="20,10" Name="Grid_stat">
+                            <Grid  Margin="20,10" Name="Grid_stat">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="85"/>
+                                    <ColumnDefinition Width="20"/>
                                     <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="70"/>
                                 </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
+
                                 <Grid.Resources>
                                     <SolidColorBrush x:Key="brush" Color="Gray"/>
                                     <Style TargetType="Image">
@@ -245,15 +245,15 @@
                                             </Style>
                                         </Grid.Resources>
 
-                                <Border Grid.Column="0" Grid.Row="0"  BorderBrush="{StaticResource brush}" BorderThickness="0,0,1,1" Background="Gray">
+                                <Border CornerRadius="10,0,0,10" Grid.Column="0" Background="Gray"   BorderBrush="{StaticResource brush}" BorderThickness="3,3,3,3">
                                     <TextBlock Text="Nom" Grid.Column="0"/>
                                 </Border>
-                                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1,0,0,1" Background="Gray">
-                                    <TextBlock Text="Valeur" Grid.Column="1"/>
+                                        <Border CornerRadius="10,0,0,10" Grid.Column="3"  Background="Gray" BorderBrush="{StaticResource brush}" BorderThickness="3,3,3,3">
+                                    <TextBlock Text="Valeur" Grid.Column="3"/>
                                 </Border>
 
-                                <local:nomGridStatUC Grid.Column="0" Grid.Row="1"/>
-                                <local:valeurGridStatUC Grid.Column="1" Grid.Row="1"/>
+                                <local:nomGridStatUC Grid.Column="1" />
+                                <local:valeurGridStatUC Grid.Column="4" />
 
 
                                 </Grid>
