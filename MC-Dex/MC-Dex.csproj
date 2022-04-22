@@ -58,8 +58,14 @@
     <Compile Include="boutonAjoutUC.xaml.cs">
       <DependentUpon>boutonAjoutUC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="nomGridStatUC.xaml.cs">
+      <DependentUpon>nomGridStatUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="textBoxUC.xaml.cs">
       <DependentUpon>textBoxUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="valeurGridStatUC.xaml.cs">
+      <DependentUpon>valeurGridStatUC.xaml</DependentUpon>
     </Compile>
     <Page Include="boutonAjoutUC.xaml">
       <SubType>Designer</SubType>
@@ -102,6 +108,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="nomGridStatUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pageAjouter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -111,6 +121,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="textBoxUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="valeurGridStatUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

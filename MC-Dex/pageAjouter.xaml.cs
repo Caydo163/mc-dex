@@ -25,9 +25,28 @@ namespace MC_Dex
             InitializeComponent();
         }
 
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private int nbStat = 1 ;
+        private void Button_ajoutLigneStat(object sender, RoutedEventArgs e)
+        {
+            Grid_stat.RowDefinitions.Add(new RowDefinition());
+            nomGridStatUC newNom = new nomGridStatUC();
+            valeurGridStatUC newValeur = new valeurGridStatUC();
+
+            Grid_stat.Children.Add(newNom);
+            newNom.SetValue(Grid.RowProperty, nbStat+1);
+            newNom.SetValue(Grid.ColumnProperty, 0);
+
+            Grid_stat.Children.Add(newValeur);
+            newValeur.SetValue(Grid.RowProperty, nbStat+1);
+            newValeur.SetValue(Grid.ColumnProperty, 1);
+
+            nbStat++;
         }
     }
 }

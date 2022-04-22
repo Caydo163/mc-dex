@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="950" d:DesignWidth="800">
 
 
     <UserControl.Resources>
@@ -16,7 +16,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="titre_partie">
-            <Setter Property="Margin" Value="20,15,20,7"/>
+            <Setter Property="Margin" Value="20,30,20,7"/>
             <Setter Property="FontFamily" Value="Minecraft"/>
             <Setter Property="FontSize" Value="22"/>
             <Setter Property="Foreground" Value="#C5C5C5"/>
@@ -59,7 +59,7 @@
 
                 <Rectangle Width="Auto" Height="2" Fill="White" Margin="15,5"/>
 
-                    <TextBlock Text="Description" Style="{StaticResource titre_partie}"/>
+                    <TextBlock Text="Description" Style="{StaticResource titre_partie}" Margin="20,10,20,7"/>
                 <TextBlock Style="{StaticResource texte_partie}" Text="Voici un exemple de description type qu'il pourrait y avoir."/>
 
                     <TextBlock Text="Craft" Style="{StaticResource titre_partie}"/>
@@ -68,7 +68,7 @@
 
                 
                     <TextBlock Text="Statistiques" Style="{StaticResource titre_partie}"/>
-                    <Grid Margin="20,0">
+                    <Grid Margin="20,10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
@@ -86,16 +86,17 @@
                             <Style TargetType="TextBlock">
                                 <Setter Property="Margin" Value="20,5"/>
                                 <Setter Property="FontFamily" Value="Minecraft"/>
-                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="FontSize" Value="18"/>
                                 <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
                             </Style>
                         </Grid.Resources>
 
-                        <Border Grid.Column="0" Grid.Row="0"  BorderBrush="{StaticResource brush}" BorderThickness="0,0,1,1">
-                            <TextBlock Text="Durete" Grid.Column="0"/>
+                        <Border Grid.Column="0" Grid.Row="0"  BorderBrush="Gray" BorderThickness="0,0,1,1" Background="Gray">
+                            <TextBlock Text="Nom" Grid.Column="0"/>
                         </Border>
-                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1,0,0,1">
-                            <TextBlock Text="3.5" Grid.Column="1"/>
+                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="Gray" BorderThickness="1,0,0,1" Background="Gray">
+                            <TextBlock Text="Valeur" Grid.Column="1"/>
                         </Border>
 
                         <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0,1,1,1">

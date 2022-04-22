@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="950" d:DesignWidth="800">
 
     <UserControl.Resources>
         <Style TargetType="TextBlock">
@@ -68,7 +68,7 @@
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="125"/>
+                        <ColumnDefinition Width="140"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
@@ -83,7 +83,7 @@
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="125"/>
+                        <ColumnDefinition Width="140"/>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
@@ -105,7 +105,7 @@
             <Border Style="{StaticResource borderGrid}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="125"/>
+                        <ColumnDefinition Width="140"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
@@ -210,10 +210,71 @@
                         </Grid>
             </Border>
 
+
+
+            <Border Style="{StaticResource borderGrid}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Statistiques" Grid.Column="0"/>
+                    <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                                <StackPanel Orientation="Horizontal">
+                            <Grid Margin="20,10" Name="Grid_stat">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.Resources>
+                                    <SolidColorBrush x:Key="brush" Color="Gray"/>
+                                    <Style TargetType="Image">
+                                        <Setter Property="Width" Value="60"/>
+                                    </Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Margin" Value="20,5"/>
+                                                <Setter Property="FontFamily" Value="Minecraft"/>
+                                                <Setter Property="FontSize" Value="18"/>
+                                                <Setter Property="Foreground" Value="White"/>
+                                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            </Style>
+                                        </Grid.Resources>
+
+                                <Border Grid.Column="0" Grid.Row="0"  BorderBrush="{StaticResource brush}" BorderThickness="0,0,1,1" Background="Gray">
+                                    <TextBlock Text="Nom" Grid.Column="0"/>
+                                </Border>
+                                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1,0,0,1" Background="Gray">
+                                    <TextBlock Text="Valeur" Grid.Column="1"/>
+                                </Border>
+
+                                <local:nomGridStatUC Grid.Column="0" Grid.Row="1"/>
+                                <local:valeurGridStatUC Grid.Column="1" Grid.Row="1"/>
+
+
+                                </Grid>
+                                    
+                                    
+                                        <Button Width="60" Height="60" BorderThickness="0" Click="Button_ajoutLigneStat">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
+                                            </Button.Background>
+                                        </Button>
+                                </StackPanel>
+                            </Border>
+
+                </Grid>
+            </Border>
+
+
             <local:boutonAjoutUC Message="Ajouter un craft"/>
             <local:boutonAjoutUC Message="Ajouter un texte"/>
 
-             </StackPanel>
+        </StackPanel>
                 
         </ScrollViewer>
             

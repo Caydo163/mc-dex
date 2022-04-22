@@ -72,9 +72,12 @@
 
         <!--<local:home DockPanel.Dock="Bottom" Loaded="home_Loaded"></local:home>-->
 
+        
+
         <ContentControl DockPanel.Dock="Bottom" x:Name="contentControl">
             <local:pageAjouter/>
-        </ContentControl>   
+        </ContentControl>
+        
 
 
 

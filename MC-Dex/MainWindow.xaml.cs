@@ -34,5 +34,6 @@ namespace MC_Dex
         {
             contentControl.Content = new pageAjouter();
         }
+
     }
 }

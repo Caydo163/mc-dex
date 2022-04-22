@@ -27,10 +27,10 @@
         <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-            <Image x:Name="SrcImg" Grid.Column="0" Source="img\Terre.png" Height="50" Width="50" Margin="20,1"/>
-            <TextBlock x:Name="NomItem" Grid.Column="1" Text="Nom item" FontFamily="Minecraft" Foreground="#C5C5C5" FontSize="23" VerticalAlignment="Center" TextWrapping="Wrap"/>
+            <Image x:Name="SrcImg" Grid.Column="0" Source="img\Terre.png" Height="50" Width="50" Margin="15,1"/>
+            <TextBlock x:Name="NomItem" Grid.Column="1" Text="Nom item" FontFamily="Minecraft" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
         </Grid>
         </Button>
     </Border>
