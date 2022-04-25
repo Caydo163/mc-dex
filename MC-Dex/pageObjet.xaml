@@ -9,7 +9,6 @@
 
 
     <UserControl.Resources>
-        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
             <Setter Property="FontSize" Value="20"/>

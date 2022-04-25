@@ -8,20 +8,7 @@
              d:DesignHeight="1000" d:DesignWidth="1000">
 
     <UserControl.Resources>
-        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
-        <Style TargetType="TextBlock">
-            <Setter Property="Margin" Value="20,10"/>
-            <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontSize" Value="15"/>
-        </Style>
-        <Style TargetType="TextBox">
-            <Setter Property="Margin" Value="7"/>
-            <Setter Property="FontFamily" Value="font\minecraft_font.ttf#Minecraft"/>
-            <Setter Property="Background" Value="{x:Null}"/>
-            <Setter Property="BorderThickness" Value="0"/>
-        </Style>
+        
         <Style TargetType="Border" x:Key="borderGrid">
             <Setter Property="CornerRadius" Value="20"/>
             <Setter Property="BorderThickness" Value="5"/>
@@ -74,7 +61,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Description" Grid.Column="0"/>
+                        <TextBlock Text="Description" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
                         <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
                             <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
                         </Border>
@@ -92,7 +79,7 @@
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Image" Grid.Column="0"/>
+                                <TextBlock Text="Image" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
                         <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
                             <TextBlock Margin="7" Text="/Chemin/du/fichier/selectionne" Foreground="#FF979797" FontFamily="Arial"/>
                         </Border>
@@ -130,7 +117,7 @@
             
             <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource borderGrid}">
             <Button Background="{x:Null}" BorderThickness="0">
-                <TextBlock Text="VALIDER"/>
+                <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
             </Button>
 
             </Border>

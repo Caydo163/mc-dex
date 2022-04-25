@@ -76,3 +76,4 @@ C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxDescriptionUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxDescriptionUC.baml
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxStatistiqueUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxStatistiqueUC.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\App.baml

@@ -9,7 +9,7 @@
 
     <UserControl.Resources>
         <Style TargetType="TextBox">
-            <Setter Property="FontFamily" Value="font\minecraft_font.ttf#Minecraft"/>
+            <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
             <Setter Property="Margin" Value="7"/>
             <Setter Property="Background" Value="{x:Null}"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -31,7 +31,7 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" Margin="20,10" MaxHeight="40">
-                <TextBox/>
+                <TextBox Style="{StaticResource pageAjouter_textBox}"/>
             </Border>
             
             <Border Grid.Column="1" Margin="2" >

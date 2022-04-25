@@ -31,16 +31,7 @@
                 <Setter Property="VerticalAlignment" Value="Top"/>
                 <Setter Property="Margin" Value="0,0,0,30"/>
                 
-                <!--Enlève couleur survol bouton-->
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="{TemplateBinding Background}">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
+ 
             </Style>
         </Grid.Resources>
 
