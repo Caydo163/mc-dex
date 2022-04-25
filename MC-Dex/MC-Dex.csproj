@@ -64,6 +64,12 @@
     <Compile Include="textBoxBaseUC.xaml.cs">
       <DependentUpon>textBoxBaseUC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="textBoxDescriptionUC.xaml.cs">
+      <DependentUpon>textBoxDescriptionUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="textBoxStatistiqueUC.xaml.cs">
+      <DependentUpon>textBoxStatistiqueUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="textBoxUC.xaml.cs">
       <DependentUpon>textBoxUC.xaml</DependentUpon>
     </Compile>
@@ -121,6 +127,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="textBoxBaseUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="textBoxDescriptionUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="textBoxStatistiqueUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

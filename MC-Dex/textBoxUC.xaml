@@ -21,7 +21,7 @@
 
             <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Margin="20,10" Foreground="White" FontFamily="{StaticResource Minecraft}" VerticalAlignment="Center"/>
             <Border Grid.Column="1" Background="White" CornerRadius="15" Margin="2" BorderThickness="4" >
-                <TextBox FontFamily="{StaticResource Minecraft}" Margin="7" Background="{x:Null}" BorderThickness="0"/>
+                <TextBox FontFamily="{StaticResource Minecraft}" Margin="7" Background="{x:Null}" BorderThickness="0" />
             </Border>
         </Grid>
     </Border>

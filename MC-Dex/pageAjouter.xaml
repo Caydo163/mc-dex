@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
-             d:DesignHeight="950" d:DesignWidth="1000">
+             d:DesignHeight="1000" d:DesignWidth="1000">
 
     <UserControl.Resources>
         <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
@@ -61,6 +61,8 @@
                 
             <StackPanel Margin="10">
 
+                    <StackPanel x:Name="panelBlocAjout">
+
                 <local:textBoxUC Nom="Nom"/>
                 <local:textBoxUC Nom="Nom (anglais)"/>
                 <local:textBoxUC Nom="Identifiant"/>
@@ -80,6 +82,8 @@
                     </Grid>
                 </Border>
 
+                
+                
                 <Border Style="{StaticResource borderGrid}">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -102,161 +106,21 @@
                 </Border>
 
 
-                <Border Style="{StaticResource borderGrid}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="160"/>
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
+                <!--<local:textBoxDescriptionUC/>
 
-                        <TextBlock Text="Craft" Grid.Column="0"/>
-                                <Border Style="{StaticResource borderTextBox}" Grid.Column="1">
-                                <StackPanel Width="auto"  Orientation="Horizontal"  Margin="10" HorizontalAlignment="Center">
-                                    <Grid  VerticalAlignment="Center">
-                                        <Grid.Resources>
-                                            <SolidColorBrush x:Key="brush" Color="#C5C5C5"/>
-                                            <Style TargetType="Image">
-                                                <Setter Property="Width" Value="60"/>
-                                            </Style>
-                                        </Grid.Resources>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="50"/>
-                                            <ColumnDefinition Width="50"/>
-                                            <ColumnDefinition Width="50"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="50"/>
-                                            <RowDefinition Height="50"/>
-                                            <RowDefinition Height="50"/>
-                                        </Grid.RowDefinitions>
-                                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 2 2">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 0 2">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 2">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="2" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 2">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 0">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 0">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-                                        <Border Grid.Column="2" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 0">
-                                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                                <Button.Background>
-                                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                                </Button.Background>
-                                            </Button>
-                                        </Border>
-
-                                    </Grid>
-
-                                    <Image Source="img\flecheCraft.png" Width="50" Margin="10"/>
-
-                                <Border  Width="50" Height="50">
-                                    <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
-                                        <Button.Background>
-                                            <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                        </Button.Background>
-                                    </Button>
-                                </Border>
-                            </StackPanel>
-                            </Border>
-
-                        </Grid>
-            </Border>
+                    <local:textBoxStatistiqueUC/>
 
 
 
-            <Border Style="{StaticResource borderGrid}">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="160"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
+                    <local:textBoxBaseUC/>-->
+             </StackPanel>
 
-                    <TextBlock Text="Statistiques" Grid.Column="0"/>
-                    
-                            <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                                <StackPanel Margin="20,20">
-                                <Grid  Name="Grid_stat" >
-                                <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition/>
-                                            <RowDefinition/>
-                                        </Grid.RowDefinitions>
+                    <Rectangle Fill="White" Height="3" Margin="5,20"/>
+                    <local:boutonAjoutUC Message="Ajouter un craft"/>
+                    <local:boutonAjoutUC Message="Ajouter un texte"/>
+                    <local:boutonAjoutUC Message="Ajouter une / des statistique(s)"/>
 
-
-                                <local:ligneGridStatUC Grid.Row="0"/>
-
-
-
-
-                                    </Grid>
-                                    
-                                <Button Width="40" Height="40" BorderThickness="0" Click="Button_ajoutLigneStat" HorizontalAlignment="Left">
-                                            <Button.Background>
-                                                <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
-                                            </Button.Background>
-                                </Button>
-                                </StackPanel>
-                            </Border>
-
-                </Grid>
-            </Border>
-
-            <local:textBoxBaseUC/>
-
-            <local:boutonAjoutUC Message="Ajouter un craft"/>
-            <local:boutonAjoutUC Message="Ajouter un texte"/>
-
-        </StackPanel>
+                </StackPanel>
                 
         </ScrollViewer>
             

@@ -63,8 +63,8 @@
                     <TextBlock Text="Description" Style="{StaticResource titre_partie}" Margin="20,10,20,7"/>
                 <TextBlock Style="{StaticResource texte_partie}" Text="Voici un exemple de description type qu'il pourrait y avoir."/>
 
-                    <TextBlock Text="Craft" Style="{StaticResource titre_partie}"/>
-                    <local:craftUC Margin="20,15,20,7" ImageName4="img\Planche.png" ImageName6="img\Planche.png"
+                    
+               <local:craftUC ImageName4="img\Planche.png" ImageName6="img\Planche.png"
                                    ImageName7="img\Planche.png" ImageName8="img\Planche.png" ImageName9="img\Planche.png" ImageName10="img\Bateau.png"/>
 
                 

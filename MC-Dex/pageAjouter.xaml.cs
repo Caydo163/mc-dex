@@ -31,16 +31,6 @@ namespace MC_Dex
 
         }
 
-        private int nbStat = 1 ;
-        private void Button_ajoutLigneStat(object sender, RoutedEventArgs e)
-        {
-            Grid_stat.RowDefinitions.Add(new RowDefinition());
-            ligneGridStatUC newLine = new ligneGridStatUC();
-
-            Grid_stat.Children.Add(newLine);
-            newLine.SetValue(Grid.RowProperty, nbStat);
-
-            nbStat++;
-        }
+        
     }
 }

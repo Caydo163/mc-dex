@@ -30,8 +30,8 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0"  Margin="20,10" MaxHeight="40">
-                <TextBox VerticalAlignment="Center"/>
+            <Border Grid.Column="0" Margin="20,10" MaxHeight="40">
+                <TextBox/>
             </Border>
             
             <Border Grid.Column="1" Margin="2" >
