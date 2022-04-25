@@ -61,6 +61,9 @@
     <Compile Include="ligneGridStatUC.xaml.cs">
       <DependentUpon>ligneGridStatUC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="textBoxBaseUC.xaml.cs">
+      <DependentUpon>textBoxBaseUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="textBoxUC.xaml.cs">
       <DependentUpon>textBoxUC.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="textBoxBaseUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="textBoxUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,10 +157,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Resource Include="Minecraft.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="minecraft_font.ttf">
+    <Resource Include="font\minecraft_font.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <None Include="Properties\Settings.settings">

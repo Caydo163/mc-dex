@@ -8,6 +8,7 @@
              d:DesignHeight="80" d:DesignWidth="220" Foreground="{x:Null}">
 
     <UserControl.Resources>
+        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
         <Style TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
@@ -30,7 +31,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
             <Image x:Name="SrcImg" Grid.Column="0" Source="img\Terre.png" Height="50" Width="50" Margin="15,1"/>
-            <TextBlock x:Name="NomItem" Grid.Column="1" Text="Nom item" FontFamily="Minecraft" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                <TextBlock x:Name="NomItem" Grid.Column="1" Text="Nom item" FontFamily="{StaticResource Minecraft}" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
         </Grid>
         </Button>
     </Border>

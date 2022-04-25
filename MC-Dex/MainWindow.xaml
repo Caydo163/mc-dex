@@ -9,7 +9,7 @@
 
     
     <Window.Resources>
-
+        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
     </Window.Resources>
 
     <DockPanel>

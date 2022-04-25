@@ -6,6 +6,10 @@
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -18,6 +22,6 @@
             </Button.Background>
         </Button>
 
-        <TextBlock x:Name="nomAjout" Text="Ajouter un craft" Grid.Column="1" Margin="5,0,20,0" Foreground="White" VerticalAlignment="Center" FontFamily="Minecraft"/>
+        <TextBlock x:Name="nomAjout" Text="Ajouter un craft" Grid.Column="1" Margin="5,0,20,0" Foreground="White" VerticalAlignment="Center" FontFamily="{StaticResource Minecraft}"/>
     </Grid>
 </UserControl>

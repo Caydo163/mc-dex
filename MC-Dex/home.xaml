@@ -6,6 +6,8 @@
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    
     
     <ScrollViewer VerticalScrollBarVisibility="Hidden">
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">

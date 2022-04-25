@@ -7,6 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
+
+    <UserControl.Resources>
+        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
+    </UserControl.Resources>
     
     <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
         <Grid>
@@ -15,9 +19,9 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Margin="20,10" Foreground="White" FontFamily="Minecraft" VerticalAlignment="Center"/>
+            <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Margin="20,10" Foreground="White" FontFamily="{StaticResource Minecraft}" VerticalAlignment="Center"/>
             <Border Grid.Column="1" Background="White" CornerRadius="15" Margin="2" BorderThickness="4" >
-                <TextBox FontFamily="Minecraft" Margin="7" Background="{x:Null}" BorderThickness="0"/>
+                <TextBox FontFamily="{StaticResource Minecraft}" Margin="7" Background="{x:Null}" BorderThickness="0"/>
             </Border>
         </Grid>
     </Border>

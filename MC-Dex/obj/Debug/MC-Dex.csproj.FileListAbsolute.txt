@@ -70,3 +70,5 @@ C:\Users\Megaport\source\repos\2\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.GenerateR
 C:\Users\Megaport\source\repos\2\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.CoreCompileInputs.cache
 C:\Users\Megaport\source\repos\2\mc-dex\MC-Dex\obj\Debug\MC-Dex.exe
 C:\Users\Megaport\source\repos\2\mc-dex\MC-Dex\obj\Debug\MC-Dex.pdb
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxBaseUC.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxBaseUC.baml
