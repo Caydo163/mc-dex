@@ -25,7 +25,6 @@ namespace MC_Dex
             InitializeComponent();
         }
 
-
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

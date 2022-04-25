@@ -9,7 +9,7 @@
 
 
     
-    <Border CornerRadius="20" BorderThickness="5" Background="#538f28" Margin="0,5">
+    <Border Style="{StaticResource pageAjouter_borderGrid}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="160"/>
@@ -17,7 +17,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
-            <Border Grid.Column="1" Background="White" CornerRadius="15" Margin="2" BorderThickness="4" >
+            <Border Grid.Column="1" Style="{StaticResource pageAjouter_borderTextBox}" >
                 <TextBox Style="{StaticResource pageAjouter_textBox}" />
             </Border>
         </Grid>

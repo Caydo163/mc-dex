@@ -72,8 +72,8 @@ C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.GenerateResour
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.CoreCompileInputs.cache
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.exe
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.pdb
-C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxDescriptionUC.g.cs
-C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxDescriptionUC.baml
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxStatistiqueUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxStatistiqueUC.baml
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\App.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxCraftUC.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxCraftUC.baml

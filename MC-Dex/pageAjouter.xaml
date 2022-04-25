@@ -7,33 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="1000" d:DesignWidth="1000">
 
-    <UserControl.Resources>
-        
-        <Style TargetType="Border" x:Key="borderGrid">
-            <Setter Property="CornerRadius" Value="20"/>
-            <Setter Property="BorderThickness" Value="5"/>
-            <Setter Property="Background" Value="#538f28"/>
-            <Setter Property="Margin" Value="0,5"/>
-        </Style>
 
-        <Style TargetType="Border" x:Key="borderTextBox">
-            <Setter Property="CornerRadius" Value="15"/>
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="Margin" Value="2"/>
-            <Setter Property="BorderThickness" Value="4"/>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </UserControl.Resources>
 
     <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0">
 
@@ -54,7 +28,7 @@
                 <local:textBoxUC Nom="Nom (anglais)"/>
                 <local:textBoxUC Nom="Identifiant"/>
 
-                <Border Style="{StaticResource borderGrid}">
+                <Border Style="{StaticResource pageAjouter_borderGrid}">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="160"/>
@@ -62,16 +36,16 @@
                         </Grid.ColumnDefinitions>
 
                         <TextBlock Text="Description" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
-                        <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
-                            <TextBox TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
+                        <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
+                            <TextBox Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
                         </Border>
 
                     </Grid>
                 </Border>
 
-                
-                
-                <Border Style="{StaticResource borderGrid}">
+
+
+                        <Border Style="{StaticResource pageAjouter_borderGrid}">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="160"/>
@@ -80,7 +54,7 @@
                         </Grid.ColumnDefinitions>
 
                                 <TextBlock Text="Image" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
-                        <Border Style="{StaticResource borderTextBox}" Grid.Column="1" >
+                        <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
                             <TextBlock Margin="7" Text="/Chemin/du/fichier/selectionne" Foreground="#FF979797" FontFamily="Arial"/>
                         </Border>
                         <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
@@ -93,14 +67,14 @@
                 </Border>
 
 
-                <!--<local:textBoxDescriptionUC/>
+                        <local:textBoxCraftUC/>
 
-                    <local:textBoxStatistiqueUC/>
+                        <local:textBoxStatistiqueUC/>
 
 
 
-                    <local:textBoxBaseUC/>-->
-             </StackPanel>
+                        <local:textBoxBaseUC/>
+                    </StackPanel>
 
                     <Rectangle Fill="White" Height="3" Margin="5,20"/>
                     <local:boutonAjoutUC Message="Ajouter un craft"/>
@@ -115,7 +89,7 @@
             
             
             
-            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource borderGrid}">
+            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource pageAjouter_borderGrid}">
             <Button Background="{x:Null}" BorderThickness="0">
                 <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
             </Button>

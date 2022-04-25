@@ -16,7 +16,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Statistiques" Grid.Column="0" VerticalAlignment="Center" FontFamily="{StaticResource Minecraft}" Margin="20,10" Foreground="White" FontSize="15"/>
+            <TextBlock Text="Statistiques" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
 
             <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
                 <StackPanel Margin="20,20">

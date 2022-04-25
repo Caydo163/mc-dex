@@ -10,7 +10,7 @@
     <UserControl.Resources>
         <Style TargetType="TextBlock">
                 <Setter Property="Margin" Value="10,5"/>
-            <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
+                <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
                 <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Foreground" Value="White"/>
                 <Setter Property="HorizontalAlignment" Value="Center"/>

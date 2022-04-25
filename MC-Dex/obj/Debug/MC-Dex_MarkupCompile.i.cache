@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\justi\source\repos\mc-dex\MC-Dex\App.xaml
-131047772312
+13-980291292
 
-18318245696
+18-1703317836
 13-1310406943
-boutonAjoutUC.xaml;craftUC.xaml;home.xaml;itemUC.xaml;ligneGridStatUC.xaml;MainWindow.xaml;menuUC.xaml;pageAjouter.xaml;pageObjet.xaml;textBoxBaseUC.xaml;textBoxDescriptionUC.xaml;textBoxStatistiqueUC.xaml;textBoxUC.xaml;
+boutonAjoutUC.xaml;craftUC.xaml;home.xaml;itemUC.xaml;ligneGridStatUC.xaml;MainWindow.xaml;menuUC.xaml;pageAjouter.xaml;pageObjet.xaml;textBoxBaseUC.xaml;textBoxCraftUC.xaml;textBoxStatistiqueUC.xaml;textBoxUC.xaml;
 
 True
 

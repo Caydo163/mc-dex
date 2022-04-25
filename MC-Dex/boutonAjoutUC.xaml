@@ -22,6 +22,6 @@
             </Button.Background>
         </Button>
 
-        <TextBlock x:Name="nomAjout" Text="Ajouter un craft" Grid.Column="1" Margin="5,0,20,0" Foreground="White" VerticalAlignment="Center" FontFamily="{StaticResource Minecraft}"/>
+        <TextBlock x:Name="nomAjout" Text="Ajouter un craft" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
     </Grid>
 </UserControl>

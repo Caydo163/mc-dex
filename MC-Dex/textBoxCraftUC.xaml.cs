@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MC_Dex
 {
     /// <summary>
-    /// Logique d'interaction pour textBoxDescriptionUC.xaml
+    /// Logique d'interaction pour textBoxCraftUC.xaml
     /// </summary>
-    public partial class textBoxDescriptionUC : UserControl
+    public partial class textBoxCraftUC : UserControl
     {
-        public textBoxDescriptionUC()
+        public textBoxCraftUC()
         {
             InitializeComponent();
         }
