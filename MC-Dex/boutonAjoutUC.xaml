@@ -7,9 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="300">
 
-    <UserControl.Resources>
-        <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
-    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>

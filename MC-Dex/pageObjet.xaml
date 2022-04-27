@@ -39,7 +39,7 @@
                 
                 
                 <TextBlock Text="Description" Style="{StaticResource pageObjet_titrePartie}" Margin="20,10,20,7"/>
-                    <TextBlock Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>
+                <TextBlock Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>
 
 
 
@@ -53,6 +53,9 @@
 
                     <local:craftUC NameTypeCraft="Fabrication"/>
 
+
+                    <TextBlock Text="Autre texte" Style="{StaticResource pageObjet_titrePartie}" Margin="20,10,20,7"/>
+                    <TextBlock Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>
 
 
                 </StackPanel>

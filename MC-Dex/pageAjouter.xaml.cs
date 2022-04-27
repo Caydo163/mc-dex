@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace MC_Dex
 {
@@ -30,6 +31,32 @@ namespace MC_Dex
 
         }
 
-        
+        private void Button_AjouterCraft(object sender, RoutedEventArgs e)
+        {
+            textBoxCraftUC box = new textBoxCraftUC();
+            panelBlocAjout.Children.Add(box);
+        }
+
+        private void Button_AjouterTexte(object sender, RoutedEventArgs e)
+        {
+            textBoxBaseUC box = new textBoxBaseUC();
+            panelBlocAjout.Children.Add(box);
+        }
+
+        private void Button_AjouterStat(object sender, RoutedEventArgs e)
+        {
+            textBoxStatistiqueUC box = new textBoxStatistiqueUC();
+            panelBlocAjout.Children.Add(box);
+        }
+
+        private void Button_OpenFile(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image File (*.png;*.jpeg) | *.png;*.jpeg";
+            if(ofd.ShowDialog() == true)
+            {
+                TextBlockPathFile.Text = ofd.FileName;
+            }
+        }
     }
 }
