@@ -16,22 +16,13 @@ using System.Windows.Shapes;
 namespace MC_Dex
 {
     /// <summary>
-    /// Logique d'interaction pour craftUC.xaml
+    /// Logique d'interaction pour statistiqueUC.xaml
     /// </summary>
-    public partial class craftUC : UserControl
+    public partial class statistiqueUC : UserControl
     {
-        public craftUC()
+        public statistiqueUC()
         {
             InitializeComponent();
         }
-
-        public string NameTypeCraft
-        {
-            set
-            {
-                TypeCraft.Text = value;
-            }
-        }
-
     }
 }

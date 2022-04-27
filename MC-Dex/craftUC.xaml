@@ -10,65 +10,20 @@
 
 
     <StackPanel>
-        <TextBlock Text="Craft" Margin="20,30,20,7" FontFamily="{StaticResource Minecraft}" FontSize="22" Foreground="#C5C5C5" FontWeight="Bold"/>
-
-        <StackPanel Width="auto"  Orientation="Horizontal" Margin="20,15,20,7">
-                    <Grid  Margin="10" VerticalAlignment="Center">
-                    <Grid.Resources>
-                        <SolidColorBrush x:Key="brush" Color="#C5C5C5"/>
-                        <Style TargetType="Image">
-                            <Setter Property="Width" Value="40"/>
-                        </Style>
-                    </Grid.Resources>
-                    <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="60"/>
-                            <ColumnDefinition Width="60"/>
-                            <ColumnDefinition Width="60"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                        </Grid.RowDefinitions>
-                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
-                            <Image x:Name="Image1"/>
-                        </Border>
-                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 2 2">
-                            <Image x:Name="Image2"/>
-                        </Border>
-                        <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 0 2">
-                            <Image x:Name="Image3" />
-                        </Border>
-                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 2">
-                            <Image x:Name="Image4"/>
-                        </Border>
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
-                            <Image x:Name="Image5"/>
-                        </Border>
-                        <Border Grid.Column="2" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 2">
-                            <Image x:Name="Image6"/>
-                        </Border>
-                        <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 0">
-                            <Image x:Name="Image7"/>
-                        </Border>
-                        <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 0">
-                            <Image x:Name="Image8"/>
-                        </Border>
-                        <Border Grid.Column="2" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 0">
-                            <Image x:Name="Image9"/>
-                        </Border>
-
-                    </Grid>
-              
+        <TextBlock x:Name="TypeCraft" Text="Craft" Style="{StaticResource pageObjet_titrePartie}"/>
 
 
+        <WrapPanel>
+            
+        <local:grilleCraftUC ImageName4="img\Planche.png" ImageName6="img\Planche.png"
+                             ImageName7="img\Planche.png" ImageName8="img\Planche.png" 
+                             ImageName9="img\Planche.png" ImageName10="img\Bateau.png"/>
 
+        <local:grilleCraftUC ImageName4="img\Planche.png" ImageName6="img\Planche.png"
+                             ImageName7="img\Planche.png" ImageName8="img\Planche.png" 
+                             ImageName9="img\Planche.png" ImageName10="img\Bateau.png"/>
+            
+        </WrapPanel>
 
-            <Image Source="img\flecheCraft.png" Width="60" Margin="10"/>
-
-            <Border  Width="70" Height="70">
-                <Image x:Name="Image10" Margin="5"/>
-            </Border>
-        </StackPanel>
     </StackPanel>    
 </UserControl>

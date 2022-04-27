@@ -72,7 +72,7 @@
         
 
         <ContentControl DockPanel.Dock="Bottom" x:Name="contentControl">
-            <local:pageAjouter/>
+            <local:pageObjet/>
         </ContentControl>
         
 

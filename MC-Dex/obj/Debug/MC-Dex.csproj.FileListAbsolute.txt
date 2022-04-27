@@ -77,3 +77,7 @@ C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxStatistiqueUC.baml
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\App.baml
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxCraftUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\textBoxCraftUC.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\statistiqueUC.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\statistiqueUC.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\grilleCraftUC.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\grilleCraftUC.baml

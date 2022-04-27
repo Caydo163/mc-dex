@@ -58,8 +58,14 @@
     <Compile Include="boutonAjoutUC.xaml.cs">
       <DependentUpon>boutonAjoutUC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="grilleCraftUC.xaml.cs">
+      <DependentUpon>grilleCraftUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ligneGridStatUC.xaml.cs">
       <DependentUpon>ligneGridStatUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="statistiqueUC.xaml.cs">
+      <DependentUpon>statistiqueUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="textBoxBaseUC.xaml.cs">
       <DependentUpon>textBoxBaseUC.xaml</DependentUpon>
@@ -78,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="craftUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="grilleCraftUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pageObjet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="statistiqueUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

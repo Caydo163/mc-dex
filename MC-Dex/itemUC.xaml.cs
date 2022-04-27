@@ -49,7 +49,7 @@ namespace MC_Dex
 
         public void Button_item(object sender, RoutedEventArgs e)
         {
-            //contentControl.Content = new pageObjet();
+            //.contentControl.Content = new pageObjet();
         }
     }
 }
