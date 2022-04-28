@@ -9,7 +9,7 @@
 
 
 
-    <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0">
+    <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0,40,20">
 
 
         <Grid>
@@ -67,8 +67,8 @@
                 </Border>
 
 
-                        <!--<local:textBoxCraftUC/>
-                        <local:textBoxStatistiqueUC/>
+                        <local:textBoxCraftUC/>
+                        <!--<local:textBoxStatistiqueUC/>
                         <local:textBoxBaseUC/>-->
                         
                     </StackPanel>
@@ -124,18 +124,19 @@
 
                         <TextBlock Text="Ajouter une / des statistique(s)" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
                     </Grid>
+                
+                    
 
                 </StackPanel>
                 
         </ScrollViewer>
-            
-            
-            
-            
-            
-            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource pageAjouter_borderGrid}" >
 
-                <Button Background="{x:Null}" BorderThickness="0">
+
+
+
+
+            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider">
+                <Button Background="{x:Null}" BorderThickness="0" Click="Button_Valider">
                     <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
                 </Button>
 

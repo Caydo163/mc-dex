@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("font/minecraft_font.ttf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/logoavecnom.svg")]
 
 

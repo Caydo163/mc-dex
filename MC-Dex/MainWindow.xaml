@@ -61,7 +61,7 @@
             <Button Grid.Column="2" Click="Button_ajouter">
                 <Image Width="100" Source="img\ajouter.png" />
             </Button>
-            <Button  Grid.Column="3">
+            <Button  Grid.Column="3" Click="Button_rechercher">
                 <Image Source="img\loupe.png" Width="80"/>
             </Button>
         </Grid>
@@ -75,11 +75,5 @@
             <local:pageObjet/>
         </ContentControl>
         
-
-
-
-
-
-
     </DockPanel>
 </Window>

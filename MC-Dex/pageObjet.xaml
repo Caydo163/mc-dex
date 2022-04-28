@@ -12,10 +12,10 @@
     <DockPanel>
 
 
-        <local:home DockPanel.Dock="Right" Width="250" Margin="0,12"/>
+        <local:home DockPanel.Dock="Right" Width="250" Margin="0,0,20,20"/>
 
+            <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0,0,20" DockPanel.Dock="Left" Padding="0,0,0,40">
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,20,0,20" DockPanel.Dock="Left" Padding="0,0,0,20">
             <StackPanel>
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
@@ -54,13 +54,13 @@
                     <local:craftUC NameTypeCraft="Fabrication"/>
 
 
-                    <TextBlock Text="Autre texte" Style="{StaticResource pageObjet_titrePartie}" Margin="20,10,20,7"/>
+                    <TextBlock Text="Autre texte" Style="{StaticResource pageObjet_titrePartie}"/>
                     <TextBlock Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>
 
 
                 </StackPanel>
-        </Border>
        </ScrollViewer>
+        </Border>
     </DockPanel>
     
     

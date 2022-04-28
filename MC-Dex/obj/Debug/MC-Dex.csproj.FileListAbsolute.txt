@@ -81,3 +81,5 @@ C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\statistiqueUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\statistiqueUC.baml
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\grilleCraftUC.g.cs
 C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\grilleCraftUC.baml
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\pageRechercher.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\pageRechercher.baml

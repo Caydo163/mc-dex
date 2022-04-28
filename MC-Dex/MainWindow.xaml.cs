@@ -35,5 +35,10 @@ namespace MC_Dex
             contentControl.Content = new pageAjouter();
         }
 
+        public void Button_rechercher(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new pageRechercher();
+        }
+
     }
 }

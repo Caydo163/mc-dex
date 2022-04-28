@@ -64,6 +64,9 @@
     <Compile Include="ligneGridStatUC.xaml.cs">
       <DependentUpon>ligneGridStatUC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="pageRechercher.xaml.cs">
+      <DependentUpon>pageRechercher.xaml</DependentUpon>
+    </Compile>
     <Compile Include="statistiqueUC.xaml.cs">
       <DependentUpon>statistiqueUC.xaml</DependentUpon>
     </Compile>
@@ -133,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pageObjet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pageRechercher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -248,6 +255,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\flecheCraft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\logoAvecNom.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\logoAvecNom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

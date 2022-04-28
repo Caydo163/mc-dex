@@ -35,6 +35,10 @@
                             <RowDefinition Height="50"/>
                             <RowDefinition Height="50"/>
                         </Grid.RowDefinitions>
+                        
+                        
+                        
+                        
                         <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0">
                                 <Button.Background>
