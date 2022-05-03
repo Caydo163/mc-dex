@@ -110,7 +110,7 @@
                         <TextBlock Text="Ajouter un texte" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
                     </Grid>
 
-                    <Grid>
+                    <Grid Name="HideButtonStat">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition/>
