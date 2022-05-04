@@ -67,6 +67,9 @@
     <Compile Include="pageRechercher.xaml.cs">
       <DependentUpon>pageRechercher.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PopUpListObject.xaml.cs">
+      <DependentUpon>PopUpListObject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="statistiqueUC.xaml.cs">
       <DependentUpon>statistiqueUC.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pageRechercher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUpListObject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

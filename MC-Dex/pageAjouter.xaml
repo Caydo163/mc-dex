@@ -19,63 +19,63 @@
             </Grid.ColumnDefinitions>
 
             <ScrollViewer VerticalScrollBarVisibility="Hidden">
-                
-            <StackPanel Margin="10">
+
+                <StackPanel Margin="10">
 
                     <StackPanel x:Name="panelBlocAjout">
 
-                <local:textBoxUC Nom="Nom"/>
-                <local:textBoxUC Nom="Nom (anglais)"/>
-                <local:textBoxUC Nom="Identifiant"/>
+                        <local:textBoxUC Nom="Nom"/>
+                        <local:textBoxUC Nom="Nom (anglais)"/>
+                        <local:textBoxUC Nom="Identifiant"/>
 
-                <Border Style="{StaticResource pageAjouter_borderGrid}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="160"/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
+                        <Border Style="{StaticResource pageAjouter_borderGrid}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="160"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Description" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
-                        <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
-                            <TextBox Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
+                                <TextBlock Text="Description" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
+                                <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
+                                    <TextBox Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
+                                </Border>
+
+                            </Grid>
                         </Border>
-
-                    </Grid>
-                </Border>
 
 
 
                         <Border Style="{StaticResource pageAjouter_borderGrid}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="160"/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="160"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
 
                                 <TextBlock Text="Image" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
-                        <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
-                            <TextBlock Margin="7" x:Name="TextBlockPathFile" Text="/Chemin/du/fichier/selectionne" Foreground="#FF979797" FontFamily="Arial"/>
-                        </Border>
-                        <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button_OpenFile">
-                            <Button.Background>
-                                <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                            </Button.Background>
-                        </Button>
+                                <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
+                                    <TextBlock Margin="7" x:Name="TextBlockPathFile" Text="/Chemin/du/fichier/selectionne" Foreground="#FF979797" FontFamily="Arial"/>
+                                </Border>
+                                <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button_OpenFile">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
 
-                    </Grid>
-                </Border>
+                            </Grid>
+                        </Border>
 
 
                         <local:textBoxCraftUC/>
                         <!--<local:textBoxStatistiqueUC/>
                         <local:textBoxBaseUC/>-->
-                        
+
                     </StackPanel>
 
                     <Rectangle Fill="White" Height="3" Margin="5,20"/>
-                
-                
+
+
                     <!--<local:boutonAjoutUC Message="Ajouter un craft"/>
                     <local:boutonAjoutUC Message="Ajouter un texte"/>
                     <local:boutonAjoutUC Message="Ajouter une / des statistique(s)"/>-->
@@ -98,7 +98,8 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="16*"/>
                         </Grid.ColumnDefinitions>
 
                         <Button Width="50" Height="35" Grid.Column="0" BorderThickness="0" Click="Button_AjouterTexte">
@@ -107,10 +108,10 @@
                             </Button.Background>
                         </Button>
 
-                        <TextBlock Text="Ajouter un texte" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
+                        <TextBlock Text="Ajouter un texte" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}" Grid.ColumnSpan="2"/>
                     </Grid>
 
-                    <Grid Name="HideButtonStat">
+                    <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition/>
@@ -124,12 +125,12 @@
 
                         <TextBlock Text="Ajouter une / des statistique(s)" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
                     </Grid>
-                
-                    
+
+
 
                 </StackPanel>
-                
-        </ScrollViewer>
+
+            </ScrollViewer>
 
 
 
@@ -143,7 +144,7 @@
             </Border>
         </Grid>
 
-       
+
 
 
 

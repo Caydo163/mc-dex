@@ -71,7 +71,7 @@
 
         
 
-        <ContentControl DockPanel.Dock="Bottom" x:Name="contentControl">
+        <ContentControl DockPanel.Dock="Bottom" Name="contentControl">
             <local:pageObjet/>
         </ContentControl>
         

@@ -39,6 +39,5 @@ namespace MC_Dex
         {
             contentControl.Content = new pageRechercher();
         }
-
     }
 }

@@ -48,7 +48,6 @@ namespace MC_Dex
         {
             textBoxStatistiqueUC box = new textBoxStatistiqueUC();
             panelBlocAjout.Children.Add(box);
-            HideButtonStat.Visibility = Visibility.Collapsed;
         }
 
         private void Button_OpenFile(object sender, RoutedEventArgs e)
@@ -63,6 +62,7 @@ namespace MC_Dex
 
         private void Button_Valider(object sender, RoutedEventArgs e)
         {
+            
         }
     }
 }
