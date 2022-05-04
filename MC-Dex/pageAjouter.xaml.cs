@@ -51,6 +51,14 @@ namespace MC_Dex
             HideButtonStat.Visibility = Visibility.Collapsed;
         }
 
+        private void Button_AjouterNom(object sender, RoutedEventArgs e)
+        {
+            textBoxUC box = new textBoxUC();
+            box.Nom = "Nom (anglais)";   
+            panelBlocAjout.Children.Add(box);
+            HideButtonName.Visibility = Visibility.Collapsed;
+        }
+
         private void Button_OpenFile(object sender, RoutedEventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();

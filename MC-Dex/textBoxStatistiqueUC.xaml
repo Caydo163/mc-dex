@@ -40,6 +40,11 @@
                             <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
                         </Button.Background>
                     </Button>
+                    <!--<Button Width="40" Height="40" BorderThickness="0" Click="Button_supprimeLigneStat" HorizontalAlignment="Left">
+                        <Button.Background>
+                            <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
+                        </Button.Background>
+                    </Button>-->
                 </StackPanel>
             </Border>
 

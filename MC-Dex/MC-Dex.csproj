@@ -264,10 +264,10 @@
     <Resource Include="img\flecheCraft.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\logoAvecNom.svg" />
+    <Resource Include="img\command_block.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\logoAvecNom.png" />
+    <Resource Include="img\liste_des_objets.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

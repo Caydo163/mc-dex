@@ -66,11 +66,6 @@
                             </Grid>
                         </Border>
 
-
-                        <local:textBoxCraftUC/>
-                        <!--<local:textBoxStatistiqueUC/>
-                        <local:textBoxBaseUC/>-->
-
                     </StackPanel>
 
                     <Rectangle Fill="White" Height="3" Margin="5,20"/>
@@ -124,6 +119,21 @@
                         </Button>
 
                         <TextBlock Text="Ajouter une / des statistique(s)" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
+                    </Grid>
+
+                    <Grid Name="HideButtonName">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="50" Height="35" Grid.Column="0" BorderThickness="0" Click="Button_AjouterNom">
+                            <Button.Background>
+                                <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
+                            </Button.Background>
+                        </Button>
+
+                        <TextBlock Text="Ajouter un nom anglais" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
                     </Grid>
 
 

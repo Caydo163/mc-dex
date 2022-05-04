@@ -36,5 +36,19 @@ namespace MC_Dex
 
             nbStat++;
         }
+
+/*        private void Button_supprimeLigneStat(object sender, RoutedEventArgs e)
+        {
+            if (nbStat < 1)
+            {
+                return;
+            }
+            Grid_stat.RowDefinitions.RemoveAt(nbStat - 1);
+
+            nbStat--;
+        }*/
+
+
+        
     }
 }
