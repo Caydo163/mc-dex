@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC-Dex", "MC-Dex.csproj", "{CFD28104-4743-45D5-A316-127F15E0F279}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc_Dex_CSharp", "..\Mc_Dex_CSharp\Mc_Dex_CSharp.csproj", "{8D121E1B-D92F-4845-9A89-48725BC2931E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CFD28104-4743-45D5-A316-127F15E0F279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD28104-4743-45D5-A316-127F15E0F279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD28104-4743-45D5-A316-127F15E0F279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D121E1B-D92F-4845-9A89-48725BC2931E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D121E1B-D92F-4845-9A89-48725BC2931E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D121E1B-D92F-4845-9A89-48725BC2931E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D121E1B-D92F-4845-9A89-48725BC2931E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
