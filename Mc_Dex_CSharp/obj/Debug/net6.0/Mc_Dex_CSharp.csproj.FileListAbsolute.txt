@@ -1,0 +1,12 @@
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\bin\Debug\net6.0\Mc_Dex_CSharp.deps.json
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\bin\Debug\net6.0\Mc_Dex_CSharp.dll
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\bin\Debug\net6.0\Mc_Dex_CSharp.pdb
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.csproj.AssemblyReference.cache
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.AssemblyInfoInputs.cache
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.AssemblyInfo.cs
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.dll
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\refint\Mc_Dex_CSharp.dll
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\Mc_Dex_CSharp.pdb
+C:\Users\justi\source\repos\mc-dex\Mc_Dex_CSharp\obj\Debug\net6.0\ref\Mc_Dex_CSharp.dll

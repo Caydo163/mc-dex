@@ -1,7 +1,15 @@
 ﻿namespace Mc_Dex_CSharp
 {
-    public class Class1
+    public class Item
     {
+        public Item (string nom, string id, string image, string description)
+            { 
+                Nom = nom;
+                Id = id;
+                Image = image;
+                Desc = description;
+            }
+
         public string Nom
         {
             get
@@ -68,7 +76,7 @@
         private string nomAnglais = default;
 
 
-        private IDictionary<string, float> listeStats = new Dictionary<string, float>();
+        private Dictionary<string, float> listeStats = new Dictionary<string, float>();
         public float this[string key]
         {
             get

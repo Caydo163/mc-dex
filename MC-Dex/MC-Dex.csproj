@@ -61,7 +61,6 @@
     <Compile Include="grilleCraftUC.xaml.cs">
       <DependentUpon>grilleCraftUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Item.cs" />
     <Compile Include="ligneGridStatUC.xaml.cs">
       <DependentUpon>ligneGridStatUC.xaml</DependentUpon>
     </Compile>

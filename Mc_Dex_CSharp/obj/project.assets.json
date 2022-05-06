@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\eloan\\.nuget\\packages\\": {}
+    "C:\\Users\\justi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Mc_Dex_CSharp\\Mc_Dex_CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Mc_Dex_CSharp\\Mc_Dex_CSharp.csproj",
       "projectName": "Mc_Dex_CSharp",
-      "projectPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Mc_Dex_CSharp\\Mc_Dex_CSharp.csproj",
-      "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Mc_Dex_CSharp\\obj\\",
+      "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Mc_Dex_CSharp\\Mc_Dex_CSharp.csproj",
+      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Mc_Dex_CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

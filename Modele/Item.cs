@@ -1,23 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MC_Dex
+namespace Modele
 {
-    internal class Item
+    public class Item
     {
+        public Item(string nom, string id, string image, string description)
+        {
+            Nom = nom;
+            Id = id;
+            Image = image;
+            Desc = description;
+        }
+
         public string Nom
         {
-            get 
-            { 
-                return nom; 
+            get
+            {
+                return nom;
             }
             set
             {
-                nom = value; 
-            }    
+                nom = value;
+            }
         }
         private string nom;
 
@@ -71,23 +76,35 @@ namespace MC_Dex
                 nomAnglais = value;
             }
         }
-        private string nomAnglais = default;
+        private string nomAnglais;
 
 
-        private IDictionary<string, float> listeStats = new Dictionary<string, float>();
+        private Dictionary<string, float> listeStats = new Dictionary<string, float>();
         public float this[string key]
         {
-           get 
+            get
             {
                 return listeStats[key];
-             }   
-           set
+            }
+            set
             {
                 listeStats[key] = value;
             }
         }
+
+        
+        private List<KeyValuePair<string, string> > listeTexte = new List<KeyValuePair<string, string>>();
+        public KeyValuePair<string, string> this[int index]
+        {
+            get { return listeTexte[index]; }
+            set { listeTexte[index] = value; }
+        }
+
+
+
+        public override string ToString()
+        {
+            return $"{Nom} / {Image} / {Id} / {Desc} / {NomE}"; 
+        }
     }
-
-
-
 }
