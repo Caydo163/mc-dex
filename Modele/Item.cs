@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Modele
 {
@@ -21,7 +22,7 @@ namespace Modele
             }
             set
             {
-                nom = value;
+                nom = value[0].ToString().ToUpper() + value.Substring(1).ToLower() ;
             }
         }
         private string nom;
@@ -34,7 +35,10 @@ namespace Modele
             }
             set
             {
-                identifiant = value;
+                if(Regex.IsMatch(value, @"^[0-9:]+$") && value[0] != '0')
+                {
+                    identifiant = value;
+                }
             }
         }
         private string identifiant;
@@ -73,26 +77,26 @@ namespace Modele
             }
             set
             {
-                nomAnglais = value;
+                nomAnglais = value[0].ToString().ToUpper() + value.Substring(1).ToLower();
             }
         }
         private string nomAnglais;
 
 
-        private Dictionary<string, float> listeStats = new Dictionary<string, float>();
-        public float this[string key]
-        {
-            get
-            {
-                return listeStats[key];
-            }
-            set
-            {
-                listeStats[key] = value;
-            }
-        }
+        /*        private Dictionary<string, float> listeStats = new Dictionary<string, float>();
+                public float this[string key]
+                {
+                    get
+                    {
+                        return listeStats[key];
+                    }
+                    set
+                    {
+                        listeStats[key] = value;
+                    }
+                }
 
-        
+*/
         private List<KeyValuePair<string, string> > listeTexte = new List<KeyValuePair<string, string>>();
         public KeyValuePair<string, string> this[int index]
         {
@@ -100,6 +104,17 @@ namespace Modele
             set { listeTexte[index] = value; }
         }
 
+
+
+
+
+
+
+        public override bool Equals(object obj)
+        {
+            Item item = (Item)obj;
+            return this.Id == item.Id;
+        }
 
 
         public override string ToString()
