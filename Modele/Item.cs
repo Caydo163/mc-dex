@@ -83,28 +83,41 @@ namespace Modele
         private string nomAnglais;
 
 
-        /*        private Dictionary<string, float> listeStats = new Dictionary<string, float>();
-                public float this[string key]
-                {
-                    get
-                    {
-                        return listeStats[key];
-                    }
-                    set
-                    {
-                        listeStats[key] = value;
-                    }
-                }
 
-*/
-        private List<KeyValuePair<string, string> > listeTexte = new List<KeyValuePair<string, string>>();
-        public KeyValuePair<string, string> this[int index]
+
+        public Dictionary<string, double> ListeStats { get; private set; }
+            
+        
+        public void ajouterStat(string nom, double valeur)
         {
-            get { return listeTexte[index]; }
-            set { listeTexte[index] = value; }
+            if(ListeStats == null)
+            {
+                ListeStats = new Dictionary<string, double>();
+                Console.WriteLine("Création dictionnaire");
+            }
+            if(! ListeStats.ContainsKey(nom))
+            {
+                ListeStats[nom] = valeur;
+            }
+            else
+            {
+                Console.WriteLine("La statistique existe déjà");
+            }
         }
 
 
+
+        public List<KeyValuePair<string, string>> ListeTexte { get; private set; }
+
+
+        public void ajouterTexte(string titre, string partie)
+        {
+            if(ListeTexte == null)
+            {
+                ListeTexte = new List<KeyValuePair<string, string>>();
+            }
+            ListeTexte.Add(new KeyValuePair<string, string>(titre, partie));
+        }
 
 
 
