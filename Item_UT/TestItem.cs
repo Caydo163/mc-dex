@@ -4,7 +4,7 @@ using Modele;
 
 namespace Item_UT
 {
-    public class UnitTest1
+    public class TestItem
     {
         [Theory]
         [InlineData("terre", "Terre", "0:9", null, "chemin/image.png", "Description")]
@@ -12,7 +12,7 @@ namespace Item_UT
 
         public void TestConstructor(string nom, string nomAttendu, string id, string idAttendu, string image, string description)
         {
-            Item item = new Item(nom, id, image, description);
+            Item item = new(nom, id, image, description);
             Assert.NotNull(item);
             Assert.Equal(nomAttendu, item.Nom);
             Assert.Equal(idAttendu, item.Id);

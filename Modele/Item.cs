@@ -22,7 +22,7 @@ namespace Modele
             }
             set
             {
-                nom = value[0].ToString().ToUpper() + value.Substring(1).ToLower() ;
+                nom = value[0].ToString().ToUpper() + value[1..].ToLower();
             }
         }
         private string nom;
@@ -77,7 +77,7 @@ namespace Modele
             }
             set
             {
-                nomAnglais = value[0].ToString().ToUpper() + value.Substring(1).ToLower();
+                nomAnglais = value[0].ToString().ToUpper() + value[1..].ToLower();
             }
         }
         private string nomAnglais;
@@ -88,7 +88,7 @@ namespace Modele
         public Dictionary<string, double> ListeStats { get; private set; }
             
         
-        public void ajouterStat(string nom, double valeur)
+        public void AjouterStat(string nom, double valeur)
         {
             if(ListeStats == null)
             {
@@ -107,10 +107,11 @@ namespace Modele
 
 
 
+
         public List<KeyValuePair<string, string>> ListeTexte { get; private set; }
 
 
-        public void ajouterTexte(string titre, string partie)
+        public void AjouterTexte(string titre, string partie)
         {
             if(ListeTexte == null)
             {
@@ -118,6 +119,7 @@ namespace Modele
             }
             ListeTexte.Add(new KeyValuePair<string, string>(titre, partie));
         }
+
 
 
 
