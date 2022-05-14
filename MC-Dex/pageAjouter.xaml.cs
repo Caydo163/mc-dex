@@ -53,17 +53,21 @@ namespace MC_Dex
 
         private void Button_AjouterNom(object sender, RoutedEventArgs e)
         {
-            textBoxUC box = new textBoxUC();
-            box.Nom = "Nom (anglais)";   
+            textBoxUC box = new textBoxUC
+            {
+                Nom = "Nom (anglais)"
+            };
             panelBlocAjout.Children.Add(box);
             HideButtonName.Visibility = Visibility.Collapsed;
         }
 
         private void Button_OpenFile(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Image File (*.png;*.jpeg) | *.png;*.jpeg";
-            if(ofd.ShowDialog() == true)
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "Image File (*.png;*.jpeg) | *.png;*.jpeg"
+            };
+            if (ofd.ShowDialog() == true)
             {
                 TextBlockPathFile.Text = ofd.FileName;
             }

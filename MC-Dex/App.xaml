@@ -8,6 +8,8 @@
         <!-- Général -->
         <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
         <Style TargetType="Button">
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">

@@ -24,5 +24,21 @@ namespace MC_Dex
         {
             InitializeComponent();
         }
+
+        private void Button_Modifier(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Supprimer(object sender, RoutedEventArgs e)
+        {
+            if (!PopUpDemandeSuppression.popUpOpen)
+            {
+                PopUpDemandeSuppression popUp = new PopUpDemandeSuppression();
+                PopUpDemandeSuppression.popUpOpen = true;
+                popUp.Show();
+                
+            }
+        }
     }
 }

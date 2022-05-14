@@ -10,24 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MC_Dex
 {
     /// <summary>
-    /// Logique d'interaction pour pageRechercher.xaml
+    /// Logique d'interaction pour PopUpDemandeSuppression.xaml
     /// </summary>
-    public partial class pageRechercher : UserControl
+    public partial class PopUpDemandeSuppression : Window
     {
-        public pageRechercher()
+        public static bool popUpOpen = false;
+        public PopUpDemandeSuppression()
         {
             InitializeComponent();
         }
 
-        public void Button_Rechercher(object sender, RoutedEventArgs e)
+        private void Button_Confirmer(object sender, RoutedEventArgs e)
         {
-            
+            this.Close();
+            popUpOpen = false;
         }
     }
 }

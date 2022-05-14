@@ -9,7 +9,7 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        >
+        BorderThickness="1" BorderBrush="White">
 
     <DockPanel >
         <DockPanel.Background>
@@ -23,8 +23,8 @@
             <Image Source="img\liste_des_objets.png" Width="250" Margin="0,5,0,15"/>
         </Border>
 
-        <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider" DockPanel.Dock="Bottom">
-            <Button Background="{x:Null}" BorderThickness="0" Click="ButtonClose">
+        <Border VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider" DockPanel.Dock="Bottom">
+            <Button Click="ButtonClose">
                 <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
             </Button>
         </Border>

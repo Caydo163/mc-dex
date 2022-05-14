@@ -28,7 +28,7 @@
                 <Border Grid.Column="0" Style="{StaticResource pageAjouter_borderTextBox}" >
                     <TextBox Style="{StaticResource pageAjouter_textBox}" />
                 </Border>
-                <Button Grid.Column="1" Background="{x:Null}" BorderThickness="0">
+                <Button Grid.Column="1" Click="Button_Rechercher">
                     <Image Source="img\loupe.png" Width="60"/>
                 </Button>
             </Grid>

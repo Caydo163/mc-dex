@@ -58,6 +58,26 @@
                     <TextBlock Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>
 
 
+
+                    <Grid Margin="0,50,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Height="50" Margin="20,20,5,20" Style="{StaticResource pageAjouter_borderGrid}">
+                            <Button Click="Button_Modifier">
+                                <TextBlock Text="MODIFIER" Style="{StaticResource pageAjouter_textBlock}"/>
+                            </Button>
+                        </Border>
+
+                        <Border Grid.Column="1" Height="50" Margin="5,20,20,20" Style="{StaticResource pageAjouter_borderGrid}" Background="#FFC20F0F">
+                            <Button Click="Button_Supprimer">
+                                <TextBlock Text="SUPPRIMER" Style="{StaticResource pageAjouter_textBlock}"/>
+                            </Button>
+                        </Border>
+                    </Grid> 
+                
+                
                 </StackPanel>
        </ScrollViewer>
         </Border>

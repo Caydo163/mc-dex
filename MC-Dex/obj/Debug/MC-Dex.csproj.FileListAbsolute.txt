@@ -135,3 +135,5 @@ C:\Users\eloan\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.GenerateResour
 C:\Users\eloan\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.csproj.CoreCompileInputs.cache
 C:\Users\eloan\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.exe
 C:\Users\eloan\source\repos\mc-dex\MC-Dex\obj\Debug\MC-Dex.pdb
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\PopUpDemandeSuppression.g.cs
+C:\Users\justi\source\repos\mc-dex\MC-Dex\obj\Debug\PopUpDemandeSuppression.baml

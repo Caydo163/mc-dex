@@ -16,7 +16,7 @@ namespace Modele
             Items = new List<Item>();
         }
 
-        public void AjouterItem(Item item)
+        public void AjouterItem(ref Item item)
         {
             if (! Items.Contains(item))
             {
@@ -35,8 +35,23 @@ namespace Modele
 
         private string ModificationStringRecherche(string mot)
         {
-
-            return Regex.Replace(mot, @"\s", "").ToLower();
+            string newMot = "";
+            foreach (char lettre in Regex.Replace(mot, @"\s", "").ToLower())
+            {
+                newMot += lettre switch
+                {
+                    'à' or 'á' or 'â' or 'ä' => 'a',
+                    'é' or 'è' or 'ê' or 'ë' => 'e',
+                    'ô' or 'ö' or 'ò' or 'ó' => 'o',
+                    'ï' or 'î' or 'ì' or 'í' => 'i',
+                    'ù' or 'ú' or 'û' or 'ü' => 'u',
+                    'ÿ' => 'y',
+                    'ç' => 'c',
+                    'ñ' => 'n',
+                     _  => lettre,
+                };
+            }
+            return newMot;
         }
 
 
@@ -46,12 +61,11 @@ namespace Modele
             List<Item> itemTrouve = new();
             mot = ModificationStringRecherche(mot);
             
-
+            Console.WriteLine(mot);
 
             foreach (Item item in Items)
             {
                 string nomItem = ModificationStringRecherche(item.Nom);
-
 
                 if (nomItem.Contains(mot))
                 {

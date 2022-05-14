@@ -43,9 +43,9 @@ namespace Test
             Console.WriteLine(item);
             Console.WriteLine("============================================================");
 
-            manager.AjouterItem(item);
-            manager.AjouterItem(item);
-            manager.AjouterItem(item2);
+            manager.AjouterItem(ref item);
+            manager.AjouterItem(ref item);
+            manager.AjouterItem(ref item2);
             manager.SupprimerItem(item2);
             foreach (Item i in manager.Items)
             {
@@ -53,10 +53,11 @@ namespace Test
             }
 
 
-            IEnumerable<Item> liste = manager.Rechercher("er");
+            Console.WriteLine("Element trouvé");
+            IEnumerable<Item> liste = manager.Rechercher("àè sddcsçsdc àsdc öiï");
             foreach (Item i in liste)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("item",i);
             }
 
 

@@ -28,16 +28,19 @@ namespace MC_Dex
         public void Button_home(object sender, RoutedEventArgs e)
         {
             contentControl.Content = new home();
+            this.Title = "MC-DEX - Accueil";
         }
 
         public void Button_ajouter(object sender, RoutedEventArgs e)
         {
             contentControl.Content = new pageAjouter();
+            this.Title = "MC-DEX - Ajouter";
         }
 
         public void Button_rechercher(object sender, RoutedEventArgs e)
         {
             contentControl.Content = new pageRechercher();
+            this.Title = "MC-DEX - Rechercher";
         }
     }
 }

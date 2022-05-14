@@ -43,7 +43,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -53,7 +52,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -63,7 +61,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -73,7 +70,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -83,7 +79,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -93,7 +88,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -103,7 +97,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -113,7 +106,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
@@ -123,7 +115,6 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new PopUpListObject();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();

@@ -124,7 +124,8 @@
                     <Grid Name="HideButtonName">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="102*"/>
+                            <ColumnDefinition Width="563*"/>
                         </Grid.ColumnDefinitions>
 
                         <Button Width="50" Height="35" Grid.Column="0" BorderThickness="0" Click="Button_AjouterNom">
@@ -133,7 +134,7 @@
                             </Button.Background>
                         </Button>
 
-                        <TextBlock Text="Ajouter un nom anglais" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}"/>
+                        <TextBlock Text="Ajouter un nom anglais" Grid.Column="1" Margin="5,0,20,0" Style="{StaticResource pageAjouter_textBlock}" Grid.ColumnSpan="2"/>
                     </Grid>
 
 
@@ -147,7 +148,7 @@
 
 
             <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider">
-                <Button Background="{x:Null}" BorderThickness="0" Click="Button_Valider">
+                <Button Click="Button_Valider">
                     <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
                 </Button>
 
