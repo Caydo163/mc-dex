@@ -14,9 +14,6 @@ C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\refint\Test.dll
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\Test.pdb
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\ref\Test.dll
-C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\MC-Dex.exe
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Modele.dll
-C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\MC-Dex.pdb
-C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\MC-Dex.exe.config
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Modele.pdb
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\Test.csproj.CopyComplete

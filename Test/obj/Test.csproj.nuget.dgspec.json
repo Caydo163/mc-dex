@@ -4,21 +4,6 @@
     "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\MC-Dex.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\MC-Dex.csproj",
-        "projectName": "MC-Dex",
-        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\MC-Dex.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -97,9 +82,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\MC-Dex.csproj": {
-                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\MC-Dex.csproj"
-              },
               "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
                 "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
               }

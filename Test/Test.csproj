@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MC-Dex\MC-Dex.csproj" />
     <ProjectReference Include="..\Modele\Modele.csproj" />
   </ItemGroup>
 

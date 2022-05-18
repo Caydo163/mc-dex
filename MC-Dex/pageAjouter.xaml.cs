@@ -75,7 +75,7 @@ namespace MC_Dex
 
         private void Button_Valider(object sender, RoutedEventArgs e)
         {
-            
+            //(Application.Current as App).MainWindow.con
         }
     }
 }

@@ -8,16 +8,10 @@
     ".NETCoreApp,Version=v5.0": {
       "Test/1.0.0": {
         "dependencies": {
-          "MC-Dex": "1.0.0",
           "Modele": "1.0.0"
         },
         "runtime": {
           "Test.dll": {}
-        }
-      },
-      "MC-Dex/1.0.0": {
-        "runtime": {
-          "MC-Dex.exe": {}
         }
       },
       "Modele/1.0.0": {
@@ -29,11 +23,6 @@
   },
   "libraries": {
     "Test/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MC-Dex/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

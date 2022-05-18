@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="MC_Dex.textBoxStatistiqueUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MC_Dex"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+
+
+    <Border Style="{StaticResource pageAjouter_borderGrid}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Statistiques" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
+
+            <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
+                <StackPanel Margin="20,20">
+                    <Grid  Name="Grid_stat" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+
+                        <local:ligneGridStatUC Grid.Row="0"/>
+
+
+                    </Grid>
+
+                    <Button Width="40" Height="40" BorderThickness="0" Click="Button_ajoutLigneStat" HorizontalAlignment="Left">
+                        <Button.Background>
+                            <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
+                        </Button.Background>
+                    </Button>
+                    <!--<Button Width="40" Height="40" BorderThickness="0" Click="Button_supprimeLigneStat" HorizontalAlignment="Left">
+                        <Button.Background>
+                            <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
+                        </Button.Background>
+                    </Button>-->
+                </StackPanel>
+            </Border>
+
+        </Grid>
+    </Border>
+</UserControl>

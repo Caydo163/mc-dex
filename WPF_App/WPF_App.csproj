@@ -1,0 +1,187 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="font\minecraft_font.ttf" />
+    <None Remove="img\ajouter.png" />
+    <None Remove="img\Arc.png" />
+    <None Remove="img\background.png" />
+    <None Remove="img\background2.png" />
+    <None Remove="img\Bateau.png" />
+    <None Remove="img\Bouclier.png" />
+    <None Remove="img\Buche.png" />
+    <None Remove="img\Charbon.png" />
+    <None Remove="img\Citrouille.png" />
+    <None Remove="img\Cobblestone.png" />
+    <None Remove="img\Coffre.png" />
+    <None Remove="img\command_block.png" />
+    <None Remove="img\Diamant.png" />
+    <None Remove="img\Etabli.png" />
+    <None Remove="img\Fer.png" />
+    <None Remove="img\flecheCraft.png" />
+    <None Remove="img\liste_des_objets.png" />
+    <None Remove="img\Lit.png" />
+    <None Remove="img\logo.png" />
+    <None Remove="img\loupe.png" />
+    <None Remove="img\MC-Dex.png" />
+    <None Remove="img\Planche.png" />
+    <None Remove="img\Poulet.png" />
+    <None Remove="img\Seau.png" />
+    <None Remove="img\Stone.png" />
+    <None Remove="img\Terre.png" />
+    <None Remove="img\texture_grass.png" />
+    <None Remove="img\texture_grass2.png" />
+    <None Remove="img\Torche.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modele\Modele.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="font\minecraft_font.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\ajouter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\Arc.png" />
+    <Resource Include="img\background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\background2.png" />
+    <Resource Include="img\Bateau.png" />
+    <Resource Include="img\Bouclier.png" />
+    <Resource Include="img\Buche.png" />
+    <Resource Include="img\Charbon.png" />
+    <Resource Include="img\Citrouille.png" />
+    <Resource Include="img\Cobblestone.png" />
+    <Resource Include="img\Coffre.png" />
+    <Resource Include="img\command_block.png" />
+    <Resource Include="img\Diamant.png" />
+    <Resource Include="img\Etabli.png" />
+    <Resource Include="img\Fer.png" />
+    <Resource Include="img\flecheCraft.png" />
+    <Resource Include="img\liste_des_objets.png" />
+    <Resource Include="img\Lit.png" />
+    <Resource Include="img\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\loupe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\MC-Dex.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\Planche.png" />
+    <Resource Include="img\Poulet.png" />
+    <Resource Include="img\Seau.png" />
+    <Resource Include="img\Stone.png" />
+    <Resource Include="img\Terre.png" />
+    <Resource Include="img\texture_grass.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\texture_grass2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\Torche.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="App.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="boutonAjoutUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="craftUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="grilleCraftUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="itemUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="ligneGridStatUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="menuUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="pageAjouter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="pageObjet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="pageRechercher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="PopUpDemandeSuppression.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="PopUpListObject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="statistiqueUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="textBoxBaseUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="textBoxCraftUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="textBoxStatistiqueUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="textBoxUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+</Project>

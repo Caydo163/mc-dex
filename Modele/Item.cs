@@ -136,5 +136,10 @@ namespace Modele
         {
             return $"{Nom} / {Image} / {Id} / {Desc} / {NomE}"; 
         }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
