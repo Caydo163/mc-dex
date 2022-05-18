@@ -57,7 +57,27 @@ namespace Test
             IEnumerable<Item> liste = manager.Rechercher("àè sddcsçsdc àsdc öiï");
             foreach (Item i in liste)
             {
-                Console.WriteLine("item",i);
+                Console.WriteLine("item", i);
+            }
+
+            CraftObjet c1 = new(1,null, item, null, null, item,null,null,item2,null);
+            Console.WriteLine(c1.Objet0_1);
+            Console.WriteLine(c1.Objet2_1);
+            Console.WriteLine(c1.Objet2_2);
+            List < KeyValuePair<string, int> > Ingred = c1.CalculIngredient();
+            foreach (KeyValuePair<string, int> e in Ingred)
+            {
+                Console.WriteLine(e.Key+" : "+e.Value);
+            }
+
+
+
+
+            CraftUtilisation c2 = new(64, item2, item2, null, item, item, item2, item2, item2, item2,item,"Pierre");
+            List<KeyValuePair<string, int>> Ingred2 = c2.CalculIngredient();
+            foreach (KeyValuePair<string, int> e in Ingred2)
+            {
+                Console.WriteLine(e.Key + " : " + e.Value);
             }
 
 

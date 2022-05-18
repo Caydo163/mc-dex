@@ -10,3 +10,15 @@ C:\Users\justi\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.dll
 C:\Users\justi\source\repos\mc-dex\Modele\obj\Debug\net5.0\refint\Modele.dll
 C:\Users\justi\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.pdb
 C:\Users\justi\source\repos\mc-dex\Modele\obj\Debug\net5.0\ref\Modele.dll
+C:\Users\eloan\source\repos\mc-dex\Modele\bin\Debug\net5.0\Modele.deps.json
+C:\Users\eloan\source\repos\mc-dex\Modele\bin\Debug\net5.0\Modele.dll
+C:\Users\eloan\source\repos\mc-dex\Modele\bin\Debug\net5.0\Modele.pdb
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.csproj.AssemblyReference.cache
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.AssemblyInfoInputs.cache
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.AssemblyInfo.cs
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.csproj.CoreCompileInputs.cache
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.dll
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\refint\Modele.dll
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\Modele.pdb
+C:\Users\eloan\source\repos\mc-dex\Modele\obj\Debug\net5.0\ref\Modele.dll
