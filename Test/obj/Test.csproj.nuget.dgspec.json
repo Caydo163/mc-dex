@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eloan\\source\\repos\\mc-dex\\Test\\Test.csproj": {}
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eloan\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
         "projectName": "Modele",
-        "projectPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
-        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Modele\\obj\\",
+        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\eloan\\source\\repos\\mc-dex\\Test\\Test.csproj": {
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Test\\obj\\",
+        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\eloan\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
-                "projectPath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+              "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
+                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
               }
             }
           }

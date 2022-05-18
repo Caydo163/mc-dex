@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "wM90ErSPq6eJp57ilaqn+Uq3hFSM9gZdz/uH1p5M4iMIbVFwqWHIBWxn2jpuMUq0azdhqSPfW40jamwxeR8dyg==",
-=======
-  "dgSpecHash": "Jfd7H1I0Gj7n2UDowvjxktJFVf0h2mTNfJGbZZii6fm1onatcvCoSwj/FiSxXTHzLcaL235ViAk946lYXqGUwQ==",
->>>>>>> 997539578dee189202b304a70e49c3f6dd1da790
   "success": true,
-  "projectFilePath": "C:\\Users\\eloan\\source\\repos\\mc-dex\\WPF_App\\WPF_App.csproj",
+  "projectFilePath": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\WPF_App.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
