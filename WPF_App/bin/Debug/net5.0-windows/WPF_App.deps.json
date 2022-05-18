@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "WPF_App/1.0.0": {
         "dependencies": {
-          "Modele": "1.0.0"
+          "Modele": "1.0.0",
+          "StubLib": "1.0.0"
         },
         "runtime": {
           "WPF_App.dll": {}
@@ -17,6 +18,14 @@
       "Modele/1.0.0": {
         "runtime": {
           "Modele.dll": {}
+        }
+      },
+      "StubLib/1.0.0": {
+        "dependencies": {
+          "Modele": "1.0.0"
+        },
+        "runtime": {
+          "StubLib.dll": {}
         }
       }
     }
@@ -28,6 +37,11 @@
       "sha512": ""
     },
     "Modele/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StubLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

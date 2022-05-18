@@ -20,9 +20,9 @@ namespace MC_Dex
     /// <summary>
     /// Logique d'interaction pour pageAjouter.xaml
     /// </summary>
-    public partial class pageAjouter : UserControl
+    public partial class PageAjouter : UserControl
     {
-        public pageAjouter()
+        public PageAjouter()
         {
             InitializeComponent();
         }
@@ -34,26 +34,26 @@ namespace MC_Dex
 
         private void Button_AjouterCraft(object sender, RoutedEventArgs e)
         {
-            textBoxCraftUC box = new textBoxCraftUC();
+            textBoxCraftUC box = new();
             panelBlocAjout.Children.Add(box);
         }
 
         private void Button_AjouterTexte(object sender, RoutedEventArgs e)
         {
-            textBoxBaseUC box = new textBoxBaseUC();
+            textBoxBaseUC box = new();
             panelBlocAjout.Children.Add(box);
         }
 
         private void Button_AjouterStat(object sender, RoutedEventArgs e)
         {
-            textBoxStatistiqueUC box = new textBoxStatistiqueUC();
+            TextBoxStatistiqueUC box = new();
             panelBlocAjout.Children.Add(box);
             HideButtonStat.Visibility = Visibility.Collapsed;
         }
 
         private void Button_AjouterNom(object sender, RoutedEventArgs e)
         {
-            textBoxUC box = new textBoxUC
+            textBoxUC box = new()
             {
                 Nom = "Nom (anglais)"
             };
@@ -63,7 +63,7 @@ namespace MC_Dex
 
         private void Button_OpenFile(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog
+            OpenFileDialog ofd = new()
             {
                 Filter = "Image File (*.png;*.jpeg) | *.png;*.jpeg"
             };
@@ -75,7 +75,7 @@ namespace MC_Dex
 
         private void Button_Valider(object sender, RoutedEventArgs e)
         {
-            //(Application.Current as App).MainWindow.conten
+            //(Application.Current as App).MainWindow.abc =
         }
     }
 }

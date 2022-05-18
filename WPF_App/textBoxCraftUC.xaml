@@ -17,6 +17,7 @@
 
             <TextBlock Text="Craft" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
             <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
                 <StackPanel Width="auto"  Orientation="Horizontal"  Margin="10" HorizontalAlignment="Center">
                     <Grid  VerticalAlignment="Center">
                         <Grid.Resources>
@@ -114,7 +115,20 @@
                             </Button.Background>
                         </Button>
                     </Border>
+
+                    <StackPanel VerticalAlignment="Center" Margin="10,0,0,0">
+                    <Border CornerRadius="15" BorderBrush="Gray" BorderThickness="2" >
+                            <StackPanel>
+                                
+                        <TextBlock Text="Nombre d'item obtenu" FontFamily="{StaticResource Minecraft}" Margin="5"/>
+                            <Border Style="{StaticResource pageAjouter_borderTextBox}" BorderThickness="1" BorderBrush="Gray" Height="35" Margin="5" >
+                                <TextBox Style="{StaticResource pageAjouter_textBox}"/>
+                            </Border>
+                            </StackPanel>    
+                    </Border>
+                    </StackPanel>
                 </StackPanel>
+                </ScrollViewer>
             </Border>
 
         </Grid>

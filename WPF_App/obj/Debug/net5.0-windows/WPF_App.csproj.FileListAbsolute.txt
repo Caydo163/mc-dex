@@ -60,6 +60,10 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\refint\WPF_A
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\ref\WPF_App.dll
+<<<<<<< HEAD
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.dll
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.pdb
+=======
 C:\Users\eloan\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.exe
 C:\Users\eloan\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.dll.config
 C:\Users\eloan\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.deps.json
@@ -122,3 +126,4 @@ C:\Users\eloan\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\refint\WPF_A
 C:\Users\eloan\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\eloan\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
 C:\Users\eloan\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\ref\WPF_App.dll
+>>>>>>> 997539578dee189202b304a70e49c3f6dd1da790

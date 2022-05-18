@@ -21,7 +21,7 @@
 
         <local:grilleCraftUC ImageName4="img\Planche.png" ImageName6="img\Planche.png"
                              ImageName7="img\Planche.png" ImageName8="img\Planche.png" 
-                             ImageName9="img\Planche.png" ImageName10="img\Bateau.png"/>
+                             ImageName9="img\Planche.png" ImageName10="img\Terre.png"/>
             
         </WrapPanel>
 

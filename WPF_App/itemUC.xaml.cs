@@ -18,10 +18,10 @@ namespace MC_Dex
     /// <summary>
     /// Logique d'interaction pour itemUC.xaml
     /// </summary>
-    public partial class itemUC : UserControl
+    public partial class ItemUC : UserControl
     {
 
-        public itemUC()
+        public ItemUC()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace MC_Dex
 
         public void Button_item(object sender, RoutedEventArgs e)
         {
-            //.contentControl.Content = new pageObjet();
+            
         }
     }
 }

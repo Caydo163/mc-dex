@@ -4,31 +4,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.Collections.ObjectModel;
 
 namespace Modele
 {
     public class Manager
     {
-        public List<Item> Items { get; set; }
+        public ReadOnlyCollection<Item> Items { get; private set; }
+        private List<Item> items = new();
+        public Item SelectedItem { get; private set; }
 
-        public Manager()
+        public IPersistanceManager Pers { get; private set; }
+
+        public Manager(IPersistanceManager pers)
         {
-            Items = new List<Item>();
+            Items = new ReadOnlyCollection<Item>(items);
+            Pers = pers;
+
         }
 
-        public void AjouterItem(ref Item item)
+        public void LoadItems()
         {
-            if (! Items.Contains(item))
+            items.Clear();
+            items.AddRange(Pers.LoadItems());
+            SelectedItem = items.First();
+        }
+
+
+        public void AjouterItem()
+        {
+            Item item = new("Terre", "10:89", "img/terre.png", "Description");
+            //if (!items.Contains(item))
+            //{
+            //    items.Add(item);
+            //}
+            foreach(Item elt in Items)
             {
-                Items.Add(item);
+                if(elt.Id == item.Id)
+                {
+                    return;
+                }
             }
+            items.Add(item);
         }
 
         public void SupprimerItem(Item item)
         {
             if(Items.Contains(item))
             {
-                Items.RemoveAt(Items.IndexOf(item));
+                items.RemoveAt(items.IndexOf(item));
             }
         }
 
@@ -53,6 +77,8 @@ namespace Modele
             }
             return newMot;
         }
+
+
 
 
 

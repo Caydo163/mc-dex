@@ -138,8 +138,6 @@ namespace Modele
         }
 
         public override int GetHashCode()
-        {
-            throw new NotImplementedException();
-        }
+            => (int)(Id.GetHashCode());
     }
 }

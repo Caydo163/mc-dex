@@ -18,9 +18,9 @@ namespace MC_Dex
     /// <summary>
     /// Logique d'interaction pour textBoxStatistiqueUC.xaml
     /// </summary>
-    public partial class textBoxStatistiqueUC : UserControl
+    public partial class TextBoxStatistiqueUC : UserControl
     {
-        public textBoxStatistiqueUC()
+        public TextBoxStatistiqueUC()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace MC_Dex
         private void Button_ajoutLigneStat(object sender, RoutedEventArgs e)
         {
             Grid_stat.RowDefinitions.Add(new RowDefinition());
-            ligneGridStatUC newLine = new ligneGridStatUC();
+            ligneGridStatUC newLine = new();
 
             Grid_stat.Children.Add(newLine);
             newLine.SetValue(Grid.RowProperty, nbStat);

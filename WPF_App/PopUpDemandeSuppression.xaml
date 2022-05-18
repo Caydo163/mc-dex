@@ -28,7 +28,7 @@
             </Button>
         </Border>
 
-        <local:itemUC/>
+        <local:ItemUC/>
 
     </DockPanel>
 </Window>

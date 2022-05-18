@@ -14,6 +14,6 @@ namespace MC_Dex
     /// </summary>
     public partial class App : Application
     {
-        public Manager LeManager { get; private set; } = new Manager();
+        public Manager LeManager { get; private set; } = new Manager(new StubLib.Stub());
     }
 }

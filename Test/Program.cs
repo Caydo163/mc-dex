@@ -10,9 +10,9 @@ namespace Test
         {
             Console.WriteLine("Hello World!");
 
-            Manager manager = new();
+            //Manager manager = new();
             Item item = new("terre", "12", "image", "Voici une description");
-            Item item2 = new("pierre", "38:2", "image", "Voici une description");
+            //Item item2 = new("pierre", "38:2", "image", "Voici une description");
             item.Id = "9:1";
 
             item.AjouterTexte("Titre 1", "Texte 1");
@@ -43,16 +43,24 @@ namespace Test
             Console.WriteLine(item);
             Console.WriteLine("============================================================");
 
-            manager.AjouterItem(ref item);
-            manager.AjouterItem(ref item);
-            manager.AjouterItem(ref item2);
-            manager.SupprimerItem(item2);
-            foreach (Item i in manager.Items)
-            {
-                Console.WriteLine(i);
-            }
+            //manager.AjouterItem(ref item);
+            //manager.AjouterItem(ref item);
+            //manager.AjouterItem(ref item2);
+            //manager.SupprimerItem(item2);
+            //foreach (Item i in manager.Items)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
 
+<<<<<<< HEAD
+            //Console.WriteLine("Element trouvé");
+            //IEnumerable<Item> liste = manager.Rechercher("àè sddcsçsdc àsdc öiï");
+            //foreach (Item i in liste)
+            //{
+            //    Console.WriteLine("item",i);
+            //}
+=======
             Console.WriteLine("Element trouvé");
             IEnumerable<Item> liste = manager.Rechercher("àè sddcsçsdc àsdc öiï");
             foreach (Item i in liste)
@@ -79,6 +87,7 @@ namespace Test
             {
                 Console.WriteLine(e.Key + " : " + e.Value);
             }
+>>>>>>> 997539578dee189202b304a70e49c3f6dd1da790
 
 
 

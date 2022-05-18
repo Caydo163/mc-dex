@@ -58,13 +58,21 @@
                 </Grid>
 
                 <Image Source="img\flecheCraft.png" Width="60" Margin="10"/>
-
-                <Border  Width="70" Height="70">
+                <!--<DockPanel Margin="0,60,0,0">
+                <Border DockPanel.Dock="Top" Width="70" Height="70">
                     <Image x:Name="Image10" Margin="5"/>
                 </Border>
+                    <TextBlock Text="3" Style="{StaticResource pageObjet_textePartie}"/>
+                </DockPanel>-->
+
+                <Canvas Width="80" Height="80" Margin="5">
+                    <TextBlock x:Name="nbBlocCraft" Canvas.Right="-15" Panel.ZIndex="1" Canvas.Bottom="2"  Text="3" Style="{StaticResource pageObjet_textePartie}" FontSize="20"/>
+                    <Image x:Name="Image10" Width="70" Height="70" Margin="5"/>
+                    
+                </Canvas>
             </StackPanel>
 
-            <TextBlock Text="* 5 planches" Style="{StaticResource pageObjet_textePartie}"/>
+            <TextBlock Text="* 5 planches"  Style="{StaticResource pageObjet_textePartie}"/>
             <TextBlock Text="* 8 lingots d'or" Style="{StaticResource pageObjet_textePartie}"/>
         </StackPanel>
     </Border>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,20 +21,31 @@ namespace MC_Dex
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static Manager Mgr => (Application.Current as App).LeManager;
         public MainWindow()
         {
             InitializeComponent();
+
+            Mgr.LoadItems();
+            DataContext = Mgr;
         }
 
         public void Button_home(object sender, RoutedEventArgs e)
         {
-            contentControl.Content = new home();
+
+            //pageObjet page = new();
+            //page.wrapPanelHome.Add
+            //contentControl.Content = page;
             this.Title = "MC-DEX - Accueil";
+            contentControl.Content = new home();
+            //TextBlock titre = new();
+            //TextBlock texte = new() 
+            //this.Title = "MC-DEX - Objet";
         }
 
         public void Button_ajouter(object sender, RoutedEventArgs e)
         {
-            contentControl.Content = new pageAjouter();
+            contentControl.Content = new PageAjouter();
             this.Title = "MC-DEX - Ajouter";
         }
 
