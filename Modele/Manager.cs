@@ -26,6 +26,7 @@ namespace Modele
         public void LoadItems()
         {
             items.Clear();
+            items.Add(new Item("Bloc actuel", "999", "img\\bloc_actuel.png",""));
             items.AddRange(Pers.LoadItems());
             SelectedItem = items.First();
         }
