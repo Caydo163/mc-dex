@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,14 @@ namespace MC_Dex
     /// </summary>
     public partial class PopUpListObject : Window
     {
+
+        public static Manager Mgr => ((App)Application.Current).LeManager;
         public static bool popUpOpen = false;
         public PopUpListObject()
         {
             InitializeComponent();
+            Mgr.LoadItems();
+            DataContext = Mgr;
         }
 
         private void ButtonClose(object sender, RoutedEventArgs e)

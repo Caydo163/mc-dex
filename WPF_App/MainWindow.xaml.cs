@@ -21,7 +21,7 @@ namespace MC_Dex
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static Manager Mgr => (Application.Current as App).LeManager;
+        public static Manager Mgr => ((App)Application.Current).LeManager;
         public MainWindow()
         {
             InitializeComponent();
@@ -45,8 +45,12 @@ namespace MC_Dex
 
         public void Button_ajouter(object sender, RoutedEventArgs e)
         {
-            contentControl.Content = new PageAjouter();
+            PageAjouter pageA = new();
+            pageA.Window = this;
+            contentControl.Content = pageA ;
+            
             this.Title = "MC-DEX - Ajouter";
+
         }
 
         public void Button_rechercher(object sender, RoutedEventArgs e)

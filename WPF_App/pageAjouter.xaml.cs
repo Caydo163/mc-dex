@@ -22,6 +22,9 @@ namespace MC_Dex
     /// </summary>
     public partial class PageAjouter : UserControl
     {
+        private MainWindow window;
+        public MainWindow Window { get; set; }
+
         public PageAjouter()
         {
             InitializeComponent();
@@ -76,6 +79,8 @@ namespace MC_Dex
         private void Button_Valider(object sender, RoutedEventArgs e)
         {
             //(Application.Current as App).MainWindow.abc =
+            Window.contentControl.Content = new home() ;
+            
         }
     }
 }

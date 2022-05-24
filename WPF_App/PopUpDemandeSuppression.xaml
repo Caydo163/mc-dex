@@ -28,7 +28,7 @@
             </Button>
         </Border>
 
-        <local:ItemUC/>
+        <!--<local:ItemUC Nom="{Binding Nom}"  ImageName="{Binding Image}"/>-->
 
     </DockPanel>
 </Window>
