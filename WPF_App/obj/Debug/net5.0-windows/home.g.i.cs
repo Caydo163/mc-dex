@@ -61,7 +61,7 @@ namespace MC_Dex {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF_App;component/home.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF_App;V1.0.0.0;component/home.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\home.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
