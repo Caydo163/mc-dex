@@ -69,7 +69,7 @@ namespace MC_Dex {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF_App;component/itemuc.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF_App;V1.0.0.0;component/itemuc.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\itemUC.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
