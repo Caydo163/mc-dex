@@ -11,7 +11,7 @@
     <StackPanel>
         <TextBlock Text="Statistiques" Margin="20,30,20,7" Style="{StaticResource pageObjet_titrePartie}"/>
      
-        <Grid Margin="20,10">
+        <Grid Margin="20,10" x:Name="gridStat">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -42,12 +42,12 @@
             </Border>
             
 
-            <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0,1,1,1">
+            <!--<Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0,1,1,1">
                 <TextBlock Text="Durete"/>
             </Border>
             <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="1,1,0,1">
                 <TextBlock Text="3.5"/>
-            </Border>
+            </Border>-->
 
         </Grid>
     </StackPanel>

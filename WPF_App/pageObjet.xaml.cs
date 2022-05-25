@@ -22,23 +22,60 @@ namespace MC_Dex
     /// </summary>
     public partial class pageObjet : UserControl
     {
+        public MainWindow Window { get; set; }
         public static Manager Mgr => ((App)Application.Current).LeManager;
+        public home detail = new();
         public pageObjet()
         {
             InitializeComponent();
+            detail.Width = 250;
+            detail.Margin = new Thickness(0,0,20,20);
+  
+            zoneHome.Children.Add(detail);
             Creation_Page();
+        }
+
+        public void chargementHome()
+        {
+            detail.Window = Window;
         }
 
         private void Creation_Page()
         {
-            //foreach (KeyValuePair<string, string> elt in Mgr.SelectedItem.ListeTexte)
+            foreach (KeyValuePair<string, string> elt in Mgr.SelectedItem.ListeTexte)
+            {
+                texteUC texte = new();
+                texte.texteTitre.Text = elt.Key;
+                texte.textePartie.Text = elt.Value;
+                StackPanelObjet.Children.Add(texte);
+            }
+
+
+            //int cpt = 1;
+            //statistiqueUC zoneStat = new(); ;
+            //foreach (KeyValuePair<string, double> stat in Mgr.SelectedItem.ListeStats)
             //{
-            //    texteUC texte = new();
-            //    texte.texteTitre.Text = elt.Key;
-            //    texte.textePartie.Text = elt.Value;
-            //    StackPanelObjet.Children.Add(texte);
+            //    //if(cpt == 1)
+            //    //{
+            //    //    zoneStat = new statistiqueUC();
+            //    //}
+            //    zoneStat.gridStat.RowDefinitions.Add(new RowDefinition());
 
+            //    Border b1 = new();
+            //    Border b2 = new();
+            //    TextBlock t1 = new(new Run(stat.Key));
+            //    TextBlock t2 = new(new Run(stat.Value.ToString()));
+            //    b1.Child = t1;
+            //    b2.Child = t2;
+            //    zoneStat.gridStat.Children.Add(b1);
+            //    b1.SetValue(Grid.RowProperty, cpt);
+            //    b1.SetValue(Grid.ColumnProperty, 0);
+            //    zoneStat.gridStat.Children.Add(b2);
+            //    b2.SetValue(Grid.RowProperty, cpt);
+            //    b2.SetValue(Grid.RowProperty, 1);
+            //    StackPanelObjet.Children.Add(zoneStat);
 
+            //    cpt++;
             //}
         }
 
@@ -53,6 +90,7 @@ namespace MC_Dex
             if (!PopUpDemandeSuppression.popUpOpen)
             {
                 PopUpDemandeSuppression popUp = new();
+                popUp.Window = Window;
                 PopUpDemandeSuppression.popUpOpen = true;
                 popUp.Show();
                 

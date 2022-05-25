@@ -25,7 +25,9 @@ namespace MC_Dex
         public MainWindow()
         {
             InitializeComponent();
-
+            home Home = new();
+            Home.Window = this;
+            contentControl.Content = Home;
             Mgr.LoadItems();
             DataContext = Mgr;
         }

@@ -29,14 +29,16 @@ namespace MC_Dex
         {
             InitializeComponent();
             DataContext = Mgr;
-            //Mgr.LoadItems();
         }
 
         void ChoixItem(object sender, SelectionChangedEventArgs args)
         {
             Mgr.SelectedItem = Mgr.Items[listBox.SelectedIndex];
-
-            Window.contentControl.Content = new pageObjet();
+            pageObjet pageO = new pageObjet();
+            Window.Title = "Item - " + Mgr.SelectedItem.Nom;
+            pageO.Window = Window;
+            pageO.chargementHome();
+            Window.contentControl.Content = pageO;
         }
     }
 }

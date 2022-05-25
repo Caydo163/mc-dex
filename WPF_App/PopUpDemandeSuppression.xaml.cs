@@ -21,20 +21,29 @@ namespace MC_Dex
     /// 
     public partial class PopUpDemandeSuppression : Window
     {
+        public MainWindow Window { get; set; }
         public static Manager Mgr => ((App)Application.Current).LeManager;
         public static bool popUpOpen = false;
         public PopUpDemandeSuppression()
         {
             InitializeComponent();
-            Mgr.LoadItems();
             DataContext = Mgr.SelectedItem;
         }
 
         private void Button_Confirmer(object sender, RoutedEventArgs e)
         {
             Mgr.SupprimerItem(Mgr.SelectedItem);
-            this.Close();
             popUpOpen = false;
+            home pageH = new();
+            pageH.Window = Window;
+            Window.contentControl.Content = pageH;
+            this.Close();
+        }
+
+        private void Button_Annuler(object sender, RoutedEventArgs e)
+        {
+            popUpOpen = false;
+            this.Close();
         }
     }
 }

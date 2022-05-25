@@ -107,9 +107,11 @@ namespace MC_Dex
                 
             }
 
-            //Mgr.AjouterItem(nom, nomE, id, image, desc);
+            Mgr.AjouterItem(nom, nomE, id, image, desc);
 
-            Window.contentControl.Content = new home();
+            home Home = new();
+            Home.Window = Window;
+            Window.contentControl.Content = Home;
 
         }
     }

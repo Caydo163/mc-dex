@@ -73,7 +73,7 @@
         
 
         <ContentControl DockPanel.Dock="Bottom" x:Name="contentControl">
-            <local:pageObjet/>
+            <!--<local:home/>-->
         </ContentControl>
         
     </DockPanel>

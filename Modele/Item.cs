@@ -85,9 +85,10 @@ namespace Modele
 
 
 
-        public Dictionary<string, double> ListeStats { get; private set; }
-            
-        
+        //public Dictionary<string, double> ListeStats { get; private set; }
+        public Dictionary<string, double> ListeStats = new Dictionary<string, double>();
+
+
         public void AjouterStat(string nom, double valeur)
         {
             if(ListeStats == null)

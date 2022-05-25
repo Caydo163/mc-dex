@@ -9,14 +9,21 @@
 
 
 
-    <DockPanel>
+    <DockPanel x:Name="dockPanel">
+            
+            
+        <DockPanel DockPanel.Dock="Right" x:Name="zoneHome">
+            
+        </DockPanel>
 
-
-        <local:home DockPanel.Dock="Right" Width="250" Margin="0,0,20,20"/>
+        <!--<local:home x:Name="homePageObjet" DockPanel.Dock="Right" Width="250" Margin="0,0,20,20"/>-->
 
             <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0,0,20" DockPanel.Dock="Left" Padding="0,0,0,40">
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <StackPanel x:Name="StackPanelObjet">
+                <DockPanel>
+                    
+                
+            <StackPanel x:Name="StackPanelObjet" DockPanel.Dock="Top">
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -58,7 +65,8 @@
 
 
 
-                    <Grid Margin="0,50,0,0">
+                </StackPanel>
+                    <Grid Margin="0,50,0,0" DockPanel.Dock="Bottom">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
@@ -77,7 +85,7 @@
                     </Grid> 
                 
                 
-                </StackPanel>
+                    </DockPanel>
        </ScrollViewer>
         </Border>
     </DockPanel>

@@ -46,19 +46,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eloan\\.nuget\\packages\\": {}
+    "C:\\Users\\justi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\WPF_App\\WPF_App.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\WPF_App.csproj",
       "projectName": "WPF_App",
-      "projectPath": "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\WPF_App\\WPF_App.csproj",
-      "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\WPF_App\\obj\\",
+      "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\WPF_App.csproj",
+      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -72,11 +72,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\MC-Dex\\StubLib\\StubLib.csproj": {
-              "projectPath": "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\MC-Dex\\StubLib\\StubLib.csproj"
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\StubLib\\StubLib.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\StubLib\\StubLib.csproj"
             },
-            "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\Modele\\Modele.csproj": {
-              "projectPath": "C:\\Users\\eloan\\Source\\Repos\\SAE\\MC-Dex\\Modele\\Modele.csproj"
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
             }
           }
         }
@@ -108,7 +108,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
