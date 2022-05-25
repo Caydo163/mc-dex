@@ -30,7 +30,7 @@
                         </Grid.RowDefinitions>
 
 
-                        <local:ligneGridStatUC Grid.Row="0"/>
+                        <local:ligneGridStatUC Grid.Row="0" x:Name="ligneStat1"/>
 
 
                     </Grid>

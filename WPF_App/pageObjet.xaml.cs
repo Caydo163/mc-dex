@@ -51,32 +51,40 @@ namespace MC_Dex
             }
 
 
-            //int cpt = 1;
-            //statistiqueUC zoneStat = new(); ;
-            //foreach (KeyValuePair<string, double> stat in Mgr.SelectedItem.ListeStats)
-            //{
-            //    //if(cpt == 1)
-            //    //{
-            //    //    zoneStat = new statistiqueUC();
-            //    //}
-            //    zoneStat.gridStat.RowDefinitions.Add(new RowDefinition());
+            int cpt = 1;
+            statistiqueUC zoneStat = new(); ;
+            foreach (KeyValuePair<string, double> stat in Mgr.SelectedItem.ListeStats)
+            {
+                //if(cpt == 1)
+                //{
+                //    zoneStat = new statistiqueUC();
+                //}
+                zoneStat.gridStat.RowDefinitions.Add(new RowDefinition());
 
-            //    Border b1 = new();
-            //    Border b2 = new();
-            //    TextBlock t1 = new(new Run(stat.Key));
-            //    TextBlock t2 = new(new Run(stat.Value.ToString()));
-            //    b1.Child = t1;
-            //    b2.Child = t2;
-            //    zoneStat.gridStat.Children.Add(b1);
-            //    b1.SetValue(Grid.RowProperty, cpt);
-            //    b1.SetValue(Grid.ColumnProperty, 0);
-            //    zoneStat.gridStat.Children.Add(b2);
-            //    b2.SetValue(Grid.RowProperty, cpt);
-            //    b2.SetValue(Grid.RowProperty, 1);
-            //    StackPanelObjet.Children.Add(zoneStat);
+                Border b1 = new();
+                Border b2 = new();
+                b1.BorderThickness = new Thickness(0, 1, 1, 1) ;
+                b2.BorderThickness = new Thickness(1, 1, 0, 1);
+                b1.BorderBrush = Brushes.Gray;
+                b2.BorderBrush = Brushes.Gray;
+                //b1.BorderBrush = new Brushes.zoneStat.gridStat.FindResource("Brush");
+                TextBlock t1 = new(new Run(stat.Key));
+                TextBlock t2 = new(new Run(stat.Value.ToString()));
+                b1.Child = t1;
+                b2.Child = t2;
+                zoneStat.gridStat.Children.Add(b1);
+                b1.SetValue(Grid.RowProperty, cpt);
+                b1.SetValue(Grid.ColumnProperty, 0);
+                zoneStat.gridStat.Children.Add(b2);
+                b2.SetValue(Grid.RowProperty, cpt);
+                b2.SetValue(Grid.ColumnProperty, 1);
 
-            //    cpt++;
-            //}
+                cpt++;
+            }
+            if(cpt != 1)
+            {
+                StackPanelObjet.Children.Add(zoneStat);
+            }
         }
 
 

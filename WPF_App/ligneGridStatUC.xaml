@@ -41,7 +41,7 @@
             <TextBlock Text="Nom"/>
         </Border>
         <Border BorderBrush="Gray" CornerRadius="0,10,10,0" BorderThickness="0,3,3,3" Margin="0,0,20,0">
-            <TextBox MinWidth="50"/>
+            <TextBox MinWidth="50" x:Name="nomStat"/>
         </Border>
         </StackPanel>
 
@@ -51,7 +51,7 @@
                 <TextBlock Text="Valeur" />
             </Border>
             <Border BorderBrush="Gray" CornerRadius="0,10,10,0" BorderThickness="0,3,3,3" Margin="0,0,20,0">
-                <TextBox MinWidth="50"/>
+                <TextBox MinWidth="50" x:Name="valStat"/>
             </Border>
         </StackPanel>
 

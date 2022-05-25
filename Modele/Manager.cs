@@ -32,21 +32,25 @@ namespace Modele
         }
 
 
-        public bool AjouterItem(String nom, String nomE, String id, String image, String desc)
+        public bool AjouterItem(String nom, String nomE, String id, String image, String desc, List<KeyValuePair<string, string>> listeTexte)
         {
-            //Item item = new("Terre", "10:89", "img/terre.png", "Description");
-            Item item = new(nom, id, image, desc);
-            //if (!items.Contains(item))
-            //{
-            //    items.Add(item);
-            //}
             foreach (Item elt in Items)
             {
-                if(elt.Id == item.Id)
+                if(elt.Id == id)
                 {
                     return false;
                 }
             }
+            //Item item = new("Terre", "10:89", "img/terre.png", "Description");
+            Item item = new(nom, id, image, desc);
+            foreach(KeyValuePair<string, string> elt in listeTexte)
+            {
+                item.ListeTexte.Add(elt);
+            }
+            //if (!items.Contains(item))
+            //{
+            //    items.Add(item);
+            //}
             items.Add(item);
             SelectedItem = items.Last();
             return true;

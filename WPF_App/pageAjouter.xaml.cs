@@ -50,11 +50,12 @@ namespace MC_Dex
             panelBlocAjout.Children.Add(box);
         }
 
+        private TextBoxStatistiqueUC? textBoxStat = null;
         private void Button_AjouterStat(object sender, RoutedEventArgs e)
         {
-            TextBoxStatistiqueUC box = new();
+            textBoxStat = new TextBoxStatistiqueUC();
 
-            panelBlocAjout.Children.Add(box);
+            panelBlocAjout.Children.Add(textBoxStat);
             HideButtonStat.Visibility = Visibility.Collapsed;
         }
 
@@ -91,23 +92,42 @@ namespace MC_Dex
             String nom = textBoxNom.textBox.Text;
             String nomE = "";
             String id = textBoxId.textBox.Text;
-            List<KeyValuePair<string, string>> listeTexte ;
+
+            if (nom == "" || id == "" || desc == "")
+            {
+                return;
+                // Afficher message dans text box si vide
+            }
+
+            List<KeyValuePair<string, string>> listeTexte = new() ;
+            Dictionary<string, double> listeStats = new() ;
+
             listeTexte = new List<KeyValuePair<string, string>>();
             if (textBoxNomE != null)
             {
                 nomE = textBoxNomE.textBox.Text;
             }
-            if(listeTextBoxBase.Any())
+            foreach(textBoxBaseUC elt in listeTextBoxBase)
             {
-                listeTexte.Add(new KeyValuePair<string, string>(listeTextBoxBase[0].textBoxTitre.Text, listeTextBoxBase[0].textBoxTexte.Text));
+                listeTexte.Add(new KeyValuePair<string, string>(elt.textBoxTitre.Text, elt.textBoxTexte.Text));
             }
             if (listeTextBoxBase.Any())
             {
                 TextBlockPathFile.Text = listeTexte[0].Key;
-                
+            }
+            if(textBoxStat != null)
+            {
+                foreach(int value in Enumerable.Range(1,textBoxStat.nbStat))
+                {
+                    //listeStats.Add(textBoxStat.ligneStat1.nomStat.Text, Convert.ToDouble(textBoxStat.ligneStat1.valStat.Text));
+                    // creer liste de ligneGridStatUC dans textboxStatistique
+                    // foreach dans cette liste
+                    
+                }
             }
 
-            Mgr.AjouterItem(nom, nomE, id, image, desc);
+
+            Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte);
 
             home Home = new();
             Home.Window = Window;

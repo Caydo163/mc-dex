@@ -25,11 +25,12 @@ namespace MC_Dex
             InitializeComponent();
         }
 
-        private int nbStat = 1;
+        public int nbStat = 1;
         private void Button_ajoutLigneStat(object sender, RoutedEventArgs e)
         {
             Grid_stat.RowDefinitions.Add(new RowDefinition());
             ligneGridStatUC newLine = new();
+            newLine.Name = "ligneStat" + nbStat+1;
 
             Grid_stat.Children.Add(newLine);
             newLine.SetValue(Grid.RowProperty, nbStat);
