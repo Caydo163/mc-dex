@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,22 @@ namespace MC_Dex
     /// </summary>
     public partial class home : UserControl
     {
+
+        public static Manager Mgr => ((App)Application.Current).LeManager;
+        private MainWindow window;
+        public MainWindow Window { get => window; set => window = value; }
         public home()
         {
             InitializeComponent();
+            DataContext = Mgr;
+            //Mgr.LoadItems();
+        }
+
+        void ChoixItem(object sender, SelectionChangedEventArgs args)
+        {
+            Mgr.SelectedItem = Mgr.Items[listBox.SelectedIndex];
+
+            Window.contentControl.Content = new pageObjet();
         }
     }
 }

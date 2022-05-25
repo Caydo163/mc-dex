@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Modele
 {
-    public class Item
+    public class Item : IEquatable<Item>
     {
         public Item(string nom, string id, string image, string description)
         {
@@ -108,8 +108,8 @@ namespace Modele
 
 
 
-        public List<KeyValuePair<string, string>> ListeTexte { get; private set; }
-
+        public List<KeyValuePair<string, string>> ListeTexte = new List<KeyValuePair<string, string>>();
+        
 
         public void AjouterTexte(string titre, string partie)
         {
@@ -125,11 +125,11 @@ namespace Modele
 
 
 
-        public override bool Equals(object obj)
-        {
-            Item item = (Item)obj;
-            return this.Id == item.Id;
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    Item item = (Item)obj;
+        //    return this.Id == item.Id;
+        //}
 
 
         public override string ToString()
@@ -139,5 +139,10 @@ namespace Modele
 
         public override int GetHashCode()
             => (int)(Id.GetHashCode());
+
+        public bool Equals(Item other)
+        {
+            return this.Id == other.Id;
+        }
     }
 }

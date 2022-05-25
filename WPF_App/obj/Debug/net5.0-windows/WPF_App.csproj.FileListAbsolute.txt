@@ -28,6 +28,7 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxBaseU
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxCraftUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxStatistiqueUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxUC.g.cs
+C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\texteUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App_MarkupCompile.cache
@@ -51,6 +52,7 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxBaseU
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxCraftUC.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxStatistiqueUC.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\textBoxUC.baml
+C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\texteUC.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.g.resources
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.AssemblyInfoInputs.cache

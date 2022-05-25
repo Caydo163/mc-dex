@@ -31,11 +31,11 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" Margin="20,10" MaxHeight="40" Style="{StaticResource pageAjouter_borderTextBox}">
-                <TextBox Style="{StaticResource pageAjouter_textBox}"/>
+                <TextBox x:Name="textBoxTitre" Style="{StaticResource pageAjouter_textBox}"/>
             </Border>
             
             <Border Grid.Column="1" Style="{StaticResource pageAjouter_borderTextBox}" >
-                <TextBox Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
+                <TextBox x:Name="textBoxTexte" Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
             </Border>
         </Grid>
     </Border>

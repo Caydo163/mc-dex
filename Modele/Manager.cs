@@ -12,7 +12,7 @@ namespace Modele
     {
         public ReadOnlyCollection<Item> Items { get; private set; }
         private List<Item> items = new();
-        public Item SelectedItem { get; private set; }
+        public Item SelectedItem { get; set; }
 
         public IPersistanceManager Pers { get; private set; }
 
@@ -28,25 +28,28 @@ namespace Modele
             items.Clear();
             items.Add(new Item("Bloc actuel", "999", "img\\bloc_actuel.png",""));
             items.AddRange(Pers.LoadItems());
-            SelectedItem = items.First();
+            SelectedItem = items[1];
         }
 
 
-        public void AjouterItem()
+        public bool AjouterItem(String nom, String nomE, String id, String image, String desc)
         {
-            Item item = new("Terre", "10:89", "img/terre.png", "Description");
+            //Item item = new("Terre", "10:89", "img/terre.png", "Description");
+            Item item = new(nom, id, image, desc);
             //if (!items.Contains(item))
             //{
             //    items.Add(item);
             //}
-            foreach(Item elt in Items)
+            foreach (Item elt in Items)
             {
                 if(elt.Id == item.Id)
                 {
-                    return;
+                    return false;
                 }
             }
             items.Add(item);
+            SelectedItem = items.Last();
+            return true;
         }
 
         public void SupprimerItem(Item item)
@@ -54,6 +57,7 @@ namespace Modele
             if(Items.Contains(item))
             {
                 items.RemoveAt(items.IndexOf(item));
+                SelectedItem = items.Last();
             }
         }
 

@@ -32,6 +32,7 @@ namespace MC_Dex
 
         private void Button_Confirmer(object sender, RoutedEventArgs e)
         {
+            Mgr.SupprimerItem(Mgr.SelectedItem);
             this.Close();
             popUpOpen = false;
         }

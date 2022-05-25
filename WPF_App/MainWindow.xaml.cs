@@ -32,15 +32,11 @@ namespace MC_Dex
 
         public void Button_home(object sender, RoutedEventArgs e)
         {
-
-            //pageObjet page = new();
-            //page.wrapPanelHome.Add
-            //contentControl.Content = page;
             this.Title = "MC-DEX - Accueil";
-            contentControl.Content = new home();
-            //TextBlock titre = new();
-            //TextBlock texte = new() 
-            //this.Title = "MC-DEX - Objet";
+            home pageH = new();
+            pageH.Window = this;
+            contentControl.Content = pageH;
+
         }
 
         public void Button_ajouter(object sender, RoutedEventArgs e)

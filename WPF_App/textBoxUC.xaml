@@ -18,7 +18,7 @@
 
             <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
             <Border Grid.Column="1" Style="{StaticResource pageAjouter_borderTextBox}" >
-                <TextBox Style="{StaticResource pageAjouter_textBox}" />
+                <TextBox x:Name="textBox" Style="{StaticResource pageAjouter_textBox}" />
             </Border>
         </Grid>
     </Border>

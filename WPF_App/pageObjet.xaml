@@ -16,7 +16,7 @@
 
             <Border CornerRadius="12" Background="#BA0E0D0D" Margin="40,0,0,20" DockPanel.Dock="Left" Padding="0,0,0,40">
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <StackPanel>
+            <StackPanel x:Name="StackPanelObjet">
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -29,9 +29,9 @@
                     </Grid.RowDefinitions>
 
                         <Image Grid.Column="0" Grid.RowSpan="2" Grid.Row="0" Source="{Binding SelectedItem.Image}" Height="110" Width="110" Margin="0,0,20,0"/>
-                        <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding SelectedItem.Nom}" FontSize="40" Style="{StaticResource pageObjet_default}"/>
-                        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding SelectedItem.NomE}"  FontSize="35" Foreground="#FF979797" Style="{StaticResource pageObjet_default}"/>
-                        <TextBlock Grid.Column="2" Grid.Row="0" Text="{Binding SelectedItem.Id}"  FontSize="22" Style="{StaticResource pageObjet_default}"/>
+                        <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding SelectedItem.Nom, FallbackValue=Terre}" FontSize="40" Style="{StaticResource pageObjet_default}"/>
+                        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding SelectedItem.NomE, FallbackValue=Dirt}"  FontSize="35" Foreground="#FF979797" Style="{StaticResource pageObjet_default}"/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text="{Binding SelectedItem.Id, FallbackValue=16:84}"  FontSize="22" Style="{StaticResource pageObjet_default}"/>
                 </Grid>
 
                 <Rectangle Width="Auto" Height="2" Fill="White" Margin="15,5"/>
@@ -39,13 +39,13 @@
                 
                 
                 <TextBlock Text="Description" Style="{StaticResource pageObjet_titrePartie}" Margin="20,10,20,7"/>
-                    <TextBlock Text="{Binding SelectedItem.Desc}" Style="{StaticResource pageObjet_textePartie}"/>
+                <TextBlock Text="{Binding SelectedItem.Desc}" Style="{StaticResource pageObjet_textePartie}"/>
 
 
 
 
 
-                <local:craftUC NameTypeCraft="Craft"/>
+                    <!--<local:craftUC NameTypeCraft="Craft"/>
 
 
 
@@ -54,8 +54,7 @@
                     <local:craftUC NameTypeCraft="Fabrication"/>
 
 
-                    <TextBlock Text="Autre texte" Style="{StaticResource pageObjet_titrePartie}"/>
-                    <TextBlock Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>
+                    -->
 
 
 

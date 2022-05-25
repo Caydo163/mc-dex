@@ -7,6 +7,11 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="texteUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="boutonAjoutUC.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -59,6 +64,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="textBoxUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="texteUC.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

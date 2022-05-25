@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using Modele;
 
 namespace MC_Dex
 {
@@ -22,7 +23,7 @@ namespace MC_Dex
     /// </summary>
     public partial class PageAjouter : UserControl
     {
-        private MainWindow window;
+        public static Manager Mgr => ((App)Application.Current).LeManager;
         public MainWindow Window { get; set; }
 
         public PageAjouter()
@@ -41,29 +42,34 @@ namespace MC_Dex
             panelBlocAjout.Children.Add(box);
         }
 
+        private List<textBoxBaseUC> listeTextBoxBase = new List<textBoxBaseUC>();
         private void Button_AjouterTexte(object sender, RoutedEventArgs e)
         {
             textBoxBaseUC box = new();
+            listeTextBoxBase.Add(box);
             panelBlocAjout.Children.Add(box);
         }
 
         private void Button_AjouterStat(object sender, RoutedEventArgs e)
         {
             TextBoxStatistiqueUC box = new();
+
             panelBlocAjout.Children.Add(box);
             HideButtonStat.Visibility = Visibility.Collapsed;
         }
 
-        private void Button_AjouterNom(object sender, RoutedEventArgs e)
+        private textBoxUC? textBoxNomE = null;
+        private void Button_AjouterNomE(object sender, RoutedEventArgs e)
         {
-            textBoxUC box = new()
+            textBoxNomE = new textBoxUC()
             {
                 Nom = "Nom (anglais)"
             };
-            panelBlocAjout.Children.Add(box);
+            panelBlocAjout.Children.Add(textBoxNomE);
             HideButtonName.Visibility = Visibility.Collapsed;
         }
 
+        private String image;
         private void Button_OpenFile(object sender, RoutedEventArgs e)
         {
             OpenFileDialog ofd = new()
@@ -73,14 +79,38 @@ namespace MC_Dex
             if (ofd.ShowDialog() == true)
             {
                 TextBlockPathFile.Text = ofd.FileName;
+                image = ofd.FileName;
             }
+            
         }
 
         private void Button_Valider(object sender, RoutedEventArgs e)
         {
             //(Application.Current as App).MainWindow.abc =
-            Window.contentControl.Content = new home() ;
-            
+            String desc = textBoxDesc.Text;
+            String nom = textBoxNom.textBox.Text;
+            String nomE = "";
+            String id = textBoxId.textBox.Text;
+            List<KeyValuePair<string, string>> listeTexte ;
+            listeTexte = new List<KeyValuePair<string, string>>();
+            if (textBoxNomE != null)
+            {
+                nomE = textBoxNomE.textBox.Text;
+            }
+            if(listeTextBoxBase.Any())
+            {
+                listeTexte.Add(new KeyValuePair<string, string>(listeTextBoxBase[0].textBoxTitre.Text, listeTextBoxBase[0].textBoxTexte.Text));
+            }
+            if (listeTextBoxBase.Any())
+            {
+                TextBlockPathFile.Text = listeTexte[0].Key;
+                
+            }
+
+            //Mgr.AjouterItem(nom, nomE, id, image, desc);
+
+            Window.contentControl.Content = new home();
+
         }
     }
 }
