@@ -32,7 +32,7 @@ namespace Modele
         }
 
 
-        public bool AjouterItem(String nom, String nomE, String id, String image, String desc, List<KeyValuePair<string, string>> listeTexte)
+        public bool AjouterItem(String nom, String nomE, String id, String image, String desc, List<KeyValuePair<string, string>> listeTexte, Dictionary<string, string> listeStats)
         {
             foreach (Item elt in Items)
             {
@@ -47,11 +47,16 @@ namespace Modele
             {
                 item.ListeTexte.Add(elt);
             }
-            //if (!items.Contains(item))
-            //{
-            //    items.Add(item);
-            //}
-            items.Add(item);
+
+            foreach(KeyValuePair<string, string> elt in listeStats)
+            {
+                item.ListeStats[elt.Key] = elt.Value;
+            }
+                //if (!items.Contains(item))
+                //{
+                //    items.Add(item);
+                //}
+                items.Add(item);
             SelectedItem = items.Last();
             return true;
         }

@@ -35,10 +35,10 @@ namespace Modele
             }
             set
             {
-                if(Regex.IsMatch(value, @"^[0-9:]+$") && value[0] != '0')
-                {
+                //if(Regex.IsMatch(value, @"^[0-9:]+$") && value[0] != '0')
+                //{
                     identifiant = value;
-                }
+                //}
             }
         }
         private string identifiant;
@@ -86,14 +86,14 @@ namespace Modele
 
 
         //public Dictionary<string, double> ListeStats { get; private set; }
-        public Dictionary<string, double> ListeStats = new Dictionary<string, double>();
+        public Dictionary<string, string> ListeStats = new Dictionary<string, string>();
 
 
-        public void AjouterStat(string nom, double valeur)
+        public void AjouterStat(string nom, string valeur)
         {
             if(ListeStats == null)
             {
-                ListeStats = new Dictionary<string, double>();
+                ListeStats = new Dictionary<string, string>();
                 Console.WriteLine("Création dictionnaire");
             }
             if(! ListeStats.ContainsKey(nom))

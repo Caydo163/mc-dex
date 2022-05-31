@@ -53,7 +53,7 @@ namespace MC_Dex
 
             int cpt = 1;
             statistiqueUC zoneStat = new(); ;
-            foreach (KeyValuePair<string, double> stat in Mgr.SelectedItem.ListeStats)
+            foreach (KeyValuePair<string, string> stat in Mgr.SelectedItem.ListeStats)
             {
                 //if(cpt == 1)
                 //{
@@ -97,8 +97,10 @@ namespace MC_Dex
         {
             if (!PopUpDemandeSuppression.popUpOpen)
             {
-                PopUpDemandeSuppression popUp = new();
-                popUp.Window = Window;
+                PopUpDemandeSuppression popUp = new()
+                {
+                    Window = Window
+                };
                 PopUpDemandeSuppression.popUpOpen = true;
                 popUp.Show();
                 

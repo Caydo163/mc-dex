@@ -24,14 +24,14 @@ namespace Test
             }
 
 
-            item.AjouterStat("Stat 1", 5.6);
-            item.AjouterStat("Stat 2", 1);
-            item.AjouterStat("Stat 3", 5.6);
-            item.AjouterStat("Stat 1", -8);
-            foreach (KeyValuePair<string, double> e in item.ListeStats)
-            {
-                Console.WriteLine(e.Key + " : " + e.Value);
-            }
+            //item.AjouterStat("Stat 1", 5.6);
+            //item.AjouterStat("Stat 2", 1);
+            //item.AjouterStat("Stat 3", 5.6);
+            //item.AjouterStat("Stat 1", -8);
+            //foreach (KeyValuePair<string, double> e in item.ListeStats)
+            //{
+            //    Console.WriteLine(e.Key + " : " + e.Value);
+            //}
 
 
 

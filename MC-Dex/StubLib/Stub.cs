@@ -24,8 +24,8 @@ namespace StubLib
             items[0].NomE = "Dirt";
             items[0].ListeTexte.Add(new KeyValuePair<string, string>("Titre 1", "Texte 1"));
             items[0].ListeTexte.Add(new KeyValuePair<string, string>("Titre 2", "Texte 2"));
-            items[0].ListeStats.Add("Stat 1", 5.4);
-            items[0].ListeStats.Add("Stat 2", 10);
+            items[0].ListeStats.Add("Stat 1", "5.4");
+            items[0].ListeStats.Add("Stat 2", "10");
 
             return items;
         }

@@ -23,33 +23,40 @@ namespace MC_Dex
         public TextBoxStatistiqueUC()
         {
             InitializeComponent();
+            ligneGridStatUC newLine = new();
+            Grid_stat.Children.Add(newLine);
+            newLine.SetValue(Grid.RowProperty, listLigneStat.Count);
+            listLigneStat.Add(newLine);
         }
 
-        public int nbStat = 1;
+
+        public List<ligneGridStatUC> listLigneStat = new();
         private void Button_ajoutLigneStat(object sender, RoutedEventArgs e)
         {
             Grid_stat.RowDefinitions.Add(new RowDefinition());
             ligneGridStatUC newLine = new();
-            newLine.Name = "ligneStat" + nbStat+1;
-
             Grid_stat.Children.Add(newLine);
-            newLine.SetValue(Grid.RowProperty, nbStat);
-
-            nbStat++;
+            newLine.SetValue(Grid.RowProperty, listLigneStat.Count);
+            listLigneStat.Add(newLine);
         }
 
-/*        private void Button_supprimeLigneStat(object sender, RoutedEventArgs e)
+        private void Button_supprimeLigneStat(object sender, RoutedEventArgs e)
         {
-            if (nbStat < 1)
+            int nb = listLigneStat.Count;
+            if (nb == 0)
             {
                 return;
             }
-            Grid_stat.RowDefinitions.RemoveAt(nbStat - 1);
+            ligneGridStatUC line = listLigneStat[nb - 1];
+            Grid_stat.Children.Remove(line);
+            Grid_stat.RowDefinitions.RemoveAt(nb - 1);
+            listLigneStat.RemoveAt(nb - 1);
 
-            nbStat--;
-        }*/
 
 
-        
+        }
+
+
+
     }
 }

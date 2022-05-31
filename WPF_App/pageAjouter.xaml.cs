@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 using Modele;
+using WPF_App;
 
 namespace MC_Dex
 {
@@ -42,7 +44,7 @@ namespace MC_Dex
             panelBlocAjout.Children.Add(box);
         }
 
-        private List<textBoxBaseUC> listeTextBoxBase = new List<textBoxBaseUC>();
+        private List<textBoxBaseUC> listeTextBoxBase = new();
         private void Button_AjouterTexte(object sender, RoutedEventArgs e)
         {
             textBoxBaseUC box = new();
@@ -70,7 +72,7 @@ namespace MC_Dex
             HideButtonName.Visibility = Visibility.Collapsed;
         }
 
-        private String image;
+        private string image;
         private void Button_OpenFile(object sender, RoutedEventArgs e)
         {
             OpenFileDialog ofd = new()
@@ -82,57 +84,102 @@ namespace MC_Dex
                 TextBlockPathFile.Text = ofd.FileName;
                 image = ofd.FileName;
             }
-            
+
+        }
+        
+        private bool verif_textBox()
+        {
+            string id = textBoxId.textBox.Text;
+            bool check = false;
+
+            textBoxId.MessageErreur.Visibility = Visibility.Collapsed;
+            textBoxNom.MessageErreur.Visibility = Visibility.Collapsed;
+            MessageErreurDesc.Visibility = Visibility.Collapsed;
+            MessageErreurImg.Visibility = Visibility.Collapsed;
+
+            if (!Regex.IsMatch(id, @"^[0-9:]+$") || id[0] == '0')
+            {
+                textBoxId.MessageErreur.Text = "Erreur : Veuillez entrer un identifiant au bon format";
+                textBoxId.MessageErreur.Visibility = Visibility;
+                check = true;
+            }
+            if (id == "")
+            {
+                textBoxId.MessageErreur.Text = "Erreur : Veuillez entrer un identifiant";
+                textBoxId.MessageErreur.Visibility = Visibility;
+                check = true;
+            }
+            if (textBoxNom.textBox.Text == "")
+            {
+                textBoxNom.MessageErreur.Text = "Erreur : Veuillez entrer un nom";
+                textBoxNom.MessageErreur.Visibility = Visibility;
+                check = true;
+            }
+            if(textBoxDesc.Text == "")
+            {
+                MessageErreurDesc.Visibility = Visibility;
+                check = true;
+            }
+            if(image == null)
+            {
+                MessageErreurImg.Visibility = Visibility;
+                check = true;
+            }
+
+            return check;
         }
 
         private void Button_Valider(object sender, RoutedEventArgs e)
         {
             //(Application.Current as App).MainWindow.abc =
-            String desc = textBoxDesc.Text;
-            String nom = textBoxNom.textBox.Text;
-            String nomE = "";
-            String id = textBoxId.textBox.Text;
+            string desc = textBoxDesc.Text;
+            string nom = textBoxNom.textBox.Text;
+            string id = textBoxId.textBox.Text;
+            string nomE = "";
 
-            if (nom == "" || id == "" || desc == "")
-            {
-                return;
-                // Afficher message dans text box si vide
-            }
+            bool check = verif_textBox();
 
-            List<KeyValuePair<string, string>> listeTexte = new() ;
-            Dictionary<string, double> listeStats = new() ;
+            if (!check)
+            {
+                List<KeyValuePair<string, string>> listeTexte = new();
+                Dictionary<string, string> listeStats = new();
 
-            listeTexte = new List<KeyValuePair<string, string>>();
-            if (textBoxNomE != null)
-            {
-                nomE = textBoxNomE.textBox.Text;
-            }
-            foreach(textBoxBaseUC elt in listeTextBoxBase)
-            {
-                listeTexte.Add(new KeyValuePair<string, string>(elt.textBoxTitre.Text, elt.textBoxTexte.Text));
-            }
-            if (listeTextBoxBase.Any())
-            {
-                TextBlockPathFile.Text = listeTexte[0].Key;
-            }
-            if(textBoxStat != null)
-            {
-                foreach(int value in Enumerable.Range(1,textBoxStat.nbStat))
+                //listeTexte = new List<KeyValuePair<string, string>>();
+                if (textBoxNomE != null)
                 {
-                    //listeStats.Add(textBoxStat.ligneStat1.nomStat.Text, Convert.ToDouble(textBoxStat.ligneStat1.valStat.Text));
-                    // creer liste de ligneGridStatUC dans textboxStatistique
-                    // foreach dans cette liste
-                    
+                    nomE = textBoxNomE.textBox.Text;
                 }
+
+                foreach (textBoxBaseUC elt in listeTextBoxBase)
+                {
+                    listeTexte.Add(new KeyValuePair<string, string>(elt.textBoxTitre.Text, elt.textBoxTexte.Text));
+                }
+
+                //if (listeTextBoxBase.Any())
+                //{
+                //    TextBlockPathFile.Text = listeTexte[0].Key;
+                //}
+
+                if (textBoxStat != null)
+                {
+                    foreach (ligneGridStatUC elt in textBoxStat.listLigneStat)
+                    {
+                        listeStats.Add(elt.nomStat.Text, elt.valStat.Text);
+                    }
+                }
+
+
+                Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte, listeStats);
+
+                home Home = new()
+                {
+                    Window = Window
+                };
+                Window.contentControl.Content = Home;
+
             }
-
-
-            Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte);
-
-            home Home = new();
-            Home.Window = Window;
-            Window.contentControl.Content = Home;
-
+            }
         }
+
     }
-}
+

@@ -15,11 +15,16 @@
                 <ColumnDefinition Width="160"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-            <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
+            <TextBlock x:Name="NomTextBox" Text="Nom"  Grid.RowSpan="2" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
             <Border Grid.Column="1" Style="{StaticResource pageAjouter_borderTextBox}" >
                 <TextBox x:Name="textBox" Style="{StaticResource pageAjouter_textBox}" />
             </Border>
+            <TextBlock Grid.Row="1" Grid.Column="1" x:Name="MessageErreur" Text="Erreur : Veuillez entrer un nom" FontFamily="{StaticResource Minecraft}" Foreground="#FFAF0D0D" FontSize="11" Margin="20,0,0,5" Visibility="Collapsed"/>
         </Grid>
     </Border>
 </UserControl>

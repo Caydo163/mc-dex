@@ -34,11 +34,17 @@
                                     <ColumnDefinition Width="160"/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
 
-                                <TextBlock Text="Description" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
+                                <TextBlock Text="Description" Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource pageAjouter_textBlock}"/>
                                 <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
                                     <TextBox Name="textBoxDesc" Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
                                 </Border>
+                                <TextBlock Grid.Row="1" Grid.Column="1" x:Name="MessageErreurDesc" Text="Erreur : Veuillez entrer une description" FontFamily="{StaticResource Minecraft}" Foreground="#FFAF0D0D" FontSize="11" Margin="20,0,0,5" Visibility="Collapsed"/>
+
 
                             </Grid>
                         </Border>
@@ -52,8 +58,12 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
 
-                                <TextBlock Text="Image" Grid.Column="0" Style="{StaticResource pageAjouter_textBlock}"/>
+                                <TextBlock Text="Image" Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource pageAjouter_textBlock}"/>
                                 <Border Style="{StaticResource pageAjouter_borderTextBox}" Grid.Column="1" >
                                     <TextBlock Margin="7" x:Name="TextBlockPathFile" Text="/Chemin/du/fichier/selectionne" Foreground="#FF979797" FontFamily="Arial"/>
                                 </Border>
@@ -62,6 +72,8 @@
                                         <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
                                     </Button.Background>
                                 </Button>
+                                <TextBlock Grid.Row="1" Grid.Column="1" x:Name="MessageErreurImg" Text="Erreur : Veuillez choisir une image" FontFamily="{StaticResource Minecraft}" Foreground="#FFAF0D0D" FontSize="11" Margin="20,0,0,5" Visibility="Collapsed"/>
+
 
                             </Grid>
                         </Border>
