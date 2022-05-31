@@ -29,11 +29,27 @@ namespace MC_Dex
         {
             InitializeComponent();
             DataContext = Mgr;
+            if(Mgr.modeRecherche)
+            {
+                listBox.ItemsSource = Mgr.ItemsRecherche;
+            }
+            else
+            {
+                listBox.ItemsSource = Mgr.Items;
+            }
+
         }
 
         void ChoixItem(object sender, SelectionChangedEventArgs args)
         {
-            Mgr.SelectedItem = Mgr.Items[listBox.SelectedIndex];
+            if(Mgr.modeRecherche)
+            {
+                Mgr.SelectedItem = Mgr.ItemsRecherche[listBox.SelectedIndex];
+            }
+            else
+            {
+                Mgr.SelectedItem = Mgr.Items[listBox.SelectedIndex];
+            }
             pageObjet pageO = new pageObjet();
             Window.Title = "Item - " + Mgr.SelectedItem.Nom;
             pageO.Window = Window;

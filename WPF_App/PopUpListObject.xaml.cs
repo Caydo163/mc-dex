@@ -20,13 +20,13 @@ namespace MC_Dex
     /// </summary>
     public partial class PopUpListObject : Window
     {
-
         public static Manager Mgr => ((App)Application.Current).LeManager;
         public static bool popUpOpen = false;
         public PopUpListObject()
         {
             InitializeComponent();
-            Mgr.LoadItems();
+            //Mgr.LoadItems();
+            //Mgr.AjouterItem("Bloc actuel", "", "999", "img\\bloc_actuel.png", "",null, null);
             DataContext = Mgr;
         }
 

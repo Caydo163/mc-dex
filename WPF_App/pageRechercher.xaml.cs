@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,8 @@ namespace MC_Dex
     /// </summary>
     public partial class pageRechercher : UserControl
     {
+        public MainWindow Window { get; set; }
+        public static Manager Mgr => ((App)Application.Current).LeManager;
         public pageRechercher()
         {
             InitializeComponent();
@@ -27,7 +30,25 @@ namespace MC_Dex
 
         public void Button_Rechercher(object sender, RoutedEventArgs e)
         {
-            
+            Rechercher();
+        }
+
+        private void ToucheEntree(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Return)
+            {
+                Rechercher();
+            }
+        }
+
+        private void Rechercher()
+        {
+            Mgr.Rechercher(textBox_Recherche.Text);
+            Mgr.modeRecherche = true;
+
+            home pageH = new();
+            pageH.Window = Window;
+            Window.contentControl.Content = pageH;
         }
     }
 }

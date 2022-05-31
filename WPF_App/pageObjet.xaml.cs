@@ -159,10 +159,6 @@ namespace MC_Dex
             statistiqueUC zoneStat = new(); ;
             foreach (KeyValuePair<string, string> stat in Mgr.SelectedItem.ListeStats)
             {
-                //if(cpt == 1)
-                //{
-                //    zoneStat = new statistiqueUC();
-                //}
                 zoneStat.gridStat.RowDefinitions.Add(new RowDefinition());
 
                 Border b1 = new();

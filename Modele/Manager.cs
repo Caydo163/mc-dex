@@ -10,7 +10,9 @@ namespace Modele
 {
     public class Manager
     {
+        public bool modeRecherche = false;
         public ReadOnlyCollection<Item> Items { get; private set; }
+        public ReadOnlyCollection<Item> ItemsRecherche { get; private set; }
         private List<Item> items = new();
         public Item SelectedItem { get; set; }
 
@@ -26,9 +28,7 @@ namespace Modele
         public void LoadItems()
         {
             items.Clear();
-            items.Add(new Item("Bloc actuel", "999", "img\\bloc_actuel.png",""));
             items.AddRange(Pers.LoadItems());
-            //SelectedItem = items[1];
         }
 
 
@@ -41,7 +41,6 @@ namespace Modele
                     return false;
                 }
             }
-            //Item item = new("Terre", "10:89", "img/terre.png", "Description");
             Item item = new(nom, id, image, desc);
             foreach(KeyValuePair<string, string> elt in listeTexte)
             {
@@ -52,12 +51,7 @@ namespace Modele
             {
                 item.ListeStats[elt.Key] = elt.Value;
             }
-                //if (!items.Contains(item))
-                //{
-                //    items.Add(item);
-                //}
-                items.Add(item);
-            //SelectedItem = items.Last();
+            items.Add(item);
             return true;
         }
 
@@ -101,18 +95,18 @@ namespace Modele
             List<Item> itemTrouve = new();
             mot = ModificationStringRecherche(mot);
             
-            Console.WriteLine(mot);
 
             foreach (Item item in Items)
             {
                 string nomItem = ModificationStringRecherche(item.Nom);
 
-                if (nomItem.Contains(mot))
+                if (nomItem.Contains(mot) || item.Id.Contains(mot))
                 {
-                    Console.WriteLine("Yes ! On l'a trouvé.");
                     itemTrouve.Add(item);
                 }
+
             }
+            ItemsRecherche = new ReadOnlyCollection<Item>(itemTrouve);
             return itemTrouve;
         }
     }

@@ -32,13 +32,37 @@ namespace MC_Dex
             DataContext = Mgr;
         }
 
+        private bool MessageConfirmationFermeturePageA()
+        {
+            MessageBoxResult choix = MessageBox.Show("Voulez-vous vraiment quitter la page ajouter ?\nVos informations ne seront pas sauvegardé.", 
+                "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
+
+            switch(choix)
+            {
+                case MessageBoxResult.Yes:
+                    return true;
+                case MessageBoxResult.No:
+                    return false;
+            }
+            return false;
+
+        }
+
         public void Button_home(object sender, RoutedEventArgs e)
         {
-            this.Title = "MC-DEX - Accueil";
-            home pageH = new();
-            pageH.Window = this;
-            contentControl.Content = pageH;
-
+            bool check = true;
+            if(contentControl.Content.GetType() == typeof(PageAjouter))
+            {
+                check = MessageConfirmationFermeturePageA();
+            }
+            if(check)
+            {
+                this.Title = "MC-DEX - Accueil";
+                Mgr.modeRecherche = false;
+                home pageH = new();
+                pageH.Window = this;
+                contentControl.Content = pageH;
+            }
         }
 
         public void Button_ajouter(object sender, RoutedEventArgs e)
@@ -53,7 +77,9 @@ namespace MC_Dex
 
         public void Button_rechercher(object sender, RoutedEventArgs e)
         {
-            contentControl.Content = new pageRechercher();
+            pageRechercher pageR = new();
+            pageR.Window = this;
+            contentControl.Content = pageR;
             this.Title = "MC-DEX - Rechercher";
         }
     }

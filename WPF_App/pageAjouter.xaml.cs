@@ -38,9 +38,11 @@ namespace MC_Dex
 
         }
 
+        public List<textBoxCraftUC> listeTextBoxCraft = new();
         private void Button_AjouterCraft(object sender, RoutedEventArgs e)
         {
             textBoxCraftUC box = new();
+            listeTextBoxCraft.Add(box);
             panelBlocAjout.Children.Add(box);
         }
 

@@ -17,7 +17,7 @@
         </WrapPanel>
     </ScrollViewer>-->
     <ListBox x:Name="listBox" ItemsSource="{Binding Items}" Background="{x:Null}" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-             ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="ChoixItem">
+             ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="ChoixItem" >
         <ListBox.ItemTemplate>
             <DataTemplate>
                 <local:ItemUC Nom="{Binding Nom}" Image="{Binding Image}"/>

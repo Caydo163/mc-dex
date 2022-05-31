@@ -21,6 +21,7 @@ namespace MC_Dex
     /// </summary>
     public partial class textBoxCraftUC : UserControl
     {
+        
         public textBoxCraftUC()
         {
             InitializeComponent();
@@ -31,10 +32,7 @@ namespace MC_Dex
             if(! PopUpListObject.popUpOpen)
             {
                 Debug.WriteLine(Mouse.GetPosition(null));
-                PopUpListObject popUp = new PopUpListObject();
-                //popUp.WindowStartupLocation = WindowStartupLocation.Manual;
-                //popUp.Top = PointToScreen(Mouse.GetPosition(null)).X;
-                //popUp.Left = PointToScreen(Mouse.GetPosition(null)).Y;
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -43,7 +41,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -52,7 +50,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -61,7 +59,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -70,7 +68,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -79,7 +77,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -88,7 +86,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -97,7 +95,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -106,7 +104,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
@@ -115,7 +113,7 @@ namespace MC_Dex
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new PopUpListObject();
+                PopUpListObject popUp = new();
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }
