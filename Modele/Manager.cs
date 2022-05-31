@@ -28,11 +28,11 @@ namespace Modele
             items.Clear();
             items.Add(new Item("Bloc actuel", "999", "img\\bloc_actuel.png",""));
             items.AddRange(Pers.LoadItems());
-            SelectedItem = items[1];
+            //SelectedItem = items[1];
         }
 
 
-        public bool AjouterItem(String nom, String nomE, String id, String image, String desc, List<KeyValuePair<string, string>> listeTexte, Dictionary<string, string> listeStats)
+        public bool AjouterItem(string nom, string nomE, string id, string image, string desc, List<KeyValuePair<string, string>> listeTexte, Dictionary<string, string> listeStats)
         {
             foreach (Item elt in Items)
             {
@@ -57,7 +57,7 @@ namespace Modele
                 //    items.Add(item);
                 //}
                 items.Add(item);
-            SelectedItem = items.Last();
+            //SelectedItem = items.Last();
             return true;
         }
 

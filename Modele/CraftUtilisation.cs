@@ -36,7 +36,7 @@ namespace Modele
         public override List<KeyValuePair<string, int>> CalculIngredient()
         {
             List<KeyValuePair<string, int>> L = new();
-            List<Item> L2 = new() { Objet0_0, Objet0_1, Objet0_2, Objet1_0, Objet1_1, Objet1_2, Objet2_0, Objet2_1, Objet2_2 };
+            List<Item> L2 = new() { Objet0_0, Objet0_1, Objet0_2, Objet1_0, Objet1_1, Objet1_2, Objet2_0, Objet2_1, Objet2_2};
             foreach (Item ite in L2)
             {
 

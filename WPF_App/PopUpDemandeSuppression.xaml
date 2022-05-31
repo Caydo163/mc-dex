@@ -24,7 +24,7 @@
 
 
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" HorizontalAlignment="Center">
-            
+
             <Border VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider">
                 <Button Click="Button_Confirmer">
                     <TextBlock Text="CONFIRMER" Style="{StaticResource pageAjouter_textBlock}"/>
@@ -37,7 +37,7 @@
             </Border>
         </StackPanel>
 
-        <local:ItemUC Nom="Terre"  ImageName="img\terre.png"/>
+        <local:ItemUC Nom="{Binding Nom}" Image="{Binding Image}"/>
 
     </DockPanel>
 </Window>

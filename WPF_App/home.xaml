@@ -20,16 +20,7 @@
              ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="ChoixItem">
         <ListBox.ItemTemplate>
             <DataTemplate>
-                <Border CornerRadius="12" BorderThickness="5" Background="#BA0E0D0D" Height="80" Width="220" Margin="3">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <Image x:Name="SrcImg" Grid.Column="0" Source="{Binding Image}" Height="50" Width="50" Margin="5"/>
-                        <TextBlock x:Name="NomItem" Grid.Column="1" Text="{Binding Nom}" FontFamily="{StaticResource Minecraft}" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
-                    </Grid>
-                </Border>
+                <local:ItemUC Nom="{Binding Nom}" Image="{Binding Image}"/>
             </DataTemplate>
         </ListBox.ItemTemplate>
         

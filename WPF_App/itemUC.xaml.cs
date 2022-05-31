@@ -28,28 +28,49 @@ namespace MC_Dex
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
+
+        /*        public string Nom
+                {
+                    set
+                    {
+                        NomItem.Text = value;
+                    }
+                }*/
 
         public string Nom
         {
-            set
-            {
-                NomItem.Text = value;
-            }
+            get { return (string)GetValue(NomProperty); }
+            set { SetValue(NomProperty, value); }
         }
 
-        public string ImageName
+        // UsingaDependencyProperty as the backing store for Texte.This enables animation,styling,binding,etc ...
+        public static readonly DependencyProperty NomProperty =
+            DependencyProperty.Register("Nom", typeof(string), typeof(ItemUC), new PropertyMetadata("Nom Vide"));
+
+        /*public string ImageName
+                {
+                    set
+                    {
+                        SrcImg.Source = new BitmapImage(new Uri(value, UriKind.Relative));
+                    }
+                }*/
+
+
+        public string Image
         {
-            set
-            {
-                SrcImg.Source = new BitmapImage(new Uri(value, UriKind.Relative));
-            }
+            get { return (string)GetValue(ImageProperty); }
+            set { SetValue(ImageProperty, value); }
         }
+
+        // UsingaDependencyProperty as the backing store for Texte.This enables animation,styling,binding,etc ...
+        public static readonly DependencyProperty ImageProperty =
+            DependencyProperty.Register("Image", typeof(string), typeof(ItemUC), new PropertyMetadata("img\\terre.png"));
 
         public void Button_item(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }

@@ -99,7 +99,7 @@ namespace MC_Dex
 
             if (!Regex.IsMatch(id, @"^[0-9:]+$") || id[0] == '0')
             {
-                textBoxId.MessageErreur.Text = "Erreur : Veuillez entrer un identifiant au bon format";
+                textBoxId.MessageErreur.Text = "Erreur : Veuillez entrer un identifiant au bon format (chiffre et \":\")";
                 textBoxId.MessageErreur.Visibility = Visibility;
                 check = true;
             }
@@ -108,6 +108,26 @@ namespace MC_Dex
                 textBoxId.MessageErreur.Text = "Erreur : Veuillez entrer un identifiant";
                 textBoxId.MessageErreur.Visibility = Visibility;
                 check = true;
+            }
+
+            if (id == "")
+            {
+                textBoxId.MessageErreur.Text = "Erreur : Veuillez entrer un identifiant";
+                textBoxId.MessageErreur.Visibility = Visibility;
+                check = true;
+            }
+            else
+            {
+                foreach (Item elt in Mgr.Items)
+                {
+                    if (elt.Id == id)
+                    {
+                        textBoxId.MessageErreur.Text = "Erreur : Cet identifiant est deja pris";
+                        textBoxId.MessageErreur.Visibility = Visibility;
+                        check = true;
+                        break;
+                    }
+                }
             }
             if (textBoxNom.textBox.Text == "")
             {

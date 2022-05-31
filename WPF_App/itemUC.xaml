@@ -5,21 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MC_Dex"
              mc:Ignorable="d" 
-             d:DesignHeight="80" d:DesignWidth="220" Foreground="{x:Null}">
+             d:DesignHeight="80" d:DesignWidth="220" Foreground="{x:Null}"
+             x:Name="root">
 
-    
+
     <Border CornerRadius="12" BorderThickness="5" Background="#BA0E0D0D" Height="80" Width="220" Margin="3">
-        <Button Background="{x:Null}" BorderThickness="0" Click="Button_item">
-            
-        <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-            <Image x:Name="SrcImg" Grid.Column="0" Source="img\Terre.png" Height="50" Width="50" Margin="0,2,10,2"/>
-                <TextBlock x:Name="NomItem" Grid.Column="1" Text="Nom item" FontFamily="{StaticResource Minecraft}" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
-        </Grid>
-        </Button>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="{Binding Image, ElementName=root}" Height="50" Width="50" Margin="10,2,10,2"/>
+                <TextBlock Grid.Column="1" Text="{Binding Nom, ElementName=root}" FontFamily="{StaticResource Minecraft}" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
+            </Grid>
     </Border>
 
 </UserControl>

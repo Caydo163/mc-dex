@@ -12,7 +12,7 @@ namespace Test
 
             //Manager manager = new();
             Item item = new("terre", "12", "image", "Voici une description");
-            //Item item2 = new("pierre", "38:2", "image", "Voici une description");
+            Item item2 = new("pierre", "38:2", "image", "Voici une description");
             item.Id = "9:1";
 
             item.AjouterTexte("Titre 1", "Texte 1");
@@ -24,22 +24,34 @@ namespace Test
             }
 
 
-            //item.AjouterStat("Stat 1", 5.6);
-            //item.AjouterStat("Stat 2", 1);
-            //item.AjouterStat("Stat 3", 5.6);
-            //item.AjouterStat("Stat 1", -8);
-            //foreach (KeyValuePair<string, double> e in item.ListeStats)
-            //{
-            //    Console.WriteLine(e.Key + " : " + e.Value);
-            //}
+            item.AjouterStat("Stat 1","5.6");
+            item.AjouterStat("Stat 2", "1");
+            item.AjouterStat("Stat 3", "5.6");
+            item.AjouterStat("Stat 1", "-8");
+            foreach (KeyValuePair<string, string> e in item.ListeStats)
+            {
+                Console.WriteLine(e.Key + " : " + e.Value);
+            }
+
+            item.AjouterCraft(item2, null, item2, item2, null, null, null, item2, item2, 5);
+            item.AjouterCraft(item2, null, item, item2, null, null, null, item, item2, 5, item2);
+
+
+            foreach(Craft c in item.ListeCraft)
+            {
+                Console.WriteLine(c);
+            }
 
 
 
-            Console.WriteLine(item.Id);
+
+
+
+            //Console.WriteLine(item.Id);
             /* item.NomE = "Terre en anglais";*/
-    /*        item.listeTexte.Add(new KeyValuePair<string, string>("Test", "test" ));
-            item.listeTexte.Add(new KeyValuePair<string, string>("Test", "test" ));
-            Console.WriteLine(item.listeTexte[0]);*/
+            /*        item.listeTexte.Add(new KeyValuePair<string, string>("Test", "test" ));
+                    item.listeTexte.Add(new KeyValuePair<string, string>("Test", "test" ));
+                    Console.WriteLine(item.listeTexte[0]);*/
             Console.WriteLine(item);
             Console.WriteLine("============================================================");
 

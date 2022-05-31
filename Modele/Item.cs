@@ -126,7 +126,7 @@ namespace Modele
         public List<Craft> ListeCraft = new();
 
 
-        public void AjouterCraft(Item o1, Item o2, Item o3, Item o4, Item o5, Item o6, Item o7, Item o8, Item o9, int nbFinal, Item o10 = null, string idBase = null)
+        public void AjouterCraft(Item o1, Item o2, Item o3, Item o4, Item o5, Item o6, Item o7, Item o8, Item o9, int nbFinal, Item o10 = null)
         {
             if (o10 is null)
             {
@@ -134,7 +134,7 @@ namespace Modele
             }
             else
             {
-                ListeCraft.Add(new CraftUtilisation(nbFinal, o1, o2, o3, o4, o5, o6, o7, o8, o9, o10, idBase));
+                ListeCraft.Add(new CraftUtilisation(nbFinal, o1, o2, o3, o4, o5, o6, o7, o8, o9, o10, this.Nom));
             }
 
         }
