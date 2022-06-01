@@ -33,6 +33,7 @@ namespace MC_Dex
             {
                 Debug.WriteLine(Mouse.GetPosition(null));
                 PopUpListObject popUp = new();
+                popUp.Craft = this;
                 PopUpListObject.popUpOpen = true;
                 popUp.Show();
             }

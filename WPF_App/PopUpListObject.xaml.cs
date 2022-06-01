@@ -22,6 +22,7 @@ namespace MC_Dex
     {
         public static Manager Mgr => ((App)Application.Current).LeManager;
         public static bool popUpOpen = false;
+        public textBoxCraftUC Craft { get; set; }
         public PopUpListObject()
         {
             InitializeComponent();
@@ -30,10 +31,13 @@ namespace MC_Dex
             DataContext = Mgr;
         }
 
+
+
         private void ButtonClose(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            //Craft.Button1Image.Background = new ImageBrush(new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative)));
             popUpOpen = false;
+            this.Close();
         }
 
     }

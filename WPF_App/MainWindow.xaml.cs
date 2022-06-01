@@ -35,7 +35,7 @@ namespace MC_Dex
         private bool MessageConfirmationFermeturePageA()
         {
             MessageBoxResult choix = MessageBox.Show("Voulez-vous vraiment quitter la page ajouter ?\nVos informations ne seront pas sauvegardé.", 
-                "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
+                "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Information, MessageBoxResult.No);
 
             switch(choix)
             {
