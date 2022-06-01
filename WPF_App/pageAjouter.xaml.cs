@@ -98,6 +98,10 @@ namespace WPF_App
             textBoxNom.MessageErreur.Visibility = Visibility.Collapsed;
             MessageErreurDesc.Visibility = Visibility.Collapsed;
             MessageErreurImg.Visibility = Visibility.Collapsed;
+            foreach(textBoxCraftUC elt in listeTextBoxCraft)
+            {
+                elt.MessageErreurNbItem.Visibility = Visibility.Collapsed;
+            }
 
             if (!Regex.IsMatch(id, @"^[0-9:]+$") || id[0] == '0')
             {
@@ -148,6 +152,15 @@ namespace WPF_App
                 check = true;
             }
 
+            //foreach (textBoxCraftUC elt in listeTextBoxCraft)
+            //{
+            //    if (!Regex.IsMatch(elt.nbrItemObtenu.Text, @"^[0-9]+$") || elt.nbrItemObtenu.Text != "")
+            //    {
+            //        elt.MessageErreurNbItem.Visibility = Visibility;
+            //        check = true;
+            //    }
+            //}
+
             return check;
         }
 
@@ -160,6 +173,7 @@ namespace WPF_App
             string nomE = "";
 
             bool check = verif_textBox();
+
 
             if (!check)
             {
@@ -191,7 +205,24 @@ namespace WPF_App
                 }
 
 
-                Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte, listeStats);
+                Item item = Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte, listeStats);
+
+
+
+                // Regarder si elt vide
+                foreach(textBoxCraftUC elt in listeTextBoxCraft)
+                {
+                    int nb = Convert.ToInt16(elt.nbrItemObtenu.Text);
+                    if (elt.nbrItemObtenu.Text == "")
+                    {
+                        nb = 1;
+                    }
+
+                    item.AjouterCraft(elt.ListItemCraft[0], elt.ListItemCraft[1], elt.ListItemCraft[2], elt.ListItemCraft[3], elt.ListItemCraft[4], elt.ListItemCraft[5], elt.ListItemCraft[6],
+                        elt.ListItemCraft[7], elt.ListItemCraft[8],nb , elt.ListItemCraft[9]);
+                }
+                
+
 
                 home Home = new()
                 {

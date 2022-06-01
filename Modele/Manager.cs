@@ -32,16 +32,18 @@ namespace Modele
         }
 
 
-        public bool AjouterItem(string nom, string nomE, string id, string image, string desc, List<KeyValuePair<string, string>> listeTexte, Dictionary<string, string> listeStats)
+        public Item AjouterItem(string nom, string nomE, string id, string image, string desc, List<KeyValuePair<string, string>> listeTexte, Dictionary<string, string> listeStats)
         {
+            
             foreach (Item elt in Items)
             {
                 if(elt.Id == id)
                 {
-                    return false;
+                    return null;
                 }
             }
             Item item = new(nom, id, image, desc);
+
             foreach(KeyValuePair<string, string> elt in listeTexte)
             {
                 item.ListeTexte.Add(elt);
@@ -52,7 +54,7 @@ namespace Modele
                 item.ListeStats[elt.Key] = elt.Value;
             }
             items.Add(item);
-            return true;
+            return item;
         }
 
         public void SupprimerItem(Item item)
@@ -99,8 +101,14 @@ namespace Modele
             foreach (Item item in Items)
             {
                 string nomItem = ModificationStringRecherche(item.Nom);
+                string nomItemE = "";
+                if (item.NomE != null)
+                {
+                    nomItemE = ModificationStringRecherche(item.NomE);
+                }
 
-                if (nomItem.Contains(mot) || item.Id.Contains(mot))
+
+                if (nomItem.Contains(mot) || item.Id.Contains(mot) || nomItemE.Contains(mot))
                 {
                     itemTrouve.Add(item);
                 }

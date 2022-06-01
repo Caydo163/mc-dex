@@ -34,8 +34,10 @@ namespace WPF_App
         {
             Mgr.SupprimerItem(Mgr.SelectedItem);
             popUpOpen = false;
-            home pageH = new();
-            pageH.Window = Window;
+            home pageH = new()
+            {
+                Window = Window
+            };
             Window.contentControl.Content = pageH;
             this.Close();
         }

@@ -41,66 +41,48 @@
                         
                         
                         <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
-                            <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button1" x:Name="Button1Image">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
-                            </Button>
+                                <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button1" >
+                                    <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button1_Image"/>
+                                </Button>
                         </Border>
                         <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 2 2">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button2">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button2_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="2 0 0 2">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button3">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button3_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 2">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button4">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button4_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="1" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 2">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button5">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button5_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="2" Grid.Row="1" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 2">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button6">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button6_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="0 2 2 0">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button7">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button7_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="1" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 2 0">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button8">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button8_Image"/>
                             </Button>
                         </Border>
                         <Border Grid.Column="2" Grid.Row="2" BorderBrush="{StaticResource brush}" BorderThickness="2 2 0 0">
                             <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button9">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                                </Button.Background>
+                                <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button9_Image"/>
                             </Button>
                         </Border>
 
@@ -110,21 +92,24 @@
 
                     <Border  Width="50" Height="50">
                         <Button Width="50" Height="35" Grid.Column="2" BorderThickness="0" Click="Button10">
-                            <Button.Background>
-                                <ImageBrush ImageSource="img\ajouter.png" Stretch="Uniform"/>
-                            </Button.Background>
+                            <Image Source="img\ajouter.png" Stretch="Uniform" x:Name="Button10_Image"/>
                         </Button>
                     </Border>
 
                     <StackPanel VerticalAlignment="Center" Margin="10,0,0,0">
                     <Border CornerRadius="15" BorderBrush="Gray" BorderThickness="2" >
-                            <StackPanel>
-                                
-                        <TextBlock Text="Nombre d'item obtenu" FontFamily="{StaticResource Minecraft}" Margin="5"/>
+                        <StackPanel>
+                            <TextBlock Text="Nombre d'item obtenu" FontFamily="{StaticResource Minecraft}" Margin="5"/>
                             <Border Style="{StaticResource pageAjouter_borderTextBox}" BorderThickness="1" BorderBrush="Gray" Height="35" Margin="5" >
-                                <TextBox Style="{StaticResource pageAjouter_textBox}"/>
+                                <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="nbrItemObtenu"/>
                             </Border>
-                            </StackPanel>    
+                                    <TextBlock x:Name="MessageErreurNbItem" Margin="5,0,5,8" TextAlignment="Center"
+                                       FontFamily="{StaticResource Minecraft}" Foreground="#FFAF0D0D" FontSize="11" Visibility="Collapsed">
+                                        <Run Text="Erreur : Veuillez entrer un nombre"/>
+                                        <LineBreak/>
+                                        <Run Text=" valide (chiffre uniquement)"/>
+                                    </TextBlock>
+                                </StackPanel>    
                     </Border>
                     </StackPanel>
                 </StackPanel>

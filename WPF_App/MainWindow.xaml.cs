@@ -48,14 +48,22 @@ namespace WPF_App
 
         }
 
+        private bool TestCollision()
+        {
+            if (PopUpListObject.popUpOpen || PopUpDemandeSuppression.popUpOpen)
+            {
+                return false;
+            }
+            if (contentControl.Content.GetType() == typeof(PageAjouter))
+            {
+                return MessageConfirmationFermeturePageA();
+            }
+            return true;
+        }
+
         public void Button_home(object sender, RoutedEventArgs e)
         {
-            bool check = true;
-            if(contentControl.Content.GetType() == typeof(PageAjouter))
-            {
-                check = MessageConfirmationFermeturePageA();
-            }
-            if(check)
+            if(TestCollision())
             {
                 this.Title = "MC-DEX - Accueil";
                 Mgr.modeRecherche = false;
@@ -67,20 +75,26 @@ namespace WPF_App
 
         public void Button_ajouter(object sender, RoutedEventArgs e)
         {
-            PageAjouter pageA = new();
-            pageA.Window = this;
-            contentControl.Content = pageA ;
-            
-            this.Title = "MC-DEX - Ajouter";
+            if(TestCollision())
+            {
+                PageAjouter pageA = new();
+                pageA.Window = this;
+                contentControl.Content = pageA;
+                this.Title = "MC-DEX - Ajouter";
+            }
 
         }
 
         public void Button_rechercher(object sender, RoutedEventArgs e)
         {
-            pageRechercher pageR = new();
-            pageR.Window = this;
-            contentControl.Content = pageR;
-            this.Title = "MC-DEX - Rechercher";
+            if(TestCollision())
+            {
+                pageRechercher pageR = new();
+                pageR.Window = this;
+                contentControl.Content = pageR;
+                this.Title = "MC-DEX - Rechercher";
+            }
+
         }
     }
 }

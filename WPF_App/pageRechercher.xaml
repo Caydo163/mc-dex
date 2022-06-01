@@ -21,7 +21,7 @@
             <Border Style="{StaticResource pageAjouter_borderGrid}" Height="50" VerticalAlignment="Top" Grid.Row="1" Margin="0,30,0,0">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 

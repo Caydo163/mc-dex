@@ -20,9 +20,29 @@ namespace WPF_App
     /// </summary>
     public partial class PopUpListObject : Window
     {
+        /// <summary>
+        /// Manager
+        /// </summary>
         public static Manager Mgr => ((App)Application.Current).LeManager;
+
+        /// <summary>
+        /// Booléen pour savoir si un pop up est ouvert ou non
+        /// </summary>
         public static bool popUpOpen = false;
+
+        /// <summary>
+        /// UserControl pour pouvoir modifier son contenu
+        /// </summary>
         public textBoxCraftUC Craft { get; set; }
+
+        /// <summary>
+        /// Entier pour avoir la position du bouton à modifier
+        /// </summary>
+        public int Pos { get; set; }
+
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public PopUpListObject()
         {
             InitializeComponent();
@@ -32,10 +52,61 @@ namespace WPF_App
         }
 
 
-
+        /// <summary>
+        /// Bouton "VALIDER" qui ferme le pop up et changer l'image du bouton cliqué
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonClose(object sender, RoutedEventArgs e)
         {
-            //Craft.Button1Image.Background = new ImageBrush(new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative)));
+            //if(listBoxItem.SelectedIndex != null)
+            //{
+            // Vérifier si element selectionner
+            switch(Pos)
+            {
+                case 1:
+                    Craft.Button1_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 2:
+                    Craft.Button2_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 3:
+                    Craft.Button3_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 4:
+                    Craft.Button4_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 5:
+                    Craft.Button5_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 6:
+                    Craft.Button6_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 7:
+                    Craft.Button7_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 8:
+                    Craft.Button8_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 9:
+                    Craft.Button9_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+                case 10:
+                    Craft.Button10_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                    Craft.ListItemCraft[Pos - 1] = Mgr.Items[listBoxItem.SelectedIndex];
+                    break;
+
+            }
+            //}
             popUpOpen = false;
             this.Close();
         }
