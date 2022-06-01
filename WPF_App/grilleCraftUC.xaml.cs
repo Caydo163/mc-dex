@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MC_Dex
+namespace WPF_App
 {
     /// <summary>
     /// Logique d'interaction pour grilleCraftUC.xaml

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Modele;
 
-namespace MC_Dex
+namespace WPF_App
 {
     /// <summary>
     /// Logique d'interaction pour App.xaml

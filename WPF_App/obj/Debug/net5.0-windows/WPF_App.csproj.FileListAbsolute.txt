@@ -7,8 +7,8 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.dll
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\Modele.dll
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.dll
-C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\Modele.pdb
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.csproj.AssemblyReference.cache
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\boutonAjoutUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\craftUC.g.cs

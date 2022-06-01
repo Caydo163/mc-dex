@@ -35,8 +35,8 @@
     },
     "StubLib/1.0.0": {
       "type": "project",
-      "path": "../MC-Dex/StubLib/StubLib.csproj",
-      "msbuildProject": "../MC-Dex/StubLib/StubLib.csproj"
+      "path": "../StubLib/StubLib.csproj",
+      "msbuildProject": "../StubLib/StubLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -72,11 +72,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\StubLib\\StubLib.csproj": {
-              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\MC-Dex\\StubLib\\StubLib.csproj"
-            },
             "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
               "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+            },
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj"
             }
           }
         }

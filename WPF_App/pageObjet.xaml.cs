@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_App;
 
-namespace MC_Dex
+namespace WPF_App
 {
     /// <summary>
     /// Logique d'interaction pour pageObjet.xaml

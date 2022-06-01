@@ -18,7 +18,7 @@ using Microsoft.Win32;
 using Modele;
 using WPF_App;
 
-namespace MC_Dex
+namespace WPF_App
 {
     /// <summary>
     /// Logique d'interaction pour pageAjouter.xaml

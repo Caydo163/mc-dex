@@ -60,7 +60,7 @@ namespace Modele
             if(Items.Contains(item))
             {
                 items.RemoveAt(items.IndexOf(item));
-                SelectedItem = items.Last();
+                //SelectedItem = items.Last();
             }
         }
 

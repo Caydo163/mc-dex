@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 
-namespace MC_Dex
+namespace WPF_App
 {
     /// <summary>
     /// Logique d'interaction pour textBoxCraftUC.xaml

@@ -41,8 +41,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MC-Dex\StubLib\StubLib.csproj" />
     <ProjectReference Include="..\Modele\Modele.csproj" />
+    <ProjectReference Include="..\StubLib\StubLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
