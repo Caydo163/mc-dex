@@ -46,8 +46,6 @@ namespace WPF_App
         public PopUpListObject()
         {
             InitializeComponent();
-            //Mgr.LoadItems();
-            //Mgr.AjouterItem("Bloc actuel", "", "999", "img\\bloc_actuel.png", "",null, null);
             DataContext = Mgr;
         }
 
