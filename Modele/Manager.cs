@@ -177,5 +177,7 @@ namespace Modele
             ItemsRecherche = new ReadOnlyCollection<Item>(itemTrouve);
             return itemTrouve;
         }
+
+
     }
 }

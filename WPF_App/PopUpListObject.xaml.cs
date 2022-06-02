@@ -40,6 +40,8 @@ namespace WPF_App
         /// </summary>
         public int Pos { get; set; }
 
+        public MainWindow Window { get;set; }
+
         /// <summary>
         /// Constructeur de la classe
         /// </summary>
@@ -47,6 +49,11 @@ namespace WPF_App
         {
             InitializeComponent();
             DataContext = Mgr;
+            //if (Window.ModeNether)
+            //{
+            //    backgroundPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
+            //    backgroundMenuPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background_nether.png", UriKind.Relative));
+            //}
         }
 
 
@@ -57,10 +64,9 @@ namespace WPF_App
         /// <param name="e"></param>
         private void ButtonClose(object sender, RoutedEventArgs e)
         {
-            //if(listBoxItem.SelectedIndex != null)
-            //{
-            // Vérifier si element selectionner
-            switch(Pos)
+            if (listBoxItem.SelectedIndex > -1)
+            {
+                switch (Pos)
             {
                 case 1:
                     Craft.Button1_Image.Source = new BitmapImage(new Uri(Mgr.Items[listBoxItem.SelectedIndex].Image, UriKind.Relative));
@@ -104,8 +110,8 @@ namespace WPF_App
                     break;
 
             }
-            //}
-            popUpOpen = false;
+        }
+        popUpOpen = false;
             this.Close();
         }
 

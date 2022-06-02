@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_App"
         mc:Ignorable="d"
-        Title="PopUpListObject" Height="400" Width="300"
+        Title="PopUpListObject" Height="450" Width="300"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
@@ -13,18 +13,35 @@
 
     <DockPanel>
         <DockPanel.Background>
-            <ImageBrush ImageSource="img\background.png" Stretch="UniformToFill"/>
+            <ImageBrush x:Name="backgroundPopUpList" ImageSource="img\background.png" Stretch="UniformToFill"/>
         </DockPanel.Background>
-        <Border DockPanel.Dock="Top" Margin="0,0,0,10" >
+        
+        <Border DockPanel.Dock="Top" Margin="0,0,0,0" >
             <Border.Background>
-                <ImageBrush ImageSource="img\texture_grass.png" Stretch="UniformToFill"/>
+                <ImageBrush x:Name="backgroundMenuPopUpList" ImageSource="img\menu_background.png" Stretch="UniformToFill"/>
             </Border.Background>
             <Image Source="img\liste_des_objets.png" Width="250" Margin="0,5,0,15"/>
         </Border>
 
+        <!--<Border DockPanel.Dock="Top" Style="{StaticResource pageAjouter_borderGrid}" Height="50" VerticalAlignment="Top" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Style="{StaticResource pageAjouter_borderTextBox}" Margin="0,0,-5,0">
+                    <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="textBox_RechercheItem" />
+                </Border>
+                <Button Grid.Column="1" Click="Button_RechercherItem">
+                    <Image Source="img\loupe.png" Width="45"/>
+                </Button>
+            </Grid>
+        </Border>-->
+
         <Border VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider" DockPanel.Dock="Bottom">
             <Button Click="ButtonClose">
-                <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
+                <TextBlock x:Name="TEST" Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
             </Button>
         </Border>
 

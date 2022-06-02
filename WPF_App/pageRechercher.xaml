@@ -19,33 +19,20 @@
 
 
             <Border Style="{StaticResource pageAjouter_borderGrid}" Height="50" VerticalAlignment="Top" Grid.Row="1" Margin="0,30,0,0">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-                <Border Grid.Column="0" Style="{StaticResource pageAjouter_borderTextBox}" >
-                    <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="textBox_Recherche" KeyDown="ToucheEntree"/>
-                </Border>
-                <Button Grid.Column="1" Click="Button_Rechercher">
-                    <Image Source="img\loupe.png" Width="60"/>
-                </Button>
-            </Grid>
-        </Border>
-
-
-
-
+                    <Border Grid.Column="0" Style="{StaticResource pageAjouter_borderTextBox}" >
+                        <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="textBox_Recherche" KeyDown="ToucheEntree"/>
+                    </Border>
+                    <Button Grid.Column="1" Click="Button_Rechercher">
+                        <Image Source="img\loupe.png" Width="60"/>
+                    </Button>
+                </Grid>
+            </Border>
         </Grid>
-
-
-
-
-
-
     </Border>
-
-
-
 </UserControl>

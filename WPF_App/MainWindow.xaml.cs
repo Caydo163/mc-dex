@@ -22,11 +22,14 @@ namespace WPF_App
     public partial class MainWindow : Window
     {
         public static Manager Mgr => ((App)Application.Current).LeManager;
+        public bool ModeNether = false;
         public MainWindow()
         {
             InitializeComponent();
-            home Home = new();
-            Home.Window = this;
+            home Home = new()
+            {
+                Window = this
+            };
             contentControl.Content = Home;
             Mgr.LoadItems();
             DataContext = Mgr;
@@ -37,7 +40,7 @@ namespace WPF_App
             Mgr.SaveItems();
         }
 
-        private bool MessageConfirmationFermeturePageA()
+        private static bool MessageConfirmationFermeturePageA()
         {
             MessageBoxResult choix = MessageBox.Show("Voulez-vous vraiment quitter la page ajouter ?\nVos informations ne seront pas sauvegardé.", 
                 "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Information, MessageBoxResult.No);
@@ -72,18 +75,39 @@ namespace WPF_App
             {
                 this.Title = "MC-DEX - Accueil";
                 Mgr.modeRecherche = false;
-                home pageH = new();
-                pageH.Window = this;
+                home pageH = new()
+                {
+                    Window = this
+                };
                 contentControl.Content = pageH;
             }
+        }
+
+        public void Button_theme(object sender, RoutedEventArgs e)
+        {
+            if(!ModeNether)
+            {
+                backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
+                backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background_nether.png", UriKind.Relative));
+                ModeNether = true;
+            }
+            else
+            {
+                backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background2.png", UriKind.Relative));
+                backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background.png", UriKind.Relative));
+                ModeNether = false;
+            }
+
         }
 
         public void Button_ajouter(object sender, RoutedEventArgs e)
         {
             if(TestCollision())
             {
-                PageAjouter pageA = new();
-                pageA.Window = this;
+                PageAjouter pageA = new()
+                {
+                    Window = this
+                };
                 contentControl.Content = pageA;
                 this.Title = "MC-DEX - Ajouter";
             }
@@ -94,8 +118,10 @@ namespace WPF_App
         {
             if(TestCollision())
             {
-                pageRechercher pageR = new();
-                pageR.Window = this;
+                pageRechercher pageR = new()
+                {
+                    Window = this
+                };
                 contentControl.Content = pageR;
                 this.Title = "MC-DEX - Rechercher";
             }

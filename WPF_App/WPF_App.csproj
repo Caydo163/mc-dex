@@ -30,12 +30,12 @@
     <None Remove="img\logo.png" />
     <None Remove="img\loupe.png" />
     <None Remove="img\MC-Dex.png" />
+    <None Remove="img\menu_background.png" />
     <None Remove="img\Planche.png" />
     <None Remove="img\Poulet.png" />
     <None Remove="img\Seau.png" />
     <None Remove="img\Stone.png" />
     <None Remove="img\Terre.png" />
-    <None Remove="img\texture_grass.png" />
     <None Remove="img\texture_grass2.png" />
     <None Remove="img\Torche.png" />
   </ItemGroup>
@@ -86,7 +86,7 @@
     <Resource Include="img\Seau.png" />
     <Resource Include="img\Stone.png" />
     <Resource Include="img\Terre.png" />
-    <Resource Include="img\texture_grass.png">
+    <Resource Include="img\menu_background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\texture_grass2.png">

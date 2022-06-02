@@ -28,6 +28,10 @@ namespace WPF_App
         {
             InitializeComponent();
             DataContext = Mgr.SelectedItem;
+            //if(Window.ModeNether)
+            //{
+            //    backgroundPopUpSuppr.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
+            //}
         }
 
         private void Button_Confirmer(object sender, RoutedEventArgs e)

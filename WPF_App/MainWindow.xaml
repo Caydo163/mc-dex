@@ -13,18 +13,19 @@
 
     <DockPanel>
         <DockPanel.Background>
-            <ImageBrush ImageSource="/img/background2.png"/>
+            <ImageBrush ImageSource="/img/background2.png" x:Name="backgroundApp"/>
         </DockPanel.Background>
 
 
         <!--<local:menuUC DockPanel.Dock="Top" Loaded="menuUC_Loaded"/>-->
         <Grid MaxHeight="125" DockPanel.Dock="Top">
             <Grid.Background>
-                <ImageBrush ImageSource="img\texture_grass.png" Stretch="UniformToFill" />
+                <ImageBrush x:Name="backgroundMenu" ImageSource="img\menu_background.png" Stretch="UniformToFill" />
             </Grid.Background>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
@@ -60,10 +61,13 @@
 
             <Image Source="img\MC-Dex.png" Width="250" Grid.Column="1" Height="100" Margin="0,20,0,30"/>
 
-            <Button Grid.Column="2" Click="Button_ajouter">
+            <Button Grid.Column="2" Click="Button_theme">
                 <Image Width="100" Source="img\ajouter.png" />
             </Button>
-            <Button  Grid.Column="3" Click="Button_rechercher">
+            <Button Grid.Column="3" Click="Button_ajouter">
+                <Image Width="100" Source="img\ajouter.png" />
+            </Button>
+            <Button  Grid.Column="4" Click="Button_rechercher">
                 <Image Source="img\loupe.png" Width="80"/>
             </Button>
         </Grid>

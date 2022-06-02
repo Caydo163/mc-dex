@@ -50,7 +50,7 @@ namespace WPF_App
             {
                 Mgr.SelectedItem = Mgr.Items[listBox.SelectedIndex];
             }
-            pageObjet pageO = new pageObjet();
+            pageObjet pageO = new();
             Window.Title = "Item - " + Mgr.SelectedItem.Nom;
             pageO.Window = Window;
             pageO.chargementHome();
