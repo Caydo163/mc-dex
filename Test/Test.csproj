@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataContractPersistance\DataContractPersistance.csproj" />
     <ProjectReference Include="..\Modele\Modele.csproj" />
+    <ProjectReference Include="..\StubLib\StubLib.csproj" />
   </ItemGroup>
 
 </Project>

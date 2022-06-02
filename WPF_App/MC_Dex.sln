@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Item_UT", "..\Item_UT\Item_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StubLib", "..\StubLib\StubLib.csproj", "{BC77586E-BAD5-480E-94DB-562524DB200B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContractPersistance", "..\DataContractPersistance\DataContractPersistance.csproj", "{9A214504-882F-49B2-8AB6-AA2757D3F08D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BC77586E-BAD5-480E-94DB-562524DB200B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC77586E-BAD5-480E-94DB-562524DB200B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC77586E-BAD5-480E-94DB-562524DB200B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A214504-882F-49B2-8AB6-AA2757D3F08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A214504-882F-49B2-8AB6-AA2757D3F08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A214504-882F-49B2-8AB6-AA2757D3F08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A214504-882F-49B2-8AB6-AA2757D3F08D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

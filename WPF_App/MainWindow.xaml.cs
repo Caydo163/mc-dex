@@ -32,6 +32,11 @@ namespace WPF_App
             DataContext = Mgr;
         }
 
+        private void MainWindow_Closed(object sender, EventArgs e)
+        {
+            Mgr.SaveItems();
+        }
+
         private bool MessageConfirmationFermeturePageA()
         {
             MessageBoxResult choix = MessageBox.Show("Voulez-vous vraiment quitter la page ajouter ?\nVos informations ne seront pas sauvegardé.", 

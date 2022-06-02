@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Modele;
 
 namespace StubLib
@@ -32,6 +33,11 @@ namespace StubLib
             items[0].AjouterCraft(items[0], null, items[6], items[0], null, null, null, items[1], items[2], 1, items[4]);
 
             return items;
+        }
+
+        public void SaveItems(IEnumerable<Item> item)
+        {
+            Debug.WriteLine("Sauvegarde demandé");
         }
     }
 }

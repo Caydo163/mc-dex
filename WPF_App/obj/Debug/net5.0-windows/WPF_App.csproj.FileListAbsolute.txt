@@ -64,3 +64,5 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\refint\WPF_A
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\ref\WPF_App.dll
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\DataContractPersistance.dll
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\DataContractPersistance.pdb

@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Modele
 {
+    [DataContract, KnownType(typeof(CraftObjet)), KnownType(typeof(CraftUtilisation))]
+
     public abstract class Craft
     {
-
+        [DataMember]
         public Item Objet0_0
         {
             get { return objet0_0; }
@@ -16,7 +19,7 @@ namespace Modele
         }
         private Item objet0_0;
 
-
+        [DataMember]
         public Item Objet0_1
         {
             get { return objet0_1; }
@@ -24,20 +27,21 @@ namespace Modele
         }
         private Item objet0_1;
 
+        [DataMember]
         public Item Objet0_2
         {
             get { return objet0_2; }
             set { objet0_2 = value; }
         }
         private Item objet0_2;
-
+        [DataMember]
         public Item Objet1_0
         {
             get { return objet1_0; }
             set { objet1_0 = value; }
         }
         private Item objet1_0;
-
+        [DataMember]
         public Item Objet1_1
         {
             get { return objet1_1; }
@@ -45,7 +49,7 @@ namespace Modele
         }
         private Item objet1_1;
 
-
+        [DataMember]
         public Item Objet1_2
         {
             get { return objet1_2; }
@@ -53,7 +57,7 @@ namespace Modele
         }
         private Item objet1_2;
 
-
+        [DataMember]
         public Item Objet2_0
         {
             get { return objet2_0; }
@@ -61,7 +65,7 @@ namespace Modele
         }
         private Item objet2_0;
 
-
+        [DataMember]
         public Item Objet2_1
         {
             get { return objet2_1; }
@@ -69,7 +73,7 @@ namespace Modele
         }
         private Item objet2_1;
 
-
+        [DataMember]
         public Item Objet2_2
         {
             get { return objet2_2; }
@@ -77,7 +81,7 @@ namespace Modele
         }
         private Item objet2_2;
 
-
+        [DataMember]
         public int NbFinal
         {
             get { return nbFinal; }

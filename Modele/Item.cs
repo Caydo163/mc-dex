@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 
 namespace Modele
 {
+    [DataContract]
     /// <summary>
     /// Classe contenant toutes les informations d'un item
     /// </summary>
@@ -27,6 +29,7 @@ namespace Modele
         /// <summary>
         /// Propriété contenant le nom de l'item
         /// </summary>
+        [DataMember]
         public string Nom
         {
             get
@@ -43,6 +46,7 @@ namespace Modele
         /// <summary>
         /// Propriété contenant l'identifiant de l'item
         /// </summary>
+        [DataMember(Order = 0)]
         public string Id
         {
             get
@@ -62,6 +66,7 @@ namespace Modele
         /// <summary>
         /// Propriété contenant l'image de l'item
         /// </summary>
+        [DataMember]
         public string Image
         {
             get
@@ -78,6 +83,7 @@ namespace Modele
         /// <summary>
         /// Propriété contenant la description de l'item
         /// </summary>
+        [DataMember]
         public string Desc
         {
             get
@@ -94,6 +100,7 @@ namespace Modele
         /// <summary>
         /// Propriété contenant le nom anglais de l'item
         /// </summary>
+        [DataMember (EmitDefaultValue = false)]
         public string NomE
         {
             get
@@ -112,6 +119,7 @@ namespace Modele
         /// <summary>
         /// Dictionnaire contenant les statistiques de litem
         /// </summary>
+        [DataMember]
         public Dictionary<string, string> ListeStats = new();
 
         /// <summary>
@@ -141,6 +149,7 @@ namespace Modele
         /// <summary>
         /// Liste de paire contenant des textes
         /// </summary>
+        [DataMember]
         public List<KeyValuePair<string, string>> ListeTexte = new();
         
 
@@ -157,11 +166,13 @@ namespace Modele
             //}
             ListeTexte.Add(new KeyValuePair<string, string>(titre, partie));
         }
+        
 
 
         /// <summary>
         /// Liste contenant les carfts de l'item
         /// </summary>
+        [DataMember]
         public List<Craft> ListeCraft = new();
 
         /// <summary>

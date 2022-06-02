@@ -23,8 +23,12 @@ C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Test.runtimeconfig.json
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Test.dll
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Test.pdb
+C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\DataContractPersistance.dll
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Modele.dll
+C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\StubLib.dll
+C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\DataContractPersistance.pdb
 C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\Modele.pdb
+C:\Users\justi\source\repos\mc-dex\Test\bin\Debug\net5.0\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\justi\source\repos\mc-dex\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache

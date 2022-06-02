@@ -13,9 +13,6 @@ C:\Users\justi\source\repos\mc-dex\MC-Dex\StubLib\obj\Debug\net5.0\StubLib.dll
 C:\Users\justi\source\repos\mc-dex\MC-Dex\StubLib\obj\Debug\net5.0\refint\StubLib.dll
 C:\Users\justi\source\repos\mc-dex\MC-Dex\StubLib\obj\Debug\net5.0\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\MC-Dex\StubLib\obj\Debug\net5.0\ref\StubLib.dll
-C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.dll
-C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\refint\StubLib.dll
-C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\StubLib\bin\Debug\net5.0\StubLib.deps.json
 C:\Users\justi\source\repos\mc-dex\StubLib\bin\Debug\net5.0\StubLib.dll
 C:\Users\justi\source\repos\mc-dex\StubLib\bin\Debug\net5.0\StubLib.pdb
@@ -27,4 +24,7 @@ C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.AssemblyInfo
 C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.AssemblyInfo.cs
 C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.csproj.CoreCompileInputs.cache
 C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.csproj.CopyComplete
+C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.dll
+C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\refint\StubLib.dll
+C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\StubLib\obj\Debug\net5.0\ref\StubLib.dll

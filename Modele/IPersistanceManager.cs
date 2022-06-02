@@ -9,5 +9,7 @@ namespace Modele
     public interface IPersistanceManager
     {
         IEnumerable<Item> LoadItems();
+
+        void SaveItems(IEnumerable<Item> item);
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using DataContractPersistance;
 using Modele;
 
 namespace WPF_App
@@ -14,6 +15,6 @@ namespace WPF_App
     /// </summary>
     public partial class App : Application
     {
-        public Manager LeManager { get; private set; } = new Manager(new StubLib.Stub());
+        public Manager LeManager { get; private set; } = new Manager(new DataContractPers());
     }
 }

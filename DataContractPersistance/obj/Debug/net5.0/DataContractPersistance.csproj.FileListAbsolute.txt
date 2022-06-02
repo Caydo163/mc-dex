@@ -1,0 +1,15 @@
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\bin\Debug\net5.0\DataContractPersistance.deps.json
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\bin\Debug\net5.0\DataContractPersistance.dll
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\bin\Debug\net5.0\DataContractPersistance.pdb
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\bin\Debug\net5.0\Modele.dll
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\bin\Debug\net5.0\Modele.pdb
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.csproj.AssemblyReference.cache
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.AssemblyInfoInputs.cache
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.AssemblyInfo.cs
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.csproj.CoreCompileInputs.cache
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.csproj.CopyComplete
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.dll
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\refint\DataContractPersistance.dll
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\DataContractPersistance.pdb
+C:\Users\justi\source\repos\mc-dex\DataContractPersistance\obj\Debug\net5.0\ref\DataContractPersistance.dll

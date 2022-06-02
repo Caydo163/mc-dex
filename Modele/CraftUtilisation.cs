@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Modele
 {
+    [DataContract]
     public class CraftUtilisation : Craft
     {
-        
+        [DataMember]
         public Item ObjetFinal
         {
             get { return objetFinal; }
@@ -16,6 +18,7 @@ namespace Modele
         }
         private Item objetFinal;
 
+        [DataMember]
         public string NomBase
         {
             get { return nomBase; }

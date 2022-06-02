@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WPF_App"
         mc:Ignorable="d"
         Title="MC-DEX - Accueil" Height="450" Width="800"
-        Icon="img\command_block.png">
+        Icon="img\command_block.png"
+        Closed="MainWindow_Closed">
 
 
 

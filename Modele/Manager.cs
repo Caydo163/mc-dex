@@ -61,6 +61,14 @@ namespace Modele
         }
 
         /// <summary>
+        /// Méthode permettant de sauvegarder la liste d'item
+        /// </summary>
+        public void SaveItems()
+        {
+            Pers.SaveItems(items);
+        }
+
+        /// <summary>
         /// Méthode permettant d'ajouter un item à la liste
         /// </summary>
         /// <param name="nom">Nom de l'item</param>

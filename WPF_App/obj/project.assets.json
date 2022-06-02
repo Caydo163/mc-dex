@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "DataContractPersistance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Modele": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataContractPersistance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataContractPersistance.dll": {}
+        }
+      },
       "Modele/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -28,6 +41,11 @@
     }
   },
   "libraries": {
+    "DataContractPersistance/1.0.0": {
+      "type": "project",
+      "path": "../DataContractPersistance/DataContractPersistance.csproj",
+      "msbuildProject": "../DataContractPersistance/DataContractPersistance.csproj"
+    },
     "Modele/1.0.0": {
       "type": "project",
       "path": "../Modele/Modele.csproj",
@@ -41,6 +59,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "DataContractPersistance >= 1.0.0",
       "Modele >= 1.0.0",
       "StubLib >= 1.0.0"
     ]
@@ -72,6 +91,9 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj"
+            },
             "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
               "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
             },
