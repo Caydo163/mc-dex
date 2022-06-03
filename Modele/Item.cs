@@ -38,7 +38,17 @@ namespace Modele
             }
             set
             {
-                nom = value[0].ToString().ToUpper() + value[1..].ToLower();
+                if (value.Length > 0)
+                {
+                    if (value.Length == 1)
+                    {
+                        nom = value[0].ToString().ToUpper();
+                    }
+                    else
+                    {
+                        nom = value[0].ToString().ToUpper() + value[1..].ToLower();
+                    }
+                }
             }
         }
         private string nom;
@@ -109,7 +119,17 @@ namespace Modele
             }
             set
             {
-                nomAnglais = value[0].ToString().ToUpper() + value[1..].ToLower();
+                if (value.Length > 0)
+                {
+                    if (value.Length == 1)
+                    {
+                        nomAnglais = value[0].ToString().ToUpper();
+                    }
+                    else
+                    {
+                        nomAnglais = value[0].ToString().ToUpper() + value[1..].ToLower();
+                    }
+                }
             }
         }
         private string nomAnglais;

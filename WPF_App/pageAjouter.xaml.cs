@@ -155,16 +155,18 @@ namespace WPF_App
                 check = true;
             }
 
-            //foreach (textBoxCraftUC elt in listeTextBoxCraft)
-            //{
-            //    if (!Regex.IsMatch(elt.nbrItemObtenu.Text, @"^[0-9]+$") || elt.nbrItemObtenu.Text != "")
-            //    {
-            //        elt.MessageErreurNbItem.Visibility = Visibility;
-            //        check = true;
-            //    }
-            //}
 
-            return check;
+
+                //foreach (textBoxCraftUC elt in listeTextBoxCraft)
+                //{
+                //    if (!Regex.IsMatch(elt.nbrItemObtenu.Text, @"^[0-9]+$") || elt.nbrItemObtenu.Text != "")
+                //    {
+                //        elt.MessageErreurNbItem.Visibility = Visibility;
+                //        check = true;
+                //    }
+                //}
+
+                return check;
         }
 
         private void Button_Valider(object sender, RoutedEventArgs e)
@@ -215,10 +217,10 @@ namespace WPF_App
                 // Regarder si elt vide
                 foreach(textBoxCraftUC elt in listeTextBoxCraft)
                 {
-                    int nb = Convert.ToInt16(elt.nbrItemObtenu.Text);
-                    if (elt.nbrItemObtenu.Text == "")
+                    int nb = 1;
+                    if (elt.nbrItemObtenu.Text != "")
                     {
-                        nb = 1;
+                        nb = Convert.ToInt16(elt.nbrItemObtenu.Text);
                     }
 
                     item.AjouterCraft(elt.ListItemCraft[0], elt.ListItemCraft[1], elt.ListItemCraft[2], elt.ListItemCraft[3], elt.ListItemCraft[4], elt.ListItemCraft[5], elt.ListItemCraft[6],

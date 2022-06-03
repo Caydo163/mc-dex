@@ -72,4 +72,43 @@
     <Nom z:Id="57">Planche</Nom>
     <Id z:Id="58">112</Id>
   </Item>
+  <Item z:Id="59">
+    <Desc z:Id="60">Une boite</Desc>
+    <Image z:Id="61">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (6).png</Image>
+    <ListeCraft z:Id="62" z:Size="2">
+      <Craft z:Id="63" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 z:Ref="2" i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+        <NomBase z:Id="64">Boite</NomBase>
+        <ObjetFinal z:Ref="10" i:nil="true" />
+      </Craft>
+      <Craft z:Id="65" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 z:Ref="10" i:nil="true" />
+        <Objet0_2 z:Ref="10" i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+        <NomBase z:Ref="64" i:nil="true" />
+        <ObjetFinal z:Ref="2" i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="66" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="67" z:Size="0" />
+    <Nom z:Ref="64" i:nil="true" />
+    <NomE z:Id="68">Box</NomE>
+    <Id z:Id="69">1</Id>
+  </Item>
 </ArrayOfItem>
