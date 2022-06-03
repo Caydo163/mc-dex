@@ -130,20 +130,23 @@ namespace Modele
         private string ModificationStringRecherche(string mot)
         {
             string newMot = "";
-            foreach (char lettre in Regex.Replace(mot, @"\s", "").ToLower())
+            if (mot != null)
             {
-                newMot += lettre switch
+                foreach (char lettre in Regex.Replace(mot, @"\s", "").ToLower())
                 {
-                    'à' or 'á' or 'â' or 'ä' => 'a',
-                    'é' or 'è' or 'ê' or 'ë' => 'e',
-                    'ô' or 'ö' or 'ò' or 'ó' => 'o',
-                    'ï' or 'î' or 'ì' or 'í' => 'i',
-                    'ù' or 'ú' or 'û' or 'ü' => 'u',
-                    'ÿ' => 'y',
-                    'ç' => 'c',
-                    'ñ' => 'n',
-                     _  => lettre,
-                };
+                    newMot += lettre switch
+                    {
+                        'à' or 'á' or 'â' or 'ä' => 'a',
+                        'é' or 'è' or 'ê' or 'ë' => 'e',
+                        'ô' or 'ö' or 'ò' or 'ó' => 'o',
+                        'ï' or 'î' or 'ì' or 'í' => 'i',
+                        'ù' or 'ú' or 'û' or 'ü' => 'u',
+                        'ÿ' => 'y',
+                        'ç' => 'c',
+                        'ñ' => 'n',
+                        _ => lettre,
+                    };
+                }
             }
             return newMot;
         }
@@ -158,27 +161,9 @@ namespace Modele
         /// <returns></returns>
         public IEnumerable<Item> Rechercher(string mot)
         {
-            List<Item> itemTrouve = new();
             mot = ModificationStringRecherche(mot);
-            
-
-            foreach (Item item in Items)
-            {
-                string nomItem = ModificationStringRecherche(item.Nom);
-                string nomItemE = "";
-                if (item.NomE != null)
-                {
-                    nomItemE = ModificationStringRecherche(item.NomE);
-                }
-
-
-                if (nomItem.Contains(mot) || item.Id.Contains(mot) || nomItemE.Contains(mot))
-                {
-                    itemTrouve.Add(item);
-                }
-
-            }
-            ItemsRecherche = new ReadOnlyCollection<Item>(itemTrouve);
+            IEnumerable<Item> itemTrouve = Items.Where(item => ModificationStringRecherche(item.Nom).Contains(mot) || ModificationStringRecherche(item.NomE).Contains(mot) || item.Id.Contains(mot));
+            ItemsRecherche = new ReadOnlyCollection<Item>(itemTrouve.ToList());
             return itemTrouve;
         }
 
