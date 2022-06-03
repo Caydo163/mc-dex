@@ -24,14 +24,15 @@ namespace WPF_App
         public MainWindow Window { get; set; }
         public static Manager Mgr => ((App)Application.Current).LeManager;
         public static bool popUpOpen = false;
-        public PopUpDemandeSuppression()
+        public PopUpDemandeSuppression(MainWindow window)
         {
             InitializeComponent();
             DataContext = Mgr.SelectedItem;
-            //if(Window.ModeNether)
-            //{
-            //    backgroundPopUpSuppr.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
-            //}
+            Window = window;
+            if (Window.ModeNether)
+            {
+                backgroundPopUpSuppr.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
+            }
         }
 
         private void Button_Confirmer(object sender, RoutedEventArgs e)

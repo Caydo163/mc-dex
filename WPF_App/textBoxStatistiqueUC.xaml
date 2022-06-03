@@ -38,7 +38,7 @@
                         
                     <Button Width="40" Height="40" BorderThickness="0" Click="Button_supprimeLigneStat" HorizontalAlignment="Left">
                         <Button.Background>
-                            <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
+                            <ImageBrush ImageSource="img\supprimer.png" Stretch="UniformToFill"/>
                         </Button.Background>
                     </Button>
                     <Button Width="40" Height="40" BorderThickness="0" Click="Button_ajoutLigneStat" HorizontalAlignment="Left" Margin="0,0,15,0">

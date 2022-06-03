@@ -28,7 +28,7 @@
                         <!--<local:textBoxUC Nom="Nom (anglais)" x:Name="textBoxNomE"/>-->
                         <local:textBoxUC Nom="Identifiant" x:Name="textBoxId"/>
 
-                        <Border Style="{StaticResource pageAjouter_borderGrid}">
+                        <Border Style="{DynamicResource pageAjouter_borderGrid}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="160"/>
@@ -51,7 +51,7 @@
 
 
 
-                        <Border Style="{StaticResource pageAjouter_borderGrid}">
+                        <Border Style="{DynamicResource pageAjouter_borderGrid}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="160"/>
@@ -161,7 +161,7 @@
 
 
 
-            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider">
+            <Border Grid.Column="1" VerticalAlignment="Top" Height="50" Margin="40,15,20,20" Style="{DynamicResource pageAjouter_borderGrid}" x:Name="ButtonValider">
                 <Button Click="Button_Valider">
                     <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
                 </Button>

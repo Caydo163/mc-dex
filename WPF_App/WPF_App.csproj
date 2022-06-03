@@ -13,8 +13,12 @@
     <None Remove="img\Arc.png" />
     <None Remove="img\background.png" />
     <None Remove="img\background2.png" />
+    <None Remove="img\background_nether.png" />
     <None Remove="img\Bateau.png" />
     <None Remove="img\Bouclier.png" />
+    <None Remove="img\bouton_mode_nether.png" />
+    <None Remove="img\bouton_mode_overworld.png" />
+    <None Remove="img\Briques_du_Nether.png" />
     <None Remove="img\Buche.png" />
     <None Remove="img\Charbon.png" />
     <None Remove="img\Citrouille.png" />
@@ -25,16 +29,20 @@
     <None Remove="img\Etabli.png" />
     <None Remove="img\Fer.png" />
     <None Remove="img\flecheCraft.png" />
+    <None Remove="img\Grass_Block.png" />
     <None Remove="img\liste_des_objets.png" />
     <None Remove="img\Lit.png" />
     <None Remove="img\logo.png" />
     <None Remove="img\loupe.png" />
     <None Remove="img\MC-Dex.png" />
     <None Remove="img\menu_background.png" />
+    <None Remove="img\menu_background_nether.png" />
+    <None Remove="img\MissingTextureBlock.png" />
     <None Remove="img\Planche.png" />
     <None Remove="img\Poulet.png" />
     <None Remove="img\Seau.png" />
     <None Remove="img\Stone.png" />
+    <None Remove="img\supprimer.png" />
     <None Remove="img\Terre.png" />
     <None Remove="img\texture_grass2.png" />
     <None Remove="img\Torche.png" />
@@ -58,8 +66,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\background2.png" />
+    <Resource Include="img\background_nether.png" />
     <Resource Include="img\Bateau.png" />
     <Resource Include="img\Bouclier.png" />
+    <Resource Include="img\bouton_mode_nether.png" />
+    <Resource Include="img\bouton_mode_overworld.png" />
+    <Resource Include="img\Briques_du_Nether.png" />
     <Resource Include="img\Buche.png" />
     <Resource Include="img\Charbon.png" />
     <Resource Include="img\Citrouille.png" />
@@ -70,6 +82,7 @@
     <Resource Include="img\Etabli.png" />
     <Resource Include="img\Fer.png" />
     <Resource Include="img\flecheCraft.png" />
+    <Resource Include="img\Grass_Block.png" />
     <Resource Include="img\liste_des_objets.png" />
     <Resource Include="img\Lit.png" />
     <Resource Include="img\logo.png">
@@ -81,10 +94,13 @@
     <Resource Include="img\MC-Dex.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\menu_background_nether.png" />
+    <Resource Include="img\MissingTextureBlock.png" />
     <Resource Include="img\Planche.png" />
     <Resource Include="img\Poulet.png" />
     <Resource Include="img\Seau.png" />
     <Resource Include="img\Stone.png" />
+    <Resource Include="img\supprimer.png" />
     <Resource Include="img\Terre.png" />
     <Resource Include="img\menu_background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -152,7 +168,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Update="pageRechercher.xaml">
+    <Page Update="barreRecherche.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

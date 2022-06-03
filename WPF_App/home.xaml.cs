@@ -24,7 +24,14 @@ namespace WPF_App
 
         public static Manager Mgr => ((App)Application.Current).LeManager;
         private MainWindow window;
-        public MainWindow Window { get => window; set => window = value; }
+        public MainWindow Window { 
+            get => window; 
+            set
+            {
+                window = value;
+                barreRecherche.Window = value;
+            } 
+        }
         public home()
         {
             InitializeComponent();
@@ -37,6 +44,7 @@ namespace WPF_App
             {
                 listBox.ItemsSource = Mgr.Items;
             }
+            barreRecherche.Home = this;
 
         }
 

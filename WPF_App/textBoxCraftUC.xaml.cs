@@ -22,6 +22,9 @@ namespace WPF_App
     /// </summary>
     public partial class textBoxCraftUC : UserControl
     {
+
+        public MainWindow Window { get; set; }
+
         /// <summary>
         /// Constructeur de la classe
         /// </summary>
@@ -41,7 +44,7 @@ namespace WPF_App
             if(! PopUpListObject.popUpOpen)
             {
                 Debug.WriteLine(Mouse.GetPosition(null));
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 1
@@ -54,7 +57,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 2
@@ -67,7 +70,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 3
@@ -80,7 +83,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 4
@@ -93,7 +96,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 5
@@ -106,7 +109,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 6
@@ -119,7 +122,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 7
@@ -132,7 +135,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 8
@@ -145,7 +148,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 9
@@ -158,7 +161,7 @@ namespace WPF_App
         {
             if (!PopUpListObject.popUpOpen)
             {
-                PopUpListObject popUp = new()
+                PopUpListObject popUp = new(Window)
                 {
                     Craft = this,
                     Pos = 10

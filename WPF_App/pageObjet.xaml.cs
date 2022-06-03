@@ -40,6 +40,9 @@ namespace WPF_App
             detail.Window = Window;
         }
 
+        /// <summary>
+        /// Ajouter les userControl nécessaire en fonction des informations de l'item
+        /// </summary>
         private void Creation_Page()
         {
             craftUC zoneCraftO = new();
@@ -52,7 +55,7 @@ namespace WPF_App
 
             foreach (Craft elt in Mgr.SelectedItem.ListeCraft)
             {
-                //CraftObjet craft1 = (CraftObjet)elt;
+                
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     grilleCraftUC craftUC = new();
@@ -73,9 +76,11 @@ namespace WPF_App
                     List<KeyValuePair<string, int>> listIngredient = elt.CalculIngredient();
                     foreach (KeyValuePair<string, int> ing in listIngredient)
                     {
-                        TextBlock textBlock = new();
-                        textBlock.Text = "* " + ing.Value.ToString() + " " + ing.Key;
-                        textBlock.Style = (Style)((App)Application.Current).Resources["pageObjet_textePartie"];
+                        TextBlock textBlock = new()
+                        {
+                            Text = "* " + ing.Value.ToString() + " " + ing.Key,
+                            Style = (Style)((App)Application.Current).Resources["pageObjet_textePartie"]
+                        };
                         craftUC.stackPanelGrilleCraft.Children.Add(textBlock);
                     }
 
@@ -110,8 +115,10 @@ namespace WPF_App
                     List<KeyValuePair<string, int>> listIngredient = craft.CalculIngredient();
                     foreach (KeyValuePair<string, int> ing in listIngredient)
                     {
-                        TextBlock textBlock = new();
-                        textBlock.Style = (Style)((App)Application.Current).Resources["pageObjet_textePartie"];
+                        TextBlock textBlock = new()
+                        {
+                            Style = (Style)((App)Application.Current).Resources["pageObjet_textePartie"]
+                        };
                         if (ing.Key[0] == '§')
                         {
                             textBlock.Text = "* " + ing.Value.ToString() + " " + ing.Key[1..];
@@ -200,10 +207,7 @@ namespace WPF_App
         {
             if (!PopUpDemandeSuppression.popUpOpen)
             {
-                PopUpDemandeSuppression popUp = new()
-                {
-                    Window = Window
-                };
+                PopUpDemandeSuppression popUp = new(Window);
                 PopUpDemandeSuppression.popUpOpen = true;
                 popUp.Show();
                 

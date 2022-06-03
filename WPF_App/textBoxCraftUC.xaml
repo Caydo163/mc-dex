@@ -6,9 +6,9 @@
              xmlns:local="clr-namespace:WPF_App"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
-    
-    <Border Style="{StaticResource pageAjouter_borderGrid}">
+
+
+    <Border Style="{DynamicResource pageAjouter_borderGrid}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="160"/>

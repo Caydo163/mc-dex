@@ -42,7 +42,7 @@
     <Page Update="pageObjet.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="pageRechercher.xaml">
+    <Page Update="barreRecherche.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PopUpDemandeSuppression.xaml">

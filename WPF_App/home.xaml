@@ -8,26 +8,28 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     
-    
-    <!--<ScrollViewer VerticalScrollBarVisibility="Hidden">
-        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Name="wrapPanelHome">
+   
+    <Grid x:Name="gridHome">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-            <local:ItemUC Nom="Buche" ImageName="img\Buche.png"/>
-          
-        </WrapPanel>
-    </ScrollViewer>-->
-    <ListBox x:Name="listBox" ItemsSource="{Binding Items}" Background="{x:Null}" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-             ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="ChoixItem" >
-        <ListBox.ItemTemplate>
-            <DataTemplate>
-                <local:ItemUC Nom="{Binding Nom}" Image="{Binding Image}"/>
-            </DataTemplate>
-        </ListBox.ItemTemplate>
-        
-        <ListBox.ItemsPanel>
-            <ItemsPanelTemplate>
-                <WrapPanel IsItemsHost="True" HorizontalAlignment="Center"/>
-            </ItemsPanelTemplate>
-        </ListBox.ItemsPanel>
-    </ListBox>
+        <local:barreRecherche Visibility="Collapsed" x:Name="barreRecherche" Margin="50,5,50,10"/>
+
+        <ListBox x:Name="listBox" Grid.Row="1" ItemsSource="{Binding Items}" Background="{x:Null}" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                 ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="ChoixItem" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <local:ItemUC Nom="{Binding Nom}" Image="{Binding Image}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+    </Grid>
 </UserControl>

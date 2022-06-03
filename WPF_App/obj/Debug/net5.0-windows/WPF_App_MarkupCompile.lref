@@ -1,5 +1,6 @@
 ﻿
 FC:\Users\justi\source\repos\mc-dex\WPF_App\App.xaml;;
+FC:\Users\justi\source\repos\mc-dex\WPF_App\barreRecherche.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\boutonAjoutUC.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\craftUC.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\grilleCraftUC.xaml;;
@@ -10,7 +11,6 @@ FC:\Users\justi\source\repos\mc-dex\WPF_App\MainWindow.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\menuUC.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\pageAjouter.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\pageObjet.xaml;;
-FC:\Users\justi\source\repos\mc-dex\WPF_App\pageRechercher.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\PopUpDemandeSuppression.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\PopUpListObject.xaml;;
 FC:\Users\justi\source\repos\mc-dex\WPF_App\statistiqueUC.xaml;;

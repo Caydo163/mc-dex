@@ -6,6 +6,7 @@
 
     <Application.Resources>
         <!-- Général -->
+        <SolidColorBrush x:Key="MainColor" Color="#538f28"></SolidColorBrush>
         <FontFamily x:Key="Minecraft">font\minecraft_font.ttf#Minecraft</FontFamily>
         <Style TargetType="Button">
             <Setter Property="Background" Value="{x:Null}"/>
@@ -26,7 +27,7 @@
         <Style TargetType="Border" x:Key="pageAjouter_borderGrid">
             <Setter Property="CornerRadius" Value="20"/>
             <Setter Property="BorderThickness" Value="5"/>
-            <Setter Property="Background" Value="#538f28"/>
+            <Setter Property="Background" Value="{DynamicResource MainColor}"/>
             <Setter Property="Margin" Value="0,5"/>
         </Style>
         <Style TargetType="Border" x:Key="pageAjouter_borderTextBox">

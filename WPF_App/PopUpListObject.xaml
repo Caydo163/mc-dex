@@ -13,7 +13,7 @@
 
     <DockPanel>
         <DockPanel.Background>
-            <ImageBrush x:Name="backgroundPopUpList" ImageSource="img\background.png" Stretch="UniformToFill"/>
+            <ImageBrush x:Name="backgroundPopUpList" ImageSource="img\background2.png" Stretch="UniformToFill"/>
         </DockPanel.Background>
         
         <Border DockPanel.Dock="Top" Margin="0,0,0,0" >
@@ -23,7 +23,9 @@
             <Image Source="img\liste_des_objets.png" Width="250" Margin="0,5,0,15"/>
         </Border>
 
-        <!--<Border DockPanel.Dock="Top" Style="{StaticResource pageAjouter_borderGrid}" Height="50" VerticalAlignment="Top" >
+        
+        
+        <Border DockPanel.Dock="Top" Style="{StaticResource pageAjouter_borderGrid}" Height="50" VerticalAlignment="Top" >
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -31,14 +33,16 @@
                 </Grid.ColumnDefinitions>
 
                 <Border Grid.Column="0" Style="{StaticResource pageAjouter_borderTextBox}" Margin="0,0,-5,0">
-                    <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="textBox_RechercheItem" />
+                    <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="textBox_RechercheItem" TextChanged="RechercheItem"/>
                 </Border>
-                <Button Grid.Column="1" Click="Button_RechercherItem">
+                <Button Grid.Column="1">
                     <Image Source="img\loupe.png" Width="45"/>
                 </Button>
             </Grid>
-        </Border>-->
+        </Border>
 
+        
+        
         <Border VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider" DockPanel.Dock="Bottom">
             <Button Click="ButtonClose">
                 <TextBlock x:Name="TEST" Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>

@@ -5,11 +5,14 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.runt
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.runtimeconfig.dev.json
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.dll
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\WPF_App.pdb
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\DataContractPersistance.dll
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\Modele.dll
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.dll
+C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\DataContractPersistance.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\Modele.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\StubLib.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.csproj.AssemblyReference.cache
+C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\barreRecherche.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\boutonAjoutUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\craftUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\grilleCraftUC.g.cs
@@ -20,7 +23,6 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\MainWindow.g
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\menuUC.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\pageAjouter.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\pageObjet.g.cs
-C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\pageRechercher.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\PopUpDemandeSuppression.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\PopUpListObject.g.cs
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\statistiqueUC.g.cs
@@ -34,6 +36,7 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\GeneratedInt
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App_MarkupCompile.cache
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App_MarkupCompile.lref
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\App.baml
+C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\barreRecherche.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\boutonAjoutUC.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\craftUC.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\grilleCraftUC.baml
@@ -44,7 +47,6 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\MainWindow.b
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\menuUC.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\pageAjouter.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\pageObjet.baml
-C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\pageRechercher.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\PopUpDemandeSuppression.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\PopUpListObject.baml
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\statistiqueUC.baml
@@ -64,5 +66,3 @@ C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\refint\WPF_A
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
 C:\Users\justi\source\repos\mc-dex\WPF_App\obj\Debug\net5.0-windows\ref\WPF_App.dll
-C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\DataContractPersistance.dll
-C:\Users\justi\source\repos\mc-dex\WPF_App\bin\Debug\net5.0-windows\DataContractPersistance.pdb

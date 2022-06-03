@@ -16,7 +16,7 @@
 
     <DockPanel>
         <DockPanel.Background>
-            <ImageBrush x:Name="backgroundPopUpSuppr" ImageSource="img\background.png" Stretch="UniformToFill"/>
+            <ImageBrush x:Name="backgroundPopUpSuppr" ImageSource="img\background2.png" Stretch="UniformToFill"/>
         </DockPanel.Background>
 
 

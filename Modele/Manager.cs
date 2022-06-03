@@ -38,7 +38,7 @@ namespace Modele
         /// </summary>
         public Item SelectedItem { get; set; }
 
-        public IPersistanceManager Pers { get; private set; }
+        public IPersistanceManager Pers { get; set; }
 
         /// <summary>
         /// Constructeur du la classe
@@ -90,9 +90,13 @@ namespace Modele
                 }
             }
 
-            Item item = new(nom, id, image, desc);
 
-            foreach(KeyValuePair<string, string> elt in listeTexte)
+            Item item = new(nom, id, image, desc)
+            {
+                NomE = nomE
+            };
+
+            foreach (KeyValuePair<string, string> elt in listeTexte)
             {
                 item.ListeTexte.Add(elt);
             }

@@ -41,7 +41,10 @@ namespace WPF_App
         public List<textBoxCraftUC> listeTextBoxCraft = new();
         private void Button_AjouterCraft(object sender, RoutedEventArgs e)
         {
-            textBoxCraftUC box = new();
+            textBoxCraftUC box = new()
+            {
+                Window = Window,
+            };
             listeTextBoxCraft.Add(box);
             panelBlocAjout.Children.Add(box);
         }

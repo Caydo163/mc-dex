@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace WPF_App
 {
     /// <summary>
@@ -89,12 +91,16 @@ namespace WPF_App
             {
                 backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
                 backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background_nether.png", UriKind.Relative));
+                imageBoutonTheme.Source = new BitmapImage(new Uri("..\\..\\..\\img\\bouton_mode_overworld.png", UriKind.Relative));
+                Application.Current.Resources["MainColor"] = new SolidColorBrush(Color.FromRgb(19, 126, 134));
                 ModeNether = true;
             }
             else
             {
                 backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background2.png", UriKind.Relative));
                 backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background.png", UriKind.Relative));
+                imageBoutonTheme.Source = new BitmapImage(new Uri("..\\..\\..\\img\\bouton_mode_nether.png", UriKind.Relative));
+                Application.Current.Resources["MainColor"] = new SolidColorBrush(Color.FromRgb(83, 143, 40));
                 ModeNether = false;
             }
 
@@ -116,16 +122,18 @@ namespace WPF_App
 
         public void Button_rechercher(object sender, RoutedEventArgs e)
         {
-            if(TestCollision())
+            if (TestCollision())
             {
-                pageRechercher pageR = new()
+                this.Title = "MC-DEX - Recherche";
+                Mgr.modeRecherche = false;
+                home pageH = new()
                 {
                     Window = this
                 };
-                contentControl.Content = pageR;
-                this.Title = "MC-DEX - Rechercher";
-            }
+                pageH.barreRecherche.Visibility = Visibility;
 
+                contentControl.Content = pageH;
+            }
         }
     }
 }
