@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Megaport\\source\\repos\\2\\mc-dex\\Modele\\Modele.csproj": {}
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Megaport\\source\\repos\\2\\mc-dex\\Modele\\Modele.csproj": {
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Megaport\\source\\repos\\2\\mc-dex\\Modele\\Modele.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
         "projectName": "Modele",
-        "projectPath": "C:\\Users\\Megaport\\source\\repos\\2\\mc-dex\\Modele\\Modele.csproj",
-        "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Megaport\\source\\repos\\2\\mc-dex\\Modele\\obj\\",
+        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

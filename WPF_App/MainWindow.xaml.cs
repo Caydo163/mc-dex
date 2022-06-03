@@ -39,6 +39,7 @@ namespace WPF_App
 
         private void MainWindow_Closed(object sender, EventArgs e)
         {
+            Mgr.ModeAjouter(false);
             Mgr.SaveItems();
         }
 
@@ -50,6 +51,7 @@ namespace WPF_App
             switch(choix)
             {
                 case MessageBoxResult.Yes:
+                    Mgr.ModeAjouter(false);
                     return true;
                 case MessageBoxResult.No:
                     return false;

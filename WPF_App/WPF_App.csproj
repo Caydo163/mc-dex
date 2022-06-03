@@ -46,6 +46,7 @@
     <None Remove="img\Terre.png" />
     <None Remove="img\texture_grass2.png" />
     <None Remove="img\Torche.png" />
+    <None Remove="img\Vide.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -109,6 +110,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\Torche.png" />
+    <Resource Include="img\Vide.png" />
   </ItemGroup>
 
   <ItemGroup>

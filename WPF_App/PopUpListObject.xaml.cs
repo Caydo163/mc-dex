@@ -82,54 +82,145 @@ namespace WPF_App
                 {
                     listItems = new ReadOnlyCollection<Item>(Mgr.Items);
                 }
-                
-                switch (Pos)
-            {
-                case 1:
-                    Craft.Button1_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 2:
-                    Craft.Button2_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 3:
-                    Craft.Button3_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 4:
-                    Craft.Button4_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 5:
-                    Craft.Button5_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 6:
-                    Craft.Button6_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 7:
-                    Craft.Button7_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 8:
-                    Craft.Button8_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 9:
-                    Craft.Button9_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
-                case 10:
-                    Craft.Button10_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
-                    Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
-                    break;
 
-            }
+               
+
+                switch (Pos)
+                {
+                    case 1:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button1_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button1_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 2:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button2_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button2_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 3:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button3_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button3_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 4:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button4_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button4_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 5:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button5_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button5_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 6:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button6_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button6_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 7:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button7_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button7_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 8:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button8_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button8_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 9:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button9_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button9_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                    case 10:
+                        if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
+                        {
+                            Craft.Button10_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = null;
+                        }
+                        else
+                        {
+                            Craft.Button10_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
+                        }
+                        break;
+
+                }
         }
         popUpOpen = false;
-            this.Close();
+        this.Close();
         }
 
     }

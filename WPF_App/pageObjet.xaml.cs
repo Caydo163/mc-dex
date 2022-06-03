@@ -46,9 +46,9 @@ namespace WPF_App
         private void Creation_Page()
         {
             craftUC zoneCraftO = new();
-            zoneCraftO.TypeCraft.Text = "Craft Objet";
+            zoneCraftO.TypeCraft.Text = "Craft  Objet";
             craftUC zoneCraftU = new();
-            zoneCraftU.TypeCraft.Text = "Craft Utilisation";
+            zoneCraftU.TypeCraft.Text = "Craft  Utilisation";
 
             bool chechCraftO = false;
             bool chechCraftU = false;
@@ -104,7 +104,7 @@ namespace WPF_App
                     if (craft.Objet2_0 != null) craftUC.ImageName7 = craft.Objet2_0.Image;
                     if (craft.Objet2_1 != null) craftUC.ImageName8 = craft.Objet2_1.Image;
                     if (craft.Objet2_2 != null) craftUC.ImageName9 = craft.Objet2_2.Image;
-                    if (craft.Objet2_2 != null) craftUC.ImageName10 = craft.ObjetFinal.Image;
+                    if (craft.ObjetFinal != null) craftUC.ImageName10 = craft.ObjetFinal.Image;
 
                     if (craft.NbFinal != 1)
                     {

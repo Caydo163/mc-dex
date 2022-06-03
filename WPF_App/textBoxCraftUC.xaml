@@ -103,13 +103,13 @@
                             <Border Style="{StaticResource pageAjouter_borderTextBox}" BorderThickness="1" BorderBrush="Gray" Height="35" Margin="5" >
                                 <TextBox Style="{StaticResource pageAjouter_textBox}" x:Name="nbrItemObtenu"/>
                             </Border>
-                                    <TextBlock x:Name="MessageErreurNbItem" Margin="5,0,5,8" TextAlignment="Center"
-                                       FontFamily="{StaticResource Minecraft}" Foreground="#FFAF0D0D" FontSize="11" Visibility="Collapsed">
-                                        <Run Text="Erreur : Veuillez entrer un nombre"/>
-                                        <LineBreak/>
-                                        <Run Text=" valide (chiffre uniquement)"/>
-                                    </TextBlock>
-                                </StackPanel>    
+                            <TextBlock x:Name="MessageErreurNbItem" Margin="5,0,5,8" TextAlignment="Center"
+                                FontFamily="{StaticResource Minecraft}" Foreground="#FFAF0D0D" FontSize="11" Visibility="Collapsed">
+                                <Run Text="Erreur : Veuillez entrer un nombre"/>
+                                <LineBreak/>
+                                <Run Text=" valide (nombre entre 1 et 999)"/>
+                            </TextBlock>
+                        </StackPanel>    
                     </Border>
                     </StackPanel>
                 </StackPanel>
