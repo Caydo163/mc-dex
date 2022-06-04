@@ -35,14 +35,109 @@ namespace WPF_App
         /// </summary>
         public MainWindow Window { get; set; }
 
+        public bool ModeModifier = false;
+
         /// <summary>
         /// Constructeur
         /// </summary>
-        public PageAjouter()
+        public PageAjouter(bool mode)
         {
             InitializeComponent();
             Mgr.ModeAjouter(true);
+            ModeModifier = mode;
+            if(ModeModifier)
+            {
+                RemplissageModeModifier();
+            }
         }
+
+        private void RemplissageModeModifier()
+        {
+            textBoxNom.textBox.Text = Mgr.SelectedItem.Nom;
+            textBoxId.textBox.Text = Mgr.SelectedItem.Id;
+            textBoxDesc.Text = Mgr.SelectedItem.Desc;
+            TextBlockPathFile.Text = Mgr.SelectedItem.Image;
+            image = Mgr.SelectedItem.Image;
+
+            // Nom anglais
+            if (Mgr.SelectedItem.NomE != null && Mgr.SelectedItem.NomE != "")
+            {
+                textBoxNomE = new textBoxUC()
+                {
+                    Nom = "Nom (anglais)"
+                };
+                textBoxNomE.textBox.Text = Mgr.SelectedItem.NomE;
+                panelBlocAjout.Children.Add(textBoxNomE);
+                HideButtonName.Visibility = Visibility.Collapsed;
+            }
+
+            // Texte
+            foreach (KeyValuePair<string, string> elt in Mgr.SelectedItem.ListeTexte)
+            {
+                textBoxBaseUC box = new();
+                box.textBoxTitre.Text = elt.Key;
+                box.textBoxTexte.Text = elt.Value;
+                listeTextBoxBase.Add(box);
+                panelBlocAjout.Children.Add(box);
+            }
+
+            // Stat
+            if (Mgr.SelectedItem.ListeStats.Count > 0)
+            {
+                textBoxStat = new TextBoxStatistiqueUC();
+                panelBlocAjout.Children.Add(textBoxStat);
+                HideButtonStat.Visibility = Visibility.Collapsed;
+
+                foreach (KeyValuePair<string, string> stat in Mgr.SelectedItem.ListeStats)
+                {
+                    textBoxStat.AjouterLigneStat(stat);
+                }
+            }
+
+            // Craft
+            foreach (Craft elt in Mgr.SelectedItem.ListeCraft)
+            {
+                textBoxCraftUC craft = new()
+                {
+                    Window = Window,
+                };
+
+                listeTextBoxCraft.Add(craft);
+                panelBlocAjout.Children.Add(craft);
+
+
+                if (elt.Objet0_0 != null) craft.Button1_Image.Source = new BitmapImage(new Uri(elt.Objet0_0.Image, UriKind.Relative));
+                if (elt.Objet0_1 != null) craft.Button2_Image.Source = new BitmapImage(new Uri(elt.Objet0_1.Image, UriKind.Relative));
+                if (elt.Objet0_2 != null) craft.Button3_Image.Source = new BitmapImage(new Uri(elt.Objet0_2.Image, UriKind.Relative));
+                if (elt.Objet1_0 != null) craft.Button4_Image.Source = new BitmapImage(new Uri(elt.Objet1_0.Image, UriKind.Relative));
+                if (elt.Objet1_1 != null) craft.Button5_Image.Source = new BitmapImage(new Uri(elt.Objet1_1.Image, UriKind.Relative));
+                if (elt.Objet1_2 != null) craft.Button6_Image.Source = new BitmapImage(new Uri(elt.Objet1_2.Image, UriKind.Relative));
+                if (elt.Objet2_0 != null) craft.Button7_Image.Source = new BitmapImage(new Uri(elt.Objet2_0.Image, UriKind.Relative));
+                if (elt.Objet2_1 != null) craft.Button8_Image.Source = new BitmapImage(new Uri(elt.Objet2_1.Image, UriKind.Relative));
+                if (elt.Objet2_2 != null) craft.Button9_Image.Source = new BitmapImage(new Uri(elt.Objet2_2.Image, UriKind.Relative));
+                if (elt.NbFinal != 1)
+                {
+                    craft.nbrItemObtenu.Text = elt.NbFinal.ToString();
+                }
+                if (elt.GetType() == typeof(CraftObjet))
+                {
+                    craft.Button10_Image.Source = new BitmapImage(new Uri(Mgr.SelectedItem.Image, UriKind.Relative));
+                }
+                else
+                {
+                    CraftUtilisation craftU = (CraftUtilisation)elt;
+                    craft.Button10_Image.Source = new BitmapImage(new Uri(craftU.ObjetFinal.Image, UriKind.Relative));
+                }
+
+            }
+        }
+
+
+
+
+
+
+
 
         /// <summary>
         /// Liste des textbox contenant les crafts de l'item
@@ -88,7 +183,6 @@ namespace WPF_App
         private void Button_AjouterStat(object sender, RoutedEventArgs e)
         {
             textBoxStat = new TextBoxStatistiqueUC();
-
             panelBlocAjout.Children.Add(textBoxStat);
             HideButtonStat.Visibility = Visibility.Collapsed;
         }
@@ -179,6 +273,10 @@ namespace WPF_App
                     {
                         if (elt.Id == id)
                         {
+                            if(ModeModifier == true && id == Mgr.SelectedItem.Id)
+                            {
+                                continue;
+                            }
                             textBoxId.MessageErreur.Text = "Erreur : Cet identifiant est deja pris";
                             textBoxId.MessageErreur.Visibility = Visibility;
                             check = true;
@@ -253,7 +351,11 @@ namespace WPF_App
                 // Récupération des textes
                 foreach (textBoxBaseUC elt in listeTextBoxBase)
                 {
-                    listeTexte.Add(new KeyValuePair<string, string>(elt.textBoxTitre.Text, elt.textBoxTexte.Text));
+                    if(elt.textBoxTitre.Text != "" && elt.textBoxTexte.Text != "")
+                    {
+                        listeTexte.Add(new KeyValuePair<string, string>(elt.textBoxTitre.Text, elt.textBoxTexte.Text));
+                    }
+                    
                 }
 
                 // Récupération des statistiques
@@ -261,10 +363,19 @@ namespace WPF_App
                 {
                     foreach (ligneGridStatUC elt in textBoxStat.listLigneStat)
                     {
-                        listeStats.Add(elt.nomStat.Text, elt.valStat.Text);
+                        if(elt.nomStat.Text != "" && elt.valStat.Text != "")
+                        {
+                            listeStats.Add(elt.nomStat.Text, elt.valStat.Text);
+                        }
+                            
                     }
                 }
 
+
+                if(ModeModifier)
+                {
+                    Mgr.SupprimerItem(Mgr.SelectedItem);
+                }
                 // On créé l'item
                 Item item = Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte, listeStats);
 
@@ -298,12 +409,26 @@ namespace WPF_App
 
                 Mgr.ModeAjouter(false);
 
-                // On affiche la page d'accueil
-                home Home = new()
+
+                if(ModeModifier)
                 {
-                    Window = Window
-                };
-                Window.contentControl.Content = Home;
+                    Mgr.SelectedItem = item;
+                    pageObjet pageO = new();
+                    Window.Title = "Item - " + Mgr.SelectedItem.Nom;
+                    pageO.Window = Window;
+                    pageO.chargementHome();
+                    Window.contentControl.Content = pageO;
+                }
+                // On affiche la page d'accueil
+                else
+                {
+                    home Home = new()
+                    {
+                        Window = Window
+                    };
+                    Window.contentControl.Content = Home;
+                }
+
 
             }
         }

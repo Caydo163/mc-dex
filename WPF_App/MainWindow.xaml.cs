@@ -155,7 +155,7 @@ namespace WPF_App
         {
             if(TestCollision())
             {
-                PageAjouter pageA = new()
+                PageAjouter pageA = new(false)
                 {
                     Window = this
                 };

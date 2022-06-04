@@ -1,90 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfItem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Modele">
   <Item z:Id="2">
-    <Desc z:Id="3"></Desc>
-    <Image z:Id="4">..\img\Vide.png</Image>
-    <ListeCraft z:Id="5" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="7" z:Size="0" />
-    <Nom z:Id="8">Vide</Nom>
-    <Id z:Id="9">999:1</Id>
-  </Item>
-  <Item z:Id="10">
-    <Desc z:Ref="3" i:nil="true" />
-    <Image z:Id="11">..\img\MissingTextureBlock.png</Image>
-    <ListeCraft z:Id="12" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="13" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="14" z:Size="0" />
-    <Nom z:Id="15">Bloc actuel</Nom>
-    <Id z:Id="16">999:2</Id>
-  </Item>
-  <Item z:Id="17">
-    <Desc z:Ref="3" i:nil="true" />
-    <Image z:Ref="4" i:nil="true" />
-    <ListeCraft z:Id="18" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="19" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="20" z:Size="0" />
-    <Nom z:Id="21">Vide</Nom>
-    <Id z:Ref="9" i:nil="true" />
-  </Item>
-  <Item z:Id="22">
-    <Desc z:Ref="3" i:nil="true" />
-    <Image z:Ref="11" i:nil="true" />
-    <ListeCraft z:Id="23" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="24" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="25" z:Size="0" />
-    <Nom z:Id="26">Bloc actuel</Nom>
-    <Id z:Ref="16" i:nil="true" />
-  </Item>
-  <Item z:Id="27">
-    <Desc z:Ref="3" i:nil="true" />
-    <Image z:Id="28">..\img\Vide.png</Image>
-    <ListeCraft z:Id="29" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="30" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="31" z:Size="0" />
-    <Nom z:Id="32">Vide</Nom>
-    <Id z:Id="33">999:1</Id>
-  </Item>
-  <Item z:Id="34">
-    <Desc z:Ref="3" i:nil="true" />
-    <Image z:Id="35">..\img\MissingTextureBlock.png</Image>
-    <ListeCraft z:Id="36" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="37" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="38" z:Size="0" />
-    <Nom z:Id="39">Bloc actuel</Nom>
-    <Id z:Id="40">999:2</Id>
-  </Item>
-  <Item z:Id="41">
-    <Desc z:Id="42">fhbfdth</Desc>
-    <Image z:Id="43">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (2).png</Image>
-    <ListeCraft z:Id="44" z:Size="1">
-      <Craft z:Id="45" i:type="CraftUtilisation">
+    <Desc z:Id="3">fhbfdth</Desc>
+    <Image z:Id="4">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (2).png</Image>
+    <ListeCraft z:Id="5" z:Size="1">
+      <Craft z:Id="6" i:type="CraftUtilisation">
         <NbFinal>47</NbFinal>
-        <Objet0_0 z:Ref="41" i:nil="true" />
+        <Objet0_0 z:Ref="2" i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
         <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="41" i:nil="true" />
+        <Objet1_1 z:Ref="2" i:nil="true" />
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
-        <NomBase z:Id="46">Dgbrg</NomBase>
+        <NomBase z:Id="7">Dgbrg</NomBase>
         <ObjetFinal i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="47" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="48" z:Size="0" />
-    <Nom z:Ref="46" i:nil="true" />
-    <Id z:Id="49">47</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="8" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="9" z:Size="0" />
+    <Nom z:Id="10">Dgbrg</Nom>
+    <Id z:Id="11">47</Id>
   </Item>
-  <Item z:Id="50">
-    <Desc z:Id="51">ytjy</Desc>
-    <Image z:Id="52">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (5).png</Image>
-    <ListeCraft z:Id="53" z:Size="1">
-      <Craft z:Id="54" i:type="CraftUtilisation">
+  <Item z:Id="12">
+    <Desc z:Id="13">ytjy</Desc>
+    <Image z:Id="14">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (5).png</Image>
+    <ListeCraft z:Id="15" z:Size="1">
+      <Craft z:Id="16" i:type="CraftUtilisation">
         <NbFinal>74</NbFinal>
-        <Objet0_0 z:Ref="50" i:nil="true" />
+        <Objet0_0 z:Ref="12" i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
         <Objet1_0 i:nil="true" />
@@ -93,13 +39,89 @@
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
-        <NomBase z:Id="55">Gtfg</NomBase>
-        <ObjetFinal z:Ref="41" i:nil="true" />
+        <NomBase z:Id="17">Gtfg</NomBase>
+        <ObjetFinal z:Ref="2" i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="56" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="57" z:Size="0" />
-    <Nom z:Ref="55" i:nil="true" />
-    <Id z:Id="58">74</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="18" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="19" z:Size="0" />
+    <Nom z:Id="20">Gtfg</Nom>
+    <Id z:Id="21">74</Id>
+  </Item>
+  <Item z:Id="22">
+    <Desc z:Id="23">zefzefz</Desc>
+    <Image z:Id="24">C:\Users\justi\Downloads\bouton_mode_nether.png</Image>
+    <ListeCraft z:Id="25" z:Size="1">
+      <Craft z:Id="26" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+        <NomBase z:Id="27">Test</NomBase>
+        <ObjetFinal i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="28" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="29" z:Size="0" />
+    <Nom z:Id="30">Test</Nom>
+    <Id z:Id="31">3222</Id>
+  </Item>
+  <Item z:Id="32">
+    <Desc z:Id="33">efzefz</Desc>
+    <Image z:Id="34">C:\Users\justi\Downloads\Warped_Nylium_%28side_texture%29_JE1_BE1.png</Image>
+    <ListeCraft z:Id="35" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="36" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="37" z:Size="0" />
+    <Nom z:Id="38">Def</Nom>
+    <Id z:Id="39">6969</Id>
+  </Item>
+  <Item z:Id="40">
+    <Desc z:Id="41">czfefzefz
+Je viens de remodifier cet item</Desc>
+    <Image z:Id="42">C:\Users\justi\Downloads\Briques_du_Nether.png</Image>
+    <ListeCraft z:Id="43" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="44" z:Size="3">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="45">Stat 0</d3p1:Key>
+        <d3p1:Value z:Id="46">infini</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="47">Stat 1</d3p1:Key>
+        <d3p1:Value z:Id="48">75.2</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="49">Stat 2</d3p1:Key>
+        <d3p1:Value z:Id="50">1</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="51" z:Size="3">
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Id="52">Titre 1</d3p1:key>
+        <d3p1:value z:Id="53">Texte 1	
+f
+erfr
+WXXXXXXXX</d3p1:value>
+      </d3p1:KeyValuePairOfstringstring>
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Id="54">Titre 2</d3p1:key>
+        <d3p1:value z:Id="55">Texte 2
+Texte 2
+Texte 2
+Texte 2Texte 2</d3p1:value>
+      </d3p1:KeyValuePairOfstringstring>
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Id="56">Titre 3</d3p1:key>
+        <d3p1:value z:Id="57">ipqdvjqdifhvnuidfjvuidfvd</d3p1:value>
+      </d3p1:KeyValuePairOfstringstring>
+    </ListeTexte>
+    <Nom z:Id="58">Test</Nom>
+    <NomE z:Id="59">Anglais</NomE>
+    <Id z:Id="60">563:5</Id>
   </Item>
 </ArrayOfItem>

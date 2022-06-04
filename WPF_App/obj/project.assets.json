@@ -65,24 +65,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Megaport\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\justi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Megaport\\Source\\Repos\\4\\WPF_App\\WPF_App.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\WPF_App.csproj",
       "projectName": "WPF_App",
-      "projectPath": "C:\\Users\\Megaport\\Source\\Repos\\4\\WPF_App\\WPF_App.csproj",
-      "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Megaport\\Source\\Repos\\4\\WPF_App\\obj\\",
+      "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\WPF_App.csproj",
+      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\WPF_App\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -96,14 +91,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Megaport\\Source\\Repos\\4\\DataContractPersistance\\DataContractPersistance.csproj": {
-              "projectPath": "C:\\Users\\Megaport\\Source\\Repos\\4\\DataContractPersistance\\DataContractPersistance.csproj"
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj"
             },
-            "C:\\Users\\Megaport\\Source\\Repos\\4\\Modele\\Modele.csproj": {
-              "projectPath": "C:\\Users\\Megaport\\Source\\Repos\\4\\Modele\\Modele.csproj"
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
             },
-            "C:\\Users\\Megaport\\Source\\Repos\\4\\StubLib\\StubLib.csproj": {
-              "projectPath": "C:\\Users\\Megaport\\Source\\Repos\\4\\StubLib\\StubLib.csproj"
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj"
             }
           }
         }
@@ -135,7 +130,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

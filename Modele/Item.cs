@@ -239,9 +239,9 @@ namespace Modele
             return this.Id == other.Id;
         }
 
-        public override bool Equals(object obj)
-        {
-            return Equals(obj as Item);
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return Equals(obj as Item);
+        //}
     }
 }

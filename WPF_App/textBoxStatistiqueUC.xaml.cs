@@ -40,6 +40,25 @@ namespace WPF_App
             listLigneStat.Add(newLine);
         }
 
+        public void AjouterLigneStat(KeyValuePair<string, string> stat)
+        {
+            if (listLigneStat[0].nomStat.Text == "" && listLigneStat[0].valStat.Text == "")
+            {
+                listLigneStat[0].nomStat.Text = stat.Key;
+                listLigneStat[0].valStat.Text = stat.Value;
+            }
+            else
+            {
+                Grid_stat.RowDefinitions.Add(new RowDefinition());
+                ligneGridStatUC newLine = new();
+                newLine.nomStat.Text = stat.Key;
+                newLine.valStat.Text = stat.Value;
+                Grid_stat.Children.Add(newLine);
+                newLine.SetValue(Grid.RowProperty, listLigneStat.Count);
+                listLigneStat.Add(newLine);
+            }
+        }
+
         private void Button_supprimeLigneStat(object sender, RoutedEventArgs e)
         {
             int nb = listLigneStat.Count;
@@ -51,12 +70,7 @@ namespace WPF_App
             Grid_stat.Children.Remove(line);
             Grid_stat.RowDefinitions.RemoveAt(nb - 1);
             listLigneStat.RemoveAt(nb - 1);
-
-
-
         }
-
-
 
     }
 }

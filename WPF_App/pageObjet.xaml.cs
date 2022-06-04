@@ -200,7 +200,12 @@ namespace WPF_App
 
         private void Button_Modifier(object sender, RoutedEventArgs e)
         {
-
+            PageAjouter pageA = new(true)
+            {
+                Window = Window
+            };
+            Window.Title = "MC-Dex - Modifier";
+            Window.contentControl.Content = pageA;
         }
 
         private void Button_Supprimer(object sender, RoutedEventArgs e)

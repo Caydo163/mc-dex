@@ -178,8 +178,11 @@ namespace Modele
             }
             else
             {
-                //items.RemoveRange(0, 2);
-                 
+                if (items[0].Id == "999:1" && items[1].Id == "999:2")
+                {
+                    items.RemoveRange(0, 2);
+                }
+
             }
         }
 
