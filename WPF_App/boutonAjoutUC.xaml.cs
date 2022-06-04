@@ -20,11 +20,17 @@ namespace WPF_App
     /// </summary>
     public partial class boutonAjoutUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public boutonAjoutUC()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Propriété pour changer le nom de la textblock
+        /// </summary>
         public string Message
         {
             set 

@@ -9,12 +9,12 @@
 
     <UserControl.Resources>
         <Style TargetType="TextBlock">
-                <Setter Property="Margin" Value="10,5"/>
-                <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
-                <Setter Property="FontSize" Value="13"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="HorizontalAlignment" Value="Center"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="FontFamily" Value="{StaticResource Minecraft}"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
         <Style TargetType="TextBox">
             <Setter Property="FontSize" Value="13"/>
@@ -36,17 +36,15 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="0,0,0,10">
-            
-        <Border CornerRadius="10,0,0,10" Background="Gray" BorderBrush="Gray" BorderThickness="3,3,3,3">
-            <TextBlock Text="Nom"/>
-        </Border>
-        <Border BorderBrush="Gray" CornerRadius="0,10,10,0" BorderThickness="0,3,3,3" Margin="0,0,20,0">
-            <TextBox MinWidth="50" x:Name="nomStat"/>
-        </Border>
+            <Border CornerRadius="10,0,0,10" Background="Gray" BorderBrush="Gray" BorderThickness="3,3,3,3">
+                <TextBlock Text="Nom"/>
+            </Border>
+            <Border BorderBrush="Gray" CornerRadius="0,10,10,0" BorderThickness="0,3,3,3" Margin="0,0,20,0">
+                <TextBox MinWidth="50" x:Name="nomStat"/>
+            </Border>
         </StackPanel>
 
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,10">
-
             <Border CornerRadius="10,0,0,10" Background="Gray" BorderBrush="Gray" BorderThickness="3,3,3,3">
                 <TextBlock Text="Valeur" />
             </Border>

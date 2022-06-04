@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modele", "..\Modele\Modele.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "..\Test\Test.csproj", "{5A073CC8-AB75-49D0-8C9F-7CC560D162BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Item_UT", "..\Item_UT\Item_UT.csproj", "{5FA73149-1E9D-4E38-B242-B9BE1420779E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_UT", "..\Item_UT\Test_UT.csproj", "{5FA73149-1E9D-4E38-B242-B9BE1420779E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StubLib", "..\StubLib\StubLib.csproj", "{BC77586E-BAD5-480E-94DB-562524DB200B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContractPersistance", "..\DataContractPersistance\DataContractPersistance.csproj", "{9A214504-882F-49B2-8AB6-AA2757D3F08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataContractPersistance", "..\DataContractPersistance\DataContractPersistance.csproj", "{9A214504-882F-49B2-8AB6-AA2757D3F08D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

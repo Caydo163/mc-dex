@@ -20,24 +20,14 @@ namespace WPF_App
     /// </summary>
     public partial class ItemUC : UserControl
     {
-
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public ItemUC()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        /*        public string Nom
-                {
-                    set
-                    {
-                        NomItem.Text = value;
-                    }
-                }*/
 
         public string Nom
         {
@@ -48,14 +38,6 @@ namespace WPF_App
         // UsingaDependencyProperty as the backing store for Texte.This enables animation,styling,binding,etc ...
         public static readonly DependencyProperty NomProperty =
             DependencyProperty.Register("Nom", typeof(string), typeof(ItemUC), new PropertyMetadata("Nom Vide"));
-
-        /*public string ImageName
-                {
-                    set
-                    {
-                        SrcImg.Source = new BitmapImage(new Uri(value, UriKind.Relative));
-                    }
-                }*/
 
 
         public string Image
@@ -68,9 +50,5 @@ namespace WPF_App
         public static readonly DependencyProperty ImageProperty =
             DependencyProperty.Register("Image", typeof(string), typeof(ItemUC), new PropertyMetadata("img\\terre.png"));
 
-        public void Button_item(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

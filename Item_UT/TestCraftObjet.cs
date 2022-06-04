@@ -3,7 +3,7 @@ using Xunit;
 using Modele;
 using System.Collections.Generic;
 
-namespace Item_UT
+namespace Test_UT
 {
     public class TestCraftObjet
     {

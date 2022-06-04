@@ -9,7 +9,7 @@
 
     <Border Background="{x:Null}" BorderThickness="2" BorderBrush="#C5C5C5" CornerRadius="15" Margin="20,15,20,7" Padding="5,10">
         <StackPanel x:Name="stackPanelGrilleCraft">
-            <StackPanel Width="auto"  Orientation="Horizontal" >
+            <StackPanel Width="auto"  Orientation="Horizontal">
                 <Grid Margin="10" VerticalAlignment="Center">
                     <Grid.Resources>
                         <SolidColorBrush x:Key="brush" Color="#C5C5C5"/>
@@ -27,6 +27,7 @@
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="60"/>
                     </Grid.RowDefinitions>
+                    
                     <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="0 0 2 2">
                         <Image x:Name="Image1"/>
                     </Border>
@@ -58,22 +59,13 @@
                 </Grid>
 
                 <Image Source="img\flecheCraft.png" Width="60" Margin="10"/>
-                <!--<DockPanel Margin="0,60,0,0">
-                <Border DockPanel.Dock="Top" Width="70" Height="70">
-                    <Image x:Name="Image10" Margin="5"/>
-                </Border>
-                    <TextBlock Text="3" Style="{StaticResource pageObjet_textePartie}"/>
-                </DockPanel>-->
 
                 <Canvas Width="80" Height="80" Margin="5">
                     <TextBlock x:Name="nbBlocCraft" Canvas.Right="-15" Panel.ZIndex="1" Canvas.Bottom="2" Style="{StaticResource pageObjet_textePartie}" FontSize="20"/>
                     <Image x:Name="Image10" Width="70" Height="70" Margin="5"/>
-                    
+
                 </Canvas>
             </StackPanel>
-
-            <!--<TextBlock x:Name="" Text="* 5 planches"  Style="{StaticResource pageObjet_textePartie}"/>
-            <TextBlock Text="* 8 lingots d'or" Style="{StaticResource pageObjet_textePartie}"/>-->
         </StackPanel>
     </Border>
 </UserControl>

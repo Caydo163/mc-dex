@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using Modele;
 
-namespace Item_UT
+namespace Test_UT
 {
     public class TestItem
     {
@@ -20,20 +20,20 @@ namespace Item_UT
             Assert.Equal(description, item.Desc);
         }
 
-        //[Fact]
-        //public void TestAjouterStat()
-        //{
-        //    Item item = new("Terre", "10:89", "img/terre.png", "Description");
-        //    item.AjouterStat("Solidité", 4.2);
-        //    item.AjouterStat("Solidité 2", 5);
-        //    item.AjouterStat("Solidité 2", 8);
-        //    item.AjouterStat("Solidité 3", 5);
-        //    Assert.NotEmpty(item.ListeStats);
-        //    Assert.Equal(4.2, item.ListeStats["Solidité"]);
-        //    Assert.Equal(5, item.ListeStats["Solidité 2"]);
-        //    Assert.Equal(5, item.ListeStats["Solidité 3"]);
-        //    Assert.Equal(3, item.ListeStats.Count);
-        //}
+        [Fact]
+        public void TestAjouterStat()
+        {
+            Item item = new("Terre", "10:89", "img/terre.png", "Description");
+            item.AjouterStat("Solidité", "4.2");
+            item.AjouterStat("Solidité 2", "5");
+            item.AjouterStat("Solidité 2", "8");
+            item.AjouterStat("Solidité 3", "5");
+            Assert.NotEmpty(item.ListeStats);
+            Assert.Equal("4.2", item.ListeStats["Solidité"]);
+            Assert.Equal("5", item.ListeStats["Solidité 2"]);
+            Assert.Equal("5", item.ListeStats["Solidité 3"]);
+            Assert.Equal(3, item.ListeStats.Count);
+        }
 
 
         [Fact]
@@ -48,6 +48,10 @@ namespace Item_UT
             Assert.Equal("Texte 1",item.ListeTexte[0].Value);
             Assert.Equal(3, item.ListeTexte.Count);
         }
+
+
+        // Ajouter craft
+
 
         [Fact]
         public void TestEqual()

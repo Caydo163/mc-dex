@@ -226,14 +226,6 @@ namespace Modele
 
 
 
-
-        //public override bool Equals(object obj)
-        //{
-        //    Item item = (Item)obj;
-        //    return this.Id == item.Id;
-        //}
-
-
         public override string ToString()
         {
             return $"{Nom} / {Image} / {Id} / {Desc} / {NomE}"; 
@@ -245,6 +237,11 @@ namespace Modele
         public bool Equals(Item other)
         {
             return this.Id == other.Id;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as Item);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2QwpxD6D85Y/O0h2H1mQ96yULh6dMocik9m7s+6JXHqG0NNgRLXGUZbMyXMXGNPGx5Bg9PKpyYI8LIIAWGIoCw==",
+  "dgSpecHash": "btLhUgcwFK6p32tSRdEGXowFPWxAv6H0xRoTCQmNeTivsCFlsYNfFDnrOxOLPEHAv2J9Zacgbzi3ZV34lno6eg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Item_UT.csproj",
+  "projectFilePath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\justi\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\justi\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

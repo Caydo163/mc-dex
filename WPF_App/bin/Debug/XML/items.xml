@@ -1,209 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfItem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Modele">
   <Item z:Id="2">
-    <Desc z:Id="3">Une boite</Desc>
-    <Image z:Id="4">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (6).png</Image>
-    <ListeCraft z:Id="5" z:Size="2">
+    <Desc z:Id="3">fzefzef</Desc>
+    <Image z:Id="4">C:\Users\justi\Downloads\laptop.png</Image>
+    <ListeCraft z:Id="5" z:Size="1">
       <Craft z:Id="6" i:type="CraftUtilisation">
-        <NbFinal>1</NbFinal>
+        <NbFinal>5</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
-        <Objet0_2 z:Id="7">
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 z:Id="7">
           <Desc z:Id="8">Voici une description</Desc>
-          <Image z:Id="9">img\Poulet.png</Image>
+          <Image z:Id="9">img\Diamant.png</Image>
           <ListeCraft z:Id="10" z:Size="0" />
           <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="11" z:Size="0" />
           <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="12" z:Size="0" />
-          <Nom z:Id="13">Poulet</Nom>
-          <Id z:Id="14">68:12</Id>
-        </Objet0_2>
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
+          <Nom z:Id="13">Diamant</Nom>
+          <Id z:Id="14">62</Id>
+        </Objet1_1>
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
-        <NomBase z:Id="15">Boite</NomBase>
-        <ObjetFinal z:Id="16">
-          <Desc z:Ref="8" i:nil="true" />
-          <Image z:Id="17">img\Lit.png</Image>
-          <ListeCraft z:Id="18" z:Size="0" />
-          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="19" z:Size="0" />
-          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="20" z:Size="0" />
-          <Nom z:Id="21">Lit</Nom>
-          <Id z:Id="22">6:12</Id>
-        </ObjetFinal>
-      </Craft>
-      <Craft z:Id="23" i:type="CraftUtilisation">
-        <NbFinal>1</NbFinal>
-        <Objet0_0 i:nil="true" />
-        <Objet0_1 z:Ref="16" i:nil="true" />
-        <Objet0_2 z:Ref="16" i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Ref="15" i:nil="true" />
-        <ObjetFinal z:Ref="7" i:nil="true" />
+        <NomBase z:Id="15">Fzefz</NomBase>
+        <ObjetFinal z:Ref="2" i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="24" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="25" z:Size="0" />
-    <Nom z:Id="26">Boite</Nom>
-    <NomE z:Id="27">Box</NomE>
-    <Id z:Id="28">1</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="16" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="17" z:Size="0" />
+    <Nom z:Id="18">Fzefz</Nom>
+    <Id z:Id="19">5693</Id>
   </Item>
-  <Item z:Id="29">
-    <Desc z:Id="30">fzefz</Desc>
-    <Image z:Id="31">C:\Users\justi\Downloads\Grass_Block.png</Image>
-    <ListeCraft z:Id="32" z:Size="1">
-      <Craft z:Id="33" i:type="CraftUtilisation">
-        <NbFinal>1</NbFinal>
-        <Objet0_0 z:Ref="29" i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 z:Ref="7" i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 z:Id="34">
-          <Desc z:Ref="8" i:nil="true" />
-          <Image z:Id="35">img\Diamant.png</Image>
-          <ListeCraft z:Id="36" z:Size="0" />
-          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="37" z:Size="0" />
-          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="38" z:Size="0" />
-          <Nom z:Id="39">Diamant</Nom>
-          <Id z:Id="40">62</Id>
-        </Objet2_2>
-        <NomBase z:Id="41">Fezf</NomBase>
-        <ObjetFinal z:Ref="16" i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="42" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="43" z:Size="0" />
-    <Nom z:Id="44">Fezf</Nom>
-    <Id z:Id="45">7777</Id>
-  </Item>
-  <Item z:Id="46">
-    <Desc z:Id="47">dzedzedzed</Desc>
-    <Image z:Id="48">C:\Users\justi\Downloads\kaggle.png</Image>
-    <ListeCraft z:Id="49" z:Size="1">
-      <Craft z:Id="50" i:type="CraftUtilisation">
-        <NbFinal>5</NbFinal>
-        <Objet0_0 z:Ref="46" i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 z:Ref="16" i:nil="true" />
-        <Objet1_0 z:Ref="46" i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="51">Test</NomBase>
-        <ObjetFinal z:Id="52">
-          <Desc z:Ref="8" i:nil="true" />
-          <Image z:Id="53">img\Stone.png</Image>
-          <ListeCraft z:Id="54" z:Size="0" />
-          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="55" z:Size="0" />
-          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="56" z:Size="0" />
-          <Nom z:Id="57">Stone</Nom>
-          <Id z:Id="58">6:78</Id>
-        </ObjetFinal>
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="59" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="60" z:Size="0" />
-    <Nom z:Id="61">Test</Nom>
-    <Id z:Id="62">523</Id>
-  </Item>
-  <Item z:Id="63">
-    <Desc z:Id="64">ezfzef</Desc>
-    <Image z:Id="65">C:\Users\justi\Downloads\alien-space-character-of-pixels-for-a-game.png</Image>
-    <ListeCraft z:Id="66" z:Size="1">
-      <Craft z:Id="67" i:type="CraftUtilisation">
-        <NbFinal>5</NbFinal>
-        <Objet0_0 i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 z:Ref="34" i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="7" i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="68">Fzfezf</NomBase>
-        <ObjetFinal z:Ref="7" i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="69" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="70" z:Size="0" />
-    <Nom z:Id="71">Fzfezf</Nom>
-    <Id z:Id="72">456</Id>
-  </Item>
-  <Item z:Id="73">
-    <Desc z:Id="74">fzefzef</Desc>
-    <Image z:Id="75">C:\Users\justi\Downloads\laptop.png</Image>
-    <ListeCraft z:Id="76" z:Size="1">
-      <Craft z:Id="77" i:type="CraftUtilisation">
-        <NbFinal>5</NbFinal>
-        <Objet0_0 i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="34" i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="78">Fzefz</NomBase>
-        <ObjetFinal z:Ref="73" i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="79" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="80" z:Size="0" />
-    <Nom z:Id="81">Fzefz</Nom>
-    <Id z:Id="82">5693</Id>
-  </Item>
-  <Item z:Id="83">
-    <Desc z:Id="84">ferfer</Desc>
-    <Image z:Id="85">C:\Users\justi\Downloads\Briques_du_Nether.png</Image>
-    <ListeCraft z:Id="86" z:Size="1">
-      <Craft z:Id="87" i:type="CraftObjet">
+  <Item z:Id="20">
+    <Desc z:Id="21">ferfer</Desc>
+    <Image z:Id="22">C:\Users\justi\Downloads\Briques_du_Nether.png</Image>
+    <ListeCraft z:Id="23" z:Size="1">
+      <Craft z:Id="24" i:type="CraftObjet">
         <NbFinal>58</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
-        <Objet1_0 z:Id="88">
+        <Objet1_0 z:Id="25">
           <Desc z:Ref="8" i:nil="true" />
-          <Image z:Id="89">img\Coffre.png</Image>
-          <ListeCraft z:Id="90" z:Size="0" />
-          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="91" z:Size="0" />
-          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="92" z:Size="0" />
-          <Nom z:Id="93">Coffre</Nom>
-          <Id z:Id="94">67:12</Id>
+          <Image z:Id="26">img\Coffre.png</Image>
+          <ListeCraft z:Id="27" z:Size="0" />
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="28" z:Size="0" />
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="29" z:Size="0" />
+          <Nom z:Id="30">Coffre</Nom>
+          <Id z:Id="31">67:12</Id>
         </Objet1_0>
-        <Objet1_1 z:Id="95">
+        <Objet1_1 z:Id="32">
           <Desc z:Ref="8" i:nil="true" />
-          <Image z:Id="96">img\Fer.png</Image>
-          <ListeCraft z:Id="97" z:Size="0" />
-          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="98" z:Size="0" />
-          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="99" z:Size="0" />
-          <Nom z:Id="100">Fer</Nom>
-          <Id z:Id="101">6:1299</Id>
+          <Image z:Id="33">img\Fer.png</Image>
+          <ListeCraft z:Id="34" z:Size="0" />
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="35" z:Size="0" />
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="36" z:Size="0" />
+          <Nom z:Id="37">Fer</Nom>
+          <Id z:Id="38">6:1299</Id>
         </Objet1_1>
-        <Objet1_2 z:Ref="95" i:nil="true" />
+        <Objet1_2 z:Ref="32" i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="102" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="103" z:Size="0" />
-    <Nom z:Id="104">Gtgt</Nom>
-    <NomE z:Id="105">Ozkef</NomE>
-    <Id z:Id="106">458</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="39" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="40" z:Size="0" />
+    <Nom z:Id="41">Gtgt</Nom>
+    <NomE z:Id="42">Ozkef</NomE>
+    <Id z:Id="43">458</Id>
   </Item>
 </ArrayOfItem>

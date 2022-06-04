@@ -21,8 +21,14 @@ namespace WPF_App
     /// </summary>
     public partial class home : UserControl
     {
-
+        /// <summary>
+        /// Manager
+        /// </summary>
         public static Manager Mgr => ((App)Application.Current).LeManager;
+
+        /// <summary>
+        /// Fenêtre de l'application
+        /// </summary>
         private MainWindow window;
         public MainWindow Window { 
             get => window; 
@@ -32,6 +38,10 @@ namespace WPF_App
                 barreRecherche.Window = value;
             } 
         }
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public home()
         {
             InitializeComponent();
@@ -45,9 +55,13 @@ namespace WPF_App
                 listBox.ItemsSource = Mgr.Items;
             }
             barreRecherche.Home = this;
-
         }
 
+        /// <summary>
+        /// Méthode permettant d'afficher la page de l'objet sélectionné par l'utilisateur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         void ChoixItem(object sender, SelectionChangedEventArgs args)
         {
             if(Mgr.modeRecherche)

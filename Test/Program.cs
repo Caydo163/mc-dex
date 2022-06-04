@@ -8,6 +8,11 @@ namespace Test
     {
         static void Main()
         {
+
+
+
+
+
             Manager manager = new(new StubLib.Stub());
             manager.LoadItems();
             manager.Pers = new DataContractPersistance.DataContractPers();

@@ -1671,6 +1671,19 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "DataContractPersistance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Modele": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataContractPersistance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataContractPersistance.dll": {}
+        }
+      },
       "Modele/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1679,6 +1692,19 @@
         },
         "runtime": {
           "bin/placeholder/Modele.dll": {}
+        }
+      },
+      "StubLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Modele": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StubLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StubLib.dll": {}
         }
       }
     }
@@ -5973,16 +5999,28 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "DataContractPersistance/1.0.0": {
+      "type": "project",
+      "path": "../DataContractPersistance/DataContractPersistance.csproj",
+      "msbuildProject": "../DataContractPersistance/DataContractPersistance.csproj"
+    },
     "Modele/1.0.0": {
       "type": "project",
       "path": "../Modele/Modele.csproj",
       "msbuildProject": "../Modele/Modele.csproj"
+    },
+    "StubLib/1.0.0": {
+      "type": "project",
+      "path": "../StubLib/StubLib.csproj",
+      "msbuildProject": "../StubLib/StubLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DataContractPersistance >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "Modele >= 1.0.0",
+      "StubLib >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -5994,9 +6032,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Item_UT.csproj",
-      "projectName": "Item_UT",
-      "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Item_UT.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj",
+      "projectName": "Test_UT",
+      "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj",
       "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\obj\\",
       "projectStyle": "PackageReference",
@@ -6015,8 +6053,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj"
+            },
             "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
               "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+            },
+            "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
+              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj"
             }
           }
         }

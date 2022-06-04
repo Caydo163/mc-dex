@@ -20,6 +20,9 @@ namespace WPF_App
     /// </summary>
     public partial class ligneGridStatUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public ligneGridStatUC()
         {
             InitializeComponent();

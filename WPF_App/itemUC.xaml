@@ -10,8 +10,7 @@
 
 
     <Border CornerRadius="12" BorderThickness="5" Background="#BA0E0D0D" Height="80" Width="220" Margin="3">
-
-            <Grid>
+        <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition/>

@@ -10,20 +10,11 @@
 
 
     <StackPanel>
-        <TextBlock x:Name="TypeCraft" Text="Craft" Style="{StaticResource pageObjet_titrePartie}"/>
-
+        <TextBlock x:Name="TypeCraft" Text="Craft X" Style="{StaticResource pageObjet_titrePartie}"/>
 
         <WrapPanel x:Name="wrapPanelCraft">
-            
-        <!--<local:grilleCraftUC ImageName4="img\Planche.png" ImageName6="img\Planche.png"
-                             ImageName7="img\Planche.png" ImageName8="img\Planche.png" 
-                             ImageName9="img\Planche.png" ImageName10="img\Bateau.png"/>
 
-        <local:grilleCraftUC ImageName4="img\Planche.png" ImageName6="img\Planche.png"
-                             ImageName7="img\Planche.png" ImageName8="img\Planche.png" 
-                             ImageName9="img\Planche.png" ImageName10="img\Terre.png"/>-->
-            
+
         </WrapPanel>
-
     </StackPanel>    
 </UserControl>

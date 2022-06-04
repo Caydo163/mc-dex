@@ -20,11 +20,17 @@ namespace WPF_App
     /// </summary>
     public partial class craftUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public craftUC()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Propriété permettant de changer le nom de la textblock
+        /// </summary>
         public string NameTypeCraft
         {
             set

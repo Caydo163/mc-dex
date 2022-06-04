@@ -20,6 +20,9 @@ namespace WPF_App
     /// </summary>
     public partial class grilleCraftUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public grilleCraftUC()
         {
             InitializeComponent();

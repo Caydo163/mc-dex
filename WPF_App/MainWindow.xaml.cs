@@ -23,11 +23,24 @@ namespace WPF_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Manager
+        /// </summary>
         public static Manager Mgr => ((App)Application.Current).LeManager;
+
+        /// <summary>
+        /// Booléen pour connaitre le mode actuel de l'application (Nether / Overworld)
+        /// </summary>
         public bool ModeNether = false;
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
+
+            // On ajoute la page accueil puis on charge les données
             home Home = new()
             {
                 Window = this
@@ -37,12 +50,21 @@ namespace WPF_App
             DataContext = Mgr;
         }
 
+        /// <summary>
+        /// Méthode permettant de désactiver le mode ajouter et de sauvegarder les items si la fenêtre est fermé
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainWindow_Closed(object sender, EventArgs e)
         {
             Mgr.ModeAjouter(false);
             Mgr.SaveItems();
         }
 
+        /// <summary>
+        /// Méthode permettant d'afficher une message box
+        /// </summary>
+        /// <returns>Booléen en fonction de la réponse de l'utilisateur</returns>
         private static bool MessageConfirmationFermeturePageA()
         {
             MessageBoxResult choix = MessageBox.Show("Voulez-vous vraiment quitter la page ajouter ?\nVos informations ne seront pas sauvegardé.", 
@@ -60,6 +82,12 @@ namespace WPF_App
 
         }
 
+        /// <summary>
+        /// Méthode permettant de tester si il y a une collision.
+        /// 1 - Changement de page alors qu'un popup est ouvert
+        /// 2 - Chanegement de page lorsque l'utilisateur est sur la page ajouter
+        /// </summary>
+        /// <returns></returns>
         private bool TestCollision()
         {
             if (PopUpListObject.popUpOpen || PopUpDemandeSuppression.popUpOpen)
@@ -73,6 +101,11 @@ namespace WPF_App
             return true;
         }
 
+        /// <summary>
+        /// Bouton permettant d'aller sur la page d'accueil
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Button_home(object sender, RoutedEventArgs e)
         {
             if(TestCollision())
@@ -87,6 +120,11 @@ namespace WPF_App
             }
         }
 
+        /// <summary>
+        /// Bouton permettant de changer le thème de l'application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Button_theme(object sender, RoutedEventArgs e)
         {
             if(!ModeNether)
@@ -108,6 +146,11 @@ namespace WPF_App
 
         }
 
+        /// <summary>
+        /// Bouton permettant d'aller sur la page ajouter
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Button_ajouter(object sender, RoutedEventArgs e)
         {
             if(TestCollision())
@@ -122,6 +165,11 @@ namespace WPF_App
 
         }
 
+        /// <summary>
+        /// Bouton permettant d'afficher la barre de recherche
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Button_rechercher(object sender, RoutedEventArgs e)
         {
             if (TestCollision())
