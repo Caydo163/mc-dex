@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Modele">
+  <Item z:Id="2">
+    <Desc z:Id="3"></Desc>
+    <Image z:Id="4">..\img\Vide.png</Image>
+    <ListeCraft z:Id="5" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="7" z:Size="0" />
+    <Nom z:Id="8">Vide</Nom>
+    <Id z:Id="9">999:1</Id>
+  </Item>
+  <Item z:Id="10">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="11">..\img\MissingTextureBlock.png</Image>
+    <ListeCraft z:Id="12" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="13" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="14" z:Size="0" />
+    <Nom z:Id="15">Bloc actuel</Nom>
+    <Id z:Id="16">999:2</Id>
+  </Item>
+  <Item z:Id="17">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Ref="4" i:nil="true" />
+    <ListeCraft z:Id="18" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="19" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="20" z:Size="0" />
+    <Nom z:Id="21">Vide</Nom>
+    <Id z:Ref="9" i:nil="true" />
+  </Item>
+  <Item z:Id="22">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Ref="11" i:nil="true" />
+    <ListeCraft z:Id="23" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="24" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="25" z:Size="0" />
+    <Nom z:Id="26">Bloc actuel</Nom>
+    <Id z:Ref="16" i:nil="true" />
+  </Item>
+  <Item z:Id="27">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="28">..\img\Vide.png</Image>
+    <ListeCraft z:Id="29" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="30" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="31" z:Size="0" />
+    <Nom z:Id="32">Vide</Nom>
+    <Id z:Id="33">999:1</Id>
+  </Item>
+  <Item z:Id="34">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="35">..\img\MissingTextureBlock.png</Image>
+    <ListeCraft z:Id="36" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="37" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="38" z:Size="0" />
+    <Nom z:Id="39">Bloc actuel</Nom>
+    <Id z:Id="40">999:2</Id>
+  </Item>
+  <Item z:Id="41">
+    <Desc z:Id="42">fhbfdth</Desc>
+    <Image z:Id="43">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (2).png</Image>
+    <ListeCraft z:Id="44" z:Size="1">
+      <Craft z:Id="45" i:type="CraftUtilisation">
+        <NbFinal>47</NbFinal>
+        <Objet0_0 z:Ref="41" i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 z:Ref="41" i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+        <NomBase z:Id="46">Dgbrg</NomBase>
+        <ObjetFinal i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="47" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="48" z:Size="0" />
+    <Nom z:Ref="46" i:nil="true" />
+    <Id z:Id="49">47</Id>
+  </Item>
+  <Item z:Id="50">
+    <Desc z:Id="51">ytjy</Desc>
+    <Image z:Id="52">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (5).png</Image>
+    <ListeCraft z:Id="53" z:Size="1">
+      <Craft z:Id="54" i:type="CraftUtilisation">
+        <NbFinal>74</NbFinal>
+        <Objet0_0 z:Ref="50" i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+        <NomBase z:Id="55">Gtfg</NomBase>
+        <ObjetFinal z:Ref="41" i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="56" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="57" z:Size="0" />
+    <Nom z:Ref="55" i:nil="true" />
+    <Id z:Id="58">74</Id>
+  </Item>
+</ArrayOfItem>

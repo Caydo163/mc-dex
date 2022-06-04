@@ -129,17 +129,17 @@ namespace WPF_App
         {
             if(!ModeNether)
             {
-                backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
-                backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background_nether.png", UriKind.Relative));
-                imageBoutonTheme.Source = new BitmapImage(new Uri("..\\..\\..\\img\\bouton_mode_overworld.png", UriKind.Relative));
+                backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\background_nether.png", UriKind.Relative));
+                backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\menu_background_nether.png", UriKind.Relative));
+                imageBoutonTheme.Source = new BitmapImage(new Uri("img\\bouton_mode_overworld.png", UriKind.Relative));
                 Application.Current.Resources["MainColor"] = new SolidColorBrush(Color.FromRgb(19, 126, 134));
                 ModeNether = true;
             }
             else
             {
-                backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background2.png", UriKind.Relative));
-                backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background.png", UriKind.Relative));
-                imageBoutonTheme.Source = new BitmapImage(new Uri("..\\..\\..\\img\\bouton_mode_nether.png", UriKind.Relative));
+                backgroundApp.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\background2.png", UriKind.Relative));
+                backgroundMenu.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\menu_background.png", UriKind.Relative));
+                imageBoutonTheme.Source = new BitmapImage(new Uri("img\\bouton_mode_nether.png", UriKind.Relative));
                 Application.Current.Resources["MainColor"] = new SolidColorBrush(Color.FromRgb(83, 143, 40));
                 ModeNether = false;
             }

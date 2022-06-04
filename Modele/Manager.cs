@@ -173,12 +173,12 @@ namespace Modele
         {
             if(check)
             {
-                items.Insert(0,new Item("Vide", "999:1", "img\\Vide.png", ""));
-                items.Insert(1,new Item("Bloc Actuel", "999:2", "img\\MissingTextureBlock.png", ""));
+                items.Insert(0,new Item("Vide", "999:1", "..\\img\\Vide.png", ""));
+                items.Insert(1,new Item("Bloc Actuel", "999:2", "..\\img\\MissingTextureBlock.png", ""));
             }
             else
             {
-                items.RemoveRange(0, 2);
+                //items.RemoveRange(0, 2);
                  
             }
         }
