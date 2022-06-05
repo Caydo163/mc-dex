@@ -22,15 +22,31 @@ namespace WPF_App
     /// </summary>
     public partial class pageObjet : UserControl
     {
+        /// <summary>
+        /// Fenêtre de l'application
+        /// </summary>
         public MainWindow Window { get; set; }
+
+        /// <summary>
+        /// Manager
+        /// </summary>
         public static Manager Mgr => ((App)Application.Current).LeManager;
+
+        /// <summary>
+        /// Page d'accueil
+        /// </summary>
         public home detail = new();
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public pageObjet()
         {
             InitializeComponent();
+
+            // Création de la page home
             detail.Width = 250;
             detail.Margin = new Thickness(0,0,20,20);
-  
             zoneHome.Children.Add(detail);
             Creation_Page();
         }
@@ -40,22 +56,29 @@ namespace WPF_App
             detail.Window = Window;
         }
 
+
         /// <summary>
         /// Ajouter les userControl nécessaire en fonction des informations de l'item
         /// </summary>
         private void Creation_Page()
         {
+            //////////////////////// Ajout de la partie craft /////////////////////////////
+
+            // On créé les zones
             craftUC zoneCraftO = new();
             zoneCraftO.TypeCraft.Text = "Craft  Objet";
             craftUC zoneCraftU = new();
             zoneCraftU.TypeCraft.Text = "Craft  Utilisation";
 
-            bool chechCraftO = false;
-            bool chechCraftU = false;
+            // On initialise 2 booléen pour savoir si on devra les afficher
+            bool checkCraftO = false;
+            bool checkCraftU = false;
 
+
+            // XXXXXXXXXXXXXXX à modif 
             foreach (Craft elt in Mgr.SelectedItem.ListeCraft)
             {
-                
+                // Si le craft est un craft objet
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     grilleCraftUC craftUC = new();
@@ -85,7 +108,7 @@ namespace WPF_App
                     }
 
                     zoneCraftO.wrapPanelCraft.Children.Add(craftUC);
-                    chechCraftO = true;
+                    checkCraftO = true;
 
                 }
 
@@ -133,23 +156,20 @@ namespace WPF_App
                     }
 
                     zoneCraftU.wrapPanelCraft.Children.Add(craftUC);
-                    chechCraftU = true;
+                    checkCraftU = true;
                 }
             }
-            if (chechCraftO)
+            if (checkCraftO)
             {
                 StackPanelObjet.Children.Add(zoneCraftO);
             }
-            if (chechCraftU)
+            if (checkCraftU)
             {
                 StackPanelObjet.Children.Add(zoneCraftU);
             }
 
 
-
-
-
-
+            //////////////////////// Ajout de la partie textes /////////////////////////////
             foreach (KeyValuePair<string, string> elt in Mgr.SelectedItem.ListeTexte)
             {
                 texteUC texte = new();
@@ -159,47 +179,59 @@ namespace WPF_App
             }
 
 
-
-
-
+            //////////////////////// Ajout de la partie statistiques /////////////////////////////
+            
+            // On créé la zone
+            statistiqueUC zoneStat = new();
+            // On déclare un compteur
             int cpt = 1;
-            statistiqueUC zoneStat = new(); ;
+
             foreach (KeyValuePair<string, string> stat in Mgr.SelectedItem.ListeStats)
             {
+                // On ajoute une ligne à la grille
                 zoneStat.gridStat.RowDefinitions.Add(new RowDefinition());
 
-                Border b1 = new();
-                Border b2 = new();
-                b1.BorderThickness = new Thickness(0, 1, 1, 1) ;
-                b2.BorderThickness = new Thickness(1, 1, 0, 1);
-                b1.BorderBrush = Brushes.Gray;
-                b2.BorderBrush = Brushes.Gray;
-                //b1.BorderBrush = new Brushes.zoneStat.gridStat.FindResource("Brush");
+                // On créé les 2 textblock
                 TextBlock t1 = new(new Run(stat.Key));
-                TextBlock t2 = new(new Run(stat.Value.ToString()));
-                b1.Child = t1;
-                b2.Child = t2;
+                Border b1 = new()
+                {
+                    BorderThickness = new Thickness(0, 1, 1, 1),
+                    BorderBrush = Brushes.Gray,
+                    Child = t1
+                };
                 zoneStat.gridStat.Children.Add(b1);
                 b1.SetValue(Grid.RowProperty, cpt);
                 b1.SetValue(Grid.ColumnProperty, 0);
+
+                TextBlock t2 = new(new Run(stat.Value.ToString()));
+                Border b2 = new()
+                {
+                    BorderThickness = new Thickness(1, 1, 0, 1),
+                    BorderBrush = Brushes.Gray,
+                    Child = t2
+                };
                 zoneStat.gridStat.Children.Add(b2);
                 b2.SetValue(Grid.RowProperty, cpt);
                 b2.SetValue(Grid.ColumnProperty, 1);
 
                 cpt++;
             }
+            // Si le compteur est différent de 1 (donc au moins 1 statistiques), on affiche la zone
             if(cpt != 1)
             {
                 StackPanelObjet.Children.Add(zoneStat);
             }
-
-
-
         }
 
 
+        /// <summary>
+        /// Bouton pour modifier l'item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Modifier(object sender, RoutedEventArgs e)
         {
+            // Booléen permettant de dire qu'il faut affiche la paje ajouter en mode modifier
             PageAjouter pageA = new(true)
             {
                 Window = Window
@@ -208,14 +240,19 @@ namespace WPF_App
             Window.contentControl.Content = pageA;
         }
 
+        /// <summary>
+        /// Bouton pour supprimer l'item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Supprimer(object sender, RoutedEventArgs e)
         {
+            // Affiche un pop up de demande de suppression
             if (!PopUpDemandeSuppression.popUpOpen)
             {
                 PopUpDemandeSuppression popUp = new(Window);
                 PopUpDemandeSuppression.popUpOpen = true;
                 popUp.Show();
-                
             }
         }
     }

@@ -20,6 +20,9 @@ namespace WPF_App
     /// </summary>
     public partial class texteUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public texteUC()
         {
             InitializeComponent();

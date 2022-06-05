@@ -20,14 +20,12 @@ namespace WPF_App
     /// </summary>
     public partial class textBoxBaseUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public textBoxBaseUC()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

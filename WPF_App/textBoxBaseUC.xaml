@@ -35,7 +35,7 @@
             </Border>
             
             <Border Grid.Column="1" Style="{StaticResource pageAjouter_borderTextBox}" >
-                <TextBox x:Name="textBoxTexte" Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" TextChanged="TextBox_TextChanged" AcceptsTab="True"/>
+                <TextBox x:Name="textBoxTexte" Style="{StaticResource pageAjouter_textBox}" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="fr" AcceptsTab="True"/>
             </Border>
         </Grid>
     </Border>

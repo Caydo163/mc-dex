@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:WPF_App"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    
     <StackPanel>
         <TextBlock x:Name="texteTitre" Text="Autre texte" Style="{StaticResource pageObjet_titrePartie}"/>
         <TextBlock x:Name="textePartie" Text="Voici un exemple de description type qu'il pourrait y avoir." Style="{StaticResource pageObjet_textePartie}"/>

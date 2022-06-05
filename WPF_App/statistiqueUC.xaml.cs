@@ -20,6 +20,9 @@ namespace WPF_App
     /// </summary>
     public partial class statistiqueUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public statistiqueUC()
         {
             InitializeComponent();

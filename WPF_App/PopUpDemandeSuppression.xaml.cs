@@ -21,20 +21,42 @@ namespace WPF_App
     /// 
     public partial class PopUpDemandeSuppression : Window
     {
+        /// <summary>
+        /// Fenêtre de l'application
+        /// </summary>
         public MainWindow Window { get; set; }
+
+        /// <summary>
+        /// Manager
+        /// </summary>
         public static Manager Mgr => ((App)Application.Current).LeManager;
+
+        /// <summary>
+        /// Booléen pour savoir si un pop up est ouvert ou non
+        /// </summary>
         public static bool popUpOpen = false;
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
+        /// <param name="window"></param>
         public PopUpDemandeSuppression(MainWindow window)
         {
             InitializeComponent();
             DataContext = Mgr.SelectedItem;
             Window = window;
+            // Si le mode nether est activé, on change l'arrière plan
             if (Window.ModeNether)
             {
-                backgroundPopUpSuppr.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
+                backgroundPopUpSuppr.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\background_nether.png", UriKind.Relative));
             }
         }
 
+        /// <summary>
+        /// Bouton pour confirmer la suppression de l'item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Confirmer(object sender, RoutedEventArgs e)
         {
             Mgr.SupprimerItem(Mgr.SelectedItem);
@@ -47,6 +69,7 @@ namespace WPF_App
             this.Close();
         }
 
+        // Bouton pour annuler la suppression de l'item
         private void Button_Annuler(object sender, RoutedEventArgs e)
         {
             popUpOpen = false;

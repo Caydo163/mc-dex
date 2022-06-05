@@ -20,10 +20,14 @@ namespace WPF_App
     /// </summary>
     public partial class textBoxUC : UserControl
     {
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         public textBoxUC()
         {
             InitializeComponent();
         }
+
 
         public string Nom
         {

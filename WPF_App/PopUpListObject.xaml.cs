@@ -49,13 +49,19 @@ namespace WPF_App
         {
             InitializeComponent();
             DataContext = Mgr;
-            if(window.ModeNether)
+            // Si le mode nether est activé, on change l'arrière plan
+            if (window.ModeNether)
             {
-                backgroundPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\background_nether.png", UriKind.Relative));
-                backgroundMenuPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\img\\menu_background_nether.png", UriKind.Relative));
+                backgroundPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\background_nether.png", UriKind.Relative));
+                backgroundMenuPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\menu_background_nether.png", UriKind.Relative));
             }
         }
 
+        /// <summary>
+        /// Méthode permettant d'affciher les items correspondant à la recherche entré par l'utilisateur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         private void RechercheItem(object sender, TextChangedEventArgs args)
         {
             Mgr.Rechercher(textBox_RechercheItem.Text);
@@ -73,6 +79,7 @@ namespace WPF_App
         {
             if (listBoxItem.SelectedIndex > -1)
             {
+                // On récupère la liste d'items en fonction du mode actuel
                 ReadOnlyCollection<Item> listItems;
                 if(Mgr.modeRecherche)
                 {
@@ -83,16 +90,17 @@ namespace WPF_App
                     listItems = new ReadOnlyCollection<Item>(Mgr.Items);
                 }
 
-               
-
-                switch (Pos)
+                // Switch pour pouvoir modifier le bon bouton
+                switch(Pos)
                 {
                     case 1:
+                        // Si l'item sélectionné correspond à l'item "Bloc Vide" (Id = "999:1"), on afficher le bouton de base et on change la valeur de l'item à null dans la liste
                         if (listItems[listBoxItem.SelectedIndex].Id == "999:1")
                         {
                             Craft.Button1_Image.Source = new BitmapImage(new Uri("..\\..\\..\\img\\ajouter.png", UriKind.Relative));
                             Craft.ListItemCraft[Pos - 1] = null;
                         }
+                        // Sinon on affcihe l'image de l'item sélectionné et on ajoute l'item dans la liste
                         else
                         {
                             Craft.Button1_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
@@ -219,6 +227,7 @@ namespace WPF_App
 
                 }
         }
+        // On ferme le pop up
         popUpOpen = false;
         this.Close();
         }

@@ -183,6 +183,8 @@ namespace WPF_App
                 pageH.barreRecherche.Visibility = Visibility;
 
                 contentControl.Content = pageH;
+                pageH.barreRecherche.textBox_Recherche.Focusable = true;
+                pageH.barreRecherche.textBox_Recherche.Focus();
             }
         }
     }

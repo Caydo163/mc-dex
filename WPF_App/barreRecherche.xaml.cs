@@ -88,5 +88,7 @@ namespace WPF_App
             Mgr.modeRecherche = true;
             Home.listBox.ItemsSource = Mgr.ItemsRecherche;
         }
+
+
     }
 }

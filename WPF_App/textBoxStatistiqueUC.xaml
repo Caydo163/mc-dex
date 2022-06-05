@@ -27,29 +27,22 @@
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-
-
-                        <!--<local:ligneGridStatUC Grid.Row="0" x:Name="ligneStat1"/>-->
-
-
                     </Grid>
 
                     <StackPanel Orientation="Horizontal">
-                        
-                    <Button Width="40" Height="40" BorderThickness="0" Click="Button_supprimeLigneStat" HorizontalAlignment="Left">
-                        <Button.Background>
-                            <ImageBrush ImageSource="img\supprimer.png" Stretch="UniformToFill"/>
-                        </Button.Background>
-                    </Button>
-                    <Button Width="40" Height="40" BorderThickness="0" Click="Button_ajoutLigneStat" HorizontalAlignment="Left" Margin="0,0,15,0">
-                        <Button.Background>
-                            <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
-                        </Button.Background>
-                    </Button>
+                        <Button Width="40" Height="40" BorderThickness="0" Click="Button_supprimeLigneStat" HorizontalAlignment="Left">
+                            <Button.Background>
+                                <ImageBrush ImageSource="img\supprimer.png" Stretch="UniformToFill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button Width="40" Height="40" BorderThickness="0" Click="Button_ajoutLigneStat" HorizontalAlignment="Left" Margin="0,0,15,0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="img\ajouter.png" Stretch="UniformToFill"/>
+                            </Button.Background>
+                        </Button>
                     </StackPanel>
                 </StackPanel>
             </Border>
-
         </Grid>
     </Border>
 </UserControl>

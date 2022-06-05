@@ -119,15 +119,15 @@ namespace WPF_App
                 {
                     craft.nbrItemObtenu.Text = elt.NbFinal.ToString();
                 }
-                if (elt.GetType() == typeof(CraftObjet))
-                {
-                    craft.Button10_Image.Source = new BitmapImage(new Uri(Mgr.SelectedItem.Image, UriKind.Relative));
-                }
-                else
-                {
-                    CraftUtilisation craftU = (CraftUtilisation)elt;
-                    craft.Button10_Image.Source = new BitmapImage(new Uri(craftU.ObjetFinal.Image, UriKind.Relative));
-                }
+                //if (elt.GetType() == typeof(CraftObjet))
+                //{
+                //    craft.Button10_Image.Source = new BitmapImage(new Uri(Mgr.SelectedItem.Image, UriKind.Relative));
+                //}
+                //else
+                //{
+                //    CraftUtilisation craftU = (CraftUtilisation)elt;
+                //    craft.Button10_Image.Source = new BitmapImage(new Uri(craftU.ObjetFinal.Image, UriKind.Relative));
+                //}
 
             }
         }

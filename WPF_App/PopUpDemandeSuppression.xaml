@@ -19,12 +19,9 @@
             <ImageBrush x:Name="backgroundPopUpSuppr" ImageSource="img\background2.png" Stretch="UniformToFill"/>
         </DockPanel.Background>
 
-
         <TextBlock DockPanel.Dock="Top" Text="Voulez-vous vraiment supprimer l'objet suivant" FontFamily="{StaticResource Minecraft}" FontSize="20" TextWrapping="Wrap" TextAlignment="Center" Margin="10" Foreground="White"/>
 
-
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" HorizontalAlignment="Center">
-
             <Border VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider">
                 <Button Click="Button_Confirmer">
                     <TextBlock Text="CONFIRMER" Style="{StaticResource pageAjouter_textBlock}"/>

@@ -22,7 +22,9 @@ namespace WPF_App
     /// </summary>
     public partial class textBoxCraftUC : UserControl
     {
-
+        /// <summary>
+        /// Fenêtre de l'application
+        /// </summary>
         public MainWindow Window { get; set; }
 
         /// <summary>
@@ -34,11 +36,21 @@ namespace WPF_App
             
         }
 
-        public List<Item> ListItemCraft { get => listItemCraft; set => listItemCraft = value; }
+        /// <summary>
+        /// Liste d'item initialisé à 10 objet null
+        /// </summary>
         private List<Item> listItemCraft = new() { null, null, null, null, null, null, null, null, null, null};
-        //public int NbItem = 1;
 
+        /// <summary>
+        /// Prporiété contenant la liste d'item
+        /// </summary>
+        public List<Item> ListItemCraft { get => listItemCraft; set => listItemCraft = value; }
 
+        /// <summary>
+        /// Bouton permettant de choisir le premier item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button1(object sender, RoutedEventArgs e)
         {
             if(! PopUpListObject.popUpOpen)
@@ -53,6 +65,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le deuxième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button2(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -66,6 +84,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le troisième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button3(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -79,6 +103,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le quatrième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button4(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -92,6 +122,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le cinquième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button5(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -105,6 +141,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le sixième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button6(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -118,6 +160,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le septième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button7(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -131,6 +179,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le huitième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button8(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -144,6 +198,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le neuvième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button9(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
@@ -157,6 +217,12 @@ namespace WPF_App
                 popUp.Show();
             }
         }
+
+        /// <summary>
+        /// Bouton permettant de choisir le dixième item du craft
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button10(object sender, RoutedEventArgs e)
         {
             if (!PopUpListObject.popUpOpen)
