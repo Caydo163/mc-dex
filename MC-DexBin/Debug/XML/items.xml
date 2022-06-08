@@ -185,4 +185,26 @@
     <Nom z:Id="77">Brthrt</Nom>
     <Id z:Id="78">543</Id>
   </Item>
+  <Item z:Id="79">
+    <Desc z:Id="80">ytnyt,t</Desc>
+    <Image z:Id="81">design patern2.png</Image>
+    <ListeCraft z:Id="82" z:Size="1">
+      <Craft z:Id="83" i:type="CraftObjet">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 z:Ref="10" i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="84" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="85" z:Size="0" />
+    <Nom z:Id="86">Htrfh</Nom>
+    <Id z:Id="87">56</Id>
+  </Item>
 </ArrayOfItem>
