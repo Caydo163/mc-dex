@@ -48,7 +48,7 @@ namespace WPF_App
 
         // UsingaDependencyProperty as the backing store for Texte.This enables animation,styling,binding,etc ...
         public static readonly DependencyProperty ImageProperty =
-            DependencyProperty.Register("Image", typeof(string), typeof(ItemUC), new PropertyMetadata("img\\terre.png"));
+            DependencyProperty.Register("Image", typeof(string), typeof(ItemUC), new PropertyMetadata("MissingTextureBlock.png"));
 
     }
 }

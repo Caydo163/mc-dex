@@ -212,7 +212,7 @@ namespace Modele
         public void AjouterCraft(Item o1, Item o2, Item o3, Item o4, Item o5, Item o6, Item o7, Item o8, Item o9, int nbFinal, Item o10 = null)
         {
             // Si il n'y a pas le 10e item, il s'agit d'un craftObjet
-            if (o10 == this)
+            if (o10 == this || o10 == null)
             {
                 ListeCraft.Add(new CraftObjet(nbFinal, o1, o2, o3, o4, o5, o6, o7, o8, o9));
             }

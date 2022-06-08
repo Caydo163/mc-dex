@@ -1,6 +1,7 @@
 ﻿using Modele;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_App;
+using Path = System.IO.Path;
 
 namespace WPF_App
 {
@@ -82,17 +84,17 @@ namespace WPF_App
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     grilleCraftUC craftUC = new();
-                    if (elt.Objet0_0 != null) craftUC.ImageName1 = "..\\img\\" + elt.Objet0_0.Image;
-                    if (elt.Objet0_1 != null) craftUC.ImageName2 = "..\\img\\" + elt.Objet0_1.Image;
-                    if (elt.Objet0_2 != null) craftUC.ImageName3 = "..\\img\\" + elt.Objet0_2.Image;
-                    if (elt.Objet1_0 != null) craftUC.ImageName4 = "..\\img\\" + elt.Objet1_0.Image;
-                    if (elt.Objet1_1 != null) craftUC.ImageName5 = "..\\img\\" + elt.Objet1_1.Image;
-                    if (elt.Objet1_2 != null) craftUC.ImageName6 = "..\\img\\" + elt.Objet1_2.Image;
-                    if (elt.Objet2_0 != null) craftUC.ImageName7 = "..\\img\\" + elt.Objet2_0.Image;
-                    if (elt.Objet2_1 != null) craftUC.ImageName8 = "..\\img\\" + elt.Objet2_1.Image;
-                    if (elt.Objet2_2 != null) craftUC.ImageName9 = "..\\img\\" + elt.Objet2_2.Image;
-
-                    craftUC.ImageName10 = "..\\img\\" + Mgr.SelectedItem.Image;
+                    string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"..\\img"));
+                    if (elt.Objet0_0 != null) craftUC.ImageName1 = Path.Combine(currentDir, elt.Objet0_0.Image);
+                    if (elt.Objet0_1 != null) craftUC.ImageName2 = Path.Combine(currentDir , elt.Objet0_1.Image);
+                    if (elt.Objet0_2 != null) craftUC.ImageName3 = Path.Combine(currentDir , elt.Objet0_2.Image);
+                    if (elt.Objet1_0 != null) craftUC.ImageName4 = Path.Combine(currentDir , elt.Objet1_0.Image);
+                    if (elt.Objet1_1 != null) craftUC.ImageName5 = Path.Combine(currentDir , elt.Objet1_1.Image);
+                    if (elt.Objet1_2 != null) craftUC.ImageName6 = Path.Combine(currentDir , elt.Objet1_2.Image);
+                    if (elt.Objet2_0 != null) craftUC.ImageName7 = Path.Combine(currentDir , elt.Objet2_0.Image);
+                    if (elt.Objet2_1 != null) craftUC.ImageName8 = Path.Combine(currentDir , elt.Objet2_1.Image);
+                    if (elt.Objet2_2 != null) craftUC.ImageName9 = Path.Combine(currentDir , elt.Objet2_2.Image);
+                    craftUC.ImageName10 = Path.Combine(currentDir , Mgr.SelectedItem.Image);
                     if (elt.NbFinal != 1)
                     {
                         craftUC.nbBlocCraft.Text = elt.NbFinal.ToString();
@@ -119,16 +121,17 @@ namespace WPF_App
                 {
                     CraftUtilisation craft = (CraftUtilisation)elt;
                     grilleCraftUC craftUC = new();
-                    if (craft.Objet0_0 != null) craftUC.ImageName1 = "..\\img\\" + craft.Objet0_0.Image;
-                    if (craft.Objet0_1 != null) craftUC.ImageName2 = "..\\img\\" + craft.Objet0_1.Image;
-                    if (craft.Objet0_2 != null) craftUC.ImageName3 = "..\\img\\" + craft.Objet0_2.Image;
-                    if (craft.Objet1_0 != null) craftUC.ImageName4 = "..\\img\\" + craft.Objet1_0.Image;
-                    if (craft.Objet1_1 != null) craftUC.ImageName5 = "..\\img\\" + craft.Objet1_1.Image;
-                    if (craft.Objet1_2 != null) craftUC.ImageName6 = "..\\img\\" + craft.Objet1_2.Image;
-                    if (craft.Objet2_0 != null) craftUC.ImageName7 = "..\\img\\" + craft.Objet2_0.Image;
-                    if (craft.Objet2_1 != null) craftUC.ImageName8 = "..\\img\\" + craft.Objet2_1.Image;
-                    if (craft.Objet2_2 != null) craftUC.ImageName9 = "..\\img\\" + craft.Objet2_2.Image;
-                    if (craft.ObjetFinal != null) craftUC.ImageName10 = "..\\img\\" + craft.ObjetFinal.Image;
+                    string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"..\\img"));
+                    if (craft.Objet0_0 != null) craftUC.ImageName1 = Path.Combine(currentDir, craft.Objet0_0.Image);
+                    if (craft.Objet0_1 != null) craftUC.ImageName2 = Path.Combine(currentDir , craft.Objet0_1.Image);
+                    if (craft.Objet0_2 != null) craftUC.ImageName3 = Path.Combine(currentDir , craft.Objet0_2.Image);
+                    if (craft.Objet1_0 != null) craftUC.ImageName4 = Path.Combine(currentDir , craft.Objet1_0.Image);
+                    if (craft.Objet1_1 != null) craftUC.ImageName5 = Path.Combine(currentDir , craft.Objet1_1.Image);
+                    if (craft.Objet1_2 != null) craftUC.ImageName6 = Path.Combine(currentDir , craft.Objet1_2.Image);
+                    if (craft.Objet2_0 != null) craftUC.ImageName7 = Path.Combine(currentDir , craft.Objet2_0.Image);
+                    if (craft.Objet2_1 != null) craftUC.ImageName8 = Path.Combine(currentDir , craft.Objet2_1.Image);
+                    if (craft.Objet2_2 != null) craftUC.ImageName9 = Path.Combine(currentDir , craft.Objet2_2.Image);
+                    if (craft.ObjetFinal != null) craftUC.ImageName10 = Path.Combine(currentDir , craft.ObjetFinal.Image);
 
                     if (craft.NbFinal != 1)
                     {

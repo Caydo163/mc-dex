@@ -6,10 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\elandre4\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\elandre4\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Users\\eloan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\eloan\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
