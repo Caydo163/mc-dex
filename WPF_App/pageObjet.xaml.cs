@@ -82,16 +82,16 @@ namespace WPF_App
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     grilleCraftUC craftUC = new();
-                    if (elt.Objet0_0 != null) craftUC.ImageName1 = elt.Objet0_0.Image;
-                    if (elt.Objet0_1 != null) craftUC.ImageName2 = elt.Objet0_1.Image;
-                    if (elt.Objet0_2 != null) craftUC.ImageName3 = elt.Objet0_2.Image;
-                    if (elt.Objet1_0 != null) craftUC.ImageName4 = elt.Objet1_0.Image;
-                    if (elt.Objet1_1 != null) craftUC.ImageName5 = elt.Objet1_1.Image;
-                    if (elt.Objet1_2 != null) craftUC.ImageName6 = elt.Objet1_2.Image;
-                    if (elt.Objet2_0 != null) craftUC.ImageName7 = elt.Objet2_0.Image;
-                    if (elt.Objet2_1 != null) craftUC.ImageName8 = elt.Objet2_1.Image;
-                    if (elt.Objet2_2 != null) craftUC.ImageName9 = elt.Objet2_2.Image;
-                    craftUC.ImageName10 = Mgr.SelectedItem.Image;
+                    if (elt.Objet0_0 != null) craftUC.ImageName1 = "..\\img\\"+elt.Objet0_0.Image;
+                    if (elt.Objet0_1 != null) craftUC.ImageName2 = "..\\img\\" + elt.Objet0_1.Image;
+                    if (elt.Objet0_2 != null) craftUC.ImageName3 = "..\\img\\" + elt.Objet0_2.Image;
+                    if (elt.Objet1_0 != null) craftUC.ImageName4 = "..\\img\\" + elt.Objet1_0.Image;
+                    if (elt.Objet1_1 != null) craftUC.ImageName5 = "..\\img\\" + elt.Objet1_1.Image;
+                    if (elt.Objet1_2 != null) craftUC.ImageName6 = "..\\img\\" + elt.Objet1_2.Image;
+                    if (elt.Objet2_0 != null) craftUC.ImageName7 = "..\\img\\" + elt.Objet2_0.Image;
+                    if (elt.Objet2_1 != null) craftUC.ImageName8 = "..\\img\\" + elt.Objet2_1.Image;
+                    if (elt.Objet2_2 != null) craftUC.ImageName9 = "..\\img\\" + elt.Objet2_2.Image;
+                    craftUC.ImageName10 = "..\\img\\" + Mgr.SelectedItem.Image;
                     if (elt.NbFinal != 1)
                     {
                         craftUC.nbBlocCraft.Text = elt.NbFinal.ToString();
@@ -118,16 +118,16 @@ namespace WPF_App
                 {
                     CraftUtilisation craft = (CraftUtilisation)elt;
                     grilleCraftUC craftUC = new();
-                    if (craft.Objet0_0 != null) craftUC.ImageName1 = craft.Objet0_0.Image;
-                    if (craft.Objet0_1 != null) craftUC.ImageName2 = craft.Objet0_1.Image;
-                    if (craft.Objet0_2 != null) craftUC.ImageName3 = craft.Objet0_2.Image;
-                    if (craft.Objet1_0 != null) craftUC.ImageName4 = craft.Objet1_0.Image;
-                    if (craft.Objet1_1 != null) craftUC.ImageName5 = craft.Objet1_1.Image;
-                    if (craft.Objet1_2 != null) craftUC.ImageName6 = craft.Objet1_2.Image;
-                    if (craft.Objet2_0 != null) craftUC.ImageName7 = craft.Objet2_0.Image;
-                    if (craft.Objet2_1 != null) craftUC.ImageName8 = craft.Objet2_1.Image;
-                    if (craft.Objet2_2 != null) craftUC.ImageName9 = craft.Objet2_2.Image;
-                    if (craft.ObjetFinal != null) craftUC.ImageName10 = craft.ObjetFinal.Image;
+                    if (craft.Objet0_0 != null) craftUC.ImageName1 = "..\\img\\" + craft.Objet0_0.Image;
+                    if (craft.Objet0_1 != null) craftUC.ImageName2 = "..\\img\\" + craft.Objet0_1.Image;
+                    if (craft.Objet0_2 != null) craftUC.ImageName3 = "..\\img\\" + craft.Objet0_2.Image;
+                    if (craft.Objet1_0 != null) craftUC.ImageName4 = "..\\img\\" + craft.Objet1_0.Image;
+                    if (craft.Objet1_1 != null) craftUC.ImageName5 = "..\\img\\" + craft.Objet1_1.Image;
+                    if (craft.Objet1_2 != null) craftUC.ImageName6 = "..\\img\\" + craft.Objet1_2.Image;
+                    if (craft.Objet2_0 != null) craftUC.ImageName7 = "..\\img\\" + craft.Objet2_0.Image;
+                    if (craft.Objet2_1 != null) craftUC.ImageName8 = "..\\img\\" + craft.Objet2_1.Image;
+                    if (craft.Objet2_2 != null) craftUC.ImageName9 = "..\\img\\" + craft.Objet2_2.Image;
+                    if (craft.ObjetFinal != null) craftUC.ImageName10 = "..\\img\\" + craft.ObjetFinal.Image;
 
                     if (craft.NbFinal != 1)
                     {

@@ -6,7 +6,12 @@
              xmlns:local="clr-namespace:WPF_App"
              mc:Ignorable="d" 
              d:DesignHeight="80" d:DesignWidth="220" Foreground="{x:Null}"
-             x:Name="root">
+             x:Name="root"
+             xmlns:conv="clr-namespace:WPF_App.converter">
+
+    <UserControl.Resources>
+        <conv:String2ImageConverter x:Key="string2ImageConverter"/>
+    </UserControl.Resources>
 
 
     <Border CornerRadius="12" BorderThickness="5" Background="#BA0E0D0D" Height="80" Width="220" Margin="3">
@@ -15,7 +20,7 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Source="{Binding Image, ElementName=root}" Height="50" Width="50" Margin="10,2,10,2"/>
+                <Image Grid.Column="0" Source="{Binding Image, ElementName=root, Converter={StaticResource string2ImageConverter}}" Height="50" Width="50" Margin="10,2,10,2"/>
                 <TextBlock Grid.Column="1" Text="{Binding Nom, ElementName=root}" FontFamily="{StaticResource Minecraft}" Foreground="#C5C5C5" FontSize="22" VerticalAlignment="Center" TextWrapping="Wrap"/>
             </Grid>
     </Border>

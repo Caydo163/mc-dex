@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -17,6 +18,7 @@ using System.Windows.Shapes;
 using Microsoft.Win32;
 using Modele;
 using WPF_App;
+using Path = System.IO.Path;
 
 namespace WPF_App
 {
@@ -106,28 +108,32 @@ namespace WPF_App
                 panelBlocAjout.Children.Add(craft);
 
 
-                if (elt.Objet0_0 != null) craft.Button1_Image.Source = new BitmapImage(new Uri(elt.Objet0_0.Image, UriKind.Relative));
-                if (elt.Objet0_1 != null) craft.Button2_Image.Source = new BitmapImage(new Uri(elt.Objet0_1.Image, UriKind.Relative));
-                if (elt.Objet0_2 != null) craft.Button3_Image.Source = new BitmapImage(new Uri(elt.Objet0_2.Image, UriKind.Relative));
-                if (elt.Objet1_0 != null) craft.Button4_Image.Source = new BitmapImage(new Uri(elt.Objet1_0.Image, UriKind.Relative));
-                if (elt.Objet1_1 != null) craft.Button5_Image.Source = new BitmapImage(new Uri(elt.Objet1_1.Image, UriKind.Relative));
-                if (elt.Objet1_2 != null) craft.Button6_Image.Source = new BitmapImage(new Uri(elt.Objet1_2.Image, UriKind.Relative));
-                if (elt.Objet2_0 != null) craft.Button7_Image.Source = new BitmapImage(new Uri(elt.Objet2_0.Image, UriKind.Relative));
-                if (elt.Objet2_1 != null) craft.Button8_Image.Source = new BitmapImage(new Uri(elt.Objet2_1.Image, UriKind.Relative));
-                if (elt.Objet2_2 != null) craft.Button9_Image.Source = new BitmapImage(new Uri(elt.Objet2_2.Image, UriKind.Relative));
+                if (elt.Objet0_0 != null) craft.Button1_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet0_0.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet0_1 != null) craft.Button2_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet0_1.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet0_2 != null) craft.Button3_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet0_2.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet1_0 != null) craft.Button4_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet1_0.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet1_1 != null) craft.Button5_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet1_1.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet1_2 != null) craft.Button6_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet1_2.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet2_0 != null) craft.Button7_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet2_0.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet2_1 != null) craft.Button8_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet2_1.Image, UriKind.RelativeOrAbsolute));
+                if (elt.Objet2_2 != null) craft.Button9_Image.Source = new BitmapImage(new Uri("..\\img\\" + elt.Objet2_2.Image, UriKind.RelativeOrAbsolute));
                 if (elt.NbFinal != 1)
                 {
                     craft.nbrItemObtenu.Text = elt.NbFinal.ToString();
                 }
-                //if (elt.GetType() == typeof(CraftObjet))
-                //{
-                //    craft.Button10_Image.Source = new BitmapImage(new Uri(Mgr.SelectedItem.Image, UriKind.Relative));
-                //}
-                //else
-                //{
-                //    CraftUtilisation craftU = (CraftUtilisation)elt;
-                //    craft.Button10_Image.Source = new BitmapImage(new Uri(craftU.ObjetFinal.Image, UriKind.Relative));
-                //}
+                if (elt.GetType() == typeof(CraftObjet))
+                {
+                    craft.Button10_Image.Source = new BitmapImage(new Uri("..\\img\\" + Mgr.SelectedItem.Image, UriKind.RelativeOrAbsolute));
+                }
+                else
+                {
+                    CraftUtilisation craftU = (CraftUtilisation)elt;
+                    if(craftU.ObjetFinal.Image != null)
+                    {
+                        craft.Button10_Image.Source = new BitmapImage(new Uri("..\\img\\" + craftU.ObjetFinal.Image, UriKind.RelativeOrAbsolute));
+                    }
+                    
+                }
 
             }
         }
@@ -372,12 +378,35 @@ namespace WPF_App
                 }
 
 
+
+
+
+
+
                 if(ModeModifier)
                 {
                     Mgr.SupprimerItem(Mgr.SelectedItem);
                 }
                 // On créé l'item
-                Item item = Mgr.AjouterItem(nom, nomE, id, image, desc, listeTexte, listeStats);
+
+                string CheminImage;
+                if (File.Exists(Path.Combine("..\\img", Path.GetFileName(image))))
+                {
+                    int i = 1;
+                    while (File.Exists(Path.Combine("..\\img", Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image))))
+                    {
+                        i++;
+                    }
+                    File.Copy(image, Path.Combine("..\\img", Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image)));
+                    CheminImage = Path.Combine("..\\img", Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image));
+                }
+                else
+                {
+                    File.Copy(image, Path.Combine("..\\img", Path.GetFileName(image)));
+                    CheminImage = Path.Combine("..\\img", Path.GetFileName(image));
+                }
+
+                Item item = Mgr.AjouterItem(nom, nomE, id, Path.GetFileName(CheminImage), desc, listeTexte, listeStats);
 
 
                 // Regarder si elt vide
@@ -392,7 +421,7 @@ namespace WPF_App
                     List<Item> temp = new(elt.ListItemCraft);
 
 
-                    // Remplacer par LINQ ?
+                    
                     foreach (Item i in elt.ListItemCraft)
                     {
                         if (i != null && i.Id == "999:2")
@@ -428,7 +457,7 @@ namespace WPF_App
                     };
                     Window.contentControl.Content = Home;
                 }
-
+                Window.Title = Path.GetFileName(CheminImage);
 
             }
         }

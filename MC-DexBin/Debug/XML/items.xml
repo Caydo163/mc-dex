@@ -1,127 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfItem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Modele">
   <Item z:Id="2">
-    <Desc z:Id="3">fhbfdth</Desc>
-    <Image z:Id="4">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (2).png</Image>
-    <ListeCraft z:Id="5" z:Size="1">
-      <Craft z:Id="6" i:type="CraftUtilisation">
-        <NbFinal>47</NbFinal>
+    <Desc z:Id="3">gtrgrtgtr</Desc>
+    <Image z:Id="4">command_block.png</Image>
+    <ListeCraft z:Id="5" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="7" z:Size="0" />
+    <Nom z:Id="8">Yuuuuuuu</Nom>
+    <Id z:Id="9">7</Id>
+  </Item>
+  <Item z:Id="10">
+    <Desc z:Id="11">zfefzefzef</Desc>
+    <Image z:Id="12">background_nether.png</Image>
+    <ListeCraft z:Id="13" z:Size="1">
+      <Craft z:Id="14" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
         <Objet0_0 z:Ref="2" i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
         <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="2" i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="7">Dgbrg</NomBase>
-        <ObjetFinal i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="8" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="9" z:Size="0" />
-    <Nom z:Id="10">Dgbrg</Nom>
-    <Id z:Id="11">47</Id>
-  </Item>
-  <Item z:Id="12">
-    <Desc z:Id="13">ytjy</Desc>
-    <Image z:Id="14">C:\Users\Megaport\Pictures\Screenshots\Capture d’écran (5).png</Image>
-    <ListeCraft z:Id="15" z:Size="1">
-      <Craft z:Id="16" i:type="CraftUtilisation">
-        <NbFinal>74</NbFinal>
-        <Objet0_0 z:Ref="12" i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
         <Objet1_1 i:nil="true" />
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
-        <NomBase z:Id="17">Gtfg</NomBase>
-        <ObjetFinal z:Ref="2" i:nil="true" />
+        <NomBase z:Id="15">Logo</NomBase>
+        <ObjetFinal i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="18" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="19" z:Size="0" />
-    <Nom z:Id="20">Gtfg</Nom>
-    <Id z:Id="21">74</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="16" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="17" z:Size="0" />
+    <Nom z:Id="18">Logo</Nom>
+    <Id z:Id="19">789</Id>
   </Item>
-  <Item z:Id="22">
-    <Desc z:Id="23">zefzefz</Desc>
-    <Image z:Id="24">C:\Users\justi\Downloads\bouton_mode_nether.png</Image>
-    <ListeCraft z:Id="25" z:Size="1">
-      <Craft z:Id="26" i:type="CraftUtilisation">
-        <NbFinal>1</NbFinal>
+  <Item z:Id="20">
+    <Desc z:Id="21">fzeefzef</Desc>
+    <Image z:Id="22">liste_des_objets.png</Image>
+    <ListeCraft z:Id="23" z:Size="2">
+      <Craft z:Id="24" i:type="CraftObjet">
+        <NbFinal>7</NbFinal>
+        <Objet0_0 z:Ref="2" i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 z:Ref="10" i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+      </Craft>
+      <Craft z:Id="25" i:type="CraftUtilisation">
+        <NbFinal>3</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
         <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
+        <Objet1_1 z:Ref="20" i:nil="true" />
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
-        <NomBase z:Id="27">Test</NomBase>
-        <ObjetFinal i:nil="true" />
+        <NomBase z:Id="26">Zdezdzez</NomBase>
+        <ObjetFinal z:Ref="2" i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="28" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="29" z:Size="0" />
-    <Nom z:Id="30">Test</Nom>
-    <Id z:Id="31">3222</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="27" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="28" z:Size="0" />
+    <Nom z:Id="29">Zdezdzez</Nom>
+    <Id z:Id="30">121</Id>
   </Item>
-  <Item z:Id="32">
-    <Desc z:Id="33">efzefz</Desc>
-    <Image z:Id="34">C:\Users\justi\Downloads\Warped_Nylium_%28side_texture%29_JE1_BE1.png</Image>
-    <ListeCraft z:Id="35" z:Size="0" />
+  <Item z:Id="31">
+    <Desc z:Id="32">fzefzfez</Desc>
+    <Image z:Id="33">game-over.png</Image>
+    <ListeCraft z:Id="34" z:Size="1">
+      <Craft z:Id="35" i:type="CraftObjet">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 z:Ref="10" i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 z:Ref="20" i:nil="true" />
+        <Objet2_1 i:nil="true" />
+        <Objet2_2 i:nil="true" />
+      </Craft>
+    </ListeCraft>
     <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="36" z:Size="0" />
     <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="37" z:Size="0" />
-    <Nom z:Id="38">Def</Nom>
-    <Id z:Id="39">6969</Id>
-  </Item>
-  <Item z:Id="40">
-    <Desc z:Id="41">czfefzefz
-Je viens de remodifier cet item</Desc>
-    <Image z:Id="42">C:\Users\justi\Downloads\Briques_du_Nether.png</Image>
-    <ListeCraft z:Id="43" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="44" z:Size="3">
-      <d3p1:KeyValueOfstringstring>
-        <d3p1:Key z:Id="45">Stat 0</d3p1:Key>
-        <d3p1:Value z:Id="46">infini</d3p1:Value>
-      </d3p1:KeyValueOfstringstring>
-      <d3p1:KeyValueOfstringstring>
-        <d3p1:Key z:Id="47">Stat 1</d3p1:Key>
-        <d3p1:Value z:Id="48">75.2</d3p1:Value>
-      </d3p1:KeyValueOfstringstring>
-      <d3p1:KeyValueOfstringstring>
-        <d3p1:Key z:Id="49">Stat 2</d3p1:Key>
-        <d3p1:Value z:Id="50">1</d3p1:Value>
-      </d3p1:KeyValueOfstringstring>
-    </ListeStats>
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="51" z:Size="3">
-      <d3p1:KeyValuePairOfstringstring>
-        <d3p1:key z:Id="52">Titre 1</d3p1:key>
-        <d3p1:value z:Id="53">Texte 1	
-f
-erfr
-WXXXXXXXX</d3p1:value>
-      </d3p1:KeyValuePairOfstringstring>
-      <d3p1:KeyValuePairOfstringstring>
-        <d3p1:key z:Id="54">Titre 2</d3p1:key>
-        <d3p1:value z:Id="55">Texte 2
-Texte 2
-Texte 2
-Texte 2Texte 2</d3p1:value>
-      </d3p1:KeyValuePairOfstringstring>
-      <d3p1:KeyValuePairOfstringstring>
-        <d3p1:key z:Id="56">Titre 3</d3p1:key>
-        <d3p1:value z:Id="57">ipqdvjqdifhvnuidfjvuidfvd</d3p1:value>
-      </d3p1:KeyValuePairOfstringstring>
-    </ListeTexte>
-    <Nom z:Id="58">Test</Nom>
-    <NomE z:Id="59">Anglais</NomE>
-    <Id z:Id="60">563:5</Id>
+    <Nom z:Id="38">Ezfefzf</Nom>
+    <Id z:Id="39">123</Id>
   </Item>
 </ArrayOfItem>

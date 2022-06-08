@@ -5,10 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WPF_App"
              mc:Ignorable="d" 
-             d:DesignHeight="2000" d:DesignWidth="800">
+             d:DesignHeight="2000" d:DesignWidth="800"
+             xmlns:conv="clr-namespace:WPF_App.converter">
 
-
-
+    <UserControl.Resources>
+        <conv:String2ImageConverter x:Key="string2ImageConverter"/>
+    </UserControl.Resources>
+    
     <DockPanel x:Name="dockPanel">
 
         <DockPanel DockPanel.Dock="Right" x:Name="zoneHome">
@@ -29,7 +32,7 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
 
-                            <Image Grid.Column="0" Grid.RowSpan="2" Grid.Row="0" Source="{Binding SelectedItem.Image}" Height="110" Width="110" Margin="0,0,20,0"/>
+                            <Image Grid.Column="0" Grid.RowSpan="2" Grid.Row="0" Source="{Binding SelectedItem.Image, Converter={StaticResource string2ImageConverter}}" Height="110" Width="110" Margin="0,0,20,0"/>
                             <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding SelectedItem.Nom, FallbackValue=Terre}" FontSize="40" Style="{StaticResource pageObjet_default}"/>
                             <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding SelectedItem.NomE, FallbackValue=Dirt}"  FontSize="35" Foreground="#FF979797" Style="{StaticResource pageObjet_default}"/>
                             <TextBlock Grid.Column="2" Grid.Row="0" Text="{Binding SelectedItem.Id, FallbackValue=16:84}"  FontSize="22" Style="{StaticResource pageObjet_default}"/>

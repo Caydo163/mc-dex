@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_App.converter;
 
 namespace WPF_App
 {
@@ -103,7 +104,7 @@ namespace WPF_App
                         // Sinon on affcihe l'image de l'item sélectionné et on ajoute l'item dans la liste
                         else
                         {
-                            Craft.Button1_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button1_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -116,7 +117,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button2_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button2_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -129,7 +130,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button3_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button3_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -142,7 +143,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button4_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button4_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -155,7 +156,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button5_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button5_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -168,7 +169,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button6_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button6_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -181,7 +182,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button7_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button7_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -194,7 +195,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button8_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button8_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -207,7 +208,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button9_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button9_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
@@ -220,7 +221,7 @@ namespace WPF_App
                         }
                         else
                         {
-                            Craft.Button10_Image.Source = new BitmapImage(new Uri(listItems[listBoxItem.SelectedIndex].Image, UriKind.Relative));
+                            Craft.Button10_Image.Source = new BitmapImage(new Uri("..\\img\\" + listItems[listBoxItem.SelectedIndex].Image, UriKind.RelativeOrAbsolute));
                             Craft.ListItemCraft[Pos - 1] = listItems[listBoxItem.SelectedIndex];
                         }
                         break;
