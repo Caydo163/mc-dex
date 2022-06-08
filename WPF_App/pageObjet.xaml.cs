@@ -40,7 +40,7 @@ namespace WPF_App
         /// <summary>
         /// Constructeur
         /// </summary>
-        public pageObjet()
+        public pageObjet(MainWindow window)
         {
             InitializeComponent();
 
@@ -82,7 +82,7 @@ namespace WPF_App
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     grilleCraftUC craftUC = new();
-                    if (elt.Objet0_0 != null) craftUC.ImageName1 = "..\\img\\"+elt.Objet0_0.Image;
+                    if (elt.Objet0_0 != null) craftUC.ImageName1 = "..\\img\\" + elt.Objet0_0.Image;
                     if (elt.Objet0_1 != null) craftUC.ImageName2 = "..\\img\\" + elt.Objet0_1.Image;
                     if (elt.Objet0_2 != null) craftUC.ImageName3 = "..\\img\\" + elt.Objet0_2.Image;
                     if (elt.Objet1_0 != null) craftUC.ImageName4 = "..\\img\\" + elt.Objet1_0.Image;
@@ -91,6 +91,7 @@ namespace WPF_App
                     if (elt.Objet2_0 != null) craftUC.ImageName7 = "..\\img\\" + elt.Objet2_0.Image;
                     if (elt.Objet2_1 != null) craftUC.ImageName8 = "..\\img\\" + elt.Objet2_1.Image;
                     if (elt.Objet2_2 != null) craftUC.ImageName9 = "..\\img\\" + elt.Objet2_2.Image;
+
                     craftUC.ImageName10 = "..\\img\\" + Mgr.SelectedItem.Image;
                     if (elt.NbFinal != 1)
                     {
@@ -232,7 +233,7 @@ namespace WPF_App
         private void Button_Modifier(object sender, RoutedEventArgs e)
         {
             // Booléen permettant de dire qu'il faut affiche la paje ajouter en mode modifier
-            PageAjouter pageA = new(true)
+            PageAjouter pageA = new(true,Window)
             {
                 Window = Window
             };

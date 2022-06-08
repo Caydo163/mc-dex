@@ -42,9 +42,10 @@ namespace WPF_App
         /// <summary>
         /// Constructeur
         /// </summary>
-        public PageAjouter(bool mode)
+        public PageAjouter(bool mode,MainWindow window)
         {
             InitializeComponent();
+            Window = window;
             Mgr.ModeAjouter(true);
             ModeModifier = mode;
             if(ModeModifier)
@@ -99,7 +100,7 @@ namespace WPF_App
             // Craft
             foreach (Craft elt in Mgr.SelectedItem.ListeCraft)
             {
-                textBoxCraftUC craft = new()
+                textBoxCraftUC craft = new(Window)
                 {
                     Window = Window,
                 };
@@ -156,7 +157,7 @@ namespace WPF_App
         /// <param name="e"></param>
         private void Button_AjouterCraft(object sender, RoutedEventArgs e)
         {
-            textBoxCraftUC box = new()
+            textBoxCraftUC box = new(Window)
             {
                 Window = Window,
             };
@@ -441,7 +442,7 @@ namespace WPF_App
                 if(ModeModifier)
                 {
                     Mgr.SelectedItem = item;
-                    pageObjet pageO = new();
+                    pageObjet pageO = new(Window);
                     Window.Title = "Item - " + Mgr.SelectedItem.Nom;
                     pageO.Window = Window;
                     pageO.chargementHome();

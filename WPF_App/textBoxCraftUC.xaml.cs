@@ -30,10 +30,10 @@ namespace WPF_App
         /// <summary>
         /// Constructeur de la classe
         /// </summary>
-        public textBoxCraftUC()
+        public textBoxCraftUC(MainWindow wIndow)
         {
             InitializeComponent();
-            
+            Window = wIndow;
         }
 
         /// <summary>
