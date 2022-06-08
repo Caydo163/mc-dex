@@ -65,20 +65,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\justi\\.nuget\\packages\\": {}
+    "C:\\Users\\elandre4\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\elandre4\\source\\repos\\mc-dex\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\Test.csproj",
-      "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Test\\obj\\",
+      "projectPath": "C:\\Users\\elandre4\\source\\repos\\mc-dex\\Test\\Test.csproj",
+      "packagesPath": "C:\\Users\\elandre4\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elandre4\\source\\repos\\mc-dex\\Test\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\elandre4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -91,14 +99,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
-              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj"
+            "C:\\Users\\elandre4\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
+              "projectPath": "C:\\Users\\elandre4\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj"
             },
-            "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
-              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+            "C:\\Users\\elandre4\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
+              "projectPath": "C:\\Users\\elandre4\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
             },
-            "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
-              "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj"
+            "C:\\Users\\elandre4\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
+              "projectPath": "C:\\Users\\elandre4\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj"
             }
           }
         }
@@ -127,7 +135,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

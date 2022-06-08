@@ -128,11 +128,10 @@ namespace WPF_App
                 else
                 {
                     CraftUtilisation craftU = (CraftUtilisation)elt;
-                    if(craftU.ObjetFinal.Image != null)
+                    if (craftU.ObjetFinal.Image != null)
                     {
                         craft.Button10_Image.Source = new BitmapImage(new Uri("..\\img\\" + craftU.ObjetFinal.Image, UriKind.RelativeOrAbsolute));
                     }
-                    
                 }
 
             }
