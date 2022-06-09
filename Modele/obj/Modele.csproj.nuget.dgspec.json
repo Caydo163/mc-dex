@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj": {}
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj": {
+    "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
         "projectName": "Modele",
-        "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj",
-        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\obj\\",
+        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

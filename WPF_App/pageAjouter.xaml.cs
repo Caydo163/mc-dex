@@ -60,7 +60,7 @@ namespace WPF_App
             textBoxId.textBox.Text = Mgr.SelectedItem.Id;
             textBoxDesc.Text = Mgr.SelectedItem.Desc;
             TextBlockPathFile.Text = Mgr.SelectedItem.Image;
-            image = Mgr.SelectedItem.Image;
+            image = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), Mgr.SelectedItem.Image);
 
             // Nom anglais
             if (Mgr.SelectedItem.NomE != null && Mgr.SelectedItem.NomE != "")
@@ -108,21 +108,58 @@ namespace WPF_App
                 listeTextBoxCraft.Add(craft);
                 panelBlocAjout.Children.Add(craft);
                 string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
-                if (elt.Objet0_0 != null) craft.Button1_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_0.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet0_1 != null) craft.Button2_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_1.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet0_2 != null) craft.Button3_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_2.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet1_0 != null) craft.Button4_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_0.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet1_1 != null) craft.Button5_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_1.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet1_2 != null) craft.Button6_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_2.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet2_0 != null) craft.Button7_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_0.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet2_1 != null) craft.Button8_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_1.Image), UriKind.RelativeOrAbsolute));
-                if (elt.Objet2_2 != null) craft.Button9_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_2.Image), UriKind.RelativeOrAbsolute));
+                if (elt.Objet0_0 != null)
+                {
+                    craft.ListItemCraft[0] = elt.Objet0_0;
+                    craft.Button1_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_0.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet0_1 != null)
+                {
+                    craft.ListItemCraft[1] = elt.Objet0_1;
+                    craft.Button2_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_1.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet0_2 != null) 
+                {
+                    craft.ListItemCraft[2] = elt.Objet0_2;
+                    craft.Button3_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_2.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet1_0 != null) 
+                {
+                    craft.ListItemCraft[3] = elt.Objet1_0;
+                    craft.Button4_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_0.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet1_1 != null) 
+                {
+                    craft.ListItemCraft[4] = elt.Objet1_1;
+                    craft.Button5_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_1.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet1_2 != null) 
+                {
+                    craft.ListItemCraft[5] = elt.Objet1_2;
+                    craft.Button6_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_2.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet2_0 != null) 
+                {
+                    craft.ListItemCraft[6] = elt.Objet2_0;
+                    craft.Button7_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_0.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet2_1 != null) 
+                {
+                    craft.ListItemCraft[7] = elt.Objet2_1;
+                    craft.Button8_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_1.Image), UriKind.RelativeOrAbsolute));
+                }
+                if (elt.Objet2_2 != null) 
+                {
+                    craft.ListItemCraft[8] = elt.Objet2_2;
+                    craft.Button9_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_2.Image), UriKind.RelativeOrAbsolute));
+                }
                 if (elt.NbFinal != 1)
                 {
                     craft.nbrItemObtenu.Text = elt.NbFinal.ToString();
                 }
                 if (elt.GetType() == typeof(CraftObjet))
                 {
+                    craft.ListItemCraft[9] = Mgr.SelectedItem;
                     craft.Button10_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, Mgr.SelectedItem.Image), UriKind.RelativeOrAbsolute));
                 }
                 else
@@ -130,6 +167,7 @@ namespace WPF_App
                     CraftUtilisation craftU = (CraftUtilisation)elt;
                     if (craftU.ObjetFinal.Image != null)
                     {
+                        craft.ListItemCraft[9] = craftU.ObjetFinal;
                         craft.Button10_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, craftU.ObjetFinal.Image), UriKind.RelativeOrAbsolute));
                     }
                 }
@@ -387,25 +425,26 @@ namespace WPF_App
                     Mgr.SupprimerItem(Mgr.SelectedItem);
                 }
                 // On créé l'item
-
+                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
                 string CheminImage;
-                if (File.Exists(Path.Combine("..\\img", Path.GetFileName(image))))
+                if (File.Exists(Path.Combine(currentDir, Path.GetFileName(image))))
                 {
                     int i = 1;
-                    while (File.Exists(Path.Combine("..\\img", Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image))))
+                    while (File.Exists(Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image))))
                     {
                         i++;
                     }
-                    File.Copy(image, Path.Combine("..\\img", Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image)));
-                    CheminImage = Path.Combine("..\\img", Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image));
+                    File.Copy(image, Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image)));
+                    CheminImage = Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image));
                 }
                 else
                 {
-                    File.Copy(image, Path.Combine("..\\img", Path.GetFileName(image)));
-                    CheminImage = Path.Combine("..\\img", Path.GetFileName(image));
+                    File.Copy(image, Path.Combine(currentDir, Path.GetFileName(image)));
+                    CheminImage = Path.Combine(currentDir, Path.GetFileName(image));
                 }
 
                 Item item = Mgr.AjouterItem(nom, nomE, id, Path.GetFileName(CheminImage), desc, listeTexte, listeStats);
+
 
 
                 // Regarder si elt vide
