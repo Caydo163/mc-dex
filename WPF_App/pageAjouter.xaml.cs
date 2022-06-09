@@ -419,32 +419,42 @@ namespace WPF_App
 
 
 
-
+                string imageActu="";
                 if(ModeModifier)
                 {
                     Mgr.SupprimerItem(Mgr.SelectedItem);
+                    imageActu = Mgr.SelectedItem.Image;
                 }
                 // On créé l'item
                 string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
                 string CheminImage;
-                if (File.Exists(Path.Combine(currentDir, Path.GetFileName(image))))
+
+                //Si l'image n'a pas été modifié durant une modififacation d'item, change l'image pour qu'elle soit unique
+                Item item;
+                if (ModeModifier==false || Path.GetFileName(image) != imageActu)
                 {
-                    int i = 1;
-                    while (File.Exists(Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image))))
+                    if (File.Exists(Path.Combine(currentDir, Path.GetFileName(image))))
                     {
-                        i++;
+                        int i = 1;
+                        while (File.Exists(Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image))))
+                        {
+                            i++;
+                        }
+                        File.Copy(image, Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image)));
+                        CheminImage = Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image));
                     }
-                    File.Copy(image, Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image)));
-                    CheminImage = Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image));
+                    else
+                    {
+                        File.Copy(image, Path.Combine(currentDir, Path.GetFileName(image)));
+                        CheminImage = Path.Combine(currentDir, Path.GetFileName(image));
+                    }
+                    item = Mgr.AjouterItem(nom, nomE, id, Path.GetFileName(CheminImage), desc, listeTexte, listeStats);
                 }
                 else
                 {
-                    File.Copy(image, Path.Combine(currentDir, Path.GetFileName(image)));
-                    CheminImage = Path.Combine(currentDir, Path.GetFileName(image));
+                    item = Mgr.AjouterItem(nom, nomE, id, imageActu, desc, listeTexte, listeStats);
                 }
-
-                Item item = Mgr.AjouterItem(nom, nomE, id, Path.GetFileName(CheminImage), desc, listeTexte, listeStats);
-
+                
 
 
                 // Regarder si elt vide

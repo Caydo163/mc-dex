@@ -1,243 +1,298 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfItem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Modele">
   <Item z:Id="2">
-    <Desc z:Id="3">gtrgrtgtr</Desc>
-    <Image z:Id="4">command_block.png</Image>
-    <ListeCraft z:Id="5" z:Size="0" />
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="7" z:Size="0" />
-    <Nom z:Id="8">Yuuuuuuu</Nom>
-    <Id z:Id="9">7</Id>
-  </Item>
-  <Item z:Id="10">
-    <Desc z:Id="11">zfefzefzef</Desc>
-    <Image z:Id="12">background_nether.png</Image>
-    <ListeCraft z:Id="13" z:Size="1">
-      <Craft z:Id="14" i:type="CraftUtilisation">
-        <NbFinal>1</NbFinal>
-        <Objet0_0 z:Ref="2" i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="15">Logo</NomBase>
-        <ObjetFinal i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="16" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="17" z:Size="0" />
-    <Nom z:Id="18">Logo</Nom>
-    <Id z:Id="19">789</Id>
-  </Item>
-  <Item z:Id="20">
-    <Desc z:Id="21">fzeefzef</Desc>
-    <Image z:Id="22">liste_des_objets.png</Image>
-    <ListeCraft z:Id="23" z:Size="2">
-      <Craft z:Id="24" i:type="CraftObjet">
-        <NbFinal>7</NbFinal>
-        <Objet0_0 z:Ref="2" i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 z:Ref="10" i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-      </Craft>
-      <Craft z:Id="25" i:type="CraftUtilisation">
-        <NbFinal>3</NbFinal>
-        <Objet0_0 i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="20" i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="26">Zdezdzez</NomBase>
-        <ObjetFinal z:Ref="2" i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="27" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="28" z:Size="0" />
-    <Nom z:Id="29">Zdezdzez</Nom>
-    <Id z:Id="30">121</Id>
-  </Item>
-  <Item z:Id="31">
-    <Desc z:Id="32">fzefzfez</Desc>
-    <Image z:Id="33">game-over.png</Image>
-    <ListeCraft z:Id="34" z:Size="1">
-      <Craft z:Id="35" i:type="CraftObjet">
+    <Desc z:Id="3">Arme, qui associé aux flèches permet de tuer les monstres, animaux ou autres joueurs en partie multijoueurs. Pour fonctionner il vous faut des flèches disponibles dans votre inventaire. L'arc est également une arme utilisée par les squelettes.</Desc>
+    <Image z:Id="4">Arc1.png</Image>
+    <ListeCraft z:Id="5" z:Size="1">
+      <Craft z:Id="6" i:type="CraftObjet">
         <NbFinal>1</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
-        <Objet1_0 z:Ref="10" i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 z:Ref="20" i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="36" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="37" z:Size="0" />
-    <Nom z:Id="38">Ezfefzf</Nom>
-    <Id z:Id="39">123</Id>
-  </Item>
-  <Item z:Id="40">
-    <Desc z:Id="41">HTHR</Desc>
-    <Image z:Id="42">design patern1.png</Image>
-    <ListeCraft z:Id="43" z:Size="1">
-      <Craft z:Id="44" i:type="CraftUtilisation">
-        <NbFinal>1</NbFinal>
-        <Objet0_0 z:Ref="10" i:nil="true" />
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-        <NomBase z:Id="45">Ytjy</NomBase>
-        <ObjetFinal i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="46" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="47" z:Size="0" />
-    <Nom z:Id="48">Ytjy</Nom>
-    <Id z:Id="49">54</Id>
-  </Item>
-  <Item z:Id="50">
-    <Desc z:Id="51">GTRH</Desc>
-    <Image z:Id="52">Sans-titre-ConvertImage.png</Image>
-    <ListeCraft z:Id="53" z:Size="1">
-      <Craft z:Id="54" i:type="CraftObjet">
-        <NbFinal>1</NbFinal>
-        <Objet0_0 i:nil="true" />
-        <Objet0_1 z:Ref="10" i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
+        <Objet1_0 z:Ref="2" i:nil="true" />
+        <Objet1_1 z:Ref="2" i:nil="true" />
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="55" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="56" z:Size="0" />
-    <Nom z:Id="57">Gertht4e</Nom>
-    <Id z:Id="58">45</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="7" z:Size="2">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="8">Durabilite</d3p1:Key>
+        <d3p1:Value z:Id="9">365</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="10">Degat</d3p1:Key>
+        <d3p1:Value z:Id="11">1-&gt;11</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="12" z:Size="0" />
+    <Nom z:Id="13">Arc</Nom>
+    <NomE z:Id="14">Bow</NomE>
+    <Id z:Id="15">261</Id>
   </Item>
-  <Item z:Id="59">
-    <Desc z:Id="60">ytnyt,t</Desc>
-    <Image z:Id="61">design patern211111.png</Image>
-    <ListeCraft z:Id="62" z:Size="1">
-      <Craft z:Id="63" i:type="CraftObjet">
+  <Item z:Id="16">
+    <Desc z:Id="17">Le Bateau sert a se déplacer dans l’eau, il existe plusieurs sortes de bateaux.</Desc>
+    <Image z:Id="18">Bateau1.png</Image>
+    <ListeCraft z:Id="19" z:Size="1">
+      <Craft z:Id="20" i:type="CraftUtilisation">
         <NbFinal>1</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
-        <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
-      </Craft>
-    </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="64" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="65" z:Size="0" />
-    <Nom z:Id="66">Htrfh</Nom>
-    <Id z:Id="67">56</Id>
-  </Item>
-  <Item z:Id="68">
-    <Desc z:Id="69">tehe</Desc>
-    <Image z:Id="70">whut61.png</Image>
-    <ListeCraft z:Id="71" z:Size="1">
-      <Craft z:Id="72" i:type="CraftObjet">
-        <NbFinal>1</NbFinal>
-        <Objet0_0 z:Id="73">
-          <Desc z:Ref="69" i:nil="true" />
-          <Image z:Id="74">whut6.png</Image>
-          <ListeCraft z:Id="75" z:Size="1">
-            <Craft z:Id="76" i:type="CraftUtilisation">
+        <Objet1_0 z:Id="21">
+          <Desc z:Id="22">Les planches sont des blocs fabriqués à partir de bûches. Elles ont l'apparence de séries de planches jointes entre elles.</Desc>
+          <Image z:Id="23">Planche.png</Image>
+          <ListeCraft z:Id="24" z:Size="1">
+            <Craft z:Id="25" i:type="CraftUtilisation">
               <NbFinal>1</NbFinal>
-              <Objet0_0 z:Ref="73" i:nil="true" />
+              <Objet0_0 i:nil="true" />
               <Objet0_1 i:nil="true" />
               <Objet0_2 i:nil="true" />
-              <Objet1_0 i:nil="true" />
+              <Objet1_0 z:Ref="21" i:nil="true" />
               <Objet1_1 i:nil="true" />
-              <Objet1_2 z:Ref="2" i:nil="true" />
-              <Objet2_0 i:nil="true" />
-              <Objet2_1 i:nil="true" />
-              <Objet2_2 i:nil="true" />
-              <NomBase z:Id="77">Brthrt</NomBase>
-              <ObjetFinal z:Ref="40" i:nil="true" />
+              <Objet1_2 z:Ref="21" i:nil="true" />
+              <Objet2_0 z:Ref="21" i:nil="true" />
+              <Objet2_1 z:Ref="21" i:nil="true" />
+              <Objet2_2 z:Ref="21" i:nil="true" />
+              <NomBase z:Id="26">Planche</NomBase>
+              <ObjetFinal z:Id="27">
+                <Desc z:Ref="17" i:nil="true" />
+                <Image z:Id="28">Bateau.png</Image>
+                <ListeCraft z:Id="29" z:Size="1">
+                  <Craft z:Id="30" i:type="CraftObjet">
+                    <NbFinal>1</NbFinal>
+                    <Objet0_0 i:nil="true" />
+                    <Objet0_1 i:nil="true" />
+                    <Objet0_2 i:nil="true" />
+                    <Objet1_0 i:nil="true" />
+                    <Objet1_1 i:nil="true" />
+                    <Objet1_2 i:nil="true" />
+                    <Objet2_0 i:nil="true" />
+                    <Objet2_1 i:nil="true" />
+                    <Objet2_2 i:nil="true" />
+                  </Craft>
+                </ListeCraft>
+                <ListeStats xmlns:d9p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="31" z:Size="0" />
+                <ListeTexte xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="32" z:Size="0" />
+                <Nom z:Id="33">Bateau</Nom>
+                <NomE z:Id="34">Boat</NomE>
+                <Id z:Id="35">90</Id>
+              </ObjetFinal>
             </Craft>
           </ListeCraft>
-          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="78" z:Size="0" />
-          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="79" z:Size="0" />
-          <Nom z:Id="80">Brthrt</Nom>
-          <Id z:Id="81">543</Id>
-        </Objet0_0>
-        <Objet0_1 i:nil="true" />
-        <Objet0_2 i:nil="true" />
-        <Objet1_0 i:nil="true" />
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="36" z:Size="0" />
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="37" z:Size="0" />
+          <Nom z:Id="38">Planche</Nom>
+          <NomE z:Id="39">Wooden plank</NomE>
+          <Id z:Id="40">5</Id>
+        </Objet1_0>
         <Objet1_1 i:nil="true" />
-        <Objet1_2 i:nil="true" />
-        <Objet2_0 i:nil="true" />
-        <Objet2_1 i:nil="true" />
-        <Objet2_2 i:nil="true" />
+        <Objet1_2 z:Ref="21" i:nil="true" />
+        <Objet2_0 z:Ref="21" i:nil="true" />
+        <Objet2_1 z:Ref="21" i:nil="true" />
+        <Objet2_2 z:Ref="21" i:nil="true" />
+        <NomBase z:Id="41">Bateau</NomBase>
+        <ObjetFinal z:Ref="27" i:nil="true" />
       </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="82" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="83" z:Size="0" />
-    <Nom z:Id="84">Brthrt</Nom>
-    <Id z:Ref="81" i:nil="true" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="42" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="43" z:Size="0" />
+    <Nom z:Id="44">Bateau</Nom>
+    <NomE z:Id="45">Boat</NomE>
+    <Id z:Ref="35" i:nil="true" />
   </Item>
-  <Item z:Id="85">
-    <Desc z:Id="86">RTHRTH</Desc>
-    <Image z:Id="87">design patern31111.png</Image>
-    <ListeCraft z:Id="88" z:Size="2">
-      <Craft z:Id="89" i:type="CraftUtilisation">
+  <Item z:Id="46">
+    <Desc z:Id="47">Les bûches sont des types de blocs trouvés sur les arbres</Desc>
+    <Image z:Id="48">Buche.png</Image>
+    <ListeCraft z:Id="49" z:Size="1">
+      <Craft z:Id="50" i:type="CraftUtilisation">
         <NbFinal>4</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
         <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="2" i:nil="true" />
+        <Objet1_1 z:Ref="46" i:nil="true" />
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
-        <Objet2_2 z:Ref="20" i:nil="true" />
-        <NomBase z:Id="90">Rhth-</NomBase>
-        <ObjetFinal z:Ref="10" i:nil="true" />
+        <Objet2_2 i:nil="true" />
+        <NomBase z:Id="51">Bûche</NomBase>
+        <ObjetFinal z:Ref="21" i:nil="true" />
       </Craft>
-      <Craft z:Id="91" i:type="CraftObjet">
-        <NbFinal>854</NbFinal>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="52" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="53" z:Size="0" />
+    <Nom z:Id="54">Bûche</Nom>
+    <NomE z:Id="55">Log</NomE>
+    <Id z:Id="56">17</Id>
+  </Item>
+  <Item z:Id="57">
+    <Desc z:Id="58">Les coffres sont des blocs capables de stocker les objets.</Desc>
+    <Image z:Id="59">Coffre.png</Image>
+    <ListeCraft z:Id="60" z:Size="1">
+      <Craft z:Id="61" i:type="CraftObjet">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 z:Id="62">
+          <Desc z:Ref="22" i:nil="true" />
+          <Image z:Id="63">Planche11.png</Image>
+          <ListeCraft z:Id="64" z:Size="2">
+            <Craft z:Id="65" i:type="CraftUtilisation">
+              <NbFinal>1</NbFinal>
+              <Objet0_0 i:nil="true" />
+              <Objet0_1 i:nil="true" />
+              <Objet0_2 i:nil="true" />
+              <Objet1_0 z:Ref="21" i:nil="true" />
+              <Objet1_1 i:nil="true" />
+              <Objet1_2 z:Ref="21" i:nil="true" />
+              <Objet2_0 z:Ref="21" i:nil="true" />
+              <Objet2_1 z:Ref="21" i:nil="true" />
+              <Objet2_2 z:Ref="21" i:nil="true" />
+              <NomBase z:Id="66">Planche</NomBase>
+              <ObjetFinal z:Ref="27" i:nil="true" />
+            </Craft>
+            <Craft z:Id="67" i:type="CraftObjet">
+              <NbFinal>4</NbFinal>
+              <Objet0_0 i:nil="true" />
+              <Objet0_1 i:nil="true" />
+              <Objet0_2 i:nil="true" />
+              <Objet1_0 i:nil="true" />
+              <Objet1_1 z:Ref="46" i:nil="true" />
+              <Objet1_2 i:nil="true" />
+              <Objet2_0 i:nil="true" />
+              <Objet2_1 i:nil="true" />
+              <Objet2_2 i:nil="true" />
+            </Craft>
+          </ListeCraft>
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="68" z:Size="0" />
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="69" z:Size="0" />
+          <Nom z:Id="70">Planche</Nom>
+          <NomE z:Id="71">Wooden plank</NomE>
+          <Id z:Ref="40" i:nil="true" />
+        </Objet0_0>
+        <Objet0_1 z:Ref="62" i:nil="true" />
+        <Objet0_2 z:Ref="62" i:nil="true" />
+        <Objet1_0 z:Ref="62" i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 z:Ref="62" i:nil="true" />
+        <Objet2_0 z:Ref="62" i:nil="true" />
+        <Objet2_1 z:Ref="62" i:nil="true" />
+        <Objet2_2 z:Ref="62" i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="72" z:Size="1">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="73">Stockage</d3p1:Key>
+        <d3p1:Value z:Id="74">27 piles</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="75" z:Size="0" />
+    <Nom z:Id="76">Coffre</Nom>
+    <NomE z:Id="77">Chest</NomE>
+    <Id z:Id="78">54</Id>
+  </Item>
+  <Item z:Id="79">
+    <Desc z:Ref="22" i:nil="true" />
+    <Image z:Id="80">Planche11111.png</Image>
+    <ListeCraft z:Id="81" z:Size="3">
+      <Craft z:Id="82" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 z:Ref="21" i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 z:Ref="21" i:nil="true" />
+        <Objet2_0 z:Ref="21" i:nil="true" />
+        <Objet2_1 z:Ref="21" i:nil="true" />
+        <Objet2_2 z:Ref="21" i:nil="true" />
+        <NomBase z:Id="83">Planche</NomBase>
+        <ObjetFinal z:Ref="27" i:nil="true" />
+      </Craft>
+      <Craft z:Id="84" i:type="CraftObjet">
+        <NbFinal>4</NbFinal>
         <Objet0_0 i:nil="true" />
         <Objet0_1 i:nil="true" />
         <Objet0_2 i:nil="true" />
         <Objet1_0 i:nil="true" />
-        <Objet1_1 z:Ref="2" i:nil="true" />
+        <Objet1_1 z:Ref="46" i:nil="true" />
         <Objet1_2 i:nil="true" />
         <Objet2_0 i:nil="true" />
         <Objet2_1 i:nil="true" />
         <Objet2_2 i:nil="true" />
       </Craft>
+      <Craft z:Id="85" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 z:Id="86">
+          <Desc z:Ref="22" i:nil="true" />
+          <Image z:Id="87">Planche111.png</Image>
+          <ListeCraft z:Id="88" z:Size="3">
+            <Craft z:Id="89" i:type="CraftUtilisation">
+              <NbFinal>1</NbFinal>
+              <Objet0_0 i:nil="true" />
+              <Objet0_1 i:nil="true" />
+              <Objet0_2 i:nil="true" />
+              <Objet1_0 z:Ref="21" i:nil="true" />
+              <Objet1_1 i:nil="true" />
+              <Objet1_2 z:Ref="21" i:nil="true" />
+              <Objet2_0 z:Ref="21" i:nil="true" />
+              <Objet2_1 z:Ref="21" i:nil="true" />
+              <Objet2_2 z:Ref="21" i:nil="true" />
+              <NomBase z:Id="90">Planche</NomBase>
+              <ObjetFinal z:Ref="27" i:nil="true" />
+            </Craft>
+            <Craft z:Id="91" i:type="CraftUtilisation">
+              <NbFinal>4</NbFinal>
+              <Objet0_0 i:nil="true" />
+              <Objet0_1 i:nil="true" />
+              <Objet0_2 i:nil="true" />
+              <Objet1_0 i:nil="true" />
+              <Objet1_1 z:Ref="46" i:nil="true" />
+              <Objet1_2 i:nil="true" />
+              <Objet2_0 i:nil="true" />
+              <Objet2_1 i:nil="true" />
+              <Objet2_2 i:nil="true" />
+              <NomBase z:Ref="90" i:nil="true" />
+              <ObjetFinal z:Ref="62" i:nil="true" />
+            </Craft>
+            <Craft z:Id="92" i:type="CraftUtilisation">
+              <NbFinal>1</NbFinal>
+              <Objet0_0 z:Ref="86" i:nil="true" />
+              <Objet0_1 z:Ref="86" i:nil="true" />
+              <Objet0_2 z:Ref="86" i:nil="true" />
+              <Objet1_0 z:Ref="86" i:nil="true" />
+              <Objet1_1 i:nil="true" />
+              <Objet1_2 z:Ref="86" i:nil="true" />
+              <Objet2_0 z:Ref="86" i:nil="true" />
+              <Objet2_1 z:Ref="86" i:nil="true" />
+              <Objet2_2 z:Ref="86" i:nil="true" />
+              <NomBase z:Ref="90" i:nil="true" />
+              <ObjetFinal z:Ref="57" i:nil="true" />
+            </Craft>
+          </ListeCraft>
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="93" z:Size="0" />
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="94" z:Size="0" />
+          <Nom z:Id="95">Planche</Nom>
+          <NomE z:Id="96">Wooden plank</NomE>
+          <Id z:Ref="40" i:nil="true" />
+        </Objet0_0>
+        <Objet0_1 z:Ref="86" i:nil="true" />
+        <Objet0_2 z:Ref="86" i:nil="true" />
+        <Objet1_0 z:Ref="86" i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 z:Ref="86" i:nil="true" />
+        <Objet2_0 z:Ref="86" i:nil="true" />
+        <Objet2_1 z:Ref="86" i:nil="true" />
+        <Objet2_2 z:Ref="86" i:nil="true" />
+        <NomBase z:Ref="83" i:nil="true" />
+        <ObjetFinal z:Ref="57" i:nil="true" />
+      </Craft>
     </ListeCraft>
-    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="92" z:Size="0" />
-    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="93" z:Size="0" />
-    <Nom z:Ref="90" i:nil="true" />
-    <Id z:Id="94">42</Id>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="97" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="98" z:Size="0" />
+    <Nom z:Id="99">Planche</Nom>
+    <NomE z:Id="100">Wooden plank</NomE>
+    <Id z:Ref="40" i:nil="true" />
   </Item>
 </ArrayOfItem>

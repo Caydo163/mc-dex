@@ -63,30 +63,17 @@
     <Resource Include="img\ajouter.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\Arc.png" />
     <Resource Include="img\background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\background2.png" />
     <Resource Include="img\background_nether.png" />
-    <Resource Include="img\Bateau.png" />
-    <Resource Include="img\Bouclier.png" />
     <Resource Include="img\bouton_mode_nether.png" />
     <Resource Include="img\bouton_mode_overworld.png" />
-    <Resource Include="img\Briques_du_Nether.png" />
-    <Resource Include="img\Buche.png" />
-    <Resource Include="img\Charbon.png" />
-    <Resource Include="img\Citrouille.png" />
-    <Resource Include="img\Cobblestone.png" />
-    <Resource Include="img\Coffre.png" />
     <Resource Include="img\command_block.png" />
-    <Resource Include="img\Diamant.png" />
-    <Resource Include="img\Etabli.png" />
-    <Resource Include="img\Fer.png" />
     <Resource Include="img\flecheCraft.png" />
     <Resource Include="img\Grass_Block.png" />
     <Resource Include="img\liste_des_objets.png" />
-    <Resource Include="img\Lit.png" />
     <Resource Include="img\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -98,10 +85,6 @@
     </Resource>
     <Resource Include="img\menu_background_nether.png" />
     <Resource Include="img\MissingTextureBlock.png" />
-    <Resource Include="img\Planche.png" />
-    <Resource Include="img\Poulet.png" />
-    <Resource Include="img\Seau.png" />
-    <Resource Include="img\Stone.png" />
     <Resource Include="img\supprimer.png" />
     <Resource Include="img\Terre.png" />
     <Resource Include="img\menu_background.png">
@@ -110,7 +93,6 @@
     <Resource Include="img\texture_grass2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\Torche.png" />
     <Resource Include="img\Vide.png" />
   </ItemGroup>
 

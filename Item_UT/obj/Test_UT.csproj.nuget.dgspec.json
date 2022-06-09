@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj": {}
+    "C:\\Users\\eloan\\source\\repos\\MC-D\\Item_UT\\Test_UT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
+    "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\DataContractPersistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj",
+        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\DataContractPersistance.csproj",
         "projectName": "DataContractPersistance",
-        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj",
-        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\obj\\",
+        "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\DataContractPersistance.csproj",
+        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
-                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+              "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj": {
+                "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj": {
+    "C:\\Users\\eloan\\source\\repos\\MC-D\\Item_UT\\Test_UT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj",
+        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\MC-D\\Item_UT\\Test_UT.csproj",
         "projectName": "Test_UT",
-        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\Test_UT.csproj",
-        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Item_UT\\obj\\",
+        "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Item_UT\\Test_UT.csproj",
+        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Item_UT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,14 +86,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj": {
-                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj"
+              "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\DataContractPersistance.csproj": {
+                "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\DataContractPersistance.csproj"
               },
-              "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
-                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+              "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj": {
+                "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj"
               },
-              "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
-                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj"
+              "C:\\Users\\eloan\\source\\repos\\MC-D\\StubLib\\StubLib.csproj": {
+                "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\StubLib\\StubLib.csproj"
               }
             }
           }
@@ -144,21 +144,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
+    "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
+        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj",
         "projectName": "Modele",
-        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj",
-        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\obj\\",
+        "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj",
+        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -198,21 +198,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj": {
+    "C:\\Users\\eloan\\source\\repos\\MC-D\\StubLib\\StubLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj",
+        "projectUniqueName": "C:\\Users\\eloan\\source\\repos\\MC-D\\StubLib\\StubLib.csproj",
         "projectName": "StubLib",
-        "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\StubLib.csproj",
-        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\StubLib\\obj\\",
+        "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\StubLib\\StubLib.csproj",
+        "packagesPath": "C:\\Users\\eloan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\StubLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eloan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -226,8 +226,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj": {
-                "projectPath": "C:\\Users\\justi\\source\\repos\\mc-dex\\Modele\\Modele.csproj"
+              "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj": {
+                "projectPath": "C:\\Users\\eloan\\source\\repos\\MC-D\\Modele\\Modele.csproj"
               }
             }
           }
@@ -256,7 +256,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
