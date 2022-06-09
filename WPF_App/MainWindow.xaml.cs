@@ -1,6 +1,7 @@
 ﻿using Modele;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,6 +60,12 @@ namespace WPF_App
         {
             Mgr.ModeAjouter(false);
             Mgr.SaveItems();
+
+            // On supprime les images des items supprimés
+            foreach(string elt in Mgr.images_a_supprimer)
+            {
+                File.Delete(elt);
+            }
         }
 
         /// <summary>

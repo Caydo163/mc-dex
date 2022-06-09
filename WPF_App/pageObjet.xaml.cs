@@ -77,7 +77,6 @@ namespace WPF_App
             bool checkCraftU = false;
 
 
-            // XXXXXXXXXXXXXXX à modif 
             foreach (Craft elt in Mgr.SelectedItem.ListeCraft)
             {
                 // Si le craft est un craft objet
@@ -85,6 +84,8 @@ namespace WPF_App
                 {
                     grilleCraftUC craftUC = new();
                     string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"..\\img"));
+
+                    // On affiche les images
                     if (elt.Objet0_0 != null) craftUC.ImageName1 = Path.Combine(currentDir, elt.Objet0_0.Image);
                     if (elt.Objet0_1 != null) craftUC.ImageName2 = Path.Combine(currentDir , elt.Objet0_1.Image);
                     if (elt.Objet0_2 != null) craftUC.ImageName3 = Path.Combine(currentDir , elt.Objet0_2.Image);
@@ -95,10 +96,14 @@ namespace WPF_App
                     if (elt.Objet2_1 != null) craftUC.ImageName8 = Path.Combine(currentDir , elt.Objet2_1.Image);
                     if (elt.Objet2_2 != null) craftUC.ImageName9 = Path.Combine(currentDir , elt.Objet2_2.Image);
                     craftUC.ImageName10 = Path.Combine(currentDir , Mgr.SelectedItem.Image);
+
+                    // On affiche le nombre d'item obtenu
                     if (elt.NbFinal != 1)
                     {
                         craftUC.nbBlocCraft.Text = elt.NbFinal.ToString();
                     }
+
+                    // On affiche la liste d'ingrédients
                     List<KeyValuePair<string, int>> listIngredient = elt.CalculIngredient();
                     foreach (KeyValuePair<string, int> ing in listIngredient)
                     {
@@ -115,13 +120,14 @@ namespace WPF_App
 
                 }
 
-
-
+                // Si le craft est un craft utilisation
                 if (elt.GetType() == typeof(CraftUtilisation))
                 {
                     CraftUtilisation craft = (CraftUtilisation)elt;
                     grilleCraftUC craftUC = new();
                     string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"..\\img"));
+
+                    // On affiche les images
                     if (craft.Objet0_0 != null) craftUC.ImageName1 = Path.Combine(currentDir, craft.Objet0_0.Image);
                     if (craft.Objet0_1 != null) craftUC.ImageName2 = Path.Combine(currentDir , craft.Objet0_1.Image);
                     if (craft.Objet0_2 != null) craftUC.ImageName3 = Path.Combine(currentDir , craft.Objet0_2.Image);
@@ -133,12 +139,13 @@ namespace WPF_App
                     if (craft.Objet2_2 != null) craftUC.ImageName9 = Path.Combine(currentDir , craft.Objet2_2.Image);
                     if (craft.ObjetFinal != null) craftUC.ImageName10 = Path.Combine(currentDir , craft.ObjetFinal.Image);
 
+                    // On affiche le nombre d'item obtenu
                     if (craft.NbFinal != 1)
                     {
                         craftUC.nbBlocCraft.Text = craft.NbFinal.ToString();
                     }
 
-
+                    // On affiche la liste des ingrédients
                     List<KeyValuePair<string, int>> listIngredient = craft.CalculIngredient();
                     foreach (KeyValuePair<string, int> ing in listIngredient)
                     {
@@ -146,6 +153,7 @@ namespace WPF_App
                         {
                             Style = (Style)((App)Application.Current).Resources["pageObjet_textePartie"]
                         };
+                        // Si il y a le caractère "§" au début, on affiche en rouge
                         if (ing.Key[0] == '§')
                         {
                             textBlock.Text = "* " + ing.Value.ToString() + " " + ing.Key[1..];
@@ -163,6 +171,8 @@ namespace WPF_App
                     checkCraftU = true;
                 }
             }
+
+            // On affiche les zones si elles contienent au moins un craft
             if (checkCraftO)
             {
                 StackPanelObjet.Children.Add(zoneCraftO);
@@ -195,7 +205,7 @@ namespace WPF_App
                 // On ajoute une ligne à la grille
                 zoneStat.gridStat.RowDefinitions.Add(new RowDefinition());
 
-                // On créé les 2 textblock
+                // On créé les 2 textblock avec une bordure
                 TextBlock t1 = new(new Run(stat.Key));
                 Border b1 = new()
                 {

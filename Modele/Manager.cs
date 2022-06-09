@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace Modele
 {
@@ -110,6 +111,8 @@ namespace Modele
             return item;
         }
 
+        public HashSet<string> images_a_supprimer = new();
+
         /// <summary>
         /// Méthode permettant de supprimer un item de la liste
         /// </summary>
@@ -118,6 +121,13 @@ namespace Modele
         {
             if(Items.Contains(item))
             {
+                // On ajoute l'image dans "images_a_supprimer" pour que l'image soit supprimé à la fermeture de l'application
+                if(File.Exists(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), item.Image)))
+                {
+                    images_a_supprimer.Add(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), item.Image));
+                }
+
+                // On supprime l'item de la liste
                 items.RemoveAt(items.IndexOf(item));
             }
         }

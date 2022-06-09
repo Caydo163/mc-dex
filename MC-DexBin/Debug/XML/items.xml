@@ -295,4 +295,129 @@
     <NomE z:Id="100">Wooden plank</NomE>
     <Id z:Ref="40" i:nil="true" />
   </Item>
+  <Item z:Id="101">
+    <Desc z:Id="102">Le bâton est un objet utilisé pour fabriquer de nombreux outils.
+Il peut aussi être utilisé dans un four.
+On peut l'obtenir en détruisant des arbustes ou des feuilles</Desc>
+    <Image z:Id="103">stick.png</Image>
+    <ListeCraft z:Id="104" z:Size="1">
+      <Craft z:Id="105" i:type="CraftObjet">
+        <NbFinal>4</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 z:Ref="79" i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 z:Ref="79" i:nil="true" />
+        <Objet2_2 i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="106" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="107" z:Size="0" />
+    <Nom z:Id="108">Baton</Nom>
+    <NomE z:Id="109">Stick</NomE>
+    <Id z:Id="110">280</Id>
+  </Item>
+  <Item z:Id="111">
+    <Desc z:Id="112">La torche permet d'éclairer une zone lorsqu'on la pose sur un bloc et ainsi éviter que des créatures apparaissent.
+</Desc>
+    <Image z:Id="113">Torche.png</Image>
+    <ListeCraft z:Id="114" z:Size="1">
+      <Craft z:Id="115" i:type="CraftObjet">
+        <NbFinal>4</NbFinal>
+        <Objet0_0 i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 z:Id="116">
+          <Desc z:Id="117">Le charbon s'obtient en minant un minerai de charbon.
+Le charbon permet de faire cuire des élément dans un four.</Desc>
+          <Image z:Id="118">Charbon.png</Image>
+          <ListeCraft z:Id="119" z:Size="0" />
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="120" z:Size="1">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key z:Id="121">Nombre d'item cuit</d6p1:Key>
+              <d6p1:Value z:Id="122">8</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+          </ListeStats>
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="123" z:Size="0" />
+          <Nom z:Id="124">Charbon</Nom>
+          <NomE z:Id="125">Coal</NomE>
+          <Id z:Id="126">12</Id>
+        </Objet1_1>
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 z:Ref="101" i:nil="true" />
+        <Objet2_2 i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="127" z:Size="2">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="128">Niveau lumiere</d3p1:Key>
+        <d3p1:Value z:Id="129">14</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="130">Nombre superposable</d3p1:Key>
+        <d3p1:Value z:Id="131">64</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="132" z:Size="0" />
+    <Nom z:Id="133">Torche</Nom>
+    <NomE z:Id="134">Torch</NomE>
+    <Id z:Id="135">452</Id>
+  </Item>
+  <Item z:Id="136">
+    <Desc z:Ref="117" i:nil="true" />
+    <Image z:Ref="118" i:nil="true" />
+    <ListeCraft z:Id="137" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="138" z:Size="1">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Ref="121" i:nil="true" />
+        <d3p1:Value z:Ref="122" i:nil="true" />
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="139" z:Size="1">
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Id="140">Ou trouver du charbon ?</d3p1:key>
+        <d3p1:value z:Id="141">On peut trouver du charbon dans les coffres des villages.
+Mais la manière la plus simple est de miner, les minerais de charbon sont très courant.</d3p1:value>
+      </d3p1:KeyValuePairOfstringstring>
+    </ListeTexte>
+    <Nom z:Id="142">Charbon</Nom>
+    <NomE z:Id="143">Coal</NomE>
+    <Id z:Ref="126" i:nil="true" />
+  </Item>
+  <Item z:Id="144">
+    <Desc z:Id="145">Le poulet cru est un aliment qui s'obtient en tuant des poules</Desc>
+    <Image z:Id="146">Poulet.png</Image>
+    <ListeCraft z:Id="147" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="148" z:Size="3">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="149">Point de nourriture restaure (cru)</d3p1:Key>
+        <d3p1:Value z:Id="150">2</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="151">Probabilite d'intoxiaction</d3p1:Key>
+        <d3p1:Value z:Id="152">30%</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Id="153">Point de nourriture restaure (cuit)</d3p1:Key>
+        <d3p1:Value z:Id="154">6</d3p1:Value>
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="155" z:Size="1">
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Id="156">Comment le manger ?</d3p1:key>
+        <d3p1:value z:Id="157">Avant de le manger, il faut faire cuire l'aliment dans un four alimenté.
+Une fois la cuisson terminée, on obtient un "poulet cuit" qui peut être consommé.
+
+Cependant il peut aussi être mangé cru mais vous risqué d'être intoxiquer.</d3p1:value>
+      </d3p1:KeyValuePairOfstringstring>
+    </ListeTexte>
+    <Nom z:Id="158">Poulet cru</Nom>
+    <NomE z:Id="159">Chicken</NomE>
+    <Id z:Id="160">23</Id>
+  </Item>
 </ArrayOfItem>

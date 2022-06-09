@@ -37,6 +37,9 @@ namespace WPF_App
         /// </summary>
         public MainWindow Window { get; set; }
 
+        /// <summary>
+        /// Booléen pour savoir si on doit charger la page en mode modifier (pré-remplir les informations)
+        /// </summary>
         public bool ModeModifier = false;
 
         /// <summary>
@@ -46,7 +49,9 @@ namespace WPF_App
         {
             InitializeComponent();
             Window = window;
-            Mgr.ModeAjouter(true);
+
+            // Ajoute les items "Bloc actuel" et "Vide" dans la liste d'item
+            Mgr.ModeAjouter(true); 
             ModeModifier = mode;
             if(ModeModifier)
             {
@@ -54,15 +59,19 @@ namespace WPF_App
             }
         }
 
+        /// <summary>
+        /// Méthode permettant de pré-remplir la page
+        /// </summary>
         private void RemplissageModeModifier()
         {
+            // Remplissage des informations obligatoire (Nom, Identifiant, Description, Image)
             textBoxNom.textBox.Text = Mgr.SelectedItem.Nom;
             textBoxId.textBox.Text = Mgr.SelectedItem.Id;
             textBoxDesc.Text = Mgr.SelectedItem.Desc;
             TextBlockPathFile.Text = Mgr.SelectedItem.Image;
             image = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), Mgr.SelectedItem.Image);
 
-            // Nom anglais
+            // Remplissage nom anglais
             if (Mgr.SelectedItem.NomE != null && Mgr.SelectedItem.NomE != "")
             {
                 textBoxNomE = new textBoxUC()
@@ -74,7 +83,7 @@ namespace WPF_App
                 HideButtonName.Visibility = Visibility.Collapsed;
             }
 
-            // Texte
+            // Remplissage des textes
             foreach (KeyValuePair<string, string> elt in Mgr.SelectedItem.ListeTexte)
             {
                 textBoxBaseUC box = new();
@@ -84,7 +93,7 @@ namespace WPF_App
                 panelBlocAjout.Children.Add(box);
             }
 
-            // Stat
+            // Remplissage des statistiques
             if (Mgr.SelectedItem.ListeStats.Count > 0)
             {
                 textBoxStat = new TextBoxStatistiqueUC();
@@ -97,7 +106,7 @@ namespace WPF_App
                 }
             }
 
-            // Craft
+            // Remplissage des crafts
             foreach (Craft elt in Mgr.SelectedItem.ListeCraft)
             {
                 textBoxCraftUC craft = new(Window)
@@ -108,6 +117,8 @@ namespace WPF_App
                 listeTextBoxCraft.Add(craft);
                 panelBlocAjout.Children.Add(craft);
                 string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
+
+                // On ajoute l'image et l'item dans ListItemCraft de textBoxCraftUC
                 if (elt.Objet0_0 != null)
                 {
                     craft.ListItemCraft[0] = elt.Objet0_0;
@@ -157,11 +168,14 @@ namespace WPF_App
                 {
                     craft.nbrItemObtenu.Text = elt.NbFinal.ToString();
                 }
+
+                // Si on a un craft objet on choisis l'item actuel 
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     craft.ListItemCraft[9] = Mgr.SelectedItem;
                     craft.Button10_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, Mgr.SelectedItem.Image), UriKind.RelativeOrAbsolute));
                 }
+                // Sinon on récupère le dernier item
                 else
                 {
                     CraftUtilisation craftU = (CraftUtilisation)elt;
@@ -174,11 +188,6 @@ namespace WPF_App
 
             }
         }
-
-
-
-
-
 
 
 
@@ -416,16 +425,13 @@ namespace WPF_App
 
 
 
-
-
-
                 string imageActu="";
                 if(ModeModifier)
                 {
                     Mgr.SupprimerItem(Mgr.SelectedItem);
                     imageActu = Mgr.SelectedItem.Image;
                 }
-                // On créé l'item
+                
                 string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
                 string CheminImage;
 
@@ -433,6 +439,7 @@ namespace WPF_App
                 Item item;
                 if (ModeModifier==false || Path.GetFileName(image) != imageActu)
                 {
+                    // Ajoute un nombre au nom de l'image si le nom existe déjà
                     if (File.Exists(Path.Combine(currentDir, Path.GetFileName(image))))
                     {
                         int i = 1;
@@ -455,21 +462,19 @@ namespace WPF_App
                     item = Mgr.AjouterItem(nom, nomE, id, imageActu, desc, listeTexte, listeStats);
                 }
                 
-
-
-                // Regarder si elt vide
+                
+                // Ajout des crafts à l'item
                 foreach(textBoxCraftUC elt in listeTextBoxCraft)
                 {
+                    // On convertit le nombre d'item obtenu
                     int nb = 1;
                     if (elt.nbrItemObtenu.Text != "")
                     {
                         nb = Convert.ToInt16(elt.nbrItemObtenu.Text);
                     }
 
+                    // On remplace "Bloc actuel" (Id="999:2") par l'item
                     List<Item> temp = new(elt.ListItemCraft);
-
-
-                    
                     foreach (Item i in elt.ListItemCraft)
                     {
                         if (i != null && i.Id == "999:2")
@@ -478,25 +483,27 @@ namespace WPF_App
                         }
                     }
 
-                    //item.AjouterCraft(elt.ListItemCraft[0], elt.ListItemCraft[1], elt.ListItemCraft[2], elt.ListItemCraft[3], elt.ListItemCraft[4], elt.ListItemCraft[5], elt.ListItemCraft[6],
-                    //    elt.ListItemCraft[7], elt.ListItemCraft[8], nb, elt.ListItemCraft[9]);
+                    // On ajoute le craft
                     item.AjouterCraft(temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6], temp[7], temp[8], nb, temp[9]);
                 }
 
-
+                // On désactive le mode ajouter
                 Mgr.ModeAjouter(false);
 
-
+                // Si on est en mode modifier, on retourne sur la page objet
                 if(ModeModifier)
                 {
+                    // Actualisation de SelectedItem
                     Mgr.SelectedItem = item;
+
                     pageObjet pageO = new(Window);
                     Window.Title = "Item - " + Mgr.SelectedItem.Nom;
                     pageO.Window = Window;
                     pageO.chargementHome();
                     Window.contentControl.Content = pageO;
                 }
-                // On affiche la page d'accueil
+
+                // Sinon on retourne sur la page d'accueil
                 else
                 {
                     home Home = new()

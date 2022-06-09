@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zLes7wKMZ+POwmwm9rIYmCGRS0IqjzUo4AO6PuBsL93csTr+Oyhe7LqyLZ1pnyALv0nJ34PrqC+mumFSGQaSrA==",
+  "dgSpecHash": "kBkcSi6QaDcyiIaQpyY4HmtajOmbaQ4aJrtntcUpyZOtDZ8v2ta7X7W1jxXb0SwMRmMqcNfIrdKFAizTTt+kWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eloan\\source\\repos\\MC-D\\DataContractPersistance\\DataContractPersistance.csproj",
+  "projectFilePath": "C:\\Users\\justi\\source\\repos\\mc-dex\\DataContractPersistance\\DataContractPersistance.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
