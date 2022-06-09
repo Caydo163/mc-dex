@@ -62,10 +62,10 @@ namespace WPF_App
             Mgr.SaveItems();
 
             // On supprime les images des items supprimés
-            foreach(string elt in Mgr.images_a_supprimer)
-            {
-                File.Delete(elt);
-            }
+            //foreach(string elt in Mgr.images_a_supprimer)
+            //{
+            //    File.Delete(elt);
+            //}
         }
 
         /// <summary>
