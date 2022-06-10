@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_App", "WPF_App.csproj", "{899462EC-2958-4929-902D-798D8AF4FAA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_App", "WPF_App\WPF_App.csproj", "{899462EC-2958-4929-902D-798D8AF4FAA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modele", "..\Modele\Modele.csproj", "{0C6BC646-84FF-4C98-BF0B-D55A92C2569F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modele", "Modele\Modele.csproj", "{0C6BC646-84FF-4C98-BF0B-D55A92C2569F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "..\Test\Test.csproj", "{5A073CC8-AB75-49D0-8C9F-7CC560D162BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{5A073CC8-AB75-49D0-8C9F-7CC560D162BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_UT", "..\Item_UT\Test_UT.csproj", "{5FA73149-1E9D-4E38-B242-B9BE1420779E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_UT", "Item_UT\Test_UT.csproj", "{5FA73149-1E9D-4E38-B242-B9BE1420779E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StubLib", "..\StubLib\StubLib.csproj", "{BC77586E-BAD5-480E-94DB-562524DB200B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StubLib", "StubLib\StubLib.csproj", "{BC77586E-BAD5-480E-94DB-562524DB200B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataContractPersistance", "..\DataContractPersistance\DataContractPersistance.csproj", "{9A214504-882F-49B2-8AB6-AA2757D3F08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataContractPersistance", "DataContractPersistance\DataContractPersistance.csproj", "{9A214504-882F-49B2-8AB6-AA2757D3F08D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
