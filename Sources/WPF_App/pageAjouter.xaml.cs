@@ -45,15 +45,15 @@ namespace WPF_App
         /// <summary>
         /// Constructeur
         /// </summary>
-        public PageAjouter(bool mode,MainWindow window)
+        public PageAjouter(bool mode, MainWindow window)
         {
             InitializeComponent();
             Window = window;
 
             // Ajoute les items "Bloc actuel" et "Vide" dans la liste d'item
-            Mgr.ModeAjouter(true); 
+            Mgr.ModeAjouter(true);
             ModeModifier = mode;
-            if(ModeModifier)
+            if (ModeModifier)
             {
                 RemplissageModeModifier();
             }
@@ -69,7 +69,7 @@ namespace WPF_App
             textBoxId.textBox.Text = Mgr.SelectedItem.Id;
             textBoxDesc.Text = Mgr.SelectedItem.Desc;
             TextBlockPathFile.Text = Mgr.SelectedItem.Image;
-            image = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), Mgr.SelectedItem.Image);
+            image = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "img"), Mgr.SelectedItem.Image);
 
             // Remplissage nom anglais
             if (Mgr.SelectedItem.NomE != null && Mgr.SelectedItem.NomE != "")
@@ -116,7 +116,7 @@ namespace WPF_App
 
                 listeTextBoxCraft.Add(craft);
                 panelBlocAjout.Children.Add(craft);
-                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
+                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
 
                 // On ajoute l'image et l'item dans ListItemCraft de textBoxCraftUC
                 if (elt.Objet0_0 != null)
@@ -129,37 +129,37 @@ namespace WPF_App
                     craft.ListItemCraft[1] = elt.Objet0_1;
                     craft.Button2_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_1.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet0_2 != null) 
+                if (elt.Objet0_2 != null)
                 {
                     craft.ListItemCraft[2] = elt.Objet0_2;
                     craft.Button3_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet0_2.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet1_0 != null) 
+                if (elt.Objet1_0 != null)
                 {
                     craft.ListItemCraft[3] = elt.Objet1_0;
                     craft.Button4_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_0.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet1_1 != null) 
+                if (elt.Objet1_1 != null)
                 {
                     craft.ListItemCraft[4] = elt.Objet1_1;
                     craft.Button5_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_1.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet1_2 != null) 
+                if (elt.Objet1_2 != null)
                 {
                     craft.ListItemCraft[5] = elt.Objet1_2;
                     craft.Button6_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet1_2.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet2_0 != null) 
+                if (elt.Objet2_0 != null)
                 {
                     craft.ListItemCraft[6] = elt.Objet2_0;
                     craft.Button7_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_0.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet2_1 != null) 
+                if (elt.Objet2_1 != null)
                 {
                     craft.ListItemCraft[7] = elt.Objet2_1;
                     craft.Button8_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_1.Image), UriKind.RelativeOrAbsolute));
                 }
-                if (elt.Objet2_2 != null) 
+                if (elt.Objet2_2 != null)
                 {
                     craft.ListItemCraft[8] = elt.Objet2_2;
                     craft.Button9_Image.Source = new BitmapImage(new Uri(Path.Combine(currentDir, elt.Objet2_2.Image), UriKind.RelativeOrAbsolute));
@@ -282,7 +282,7 @@ namespace WPF_App
             }
 
         }
-        
+
         /// <summary>
         /// Méthode permettant de vérifier la validité des informations entrées par l'utilisateur
         /// </summary>
@@ -297,11 +297,11 @@ namespace WPF_App
             textBoxNom.MessageErreur.Visibility = Visibility.Collapsed;
             MessageErreurDesc.Visibility = Visibility.Collapsed;
             MessageErreurImg.Visibility = Visibility.Collapsed;
-            foreach(textBoxCraftUC elt in listeTextBoxCraft)
+            foreach (textBoxCraftUC elt in listeTextBoxCraft)
             {
                 elt.MessageErreurNbItem.Visibility = Visibility.Collapsed;
             }
-            
+
             // Test de l'identifiant
             string id = textBoxId.textBox.Text;
             if (id == "")
@@ -321,11 +321,11 @@ namespace WPF_App
                 else
                 {
                     // Si l'identifiant est valide, on vérifie s'il est disponible
-                    foreach (Item elt in Mgr.Items) 
+                    foreach (Item elt in Mgr.Items)
                     {
                         if (elt.Id == id)
                         {
-                            if(ModeModifier == true && id == Mgr.SelectedItem.Id)
+                            if (ModeModifier == true && id == Mgr.SelectedItem.Id)
                             {
                                 continue;
                             }
@@ -348,14 +348,14 @@ namespace WPF_App
             }
 
             // Test de la description
-            if(textBoxDesc.Text == "")
+            if (textBoxDesc.Text == "")
             {
                 MessageErreurDesc.Visibility = Visibility;
                 check = true;
             }
 
             // Test de l'image
-            if(image == null)
+            if (image == null)
             {
                 MessageErreurImg.Visibility = Visibility;
                 check = true;
@@ -403,11 +403,11 @@ namespace WPF_App
                 // Récupération des textes
                 foreach (textBoxBaseUC elt in listeTextBoxBase)
                 {
-                    if(elt.textBoxTitre.Text != "" && elt.textBoxTexte.Text != "")
+                    if (elt.textBoxTitre.Text != "" && elt.textBoxTexte.Text != "")
                     {
                         listeTexte.Add(new KeyValuePair<string, string>(elt.textBoxTitre.Text, elt.textBoxTexte.Text));
                     }
-                    
+
                 }
 
                 // Récupération des statistiques
@@ -415,30 +415,29 @@ namespace WPF_App
                 {
                     foreach (ligneGridStatUC elt in textBoxStat.listLigneStat)
                     {
-                        if(elt.nomStat.Text != "" && elt.valStat.Text != "")
+                        if (elt.nomStat.Text != "" && elt.valStat.Text != "")
                         {
                             listeStats.Add(elt.nomStat.Text, elt.valStat.Text);
                         }
-                            
+
                     }
                 }
 
 
 
-                string imageActu="";
+                string imageActu = "";
                 // Si l'item est en modification, supprime l'ancien
-                if(ModeModifier)
+                if (ModeModifier)
                 {
-                    Mgr.SupprimerItem(Mgr.SelectedItem);
                     imageActu = Mgr.SelectedItem.Image;
                 }
                 // Repertoire contenant les images
-                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
+                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
                 string CheminImage;
 
                 //Si l'image n'a pas été modifié durant une modififacation d'item, change l'image pour qu'elle soit unique
                 Item item;
-                if (ModeModifier==false || Path.GetFileName(image) != imageActu)
+                if (ModeModifier == false || Path.GetFileName(image) != imageActu)
                 {
                     // Ajoute un nombre au nom de l'image si le nom existe déjà
                     if (File.Exists(Path.Combine(currentDir, Path.GetFileName(image))))
@@ -458,17 +457,22 @@ namespace WPF_App
                         CheminImage = Path.Combine(currentDir, Path.GetFileName(image));
                     }
                     //Ajoute l'objet avec une nouvelle image
+                    if (ModeModifier)
+                    {
+                        Mgr.SupprimerItem(Mgr.SelectedItem, true);
+                    }
                     item = Mgr.AjouterItem(nom, nomE, id, Path.GetFileName(CheminImage), desc, listeTexte, listeStats);
                 }
                 else
                 {
+                    Mgr.SupprimerItem(Mgr.SelectedItem, false);
                     //Ajouter l'objet si il a gardé l'image d'avant modification
                     item = Mgr.AjouterItem(nom, nomE, id, imageActu, desc, listeTexte, listeStats);
                 }
-                
-                
+
+
                 // Ajout des crafts à l'item
-                foreach(textBoxCraftUC elt in listeTextBoxCraft)
+                foreach (textBoxCraftUC elt in listeTextBoxCraft)
                 {
                     // On convertit le nombre d'item obtenu
                     int nb = 1;
@@ -481,7 +485,7 @@ namespace WPF_App
                     List<Item> temp = new(elt.ListItemCraft);
                     foreach (Item i in elt.ListItemCraft)
                     {
-                        if (i != null && i.Id == "999:2")
+                        if (i != null && (i.Id == "999:2" || i.Nom == item.Nom))
                         {
                             temp[temp.IndexOf(i)] = item;
                         }
@@ -495,7 +499,7 @@ namespace WPF_App
                 Mgr.ModeAjouter(false);
 
                 // Si on est en mode modifier, on retourne sur la page objet
-                if(ModeModifier)
+                if (ModeModifier)
                 {
                     // Actualisation de SelectedItem
                     Mgr.SelectedItem = item;
@@ -520,7 +524,7 @@ namespace WPF_App
             }
         }
 
-        }
-
     }
+
+}
 

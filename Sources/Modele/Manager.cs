@@ -85,7 +85,7 @@ namespace Modele
             // On vérifie si l'identifiant n'existe pas
             foreach (Item elt in Items)
             {
-                if(elt.Id == id)
+                if (elt.Id == id)
                 {
                     return null;
                 }
@@ -102,7 +102,7 @@ namespace Modele
                 item.ListeTexte.Add(elt);
             }
 
-            foreach(KeyValuePair<string, string> elt in listeStats)
+            foreach (KeyValuePair<string, string> elt in listeStats)
             {
                 item.ListeStats[elt.Key] = elt.Value;
             }
@@ -116,23 +116,26 @@ namespace Modele
         /// <summary>
         /// Méthode permettant de supprimer un item de la liste
         /// </summary>
-        /// <param name="item">L'item à supprimer</param>
-        public void SupprimerItem(Item item)
+        /// <param name="item">item à supprimer</param>
+        /// <param name="Bool">connaitre si l'image est à supprimer ou non</param>
+        public void SupprimerItem(Item item, bool Bool)
         {
-            if(Items.Contains(item))
+            if (Items.Contains(item))
             {
-                // On ajoute l'image dans "images_a_supprimer" pour que l'image soit supprimé à la fermeture de l'application
-                if(File.Exists(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), item.Image)))
+                if (Bool)
                 {
-                    images_a_supprimer.Add(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), item.Image));
-                }
-
-                // On supprime tous les crafts qui font référence à cet item
-                foreach(Item elt in items)
-                {
-                    foreach(Craft craft in elt.ListeCraft)
+                    // On ajoute l'image dans "images_a_supprimer" pour que l'image soit supprimé à la fermeture de l'application
+                    if (File.Exists(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "img"), item.Image)))
                     {
-                        if(craft.Objet0_0 != null && craft.Objet0_0.Id == item.Id)
+                        images_a_supprimer.Add(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "img"), item.Image));
+                    }
+                }
+                // On supprime tous les crafts qui font référence à cet item
+                foreach (Item elt in items)
+                {
+                    foreach (Craft craft in elt.ListeCraft)
+                    {
+                        if (craft.Objet0_0 != null && craft.Objet0_0.Id == item.Id)
                         {
                             elt.ListeCraft.Remove(craft);
                             break;
@@ -180,7 +183,7 @@ namespace Modele
                         if (craft.GetType() == typeof(CraftUtilisation))
                         {
                             CraftUtilisation craftU = (CraftUtilisation)craft;
-                            if(craftU.ObjetFinal.Id == item.Id)
+                            if (craftU.ObjetFinal.Id == item.Id)
                             {
                                 elt.ListeCraft.Remove(craft);
                                 break;
@@ -188,7 +191,6 @@ namespace Modele
                         }
                     }
                 }
-
                 // On supprime l'item de la liste
                 items.RemoveAt(items.IndexOf(item));
             }
@@ -247,17 +249,17 @@ namespace Modele
         public void ModeAjouter(bool check)
         {
             // Si on active le mode ajouter, on ajoute les 2 items
-            if(check)
+            if (check)
             {
                 // L'item "Vide" permet d'enlever un bloc d'un craft
-                items.Insert(0,new Item("Vide", "999:1", "..\\img\\Vide.png", ""));
+                items.Insert(0, new Item("Vide", "999:1", "img\\Vide.png", ""));
                 // L'item "Bloc Actuel" permet d'ajouter l'item que l'on est entrain de créer dans un craft
-                items.Insert(1,new Item("Bloc Actuel", "999:2", "..\\img\\MissingTextureBlock.png", ""));
+                items.Insert(1, new Item("Bloc Actuel", "999:2", "img\\MissingTextureBlock.png", ""));
             }
             // Si on désactive le mode ajouter et que les items existe on les supprimes
             else
             {
-                if(items.Count > 1)
+                if (items.Count > 1)
                 {
                     if (items[0].Id == "999:1" && items[1].Id == "999:2")
                     {

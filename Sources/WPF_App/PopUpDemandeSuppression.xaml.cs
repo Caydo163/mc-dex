@@ -59,7 +59,7 @@ namespace WPF_App
         /// <param name="e"></param>
         private void Button_Confirmer(object sender, RoutedEventArgs e)
         {
-            Mgr.SupprimerItem(Mgr.SelectedItem);
+            Mgr.SupprimerItem(Mgr.SelectedItem,true);
             popUpOpen = false;
             home pageH = new()
             {

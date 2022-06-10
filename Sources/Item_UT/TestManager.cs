@@ -56,7 +56,7 @@ namespace Test_UT
             Item item = manager.AjouterItem("Terre", "Dirt", "10:89", "img/terre.png", "Description", listeTexte, listeStats);
 
             Assert.Single(manager.Items);
-            manager.SupprimerItem(item);
+            manager.SupprimerItem(item,false);
             Assert.Empty(manager.Items);
         }
 

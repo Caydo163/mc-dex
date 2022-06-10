@@ -10,7 +10,7 @@ namespace DataContractPersistance
 {
     public class DataContractPers : IPersistanceManager
     {
-        public string FilePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "..\\XML");
+        public string FilePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "XML");
         public string FileName { get; set; } = "items.xml";
 
         private DataContractSerializer Serializer { get; set; } = new DataContractSerializer(typeof(IEnumerable<Item>),
