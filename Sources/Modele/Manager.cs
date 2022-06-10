@@ -252,9 +252,9 @@ namespace Modele
             if (check)
             {
                 // L'item "Vide" permet d'enlever un bloc d'un craft
-                items.Insert(0, new Item("Vide", "999:1", "img\\Vide.png", ""));
+                items.Insert(0, new Item("Vide", "999:1", "Vide.png", ""));
                 // L'item "Bloc Actuel" permet d'ajouter l'item que l'on est entrain de créer dans un craft
-                items.Insert(1, new Item("Bloc Actuel", "999:2", "img\\MissingTextureBlock.png", ""));
+                items.Insert(1, new Item("Bloc Actuel", "999:2", "MissingTextureBlock.png", ""));
             }
             // Si on désactive le mode ajouter et que les items existe on les supprimes
             else

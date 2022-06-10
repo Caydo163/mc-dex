@@ -10,7 +10,7 @@
     
     <Grid MaxHeight="125">
         <Grid.Background>
-            <ImageBrush ImageSource="img\texture_grass.png" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="img\menu_background.png" Stretch="UniformToFill" />
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
