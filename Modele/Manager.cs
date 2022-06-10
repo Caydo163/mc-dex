@@ -198,7 +198,7 @@ namespace Modele
         /// Méthode permettant de modifier une chaîne de caractère pour la recherche
         /// </summary>
         /// <param name="mot">String à modifier</param>
-        /// <returns></returns>
+        /// <returns>La chaine de caractère modifiée</returns>
         private string ModificationStringRecherche(string mot)
         {
             string newMot = "";
@@ -230,7 +230,7 @@ namespace Modele
         /// Méthode permettant de rechercher les items (noom, nom anglais et identifiant) correspondant aux critères
         /// </summary>
         /// <param name="mot">Critère de selection</param>
-        /// <returns></returns>
+        /// <returns>La liste des items correspondants aux critères</returns>
         public IEnumerable<Item> Rechercher(string mot)
         {
             mot = ModificationStringRecherche(mot);

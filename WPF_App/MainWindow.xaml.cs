@@ -94,7 +94,7 @@ namespace WPF_App
         /// 1 - Changement de page alors qu'un popup est ouvert
         /// 2 - Chanegement de page lorsque l'utilisateur est sur la page ajouter
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Le booleen de colision</returns>
         private bool TestCollision()
         {
             if (PopUpListObject.popUpOpen || PopUpDemandeSuppression.popUpOpen)

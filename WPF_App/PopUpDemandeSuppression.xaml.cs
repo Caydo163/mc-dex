@@ -69,7 +69,11 @@ namespace WPF_App
             this.Close();
         }
 
-        // Bouton pour annuler la suppression de l'item
+        /// <summary>
+        /// Bouton pour annuler la suppression de l'item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Annuler(object sender, RoutedEventArgs e)
         {
             popUpOpen = false;

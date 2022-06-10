@@ -90,6 +90,19 @@ namespace Modele
         private int nbFinal;
 
 
+        /// <summary>
+        /// Constructeur de la classe Craft avec les 9 items d'un Craft ainsi que le nombre Finale d'objet que le craft fournira
+        /// </summary>
+        /// <param name="nbF"></param>
+        /// <param name="o1"></param>
+        /// <param name="o2"></param>
+        /// <param name="o3"></param>
+        /// <param name="o4"></param>
+        /// <param name="o5"></param>
+        /// <param name="o6"></param>
+        /// <param name="o7"></param>
+        /// <param name="o8"></param>
+        /// <param name="o9"></param>
         public Craft(int nbF,Item o1, Item o2, Item o3, Item o4, Item o5, Item o6, Item o7, Item o8, Item o9)
         {
             Objet0_0 = o1;
@@ -104,6 +117,10 @@ namespace Modele
             NbFinal = nbF;
         }
 
+        /// <summary>
+        /// Methode abstraite qui calcule les ingredients
+        /// </summary>
+        /// <returns></returns>
         public abstract List<KeyValuePair<string, int>> CalculIngredient();
         public override string ToString()
         {

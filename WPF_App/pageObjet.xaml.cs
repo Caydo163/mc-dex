@@ -125,6 +125,7 @@ namespace WPF_App
                 {
                     CraftUtilisation craft = (CraftUtilisation)elt;
                     grilleCraftUC craftUC = new();
+                    // Repertoire des images de l'application
                     string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"..\\img"));
 
                     // On affiche les images

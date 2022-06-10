@@ -20,6 +20,11 @@ namespace StubLib
             new Item("planche", "112", "img\\Terre.png", "Voici une description"),
             new Item("planche", "6:6312", "img\\Terre.png", "Voici une description"),
         };
+
+        /// <summary>
+        /// Stub permettant la créations du IEnumerable d'items
+        /// </summary>
+        /// <returns>Le IEnumerable d'items</returns>
         public IEnumerable<Item> LoadItems()
         {
             items[0].NomE = "Dirt";
@@ -35,6 +40,10 @@ namespace StubLib
             return items;
         }
 
+        /// <summary>
+        /// Methode vide qui permet de respecter les méthode de IPersistance Manager
+        /// </summary>
+        /// <param name="item"></param>
         public void SaveItems(IEnumerable<Item> item)
         {
             Debug.WriteLine("Sauvegarde demandé");

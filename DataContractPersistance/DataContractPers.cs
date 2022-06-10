@@ -18,7 +18,14 @@ namespace DataContractPersistance
                                                 {
                                                     PreserveObjectReferences = true
                                                 });
+        
         string PersFile => Path.Combine(FilePath, FileName);
+
+        /// <summary>
+        /// Permet de charger les items du fichier items.xml dans le IEnumerable items
+        /// </summary>
+        /// <returns>Le IEnumerable d'items</returns>
+        /// <exception cref="FileNotFoundException"></exception>
         public IEnumerable<Item> LoadItems()
         {
             if (!File.Exists(PersFile))
@@ -43,6 +50,10 @@ namespace DataContractPersistance
         }
 
 
+        /// <summary>
+        /// Permet de sauvegarde la liste des items dans le fichier items.xml
+        /// </summary>
+        /// <param name="item"></param>
         public void SaveItems(IEnumerable<Item> item)
         {
 

@@ -426,12 +426,13 @@ namespace WPF_App
 
 
                 string imageActu="";
+                // Si l'item est en modification, supprime l'ancien
                 if(ModeModifier)
                 {
                     Mgr.SupprimerItem(Mgr.SelectedItem);
                     imageActu = Mgr.SelectedItem.Image;
                 }
-                
+                // Repertoire contenant les images
                 string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"));
                 string CheminImage;
 
@@ -447,6 +448,7 @@ namespace WPF_App
                         {
                             i++;
                         }
+                        // Copie l'image dans le repertoire image de l'application
                         File.Copy(image, Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image)));
                         CheminImage = Path.Combine(currentDir, Path.GetFileNameWithoutExtension(image) + i.ToString() + Path.GetExtension(image));
                     }
@@ -455,10 +457,12 @@ namespace WPF_App
                         File.Copy(image, Path.Combine(currentDir, Path.GetFileName(image)));
                         CheminImage = Path.Combine(currentDir, Path.GetFileName(image));
                     }
+                    //Ajoute l'objet avec une nouvelle image
                     item = Mgr.AjouterItem(nom, nomE, id, Path.GetFileName(CheminImage), desc, listeTexte, listeStats);
                 }
                 else
                 {
+                    //Ajouter l'objet si il a gardé l'image d'avant modification
                     item = Mgr.AjouterItem(nom, nomE, id, imageActu, desc, listeTexte, listeStats);
                 }
                 

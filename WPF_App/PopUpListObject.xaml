@@ -50,7 +50,7 @@
         
         <Border VerticalAlignment="Top" Height="50" Style="{StaticResource pageAjouter_borderGrid}" x:Name="ButtonValider" DockPanel.Dock="Bottom">
             <Button Click="ButtonClose">
-                <TextBlock x:Name="TEST" Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
+                <TextBlock Text="VALIDER" Style="{StaticResource pageAjouter_textBlock}"/>
             </Button>
         </Border>
 

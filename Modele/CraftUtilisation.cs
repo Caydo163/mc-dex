@@ -27,7 +27,21 @@ namespace Modele
         private string nomBase;
 
 
-                                              
+        /// <summary>
+        /// Constructeur de la classe CraftUtilisation faisant appel à la classe mère et qui set les attributs ObjetFinal et NomBase
+        /// </summary>
+        /// <param name="nbF"></param>
+        /// <param name="o1"></param>
+        /// <param name="o2"></param>
+        /// <param name="o3"></param>
+        /// <param name="o4"></param>
+        /// <param name="o5"></param>
+        /// <param name="o6"></param>
+        /// <param name="o7"></param>
+        /// <param name="o8"></param>
+        /// <param name="o9"></param>
+        /// <param name="objetFinal"></param>
+        /// <param name="nomBase"></param>        
         public CraftUtilisation(int nbF, Item o1, Item o2, Item o3, Item o4, Item o5, Item o6, Item o7, Item o8, Item o9, Item objetFinal, string nomBase)
             :base(nbF, o1, o2, o3, o4, o5, o6, o7, o8, o9)
         {
@@ -36,6 +50,10 @@ namespace Modele
         }
 
 
+        /// <summary>
+        /// Calcul pour chaque items différents, son total d'apparition dans les attributs et met un indicateur devant l'item de meme nom que la classe Item qui l'a creer
+        /// </summary>
+        /// <returns>Liste du nombre d'apparition de chaque item dans la classe</returns>
         public override List<KeyValuePair<string, int>> CalculIngredient()
         {
             List<KeyValuePair<string, int>> L = new();
