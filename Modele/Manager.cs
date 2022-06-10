@@ -127,6 +127,68 @@ namespace Modele
                     images_a_supprimer.Add(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "..\\img"), item.Image));
                 }
 
+                // On supprime tous les crafts qui font référence à cet item
+                foreach(Item elt in items)
+                {
+                    foreach(Craft craft in elt.ListeCraft)
+                    {
+                        if(craft.Objet0_0 != null && craft.Objet0_0.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet0_1 != null && craft.Objet0_1.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet0_2 != null && craft.Objet0_2.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet1_0 != null && craft.Objet1_0.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet1_1 != null && craft.Objet1_1.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet1_2 != null && craft.Objet1_2.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet2_0 != null && craft.Objet2_0.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet2_1 != null && craft.Objet2_1.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.Objet2_2 != null && craft.Objet2_2.Id == item.Id)
+                        {
+                            elt.ListeCraft.Remove(craft);
+                            break;
+                        }
+                        if (craft.GetType() == typeof(CraftUtilisation))
+                        {
+                            CraftUtilisation craftU = (CraftUtilisation)craft;
+                            if(craftU.ObjetFinal.Id == item.Id)
+                            {
+                                elt.ListeCraft.Remove(craft);
+                                break;
+                            }
+                        }
+                    }
+                }
+
                 // On supprime l'item de la liste
                 items.RemoveAt(items.IndexOf(item));
             }
@@ -178,14 +240,21 @@ namespace Modele
         }
 
 
-        
+        /// <summary>
+        /// Méthode permettant d'ajouter 2 items qui servent pour ajouter un craft 
+        /// </summary>
+        /// <param name="check"></param>
         public void ModeAjouter(bool check)
         {
+            // Si on active le mode ajouter, on ajoute les 2 items
             if(check)
             {
+                // L'item "Vide" permet d'enlever un bloc d'un craft
                 items.Insert(0,new Item("Vide", "999:1", "..\\img\\Vide.png", ""));
+                // L'item "Bloc Actuel" permet d'ajouter l'item que l'on est entrain de créer dans un craft
                 items.Insert(1,new Item("Bloc Actuel", "999:2", "..\\img\\MissingTextureBlock.png", ""));
             }
+            // Si on désactive le mode ajouter et que les items existe on les supprimes
             else
             {
                 if(items.Count > 1)

@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using Modele;
+using System.Collections.Generic;
 
 namespace Test_UT
 {
@@ -50,7 +51,22 @@ namespace Test_UT
         }
 
 
-        // Ajouter craft
+        [Fact]
+        public void TestAjouterCraft()
+        {
+            Item item = new("Terre", "10:89", "img/terre.png", "Description");
+            Item item2 = new("Pierre", "185", "img/pierre.png", "Description");
+            List<Item> craft1 = new(){null, null, null, null, null, null, item2, item2, item2, null};
+            List<Item> craft2 = new(){null, null, null, null, item, null, null, null, null, item2 };
+            item.AjouterCraft(craft1[0], craft1[1], craft1[2], craft1[3], craft1[4], craft1[5], craft1[6], craft1[7], craft1[8], 3, craft1[9]);
+            item.AjouterCraft(craft2[0], craft2[1], craft2[2], craft2[3], craft2[4], craft2[5], craft2[6], craft2[7], craft2[8], 3, craft2[9]);
+            Assert.Equal(typeof(CraftObjet), item.ListeCraft[0].GetType());
+            Assert.Equal(typeof(CraftUtilisation), item.ListeCraft[1].GetType());
+            Assert.Equal(item.ListeCraft[0].Objet2_0, item2);
+            Assert.Null(item.ListeCraft[0].Objet0_0);
+
+        }
+
 
 
         [Fact]

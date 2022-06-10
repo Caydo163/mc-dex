@@ -9,13 +9,29 @@ using System.Windows.Data;
 
 namespace WPF_App.converter
 {
+    /// <summary>
+    /// Classe permettant de convertir un nom d'image en chemin
+    /// </summary>
     public class String2ImageConverter : IValueConverter
     {
         private static string imagesPath;
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
         static String2ImageConverter()
         {
             imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "..\\img\\");
         }
+
+        /// <summary>
+        /// Convertit nom image en chemin
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="targetType"></param>
+        /// <param name="parameter"></param>
+        /// <param name="culture"></param>
+        /// <returns></returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             string imageName = value as string;

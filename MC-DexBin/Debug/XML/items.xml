@@ -935,8 +935,8 @@ Elle peut aussi être obtenu avec une toile d'araignée.</d3p1:value>
     </ListeCraft>
     <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="315" z:Size="0" />
     <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="316" z:Size="0" />
-    <Nom z:Ref="312" i:nil="true" />
-    <NomE z:Id="317">Wooden plank</NomE>
+    <Nom z:Id="317">Planche</Nom>
+    <NomE z:Id="318">Wooden plank</NomE>
     <Id z:Ref="61" i:nil="true" />
   </Item>
 </ArrayOfItem>
