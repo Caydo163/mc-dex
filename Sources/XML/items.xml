@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfItem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Modele">
+  <Item z:Id="2">
+    <Desc z:Id="3">Voici une description</Desc>
+    <Image z:Id="4">Terre.png</Image>
+    <ListeCraft z:Id="5" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="7" z:Size="0" />
+    <Nom z:Id="8">Poulet</Nom>
+    <Id z:Id="9">68:12</Id>
+  </Item>
+  <Item z:Id="10">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="11">Terre.png</Image>
+    <ListeCraft z:Id="12" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="13" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="14" z:Size="0" />
+    <Nom z:Id="15">Lit</Nom>
+    <Id z:Id="16">6:12</Id>
+  </Item>
+  <Item z:Id="17">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="18">Terre.png</Image>
+    <ListeCraft z:Id="19" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="20" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="21" z:Size="0" />
+    <Nom z:Id="22">Diamant</Nom>
+    <Id z:Id="23">62</Id>
+  </Item>
+  <Item z:Id="24">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="25">Terre.png</Image>
+    <ListeCraft z:Id="26" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="27" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="28" z:Size="0" />
+    <Nom z:Id="29">Fer</Nom>
+    <Id z:Id="30">6:1299</Id>
+  </Item>
+  <Item z:Id="31">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="32">Terre.png</Image>
+    <ListeCraft z:Id="33" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="34" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="35" z:Size="0" />
+    <Nom z:Id="36">Coffre</Nom>
+    <Id z:Id="37">67:12</Id>
+  </Item>
+  <Item z:Id="38">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="39">Terre.png</Image>
+    <ListeCraft z:Id="40" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="41" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="42" z:Size="0" />
+    <Nom z:Id="43">Planche</Nom>
+    <Id z:Id="44">1:12</Id>
+  </Item>
+  <Item z:Id="45">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="46">Terre.png</Image>
+    <ListeCraft z:Id="47" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="48" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="49" z:Size="0" />
+    <Nom z:Id="50">Stone</Nom>
+    <Id z:Id="51">6:78</Id>
+  </Item>
+  <Item z:Id="52">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Id="53">Terre.png</Image>
+    <ListeCraft z:Id="54" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="55" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="56" z:Size="0" />
+    <Nom z:Id="57">Planche</Nom>
+    <Id z:Id="58">112</Id>
+  </Item>
+  <Item z:Id="59">
+    <Desc z:Ref="3" i:nil="true" />
+    <Image z:Ref="53" i:nil="true" />
+    <ListeCraft z:Id="60" z:Size="3">
+      <Craft z:Id="61" i:type="CraftObjet">
+        <NbFinal>5</NbFinal>
+        <Objet0_0 z:Ref="31" i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 z:Ref="2" i:nil="true" />
+        <Objet1_0 i:nil="true" />
+        <Objet1_1 z:Ref="2" i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 z:Ref="31" i:nil="true" />
+        <Objet2_2 z:Ref="31" i:nil="true" />
+      </Craft>
+      <Craft z:Id="62" i:type="CraftObjet">
+        <NbFinal>5</NbFinal>
+        <Objet0_0 z:Ref="31" i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 z:Ref="2" i:nil="true" />
+        <Objet1_0 z:Ref="45" i:nil="true" />
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 z:Ref="31" i:nil="true" />
+        <Objet2_2 z:Ref="31" i:nil="true" />
+      </Craft>
+      <Craft z:Id="63" i:type="CraftUtilisation">
+        <NbFinal>1</NbFinal>
+        <Objet0_0 z:Ref="59" i:nil="true" />
+        <Objet0_1 i:nil="true" />
+        <Objet0_2 z:Ref="38" i:nil="true" />
+        <Objet1_0 z:Id="64">
+          <Desc z:Ref="3" i:nil="true" />
+          <Image z:Ref="53" i:nil="true" />
+          <ListeCraft z:Id="65" z:Size="2">
+            <Craft z:Id="66" i:type="CraftObjet">
+              <NbFinal>5</NbFinal>
+              <Objet0_0 z:Ref="31" i:nil="true" />
+              <Objet0_1 i:nil="true" />
+              <Objet0_2 z:Ref="2" i:nil="true" />
+              <Objet1_0 z:Ref="45" i:nil="true" />
+              <Objet1_1 i:nil="true" />
+              <Objet1_2 i:nil="true" />
+              <Objet2_0 i:nil="true" />
+              <Objet2_1 z:Ref="31" i:nil="true" />
+              <Objet2_2 z:Ref="31" i:nil="true" />
+            </Craft>
+            <Craft z:Id="67" i:type="CraftObjet">
+              <NbFinal>5</NbFinal>
+              <Objet0_0 z:Ref="31" i:nil="true" />
+              <Objet0_1 i:nil="true" />
+              <Objet0_2 z:Ref="2" i:nil="true" />
+              <Objet1_0 z:Ref="45" i:nil="true" />
+              <Objet1_1 i:nil="true" />
+              <Objet1_2 i:nil="true" />
+              <Objet2_0 i:nil="true" />
+              <Objet2_1 z:Ref="31" i:nil="true" />
+              <Objet2_2 z:Ref="31" i:nil="true" />
+            </Craft>
+          </ListeCraft>
+          <ListeStats xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="68" z:Size="2">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key z:Id="69">Stat 1</d6p1:Key>
+              <d6p1:Value z:Id="70">5.4</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key z:Id="71">Stat 2</d6p1:Key>
+              <d6p1:Value z:Id="72">10</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+          </ListeStats>
+          <ListeTexte xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="73" z:Size="2">
+            <d6p1:KeyValuePairOfstringstring>
+              <d6p1:key z:Id="74">Titre 1</d6p1:key>
+              <d6p1:value z:Id="75">Texte 1</d6p1:value>
+            </d6p1:KeyValuePairOfstringstring>
+            <d6p1:KeyValuePairOfstringstring>
+              <d6p1:key z:Id="76">Titre 2</d6p1:key>
+              <d6p1:value z:Id="77">Texte 2</d6p1:value>
+            </d6p1:KeyValuePairOfstringstring>
+          </ListeTexte>
+          <Nom z:Id="78">Terre</Nom>
+          <NomE z:Id="79">Dirt</NomE>
+          <Id z:Id="80">12</Id>
+        </Objet1_0>
+        <Objet1_1 i:nil="true" />
+        <Objet1_2 i:nil="true" />
+        <Objet2_0 i:nil="true" />
+        <Objet2_1 z:Ref="2" i:nil="true" />
+        <Objet2_2 z:Ref="10" i:nil="true" />
+        <NomBase z:Id="81">Terre</NomBase>
+        <ObjetFinal z:Ref="24" i:nil="true" />
+      </Craft>
+    </ListeCraft>
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="82" z:Size="2">
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Ref="69" i:nil="true" />
+        <d3p1:Value z:Ref="70" i:nil="true" />
+      </d3p1:KeyValueOfstringstring>
+      <d3p1:KeyValueOfstringstring>
+        <d3p1:Key z:Ref="71" i:nil="true" />
+        <d3p1:Value z:Ref="72" i:nil="true" />
+      </d3p1:KeyValueOfstringstring>
+    </ListeStats>
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="83" z:Size="2">
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Ref="74" i:nil="true" />
+        <d3p1:value z:Ref="75" i:nil="true" />
+      </d3p1:KeyValuePairOfstringstring>
+      <d3p1:KeyValuePairOfstringstring>
+        <d3p1:key z:Ref="76" i:nil="true" />
+        <d3p1:value z:Ref="77" i:nil="true" />
+      </d3p1:KeyValuePairOfstringstring>
+    </ListeTexte>
+    <Nom z:Id="84">Terre</Nom>
+    <NomE z:Id="85">Dirt</NomE>
+    <Id z:Ref="80" i:nil="true" />
+  </Item>
+  <Item z:Id="86">
+    <Desc z:Id="87">Arme</Desc>
+    <Image z:Id="88">Terre.png</Image>
+    <ListeCraft z:Id="89" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="90" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="91" z:Size="0" />
+    <Nom z:Id="92">Epee</Nom>
+    <NomE z:Id="93">Sword</NomE>
+    <Id z:Id="94">475:2</Id>
+  </Item>
+  <Item z:Id="95">
+    <Desc z:Id="96">bloc que l'on trouve dans l'overworld</Desc>
+    <Image z:Id="97">Terre.png</Image>
+    <ListeCraft z:Id="98" z:Size="0" />
+    <ListeStats xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="99" z:Size="0" />
+    <ListeTexte xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" z:Id="100" z:Size="0" />
+    <Nom z:Id="101">Stone</Nom>
+    <Id z:Id="102">856</Id>
+  </Item>
+</ArrayOfItem>

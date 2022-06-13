@@ -83,7 +83,8 @@ namespace WPF_App
                 if (elt.GetType() == typeof(CraftObjet))
                 {
                     grilleCraftUC craftUC = new();
-                    string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"img"));
+                    //string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"img"));
+                    string currentDir = "..\\..\\..\\img\\";
 
                     // On affiche les images
                     if (elt.Objet0_0 != null) craftUC.ImageName1 = Path.Combine(currentDir, elt.Objet0_0.Image);
@@ -126,7 +127,8 @@ namespace WPF_App
                     CraftUtilisation craft = (CraftUtilisation)elt;
                     grilleCraftUC craftUC = new();
                     // Repertoire des images de l'application
-                    string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(),"img"));
+
+                    string currentDir = "..\\..\\..\\img\\";
 
                     // On affiche les images
                     if (craft.Objet0_0 != null) craftUC.ImageName1 = Path.Combine(currentDir, craft.Objet0_0.Image);

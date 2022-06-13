@@ -21,7 +21,8 @@ namespace WPF_App.converter
         /// </summary>
         static String2ImageConverter()
         {
-            imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "img\\");
+            //imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "img\\");
+            imagesPath = "..\\..\\..\\img\\";
         }
 
         /// <summary>

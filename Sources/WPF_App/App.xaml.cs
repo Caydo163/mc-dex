@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using DataContractPersistance;
 using Modele;
+using StubLib;
 
 namespace WPF_App
 {

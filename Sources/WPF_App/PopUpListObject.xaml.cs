@@ -94,7 +94,8 @@ namespace WPF_App
                 }
 
                 // Switch pour pouvoir modifier le bon bouton
-                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
+                //string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
+                string currentDir = "..\\..\\..\\img\\";
                 switch (Pos)
                 {
                     case 1:
