@@ -69,7 +69,7 @@ namespace WPF_App
             textBoxId.textBox.Text = Mgr.SelectedItem.Id;
             textBoxDesc.Text = Mgr.SelectedItem.Desc;
             TextBlockPathFile.Text = Mgr.SelectedItem.Image;
-            image = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "img"), Mgr.SelectedItem.Image);
+            image = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "../img"), Mgr.SelectedItem.Image);
 
             // Remplissage nom anglais
             if (Mgr.SelectedItem.NomE != null && Mgr.SelectedItem.NomE != "")
@@ -116,7 +116,7 @@ namespace WPF_App
 
                 listeTextBoxCraft.Add(craft);
                 panelBlocAjout.Children.Add(craft);
-                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
+                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "../img"));
 
                 // On ajoute l'image et l'item dans ListItemCraft de textBoxCraftUC
                 if (elt.Objet0_0 != null)
@@ -432,7 +432,7 @@ namespace WPF_App
                     imageActu = Mgr.SelectedItem.Image;
                 }
                 // Repertoire contenant les images
-                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
+                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "../img"));
                 string CheminImage;
 
                 //Si l'image n'a pas été modifié durant une modififacation d'item, change l'image pour qu'elle soit unique

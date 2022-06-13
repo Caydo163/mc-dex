@@ -55,8 +55,8 @@ namespace WPF_App
             // Si le mode nether est activé, on change l'arrière plan
             if (window.ModeNether)
             {
-                backgroundPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\background_nether.png", UriKind.Relative));
-                backgroundMenuPopUpList.ImageSource = new BitmapImage(new Uri("..\\..\\..\\WPF_App\\img\\menu_background_nether.png", UriKind.Relative));
+                backgroundPopUpList.ImageSource = new BitmapImage(new Uri("..\\img\\background_nether.png", UriKind.Relative));
+                backgroundMenuPopUpList.ImageSource = new BitmapImage(new Uri("..\\img\\menu_background_nether.png", UriKind.Relative));
             }
         }
 
@@ -94,7 +94,7 @@ namespace WPF_App
                 }
 
                 // Switch pour pouvoir modifier le bon bouton
-                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "img"));
+                string currentDir = new(Path.Combine(Directory.GetCurrentDirectory(), "../img"));
                 switch (Pos)
                 {
                     case 1:

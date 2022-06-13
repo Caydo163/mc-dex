@@ -8,6 +8,10 @@
     <BaseOutputPath>..\MC-DexBin</BaseOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>./</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="font\minecraft_font.ttf" />
     <None Remove="img\ajouter.png" />

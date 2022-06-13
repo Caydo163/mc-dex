@@ -9,7 +9,10 @@ namespace Test
         static void Main()
         {
 
-
+            //Manager manager = new(new StubLib.Stub());
+            //manager.LoadItems();
+            //manager.Pers = new DataContractPersistance.DataContractPers();
+            //manager.SaveItems();
 
 
 
@@ -83,7 +86,7 @@ namespace Test
             manager.AjouterItem(item.Nom, "", item.Id, item.Image, item.Desc, item.ListeTexte, item.ListeStats);
             manager.AjouterItem(item.Nom, "", item.Id, item.Image, item.Desc, item.ListeTexte, item.ListeStats);
             manager.AjouterItem(item2.Nom, item2.NomE, item2.Id, item2.Image, item2.Desc, item2.ListeTexte, item2.ListeStats);
-            manager.SupprimerItem(item2,false);
+            manager.SupprimerItem(item2, false);
 
             Console.WriteLine("Element Attendu :");
             Console.WriteLine("Terre / image / 9:1 / Voici une description /");
@@ -141,6 +144,7 @@ namespace Test
 
 
 
+            //}
         }
     }
 }
